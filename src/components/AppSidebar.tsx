@@ -4,20 +4,28 @@ import {
   Activity, Brain, Rss, Building2, Settings as SettingsIcon,
 } from "lucide-react";
 
-const primary = [
+type NavItem = {
+  to: string;
+  label: string;
+  icon: typeof LayoutDashboard;
+  exact?: boolean;
+  hint?: string;
+};
+
+const primary: NavItem[] = [
   { to: "/", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { to: "/creators", label: "Creator Database", icon: Users },
   { to: "/pipeline", label: "Outreach Pipeline", icon: KanbanSquare },
   { to: "/opportunities", label: "Opportunities", icon: Sparkles },
   { to: "/events", label: "Events & Conferences", icon: Calendar },
-] as const;
+];
 
-const intel = [
+const intel: NavItem[] = [
   { to: "/timeline", label: "Relationship Timeline", icon: Activity, hint: "Recent activity in Dallas" },
   { to: "/insights", label: "AI Insights", icon: Brain, hint: "6 new recommendations" },
   { to: "/feed", label: "Notes & Activity", icon: Rss, hint: "Updated 10m ago" },
   { to: "/organizations", label: "Organizations", icon: Building2, hint: "8 tracked" },
-] as const;
+];
 
 export function AppSidebar() {
   const path = useRouterState({ select: (s) => s.location.pathname });
