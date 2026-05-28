@@ -7,9 +7,6 @@ import {
   Scripts,
   Link,
 } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
-import { Toaster } from "@/components/ui/sonner";
-import { useStore } from "@/lib/store";
 
 import appCss from "../styles.css?url";
 import { AppSidebar } from "@/components/AppSidebar";
@@ -66,6 +63,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Signal — Creator Partnership Intelligence" },
       { name: "description", content: "Internal creator partnership intelligence and digital missions operations platform." },
+      { property: "og:title", content: "Signal — Creator Partnership Intelligence" },
+      { name: "twitter:title", content: "Signal — Creator Partnership Intelligence" },
+      { property: "og:description", content: "Internal creator partnership intelligence and digital missions operations platform." },
+      { name: "twitter:description", content: "Internal creator partnership intelligence and digital missions operations platform." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9ae9dc85-ebc8-4511-8401-1ebe340ad929/id-preview-2854eb1a--31fc3418-f2b8-4712-a4a0-b7db4b84c762.lovable.app-1779997445575.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9ae9dc85-ebc8-4511-8401-1ebe340ad929/id-preview-2854eb1a--31fc3418-f2b8-4712-a4a0-b7db4b84c762.lovable.app-1779997445575.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -99,23 +104,15 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  const [hydrated, setHydrated] = useState(false);
-  useEffect(() => {
-    useStore.persist.rehydrate();
-    setHydrated(true);
-  }, []);
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-surface-50 text-surface-900">
         <AppSidebar />
         <div className="lg:pl-64">
           <div className="mx-auto max-w-[1400px] px-6 py-6 lg:px-8 lg:py-8">
-            {hydrated ? <Outlet /> : (
-              <div className="flex h-64 items-center justify-center text-xs text-surface-400">Loading workspace…</div>
-            )}
+            <Outlet />
           </div>
         </div>
-        <Toaster position="bottom-right" />
       </div>
     </QueryClientProvider>
   );
