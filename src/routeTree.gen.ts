@@ -9,38 +9,234 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TimelineRouteImport } from './routes/timeline'
+import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as PipelineRouteImport } from './routes/pipeline'
+import { Route as OrganizationsRouteImport } from './routes/organizations'
+import { Route as OpportunitiesRouteImport } from './routes/opportunities'
+import { Route as InsightsRouteImport } from './routes/insights'
+import { Route as FeedRouteImport } from './routes/feed'
+import { Route as EventsRouteImport } from './routes/events'
+import { Route as CreatorsRouteImport } from './routes/creators'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CreatorsIdRouteImport } from './routes/creators.$id'
 
+const TimelineRoute = TimelineRouteImport.update({
+  id: '/timeline',
+  path: '/timeline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PipelineRoute = PipelineRouteImport.update({
+  id: '/pipeline',
+  path: '/pipeline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrganizationsRoute = OrganizationsRouteImport.update({
+  id: '/organizations',
+  path: '/organizations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OpportunitiesRoute = OpportunitiesRouteImport.update({
+  id: '/opportunities',
+  path: '/opportunities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsRoute = InsightsRouteImport.update({
+  id: '/insights',
+  path: '/insights',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeedRoute = FeedRouteImport.update({
+  id: '/feed',
+  path: '/feed',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CreatorsRoute = CreatorsRouteImport.update({
+  id: '/creators',
+  path: '/creators',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CreatorsIdRoute = CreatorsIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => CreatorsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/creators': typeof CreatorsRouteWithChildren
+  '/events': typeof EventsRoute
+  '/feed': typeof FeedRoute
+  '/insights': typeof InsightsRoute
+  '/opportunities': typeof OpportunitiesRoute
+  '/organizations': typeof OrganizationsRoute
+  '/pipeline': typeof PipelineRoute
+  '/settings': typeof SettingsRoute
+  '/timeline': typeof TimelineRoute
+  '/creators/$id': typeof CreatorsIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/creators': typeof CreatorsRouteWithChildren
+  '/events': typeof EventsRoute
+  '/feed': typeof FeedRoute
+  '/insights': typeof InsightsRoute
+  '/opportunities': typeof OpportunitiesRoute
+  '/organizations': typeof OrganizationsRoute
+  '/pipeline': typeof PipelineRoute
+  '/settings': typeof SettingsRoute
+  '/timeline': typeof TimelineRoute
+  '/creators/$id': typeof CreatorsIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/creators': typeof CreatorsRouteWithChildren
+  '/events': typeof EventsRoute
+  '/feed': typeof FeedRoute
+  '/insights': typeof InsightsRoute
+  '/opportunities': typeof OpportunitiesRoute
+  '/organizations': typeof OrganizationsRoute
+  '/pipeline': typeof PipelineRoute
+  '/settings': typeof SettingsRoute
+  '/timeline': typeof TimelineRoute
+  '/creators/$id': typeof CreatorsIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/creators'
+    | '/events'
+    | '/feed'
+    | '/insights'
+    | '/opportunities'
+    | '/organizations'
+    | '/pipeline'
+    | '/settings'
+    | '/timeline'
+    | '/creators/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/creators'
+    | '/events'
+    | '/feed'
+    | '/insights'
+    | '/opportunities'
+    | '/organizations'
+    | '/pipeline'
+    | '/settings'
+    | '/timeline'
+    | '/creators/$id'
+  id:
+    | '__root__'
+    | '/'
+    | '/creators'
+    | '/events'
+    | '/feed'
+    | '/insights'
+    | '/opportunities'
+    | '/organizations'
+    | '/pipeline'
+    | '/settings'
+    | '/timeline'
+    | '/creators/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CreatorsRoute: typeof CreatorsRouteWithChildren
+  EventsRoute: typeof EventsRoute
+  FeedRoute: typeof FeedRoute
+  InsightsRoute: typeof InsightsRoute
+  OpportunitiesRoute: typeof OpportunitiesRoute
+  OrganizationsRoute: typeof OrganizationsRoute
+  PipelineRoute: typeof PipelineRoute
+  SettingsRoute: typeof SettingsRoute
+  TimelineRoute: typeof TimelineRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/timeline': {
+      id: '/timeline'
+      path: '/timeline'
+      fullPath: '/timeline'
+      preLoaderRoute: typeof TimelineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pipeline': {
+      id: '/pipeline'
+      path: '/pipeline'
+      fullPath: '/pipeline'
+      preLoaderRoute: typeof PipelineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/organizations': {
+      id: '/organizations'
+      path: '/organizations'
+      fullPath: '/organizations'
+      preLoaderRoute: typeof OrganizationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/opportunities': {
+      id: '/opportunities'
+      path: '/opportunities'
+      fullPath: '/opportunities'
+      preLoaderRoute: typeof OpportunitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights': {
+      id: '/insights'
+      path: '/insights'
+      fullPath: '/insights'
+      preLoaderRoute: typeof InsightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/feed': {
+      id: '/feed'
+      path: '/feed'
+      fullPath: '/feed'
+      preLoaderRoute: typeof FeedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creators': {
+      id: '/creators'
+      path: '/creators'
+      fullPath: '/creators'
+      preLoaderRoute: typeof CreatorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,22 +244,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/creators/$id': {
+      id: '/creators/$id'
+      path: '/$id'
+      fullPath: '/creators/$id'
+      preLoaderRoute: typeof CreatorsIdRouteImport
+      parentRoute: typeof CreatorsRoute
+    }
   }
 }
 
+interface CreatorsRouteChildren {
+  CreatorsIdRoute: typeof CreatorsIdRoute
+}
+
+const CreatorsRouteChildren: CreatorsRouteChildren = {
+  CreatorsIdRoute: CreatorsIdRoute,
+}
+
+const CreatorsRouteWithChildren = CreatorsRoute._addFileChildren(
+  CreatorsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CreatorsRoute: CreatorsRouteWithChildren,
+  EventsRoute: EventsRoute,
+  FeedRoute: FeedRoute,
+  InsightsRoute: InsightsRoute,
+  OpportunitiesRoute: OpportunitiesRoute,
+  OrganizationsRoute: OrganizationsRoute,
+  PipelineRoute: PipelineRoute,
+  SettingsRoute: SettingsRoute,
+  TimelineRoute: TimelineRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
