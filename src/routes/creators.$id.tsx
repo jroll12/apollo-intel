@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Avatar } from "@/components/Avatar";
 import {
-  creators, getCreator, formatAudience, opportunities, timeline,
+  getCreator, formatAudience, opportunities, timeline, type Creator,
 } from "@/lib/mock-data";
 import {
   ArrowLeft, Youtube, Instagram, Mic, Globe, Mail, MessageCircle,
