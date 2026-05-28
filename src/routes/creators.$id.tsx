@@ -46,7 +46,7 @@ const scoreLabels: Record<string, string> = {
 };
 
 function CreatorDetail() {
-  const { creator: c } = Route.useLoaderData();
+  const { creator: c } = Route.useLoaderData() as { creator: Creator };
   const ops = opportunities.filter((o) => o.creatorIds.includes(c.id));
   const tl = timeline.filter((t) => t.creatorId === c.id);
 
