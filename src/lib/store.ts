@@ -141,6 +141,14 @@ interface State {
   addOpportunity: (o: Omit<Opportunity, "id">) => void;
   updateOpportunity: (id: string, patch: Partial<Opportunity>) => void;
   deleteOpportunity: (id: string) => void;
+
+  _log: (
+    entityType: Activity["entityType"],
+    entityId: string,
+    action: string,
+    description: string,
+    creatorId?: string,
+  ) => void;
 }
 
 const now = () => new Date().toISOString();
