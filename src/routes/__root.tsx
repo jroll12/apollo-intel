@@ -99,15 +99,23 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => {
+    useStore.persist.rehydrate();
+    setHydrated(true);
+  }, []);
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-surface-50 text-surface-900">
         <AppSidebar />
         <div className="lg:pl-64">
           <div className="mx-auto max-w-[1400px] px-6 py-6 lg:px-8 lg:py-8">
-            <Outlet />
+            {hydrated ? <Outlet /> : (
+              <div className="flex h-64 items-center justify-center text-xs text-surface-400">Loading workspace…</div>
+            )}
           </div>
         </div>
+        <Toaster position="bottom-right" />
       </div>
     </QueryClientProvider>
   );
