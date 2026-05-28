@@ -353,7 +353,7 @@ export const useStore = create<State>()(
         };
         set((s) => ({ activities: [a, ...s.activities].slice(0, 500) }));
       },
-    } as State & { _log: (...args: unknown[]) => void }),
+    }),
     {
       name: STORAGE_KEY,
       skipHydration: true,
