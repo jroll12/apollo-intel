@@ -4,7 +4,8 @@ The team's companion app. It extends the coaching system already used at
 practice — it doesn't replace it or invent a new one.
 
 Two tabs. **Fun** opens first and is currently a "more coming soon" placeholder.
-**Focus** is the live one: situational practice, four phases, 156 situations.
+**Focus** is the live one: animated live reps plus four phases of situational
+practice.
 
 **No accounts, no profiles, no name picker.** Open the link and you're in.
 Progress belongs to the phone, not to a person. Plain HTML/CSS/JS, no build
@@ -53,14 +54,14 @@ USB stick, any static host, even a double-clicked `file://` — run:
 
 ```bash
 cd fun-focus
-node build-single-file.mjs              # dist/fun-focus.html   (~161 KB)
+node build-single-file.mjs              # dist/fun-focus.html   (~211 KB)
 node build-single-file.mjs --artifact   # dist/fun-focus.artifact.html
 ```
 
 `dist/` is gitignored: it's a derived build, so never edit the output — edit
 the modules and re-run. The bundler concatenates sources in dependency order
-and throws on any top-level name collision rather than silently shadowing
-something.
+and throws on any top-level name collision, and on any module syntax that
+survives stripping, rather than silently shipping a blank page.
 
 ### Running it locally
 
@@ -87,17 +88,23 @@ npx serve@14 .          # or: python3 -m http.server 5173
 
 ## Look and feel
 
-Three colours: **orange, white, black**. Everything else is a tint or a grey
-derived from them, defined once at the top of `styles.css`.
+Orange, white, black. White is the ground, orange carries the structure, and
+black is text only — never a surface. Defined once at the top of `styles.css`.
 
-- `--orange: #F26722` — the brand, and the only "yes" in the palette
-- `--orange-dark: #C4501A` — borders and small text on white, where plain
-  orange doesn't have the contrast
-- `--orange-tint: #FFF0E6` — correct-answer backgrounds
-- `--black: #121212`, `--white: #FFFFFF`, `--paper: #FAF8F5`
+Three oranges, split strictly by **contrast job**. Getting this wrong is the
+easiest way to make the app unreadable in daylight at a field:
 
-Orange fills always carry **black** text, never white — this orange is too
-bright to hold white at button sizes.
+| Token | Hex | Job | Contrast |
+|---|---|---|---|
+| `--orange` | `#F88800` | Decorative fills only — progress bar, rules, tab indicator | can't hold text either way (2.47:1) |
+| `--orange-deep` | `#DB7518` | Surfaces with white text — header, situation card, buttons | 3.20:1 white-on-it |
+| `--orange-ink` | `#B26010` | Orange text on white, borders, focus rings | 4.59:1 on white |
+
+`--orange` is the 🍊 emoji's own orange, sampled from a render. All three share
+its hue (~30°) so they read as one family. Plus `--black: #121212`,
+`--white: #FFFFFF`, `--paper: #FFFFFF`, `--orange-tint: #FFF2E3`.
+
+Never put white text on `--orange`, and never use `--orange` as text on white.
 
 Fonts are Anton for headers, Inter 400/600/700/800 for body.
 
