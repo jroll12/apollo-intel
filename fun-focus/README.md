@@ -3,9 +3,9 @@
 The team's companion app. It extends the coaching system already used at
 practice — it doesn't replace it or invent a new one.
 
-Two tabs. **Fun** opens first and is currently a "more coming soon" placeholder.
-**Focus** is the live one: animated live reps plus four phases of situational
-practice.
+Two tabs. **Fun** has the chant book, the Golden Chain, the handshake and the
+game-day standards. **Focus** has animated live reps plus four phases of
+situational practice.
 
 **No accounts, no profiles, no name picker.** Open the link and you're in.
 Progress belongs to the phone, not to a person. Plain HTML/CSS/JS, no build
@@ -13,14 +13,11 @@ step, no framework, nothing to install.
 
 ---
 
-## Right now this needs zero external accounts
+## One feature needs a backend
 
-Everything that ships today runs off static files. Nothing to sign up for,
-nothing to configure, no API keys.
-
-That changes when the Fun tab ships — see [Parked: the Fun tab](#parked-the-fun-tab)
-below, because the Golden Chain does need a backend to be the same on every
-phone. The setup is written and ready; it just isn't needed yet.
+Everything runs off static files except the **Golden Chain**, which has to look
+the same on every phone. Until a backend is configured the app still works and
+says so on screen rather than pretending — see [The Golden Chain backend](#the-golden-chain-backend).
 
 ---
 
@@ -213,27 +210,53 @@ node -e "import('./js/data/phases.js').then(m=>console.log(m.PHASES.map(p=>p.nam
 
 ---
 
-## Parked: the Fun tab
+## The Fun tab
 
-The full Fun tab is **built and working**, just held back. It has shared Golden
-Chain history, a coach award form behind a PIN gate, the team chant, the
-handshake with a coach-editable final move, the walk-up sheet link-out, and the
-six-item "what fun looks like in a game" card.
+### Chant book
 
-Nothing was thrown away:
+19 chants in five sections, grouped by the moment you use them: breaking the
+huddle, our guy is up, Creamsicle calls, we are in the field, and for each
+other.
 
-- The data it reads is still here and still wired — `js/data/fun-content.js`,
-  `js/data/roster.js`, `js/chain.js`, `netlify/functions/chain.mjs`.
-- The UI and its CSS are in git at commit `9b596ed`. `js/fun.js` has the exact
-  restore commands at the top of the file.
+**Dugout Mode** is the point of it. Tap any chant and it fills the screen in
+huge type, with the leader's call set smaller and the dugout's answer set
+biggest, so the kid running the cheer holds his phone up and everyone reads it.
 
-Restoring it means putting back `js/fun.js` and its stylesheet blocks, and
-calling `initChain()` / `loadFunData()` from `app.js` again.
+**The one rule, and it is a real rule, not a manners note.** Every chant hypes
+our guy; none of them mention theirs. Little League International bans taunting
+and "negative chatter" aimed at opponents, and most leagues stop chanting once
+the pitcher starts his windup. Roughly half of what a search for "baseball
+chants" turns up is aimed at the other team's pitcher and would get a dugout
+warned. None of it is in `js/data/chants.js` and nothing like it should be
+added.
 
-**When it ships, the Golden Chain needs a backend.** It has to look the same on
-every phone — kids, parents and coaches all seeing one list — and a
-localStorage-only version would silently give each phone its own private copy.
-Two ways to switch it on:
+Several chants deliberately encode the "What Fun Looks Like in a Game"
+standards — **On The Rail**, **We Got Him**, **Everybody Moves** — so the chant
+book teaches the checklist instead of sitting next to it.
+
+Adding one: copy an entry in `js/data/chants.js`. `who: 'lead'` is the call,
+`who: 'all'` is the answer, no `who` is everyone together. `[TEAM]` is swapped
+for `CONFIG.chantName`.
+
+### Golden Chain
+
+Shared award history, newest first, plus a coach-only award form behind a
+4-digit PIN. The PIN is friction so nobody taps it by accident — it ships
+inside `config.js` and anyone can read it, so it is not security.
+
+### Also here
+
+The handshake (clap, bump, spin, plus the team's voted fourth move, which the
+coach sets in-app behind the PIN), the walk-up song sheet link-out, and the
+six-item game-day standard.
+
+---
+
+## The Golden Chain backend
+
+The chain and the handshake move have to be the same on every phone — kids,
+parents and coaches all seeing one list — and a localStorage-only version would
+silently give each phone its own private copy. Two ways to switch it on:
 
 ### Option A — Netlify Blobs (recommended: no API keys)
 
@@ -274,6 +297,7 @@ there's no SDK to download on a bad connection.
 
 | Data | Where | Why |
 |---|---|---|
+| Chants, checklist, roster | Hardcoded | Static reference content |
 | All 156 phase questions | Hardcoded | Static reference content |
 | Live rep plays | Computed at runtime | 819 plays is too many to author |
 | Streaks and completion per phase | `localStorage` | Belongs to the phone |
@@ -293,6 +317,10 @@ every question included — works with no signal at all. **Bump `CACHE_VERSION` 
 
 - Player profiles or name selection — removed on purpose; anyone can just open
   it.
+- Kid-to-kid shoutout board. The standards call for teammate shoutouts, but an
+  in-app version is free text written by ten-year-olds, visible to the whole
+  team and parents, with no moderation and no accounts to trace anything. That
+  needs a deliberate decision, not a default.
 - Walk-up song sign-up — stays on the Google Sheet, the Fun tab will link out.
 - Editing the roster in-app.
 - **Undoing a Golden Chain award.** The chain is append-only. A mis-tap would

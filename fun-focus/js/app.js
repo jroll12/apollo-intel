@@ -6,7 +6,8 @@
    ========================================================================= */
 
 import { CONFIG } from './config.js';
-import { renderFun } from './fun.js';
+import { initChain } from './chain.js';
+import { renderFun, loadFunData, lockCoachMode } from './fun.js';
 import { renderFocus, exitPhase, inPhase } from './focus.js';
 import { el, clear } from './ui.js';
 
@@ -25,7 +26,7 @@ function render() {
   shell.append(renderTopbar());
 
   const main = el('main', { class: 'main', id: 'main' });
-  if (ui.tab === 'fun') renderFun(main, { goToFocus: () => switchTab('focus') });
+  if (ui.tab === 'fun') renderFun(main, { rerender: render, goToFocus: () => switchTab('focus') });
   else renderFocus(main, { onStateChange: render });
   shell.append(main);
 
@@ -33,6 +34,8 @@ function render() {
 }
 
 function switchTab(id) {
+  // Handing the phone back to a kid should not leave coach mode unlocked.
+  if (ui.tab === 'fun' && id !== 'fun') lockCoachMode();
   ui.tab = id;
   render();
   window.scrollTo(0, 0);
@@ -86,5 +89,11 @@ window.addEventListener('popstate', () => {
 });
 history.pushState(null, '', location.href);
 
+/* Paint immediately, then fill in the shared Golden Chain when it arrives —
+   the app must be usable before the network is. */
 render();
 registerServiceWorker();
+initChain()
+  .then(loadFunData)
+  .then(render)
+  .catch(() => render());

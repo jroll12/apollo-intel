@@ -108,6 +108,9 @@ export async function initChain() {
 }
 
 async function probeNetlify() {
+  // A single-file build opened from disk has no origin to call — don't even
+  // try, or the console fills with a scheme error on every load.
+  if (!location.protocol.startsWith('http')) return false;
   try {
     const res = await fetchWithTimeout(`${NETLIFY_ENDPOINT}?probe=1`, {
       headers: { accept: 'application/json' },
