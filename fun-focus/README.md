@@ -37,8 +37,8 @@ It has no deploy yet. To give it one:
 Netlify pulls straight from GitHub, so this needs nothing from any local
 machine. It lands at `https://creamsicles-fun-focus.netlify.app`.
 
-`netlify/functions/chain.mjs` deploys alongside but nothing calls it while the
-Fun tab is parked.
+`netlify/functions/chain.mjs` deploys alongside and is what makes the Golden
+Chain shared.
 
 For Vercel, GitHub Pages, S3 or anything else: upload the contents of
 `fun-focus/` minus `netlify/`. It works identically today.
@@ -51,7 +51,7 @@ USB stick, any static host, even a double-clicked `file://` — run:
 
 ```bash
 cd fun-focus
-node build-single-file.mjs              # dist/fun-focus.html   (~211 KB)
+node build-single-file.mjs              # dist/fun-focus.html   (~257 KB)
 node build-single-file.mjs --artifact   # dist/fun-focus.artifact.html
 ```
 
@@ -77,11 +77,11 @@ npx serve@14 .          # or: python3 -m http.server 5173
 | Setting | What it does |
 |---|---|
 | `teamName` | Shows in the app header. `The Creamsicles` |
-| `chantName` | The name shouted in the chant — `Creamsicles`, so it isn't "The Creamsicles on three". Parked with the Fun tab. |
-| `coachPin` | 4 digits to award the Golden Chain. Ships as `1234`; change it before the Fun tab ships. Unused today. |
-| `walkupSheetUrl` | Google Sheet link for walk-up songs. Parked. |
-| `chainBackend` | `auto` / `netlify` / `firebase` / `local`. Parked. |
-| `firebase` | Project ID + API key, if you go that route. Parked. |
+| `chantName` | The name shouted in the chant — `Creamsicles`, so it isn't "The Creamsicles on three". |
+| `coachPin` | 4 digits to award the Golden Chain. **Ships as `1234` — change it.** |
+| `walkupSheetUrl` | Google Sheet link for walk-up songs. Blank hides the card. |
+| `chainBackend` | `auto` / `netlify` / `firebase` / `local` |
+| `firebase` | Project ID + API key, if you go that route |
 
 ## Look and feel
 
@@ -165,8 +165,8 @@ Three things are deliberate and worth not undoing:
   and shows the read. There is no consequence system here and nothing in the
   data model to build one on.
 
-The hype lines still talk about the Golden Chain — that award is a real thing
-the team does, it just isn't in the app yet.
+The hype lines talk about the Golden Chain, which is the same award the Fun
+tab tracks — one system, both tabs.
 
 ### Coach's calls, flagged rather than guessed
 
@@ -302,7 +302,7 @@ there's no SDK to download on a bad connection.
 | Live rep plays | Computed at runtime | 819 plays is too many to author |
 | Streaks and completion per phase | `localStorage` | Belongs to the phone |
 | Live rep count, streak, position | `localStorage` | Belongs to the phone |
-| Golden Chain history, handshake move | Shared backend (parked) | Everyone must see the same thing |
+| Golden Chain history, handshake move | Shared backend | Everyone must see the same thing |
 
 Nothing about wrong answers is persisted anywhere. There is no player identity,
 so a shared family phone is simply one shared set of streaks.
