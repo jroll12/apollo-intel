@@ -25,14 +25,22 @@ phone. The setup is written and ready; it just isn't needed yet.
 
 ## Deploying
 
-Any static host works. Netlify is what the config targets.
+Any static host works. Netlify is what the config targets, and the site is
+already created: **`creamsicles-fun-focus`**
+([app.netlify.com/projects/creamsicles-fun-focus](https://app.netlify.com/projects/creamsicles-fun-focus)).
+It has no deploy yet. To give it one:
 
-1. Sign up free at [netlify.com](https://netlify.com) and connect this repo.
-2. Deploy. Nothing to configure — the repo-root `netlify.toml` already sets
-   `base = "fun-focus"` (the root holds an unrelated app).
+1. Open the project → **Project configuration → Build & deploy → Link repository**
+2. Pick `jroll12/apollo-intel`, branch `claude/fun-focus-team-app-6cuutu`
+3. **Deploy.** Change nothing else — the repo-root `netlify.toml` already sets
+   `base = "fun-focus"` (the root holds an unrelated app), the publish
+   directory, and the functions directory.
 
-That's it. `netlify/functions/chain.mjs` deploys alongside but nothing calls it
-while the Fun tab is parked.
+Netlify pulls straight from GitHub, so this needs nothing from any local
+machine. It lands at `https://creamsicles-fun-focus.netlify.app`.
+
+`netlify/functions/chain.mjs` deploys alongside but nothing calls it while the
+Fun tab is parked.
 
 For Vercel, GitHub Pages, S3 or anything else: upload the contents of
 `fun-focus/` minus `netlify/`. It works identically today.
