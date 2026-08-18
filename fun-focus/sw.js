@@ -4,7 +4,7 @@
 
    Bump CACHE_VERSION whenever you change app files, or phones will keep
    serving the old copy. */
-const CACHE_VERSION = 'funfocus-v3';
+const CACHE_VERSION = 'funfocus-v4';
 
 const PRECACHE = [
   './',

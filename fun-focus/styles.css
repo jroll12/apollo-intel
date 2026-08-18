@@ -2,25 +2,34 @@
    Fun & Focus — The Creamsicles.
 
    Orange, white, black. White is the ground, orange carries the structure,
-   and black is reserved for text — it is not used as a surface anywhere.
+   and black is reserved for text — never used as a surface.
 
-   Two oranges, and the split is about contrast, not decoration:
-     --orange       #F26722  bright. Carries BLACK text (6.0:1). Accents,
-                             progress fills, the tab indicator.
-     --orange-deep  #C4501A  deeper. Carries WHITE text (4.66:1) and reads
-                             as 4.66:1 on white itself. Every large surface
-                             and every filled button.
-   White on the bright orange is only 3.1:1, which fails at body sizes — so
-   anything holding white text uses the deep one.
+   THREE oranges, split strictly by contrast job. Getting this wrong is the
+   easiest way to make the app unreadable in daylight at a field.
+
+     --orange        #F88800  the 🍊 emoji's own orange, sampled from a render.
+                              DECORATIVE FILLS ONLY — progress bar, rules, the
+                              tab indicator. It cannot hold text: white on it
+                              is 2.47:1, and it is too light to be text on
+                              white (2.47:1 there too).
+     --orange-deep   #DB7518  SURFACES that carry white text — header,
+                              situation card, filled buttons. White on it is
+                              3.20:1, which clears the bar for the large bold
+                              type it holds.
+     --orange-ink    #B26010  ORANGE TEXT ON WHITE, borders and focus rings.
+                              4.59:1 on white, so small labels stay legible.
+
+   All three share the emoji's hue (~30°) so they read as one family rather
+   than three different oranges.
 
    No red and no amber. A wrong quiz answer is neutral, never alarming.
    ========================================================================== */
 
 :root {
-  --orange: #f26722;
-  --orange-deep: #c4501a;
-  --orange-press: #a8410f;
-  --orange-tint: #fff0e6;
+  --orange: #f88800;
+  --orange-deep: #db7518;
+  --orange-ink: #b26010;
+  --orange-tint: #fff2e3;
   --black: #121212;
   --black-soft: #2e2e2e;
   --white: #ffffff;
@@ -176,7 +185,7 @@ button {
 }
 
 .tabbar__btn[aria-selected='true'] {
-  color: var(--orange-deep);
+  color: var(--orange-ink);
   border-top-color: var(--orange);
 }
 
@@ -241,9 +250,9 @@ button {
 /* White text needs the deep orange to stay readable — see the note up top. */
 .btn--primary {
   background: var(--orange-deep);
-  border-color: var(--orange-press);
+  border-color: var(--orange-ink);
   color: var(--white);
-  box-shadow: 0 2px 0 var(--orange-press);
+  box-shadow: 0 2px 0 var(--orange-ink);
 }
 
 .btn--ghost {
@@ -322,7 +331,7 @@ button {
   font-family: var(--font-display);
   font-size: 12px;
   letter-spacing: 0.14em;
-  color: var(--orange-deep);
+  color: var(--orange-ink);
 }
 
 .phase__name {
@@ -364,7 +373,7 @@ button {
 }
 
 .streak {
-  color: var(--orange-deep);
+  color: var(--orange-ink);
   font-weight: 700;
 }
 
@@ -415,7 +424,7 @@ button {
   font-family: var(--font-display);
   font-size: 26px;
   background: var(--white);
-  color: var(--orange-deep);
+  color: var(--orange-ink);
   border-radius: 10px;
   padding: 3px 11px;
   margin-bottom: 6px;
@@ -439,8 +448,9 @@ button {
 .situation__text {
   margin: 14px 0 0;
   padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.28);
-  font-size: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.32);
+  font-size: 17px;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--white);
 }
@@ -537,7 +547,7 @@ button {
 
 .choice[data-state='correct'] .choice__key {
   background: var(--orange-deep);
-  border-color: var(--orange-press);
+  border-color: var(--orange-ink);
   color: var(--white);
 }
 
@@ -590,7 +600,7 @@ button {
 }
 
 .result--correct .result__head {
-  color: var(--orange-deep);
+  color: var(--orange-ink);
 }
 
 .result--info .result__head {
@@ -692,7 +702,7 @@ button {
 
 .reveal__row--primary .reveal__pos {
   background: var(--orange-deep);
-  border-color: var(--orange-press);
+  border-color: var(--orange-ink);
   color: var(--white);
 }
 
@@ -763,7 +773,7 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--orange-deep);
+  outline: 2px solid var(--orange-ink);
   outline-offset: 2px;
 }
 
