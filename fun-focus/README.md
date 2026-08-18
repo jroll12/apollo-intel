@@ -45,6 +45,23 @@ Fun tab is parked.
 For Vercel, GitHub Pages, S3 or anything else: upload the contents of
 `fun-focus/` minus `netlify/`. It works identically today.
 
+### Single-file build
+
+The app normally ships as ES modules, which need a web server. To flatten it
+into one self-contained HTML file that runs from anywhere — email attachment,
+USB stick, any static host, even a double-clicked `file://` — run:
+
+```bash
+cd fun-focus
+node build-single-file.mjs              # dist/fun-focus.html   (~161 KB)
+node build-single-file.mjs --artifact   # dist/fun-focus.artifact.html
+```
+
+`dist/` is gitignored: it's a derived build, so never edit the output — edit
+the modules and re-run. The bundler concatenates sources in dependency order
+and throws on any top-level name collision rather than silently shadowing
+something.
+
 ### Running it locally
 
 ES modules need a real server — opening `index.html` from the filesystem won't
