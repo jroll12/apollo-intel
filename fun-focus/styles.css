@@ -1,30 +1,38 @@
 /* ==========================================================================
    Fun & Focus — The Creamsicles.
 
-   Three colours only: orange, white, black. Everything else is a tint or a
-   grey derived from them.
+   Orange, white, black. White is the ground, orange carries the structure,
+   and black is reserved for text — it is not used as a surface anywhere.
 
-   No red and no amber-as-warning. A wrong quiz answer is black-on-white under
-   "Here's the read" — never alarming. Correct is orange, because in a
-   three-colour palette orange is the only "yes" available, and it earns more
-   weight that way.
+   Two oranges, and the split is about contrast, not decoration:
+     --orange       #F26722  bright. Carries BLACK text (6.0:1). Accents,
+                             progress fills, the tab indicator.
+     --orange-deep  #C4501A  deeper. Carries WHITE text (4.66:1) and reads
+                             as 4.66:1 on white itself. Every large surface
+                             and every filled button.
+   White on the bright orange is only 3.1:1, which fails at body sizes — so
+   anything holding white text uses the deep one.
+
+   No red and no amber. A wrong quiz answer is neutral, never alarming.
    ========================================================================== */
 
 :root {
   --orange: #f26722;
-  --orange-dark: #c4501a;
+  --orange-deep: #c4501a;
+  --orange-press: #a8410f;
   --orange-tint: #fff0e6;
   --black: #121212;
   --black-soft: #2e2e2e;
   --white: #ffffff;
-  --paper: #faf8f5;
+  --paper: #ffffff;
+  --inset: #f6f2ed;
   --grey: #6b6b6b;
-  --line: #e8e4de;
+  --line: #e7e0d8;
 
   --radius: 14px;
   --radius-lg: 20px;
-  --shadow: 0 1px 2px rgba(18, 18, 18, 0.05), 0 4px 14px rgba(18, 18, 18, 0.06);
-  --shadow-lift: 0 2px 4px rgba(18, 18, 18, 0.08), 0 10px 28px rgba(18, 18, 18, 0.12);
+  --shadow: 0 1px 2px rgba(18, 18, 18, 0.05), 0 4px 14px rgba(18, 18, 18, 0.07);
+  --shadow-lift: 0 2px 4px rgba(18, 18, 18, 0.08), 0 10px 28px rgba(18, 18, 18, 0.13);
 
   --tabbar-h: 66px;
 
@@ -95,7 +103,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: var(--black);
+  background: var(--orange-deep);
   color: var(--white);
   padding: calc(env(safe-area-inset-top) + 12px) 16px 12px;
   display: flex;
@@ -106,7 +114,7 @@ button {
 .topbar__title {
   font-family: var(--font-display);
   font-size: 22px;
-  color: var(--orange);
+  color: var(--white);
   flex: 1;
   min-width: 0;
 }
@@ -117,7 +125,7 @@ button {
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.72);
   text-transform: uppercase;
 }
 
@@ -168,12 +176,14 @@ button {
 }
 
 .tabbar__btn[aria-selected='true'] {
-  color: var(--black);
+  color: var(--orange-deep);
   border-top-color: var(--orange);
 }
 
 /* ---------- Cards -------------------------------------------------------- */
 
+/* Cards are white on a white page, so the border and shadow are what
+   separate them — not a tinted background. */
 .card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -228,13 +238,12 @@ button {
   transform: scale(0.985);
 }
 
-/* Black on orange, not white on orange — orange this bright needs the dark
-   text to stay readable at button sizes. */
+/* White text needs the deep orange to stay readable — see the note up top. */
 .btn--primary {
-  background: var(--orange);
-  border-color: var(--orange-dark);
-  color: var(--black);
-  box-shadow: 0 2px 0 var(--orange-dark);
+  background: var(--orange-deep);
+  border-color: var(--orange-press);
+  color: var(--white);
+  box-shadow: 0 2px 0 var(--orange-press);
 }
 
 .btn--ghost {
@@ -313,7 +322,7 @@ button {
   font-family: var(--font-display);
   font-size: 12px;
   letter-spacing: 0.14em;
-  color: var(--orange-dark);
+  color: var(--orange-deep);
 }
 
 .phase__name {
@@ -332,7 +341,8 @@ button {
 .bar {
   height: 9px;
   border-radius: 999px;
-  background: var(--line);
+  background: var(--inset);
+  border: 1px solid var(--line);
   overflow: hidden;
 }
 
@@ -354,7 +364,7 @@ button {
 }
 
 .streak {
-  color: var(--orange-dark);
+  color: var(--orange-deep);
   font-weight: 700;
 }
 
@@ -379,8 +389,9 @@ button {
   color: var(--grey);
 }
 
+/* The situation card is the focal surface — solid orange, white type. */
 .situation {
-  background: var(--black);
+  background: var(--orange-deep);
   color: var(--white);
   border-radius: var(--radius-lg);
   padding: 16px;
@@ -398,12 +409,13 @@ button {
   min-width: 0;
 }
 
+/* Reversed out of the orange: white chip, orange letters. */
 .pos-badge {
   display: inline-block;
   font-family: var(--font-display);
   font-size: 26px;
-  background: var(--orange);
-  color: var(--black);
+  background: var(--white);
+  color: var(--orange-deep);
   border-radius: 10px;
   padding: 3px 11px;
   margin-bottom: 6px;
@@ -414,29 +426,30 @@ button {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .situation__state {
   margin-top: 8px;
   font-size: 14px;
-  font-weight: 600;
-  color: var(--orange);
+  font-weight: 700;
+  color: var(--white);
 }
 
 .situation__text {
   margin: 14px 0 0;
   padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
   font-size: 16px;
   line-height: 1.5;
+  color: var(--white);
 }
 
 .situation__q {
   margin: 10px 0 0;
   font-weight: 700;
   font-size: 16.5px;
-  color: var(--orange);
+  color: var(--white);
 }
 
 .outs {
@@ -450,12 +463,12 @@ button {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
 }
 
 .outs__pip--on {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--white);
+  border-color: var(--white);
 }
 
 .outs__label {
@@ -463,7 +476,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(255, 255, 255, 0.78);
   margin-left: 4px;
 }
 
@@ -508,7 +521,7 @@ button {
   width: 26px;
   height: 26px;
   border-radius: 7px;
-  background: var(--paper);
+  background: var(--inset);
   border: 1px solid var(--line);
   display: grid;
   place-items: center;
@@ -518,25 +531,27 @@ button {
 }
 
 .choice[data-state='correct'] {
-  border-color: var(--orange);
+  border-color: var(--orange-deep);
   background: var(--orange-tint);
 }
 
 .choice[data-state='correct'] .choice__key {
-  background: var(--orange);
-  border-color: var(--orange-dark);
-  color: var(--black);
+  background: var(--orange-deep);
+  border-color: var(--orange-press);
+  color: var(--white);
 }
 
-/* A wrong pick is marked in plain black — no red, no shake, no alarm. */
+/* The pick you made, when it wasn't the coached play. Neutral outline — it
+   has to read as "this was you", clearly distinct from the orange "this is
+   the job", without ever reading as an error. */
 .choice[data-state='picked'] {
-  border-color: var(--black);
+  border-color: var(--black-soft);
   background: var(--white);
 }
 
 .choice[data-state='picked'] .choice__key {
-  background: var(--black);
-  border-color: var(--black);
+  background: var(--black-soft);
+  border-color: var(--black-soft);
   color: var(--white);
 }
 
@@ -560,12 +575,12 @@ button {
 
 .result--correct {
   background: var(--orange-tint);
-  border-color: var(--orange);
+  border-color: var(--orange-deep);
 }
 
 .result--info {
   background: var(--white);
-  border-color: var(--black);
+  border-color: var(--black-soft);
 }
 
 .result__head {
@@ -575,7 +590,7 @@ button {
 }
 
 .result--correct .result__head {
-  color: var(--orange-dark);
+  color: var(--orange-deep);
 }
 
 .result--info .result__head {
@@ -600,7 +615,7 @@ button {
   color: var(--black-soft);
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 1px dashed var(--line);
+  border-top: 1px dashed var(--orange-deep);
 }
 
 .result__trap b {
@@ -613,7 +628,7 @@ button {
   align-items: center;
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 1px solid var(--orange);
+  border-top: 1px solid var(--orange-deep);
   font-weight: 700;
   font-size: 15px;
   color: var(--black);
@@ -670,15 +685,15 @@ button {
   place-items: center;
   font-family: var(--font-display);
   font-size: 13px;
-  background: var(--paper);
+  background: var(--inset);
   border: 1px solid var(--line);
   color: var(--black-soft);
 }
 
 .reveal__row--primary .reveal__pos {
-  background: var(--orange);
-  border-color: var(--orange-dark);
-  color: var(--black);
+  background: var(--orange-deep);
+  border-color: var(--orange-press);
+  color: var(--white);
 }
 
 .reveal__job {
@@ -696,7 +711,7 @@ button {
 /* "You" here means the position the question put you in, not a person — the
    app has no player identity. */
 .reveal__row--you .reveal__pos {
-  box-shadow: 0 0 0 2px var(--black);
+  box-shadow: 0 0 0 2px var(--orange);
 }
 
 .reveal__you-tag {
@@ -705,8 +720,8 @@ button {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--black);
-  background: var(--orange);
+  color: var(--white);
+  background: var(--orange-deep);
   border-radius: 4px;
   padding: 1px 5px;
   margin-left: 6px;
@@ -745,6 +760,11 @@ button {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--orange-deep);
+  outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {

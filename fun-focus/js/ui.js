@@ -103,8 +103,10 @@ export const POSITION_ORDER = ['P', 'C', '1B', '2B', 'SS', '3B', 'LF', 'CF', 'RF
 
 /** A tiny base diamond with occupied bases filled in. */
 export function diamondSVG(basesOccupied = []) {
-  const on = (n) => (basesOccupied.includes(n) ? '#FFC93C' : 'none');
-  const stroke = 'rgba(255,253,247,0.55)';
+  // The diamond sits on the orange situation card, so an occupied base is
+  // solid white and the empty outline is white at low opacity.
+  const on = (n) => (basesOccupied.includes(n) ? '#FFFFFF' : 'none');
+  const stroke = 'rgba(255,255,255,0.62)';
   return `
   <svg class="diamond" viewBox="0 0 100 100" role="img"
        aria-label="Runners on ${basesOccupied.length ? basesOccupied.map(baseName).join(', ') : 'no bases'}">

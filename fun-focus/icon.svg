@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Fun and Focus">
-  <rect width="512" height="512" fill="#121212" />
-  <!-- Creamsicle: orange bar, cream core, white stick -->
-  <rect x="146" y="76" width="220" height="256" rx="100" fill="#F26722" />
-  <rect x="196" y="126" width="120" height="156" rx="56" fill="#FFF0E6" opacity="0.85" />
+  <rect width="512" height="512" fill="#C4501A" />
+  <!-- Creamsicle: cream bar with an orange core, white stick -->
+  <rect x="146" y="76" width="220" height="256" rx="100" fill="#FFF0E6" />
+  <rect x="196" y="126" width="120" height="156" rx="56" fill="#F26722" />
   <rect x="226" y="316" width="60" height="120" rx="18" fill="#FFFFFF" />
 </svg>
