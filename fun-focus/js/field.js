@@ -14,12 +14,12 @@
 
 import { BASES, FIELDER_SPOTS, OUTFIELD_FENCE } from './data/field-geometry.js';
 
-const SKY = '#DCEBF5';
-const GRASS = '#4E9A4B';
-const GRASS_DARK = '#43873F';
-const DIRT = '#C08B52';
-const DIRT_LIGHT = '#CE9A61';
-const LINE = 'rgba(255,255,255,0.85)';
+const SKY = '#D9E9F4';
+const GRASS = '#4F9E4A';
+const GRASS_DARK = '#458B41';
+const DIRT = '#C68B54';
+const DIRT_EDGE = 'rgba(90, 58, 28, 0.35)';
+const LINE = '#FFFFFF';
 
 /** Depth falloff. Smaller = more compression, outfield pushed further up. */
 const DEPTH = 78;
@@ -64,64 +64,95 @@ export class FieldView {
     const { ctx } = this;
     ctx.clearRect(0, 0, this.w, this.h);
 
-    // Sky
     ctx.fillStyle = SKY;
     ctx.fillRect(0, 0, this.w, this.h);
 
-    // Outfield grass — a wedge from home out to the fence arc.
+    // Outfield turf, then one mown band. Two tones read as depth; three read
+    // as stripes.
     ctx.fillStyle = GRASS;
     ctx.beginPath();
     this.arcPath(OUTFIELD_FENCE, true);
     ctx.fill();
 
-    // A mown band for depth cueing.
     ctx.fillStyle = GRASS_DARK;
     ctx.beginPath();
-    this.arcPath(150, true);
-    ctx.fill();
-    ctx.fillStyle = GRASS;
-    ctx.beginPath();
-    this.arcPath(112, true);
+    this.arcPath(148, true);
     ctx.fill();
 
-    // Infield dirt
+    // Skinned infield: dirt arc with a soft edge where it meets the turf.
     ctx.fillStyle = DIRT;
     ctx.beginPath();
-    this.arcPath(95, true);
+    this.arcPath(96, true);
     ctx.fill();
+    ctx.strokeStyle = DIRT_EDGE;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    this.arcPath(96, true);
+    ctx.stroke();
 
-    // Infield grass inside the basepaths
+    // Grass inside the basepaths — a true diamond shrunk toward its own
+    // centre, not hand-nudged corners, so all four sides stay parallel to the
+    // basepaths.
     ctx.fillStyle = GRASS;
     ctx.beginPath();
-    this.polygon([
-      [0, 13],
-      [BASES.first[0] - 9, BASES.first[1] - 3],
-      [BASES.second[0], BASES.second[1] - 11],
-      [BASES.third[0] + 9, BASES.third[1] - 3],
-    ]);
+    this.polygon(this.infieldGrass());
     ctx.fill();
+    ctx.strokeStyle = DIRT_EDGE;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    this.polygon(this.infieldGrass());
+    ctx.stroke();
 
     // Mound
-    ctx.fillStyle = DIRT_LIGHT;
-    this.dot(0, 46, 7.5);
+    ctx.fillStyle = DIRT;
+    ctx.beginPath();
+    this.circlePath(0, 46, 8);
+    ctx.fill();
+    ctx.strokeStyle = DIRT_EDGE;
+    ctx.beginPath();
+    this.circlePath(0, 46, 8);
+    ctx.stroke();
 
     // Foul lines
     ctx.strokeStyle = LINE;
     ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
     for (const sign of [-1, 1]) {
       ctx.beginPath();
-      const [x0, y0] = this.project(0, 1);
+      const [x0, y0] = this.project(0, 1.5);
       const [x1, y1] = this.project(sign * 141, 141);
       ctx.moveTo(x0, y0);
       ctx.lineTo(x1, y1);
       ctx.stroke();
     }
 
-    // Bases
-    for (const key of ['first', 'second', 'third']) {
-      this.baseMark(BASES[key], false);
-    }
+    for (const key of ['first', 'second', 'third']) this.baseMark(BASES[key], false);
     this.plateMark();
+  }
+
+  /** The four corners of the infield grass, inset from the basepaths. */
+  infieldGrass() {
+    const inset = 11; // feet in from each basepath
+    const cx = 0;
+    const cy = BASES.second[1] / 2;
+    const shrink = 1 - inset / 34;
+    return [BASES.home, BASES.first, BASES.second, BASES.third].map(([x, y]) => [
+      cx + (x - cx) * shrink,
+      cy + (y - cy) * shrink,
+    ]);
+  }
+
+  /** A circle on the ground plane, projected — so it flattens with distance. */
+  circlePath(cx, cy, radius) {
+    const { ctx } = this;
+    const steps = 22;
+    for (let i = 0; i <= steps; i += 1) {
+      const a = (i / steps) * Math.PI * 2;
+      const [sx, sy] = this.project(cx + Math.cos(a) * radius, cy + Math.sin(a) * radius);
+      if (i === 0) ctx.moveTo(sx, sy);
+      else ctx.lineTo(sx, sy);
+    }
+    ctx.closePath();
   }
 
   arcPath(radius, close) {
@@ -159,30 +190,50 @@ export class FieldView {
     ctx.fill();
   }
 
+  /**
+   * Bases and the plate are drawn at a CONSTANT screen size, like the fielder
+   * markers, rather than projected in perspective. Perspective is correct but
+   * flattens second base into a sliver at that depth, and this drawing is a
+   * diagram first — every base has to stay equally readable.
+   */
   baseMark([x, y], occupied) {
     const { ctx } = this;
     const [sx, sy] = this.project(x, y);
-    const d = DEPTH / (DEPTH + y);
-    const s = Math.max(4, 5.2 * d * (this.w / 118) * 1.6);
-    ctx.save();
-    ctx.translate(sx, sy);
-    ctx.scale(1, 0.55);
-    ctx.rotate(Math.PI / 4);
+    const w = 7.5;
+    const h = 4.6;
+
+    ctx.beginPath();
+    ctx.moveTo(sx, sy - h);
+    ctx.lineTo(sx + w, sy);
+    ctx.lineTo(sx, sy + h);
+    ctx.lineTo(sx - w, sy);
+    ctx.closePath();
+
     ctx.fillStyle = occupied ? '#F88800' : '#FFFFFF';
-    ctx.strokeStyle = occupied ? '#B26010' : 'rgba(0,0,0,0.25)';
+    ctx.fill();
     ctx.lineWidth = 1.5;
-    ctx.fillRect(-s / 2, -s / 2, s, s);
-    ctx.strokeRect(-s / 2, -s / 2, s, s);
-    ctx.restore();
+    ctx.strokeStyle = occupied ? '#8A4A0C' : 'rgba(70, 45, 22, 0.65)';
+    ctx.stroke();
   }
 
   plateMark() {
     const { ctx } = this;
     const [sx, sy] = this.project(0, 0);
-    ctx.fillStyle = '#FFFFFF';
+    const w = 6;
+
     ctx.beginPath();
-    ctx.ellipse(sx, sy, 7, 4, 0, 0, Math.PI * 2);
+    ctx.moveTo(sx - w, sy - 3);
+    ctx.lineTo(sx + w, sy - 3);
+    ctx.lineTo(sx + w, sy + 1);
+    ctx.lineTo(sx, sy + 5);
+    ctx.lineTo(sx - w, sy + 1);
+    ctx.closePath();
+
+    ctx.fillStyle = '#FFFFFF';
     ctx.fill();
+    ctx.lineWidth = 1.3;
+    ctx.strokeStyle = 'rgba(70, 45, 22, 0.65)';
+    ctx.stroke();
   }
 
   /* ---------- Fielders ----------------------------------------------------- */
@@ -193,27 +244,29 @@ export class FieldView {
       const [sx, sy] = this.project(x, y);
       const isYou = pos === youPos;
       const isBall = pos === highlightPos;
+      // Constant size, not scaled by depth: these are labels, and a two-letter
+      // label needs room whether it is at first base or on the warning track.
+      const r = isYou ? 12.5 : 10.5;
+      const cy = sy - r * 0.55;
 
-      // Shadow
-      ctx.fillStyle = 'rgba(0,0,0,0.18)';
+      ctx.fillStyle = 'rgba(0,0,0,0.22)';
       ctx.beginPath();
-      ctx.ellipse(sx, sy + 2, 7, 3, 0, 0, Math.PI * 2);
+      ctx.ellipse(sx, sy + 1.5, r * 0.7, r * 0.28, 0, 0, Math.PI * 2);
       ctx.fill();
 
       ctx.beginPath();
-      ctx.arc(sx, sy - 5, isYou ? 8 : 6.5, 0, Math.PI * 2);
-      ctx.fillStyle = isYou ? '#F88800' : isBall ? '#FFFFFF' : 'rgba(255,255,255,0.92)';
+      ctx.arc(sx, cy, r, 0, Math.PI * 2);
+      ctx.fillStyle = isYou ? '#F88800' : '#FFFFFF';
       ctx.fill();
-      ctx.lineWidth = isYou ? 2.5 : 1.5;
-      ctx.strokeStyle = isYou ? '#B26010' : 'rgba(18,18,18,0.55)';
+      ctx.lineWidth = isYou ? 2.5 : 1.75;
+      ctx.strokeStyle = isYou ? '#8A4A0C' : isBall ? '#B26010' : 'rgba(40, 30, 20, 0.6)';
       ctx.stroke();
 
-      // Position label
-      ctx.font = `700 ${isYou ? 11 : 9.5}px Inter, system-ui, sans-serif`;
+      ctx.font = `800 ${isYou ? 12 : 10.5}px Inter, system-ui, sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillStyle = isYou ? '#121212' : '#1c1c1c';
-      ctx.fillText(pos, sx, sy - 5);
+      ctx.fillStyle = '#121212';
+      ctx.fillText(pos, sx, cy + 0.5);
     }
   }
 

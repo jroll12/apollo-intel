@@ -52,8 +52,8 @@ export const PHASE2_QUESTIONS = [
     reveal: reveal(
       {
         '2B': 'Field it and feed the shortstop — glove-side flip, chest high.',
-        SS: 'Touch second for the force, then relay across to first.',
-        '1B': 'Cover first and stretch for the relay.',
+        SS: 'Touch second for the force, then throw across to first.',
+        '1B': 'Cover first and stretch for the second throw.',
         P: 'Break toward the first-base line and back up the throw.',
         C: `"Force at second!" ${CALL_IT}`,
       },
@@ -72,7 +72,7 @@ export const PHASE2_QUESTIONS = [
     options: [
       { key: 'a', text: 'Force at third — just touch the bag' },
       { key: 'b', text: 'Tag at third — glove on the runner' },
-      { key: 'c', text: 'Force at third, then relay to first' },
+      { key: 'c', text: 'Force at third, then throw to first' },
       { key: 'd', text: 'Let him have third and throw to first' },
     ],
     correct: 'b',
@@ -110,7 +110,7 @@ export const PHASE2_QUESTIONS = [
     reveal: reveal(
       {
         SS: 'Field it and throw home — the lead force is the play.',
-        C: 'Foot on the plate, give a target, take the force. Then look to first.',
+        C: 'Foot on the plate, hold your glove up so they know where to throw, take the force. Then look to first.',
         '1B': 'Cover first for the throw after the force.',
         P: 'Back up home in case the throw gets by.',
         '3B': 'Cover third — a runner is still coming.',
@@ -228,7 +228,7 @@ export const PHASE2_QUESTIONS = [
     reveal: reveal(
       {
         C: 'Come up clean and throw to the bag — low and on the tag side.',
-        SS: 'Straddle the bag, catch it, sweep the tag down.',
+        SS: 'Stand with a foot on each side of the bag, catch it, sweep your glove down to tag him.',
         '2B': 'Back up the throw behind second.',
         CF: 'Break in hard behind second — if it gets through, he takes third.',
         P: 'Get off the mound toward third in case it gets away.',
@@ -260,7 +260,7 @@ export const PHASE2_QUESTIONS = [
         '1B': 'Step on first for the out, then look up — the force just disappeared.',
         '2B': 'Take the throw and run at him. Tag, do not just stand on the bag.',
         SS: 'Get behind second so the rundown has two men.',
-        P: 'Trail the play toward second — be the third man in a rundown.',
+        P: 'Follow the play toward second — be the third man in a rundown.',
         C: `"Force is off!" — somebody has to say it the moment first is stepped on.`,
       },
       { primary: '2B' },
@@ -317,7 +317,7 @@ export const PHASE2_QUESTIONS = [
       {
         RF: 'Catch it moving in, then come up and throw to third.',
         SS: 'Line up as the cutoff between right field and third.',
-        '3B': 'Straddle the bag, take the throw, sweep the tag.',
+        '3B': 'Stand with a foot on each side of the bag, take the throw, sweep your glove down to tag him.',
         '2B': 'Cover second.',
         C: `"He can tag — play is at third, and it's a tag!"`,
         P: 'Back up third.',
@@ -375,7 +375,7 @@ export const PHASE2_QUESTIONS = [
       {
         '2B': 'Take the closest force you cannot miss — second — and look to turn two.',
         SS: 'Cover second for the feed.',
-        '1B': 'Cover first for the relay.',
+        '1B': 'Cover first for the second throw.',
         C: `"Force everywhere!" ${CALL_IT}`,
         '3B': 'Cover third — that force is live too.',
         P: 'Back up home.',
@@ -435,7 +435,7 @@ export const PHASE2_QUESTIONS = [
     reveal: reveal(
       {
         '2B': 'Field it and feed second.',
-        SS: 'Touch second for the force, then decide on the relay.',
+        SS: 'Touch second for the force, then decide on the second throw.',
         '1B': 'Cover first.',
         C: `"Force at second — nothing forced at home!"`,
         P: 'Back up home.',
@@ -632,7 +632,7 @@ export const PHASE2_QUESTIONS = [
     options: [
       { key: 'a', text: 'Force at second — touch it and the inning is over' },
       { key: 'b', text: 'Tag him, then throw to first to end it' },
-      { key: 'c', text: 'Force at second, then you still need the relay to first' },
+      { key: 'c', text: 'Force at second, then you still need the then throw to first' },
       { key: 'd', text: 'Tag at second — the inning ends on the tag' },
     ],
     correct: 'a',

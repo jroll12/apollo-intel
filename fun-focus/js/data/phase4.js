@@ -33,7 +33,7 @@
       team has a rule, it belongs here.
 
    2. On a ball hit straight to CENTER in a gap, which middle infielder goes
-      out for the relay. Most systems make it a verbal call between the two
+      out for the second throw. Most systems make it a verbal call between the two
       rather than a fixed assignment. Questions here only use the left-center
       and right-center gaps, where the side of the field settles it.
    ========================================================================= */
@@ -60,7 +60,7 @@ export const PHASE4_QUESTIONS = [
     options: [
       { key: 'a', text: 'Line up between the left fielder and home as the cutoff' },
       { key: 'b', text: 'Cover third base' },
-      { key: 'c', text: 'Go out toward left field as the relay man' },
+      { key: 'c', text: 'Go out toward left field as the second throw man' },
       { key: 'd', text: 'Back up home behind the catcher' },
     ],
     correct: 'a',
@@ -74,7 +74,7 @@ export const PHASE4_QUESTIONS = [
         P: 'Back up home.',
         SS: 'Cover third.',
         '2B': 'Cover second — the batter is coming.',
-        '1B': 'Cover first, then trail toward the cut line.',
+        '1B': 'Cover first, then trail toward the throwing line.',
         CF: 'Back up the left fielder.',
         RF: 'Cross in behind second.',
       },
@@ -88,7 +88,7 @@ export const PHASE4_QUESTIONS = [
     bases: [2],
     basesLabel: 'Runner on 2nd',
     pos: 'SS',
-    situation: 'Base hit to left field. The third baseman breaks out toward the cut line.',
+    situation: 'Base hit to left field. The third baseman breaks out toward the throwing line.',
     question: 'Where do you go?',
     options: [
       { key: 'a', text: 'Cover third base' },
@@ -123,7 +123,7 @@ export const PHASE4_QUESTIONS = [
     options: [
       { key: 'a', text: 'Line up between the center fielder and home as the cutoff' },
       { key: 'b', text: 'Cover first base and stay there' },
-      { key: 'c', text: 'Go out to center as the relay man' },
+      { key: 'c', text: 'Go out to center as the second throw man' },
       { key: 'd', text: 'Back up home behind the catcher' },
     ],
     correct: 'a',
@@ -156,7 +156,7 @@ export const PHASE4_QUESTIONS = [
       { key: 'a', text: 'Line up between the right fielder and third base' },
       { key: 'b', text: 'Cover second base' },
       { key: 'c', text: 'Cover third base' },
-      { key: 'd', text: 'Go out to right field as the relay man' },
+      { key: 'd', text: 'Go out to right field as the second throw man' },
     ],
     correct: 'a',
     why: 'Every throw to third from the outfield goes through the shortstop, no matter which outfielder has the ball.',
@@ -164,7 +164,7 @@ export const PHASE4_QUESTIONS = [
       {
         RF: 'Field it and throw through the cutoff to third.',
         SS: 'On the line between right field and third. Hands up, yell for it.',
-        '3B': 'Cover third, give a target, make the cut call.',
+        '3B': 'Cover third, hold your glove up so they know where to throw, make the cut call.',
         '2B': 'Cover second — the batter is coming.',
         '1B': 'Cover first.',
         P: 'Get behind third to back it up.',
@@ -287,7 +287,7 @@ export const PHASE4_QUESTIONS = [
     why: 'The run is scoring either way, so the ball goes to the base that stops the next runner.',
     reveal: reveal(
       {
-        LF: 'You made the throw — now back up nothing, trail the play in.',
+        LF: 'You made the throw — now back up nothing, follow the play in.',
         '3B': 'Cut it and turn to second in one motion.',
         C: 'Loud and early. He needs the call before the ball reaches him, not as it arrives.',
         '2B': 'Cover second — the throw is coming to you.',
@@ -348,7 +348,7 @@ export const PHASE4_QUESTIONS = [
     trap: 'No base named feels like an unfinished instruction. It is a complete one: cut it, hold it, let nobody take another step.',
     reveal: reveal(
       {
-        LF: 'You already did your job — trail the play in.',
+        LF: 'You already did your job — follow the play in.',
         '3B': 'Catch it, hold it, look every runner back.',
         C: 'Say it early and say it once.',
         SS: 'Cover third in case somebody strays.',
@@ -369,7 +369,7 @@ export const PHASE4_QUESTIONS = [
     situation: 'Ball is hammered into the right-center gap and both outfielders are chasing it.',
     question: 'Where do you go?',
     options: [
-      { key: 'a', text: 'Run out into the outfield as the relay man' },
+      { key: 'a', text: 'Run out into the outfield as the second throw man' },
       { key: 'b', text: 'Cover second base' },
       { key: 'c', text: 'Cover first base' },
       { key: 'd', text: 'Line up between the outfield and home' },
@@ -378,12 +378,12 @@ export const PHASE4_QUESTIONS = [
     why: 'Ball in the gap on your side, you go get it — the shortstop covers second behind you.',
     reveal: reveal(
       {
-        RF: 'Run it down and find the relay man with your voice.',
+        RF: 'Run it down and find the second throw man with your voice.',
         CF: 'Chase with him and call who takes it.',
         '2B': 'Sprint out onto the grass, get on the line to third, hands up.',
         SS: 'Cover second.',
         '3B': 'Cover third — that is where the throw is going.',
-        '1B': 'Cover first, then trail toward the cut line.',
+        '1B': 'Cover first, then trail toward the throwing line.',
         C: 'Stay home and read the play.',
         P: 'Get between third and home and pick one to back up.',
         LF: 'Cross all the way in behind second.',
@@ -404,15 +404,15 @@ export const PHASE4_QUESTIONS = [
       { key: 'a', text: 'Cover second base' },
       { key: 'b', text: 'Go out as a second relay man behind him' },
       { key: 'c', text: 'Cover third base' },
-      { key: 'd', text: 'Line up between the relay man and home' },
+      { key: 'd', text: 'Line up between the second throw man and home' },
     ],
     correct: 'a',
     why: 'One middle infielder goes out, the other has the bag — on a ball to the right side, you are the bag.',
     reveal: reveal(
       {
-        '2B': 'Out for the relay.',
+        '2B': 'Out for the second throw.',
         SS: 'Cover second. The batter is coming and somebody has to be there.',
-        RF: 'Run it down, hit the relay man.',
+        RF: 'Run it down, hit the second throw man.',
         '3B': 'Cover third.',
         '1B': 'Cover first.',
         CF: 'Chase and back up.',
@@ -431,7 +431,7 @@ export const PHASE4_QUESTIONS = [
     situation: 'Ball is ripped into the left-center gap.',
     question: 'Where do you go?',
     options: [
-      { key: 'a', text: 'Run out into the outfield as the relay man' },
+      { key: 'a', text: 'Run out into the outfield as the second throw man' },
       { key: 'b', text: 'Cover second base' },
       { key: 'c', text: 'Cover third base' },
       { key: 'd', text: 'Line up between the outfield and home' },
@@ -440,12 +440,12 @@ export const PHASE4_QUESTIONS = [
     why: 'Ball in the gap on your side, so you go out — the second baseman covers second behind you.',
     reveal: reveal(
       {
-        LF: 'Run it down and find the relay man.',
+        LF: 'Run it down and find the second throw man.',
         CF: 'Chase and call who takes it.',
         SS: 'Out onto the grass, line up with third, hands up and loud.',
         '2B': 'Cover second.',
-        '3B': 'Cover third and make the call on the relay.',
-        '1B': 'Cover first, then trail the cut line.',
+        '3B': 'Cover third and make the call on the second throw.',
+        '1B': 'Cover first, then trail the throwing line.',
         P: 'Get between third and home.',
         C: 'Stay home.',
         RF: 'Cross all the way in behind second.',
@@ -460,8 +460,8 @@ export const PHASE4_QUESTIONS = [
     bases: [1],
     basesLabel: 'Runner on 1st',
     pos: '2B',
-    situation: 'Ball is in the left-center gap and you are the relay man\'s partner. The outfielder has his back to the infield.',
-    question: 'What does the relay man have to do first?',
+    situation: 'Ball is in the left-center gap and you are the second throw man\'s partner. The outfielder has his back to the infield.',
+    question: 'What does the second throw man have to do first?',
     options: [
       { key: 'a', text: 'Yell his name and wave until he finds him' },
       { key: 'b', text: 'Get to the exact right spot and wait quietly' },
@@ -469,7 +469,7 @@ export const PHASE4_QUESTIONS = [
       { key: 'd', text: 'Turn and look at third to line himself up' },
     ],
     correct: 'a',
-    why: 'The outfielder is running away from the infield, so the relay man has to be a voice before he can be a target.',
+    why: 'The outfielder is running away from the infield, so the second throw man has to be a voice before he can be a target.',
     reveal: reveal(
       {
         LF: 'Ball first, then find the voice.',
@@ -556,23 +556,23 @@ export const PHASE4_QUESTIONS = [
     situation: 'Double down the left-field line. You run it down in the corner and the runner is heading home.',
     question: 'What do you do with the ball?',
     options: [
-      { key: 'a', text: 'Turn and fire it to the relay man, chest high' },
+      { key: 'a', text: 'Turn and fire it to the second throw man, chest high' },
       { key: 'b', text: 'Throw it all the way home on the fly' },
       { key: 'c', text: 'Run it in toward the infield yourself' },
       { key: 'd', text: 'Throw it to third base' },
     ],
     correct: 'a',
-    why: 'You are not throwing anyone out from the corner — the relay man is the throw, and your only job is getting it to him fast and accurate.',
+    why: 'You are not throwing anyone out from the corner — the second throw man is the throw, and your only job is getting it to him fast and accurate.',
     trap: 'The big throw home is the one everybody wants to make. From the corner it is slower than two good throws and it usually ends up somewhere nobody is standing.',
     reveal: reveal(
       {
-        LF: 'Get to it, turn, and hit the relay man in the chest.',
+        LF: 'Get to it, turn, and hit the second throw man in the chest.',
         SS: 'Relay man — out on the grass, lined up with home.',
-        '2B': 'Cover second, and be the trail man behind the relay.',
+        '2B': 'Cover second, and be the trail man behind the second throw.',
         '3B': 'Cover third.',
         C: 'Set up at the plate and make the call.',
         P: 'Back up home.',
-        '1B': 'Cover first, then trail the cut line.',
+        '1B': 'Cover first, then trail the throwing line.',
         CF: 'Back up the corner.',
         RF: 'Cross in behind second.',
       },
@@ -598,7 +598,7 @@ export const PHASE4_QUESTIONS = [
     why: 'He can see that the throw will not beat the runner, so he is ending the play before a short hop turns into a loose ball.',
     reveal: reveal(
       {
-        LF: 'Trail the play in.',
+        LF: 'Follow the play in.',
         '3B': 'Cut it clean, hold it high, look everybody back.',
         C: 'Make the call the moment you see it is short.',
         SS: 'Cover third.',
@@ -621,7 +621,7 @@ export const PHASE4_QUESTIONS = [
     options: [
       { key: 'a', text: 'Line up between the center fielder and home as the cutoff' },
       { key: 'b', text: 'Stay at first base' },
-      { key: 'c', text: 'Go out toward center as the relay man' },
+      { key: 'c', text: 'Go out toward center as the second throw man' },
       { key: 'd', text: 'Back up home behind the catcher' },
     ],
     correct: 'a',
@@ -683,7 +683,7 @@ export const PHASE4_QUESTIONS = [
     situation: 'Clean base hit to center field. The batter rounds first hard and looks at second.',
     question: 'Where do you go?',
     options: [
-      { key: 'a', text: 'Out toward center field as the relay man' },
+      { key: 'a', text: 'Out toward center field as the second throw man' },
       { key: 'b', text: 'Cover second base' },
       { key: 'c', text: 'Cover first base' },
       { key: 'd', text: 'Stay where you are — it is only a single' },
@@ -713,12 +713,12 @@ export const PHASE4_QUESTIONS = [
     bases: [2],
     basesLabel: 'Runner on 2nd',
     pos: '1B',
-    situation: 'Base hit to right field. The runner is going for third and the shortstop breaks out to the cut line.',
+    situation: 'Base hit to right field. The runner is going for third and the shortstop breaks out to the throwing line.',
     question: 'Where do you go?',
     options: [
       { key: 'a', text: 'Cover first base' },
       { key: 'b', text: 'Line up as the cutoff for the throw to third' },
-      { key: 'c', text: 'Go out to right field as the relay man' },
+      { key: 'c', text: 'Go out to right field as the second throw man' },
       { key: 'd', text: 'Line up between right field and home' },
     ],
     correct: 'a',
@@ -746,7 +746,7 @@ export const PHASE4_QUESTIONS = [
     bases: [2],
     basesLabel: 'Runner on 2nd',
     pos: 'CF',
-    situation: 'Base hit right at you. The runner is rounding third and the first baseman is out on the cut line waving his arms.',
+    situation: 'Base hit right at you. The runner is rounding third and the first baseman is out on the throwing line waving his arms.',
     question: 'How do you throw it?',
     options: [
       { key: 'a', text: 'Through the cutoff man, low and on a line' },
@@ -791,7 +791,7 @@ export const PHASE4_QUESTIONS = [
     why: 'The shortstop is the cutoff on every outfield throw to third, so your job is hitting him — not the base behind him.',
     reveal: reveal(
       {
-        RF: 'Get to it, crow-hop, and throw through the shortstop.',
+        RF: 'Get to it, take a hop toward your target, and throw through the shortstop.',
         SS: 'Cutoff on the line to third. Hands up, name loud.',
         '3B': 'Cover third and make the cut call.',
         '2B': 'Cover second — the batter will try to take it.',
@@ -811,7 +811,7 @@ export const PHASE4_QUESTIONS = [
     bases: [1],
     basesLabel: 'Runner on 1st',
     pos: 'P',
-    situation: 'Ball is in the left-center gap. The shortstop is out on the grass as the relay man and the runner is going to try to score.',
+    situation: 'Ball is in the left-center gap. The shortstop is out on the grass as the second throw man and the runner is going to try to score.',
     question: 'Where do you go?',
     options: [
       { key: 'a', text: 'Get between third and home, then back up whichever one the throw goes to' },
@@ -820,17 +820,17 @@ export const PHASE4_QUESTIONS = [
       { key: 'd', text: 'Stay on the mound as an extra cutoff option' },
     ],
     correct: 'a',
-    why: 'On an extra-base hit you cannot know yet which base the throw ends at, so you split the two and commit once the relay man turns.',
+    why: 'On an extra-base hit you cannot know yet which base the throw ends at, so you split the two and commit once the second throw man turns.',
     trap: 'Picking a base early feels decisive and it is a guess. Standing between them costs you nothing and covers both.',
     reveal: reveal(
       {
-        LF: 'Run it down and hit the relay man.',
+        LF: 'Run it down and hit the second throw man.',
         SS: 'Relay man out on the grass, lined up with home.',
         '2B': 'Cover second.',
         '3B': 'Cover third and make the call if it comes there.',
         C: 'Home is yours — set up and make the call.',
-        P: 'Split third and home. Read the relay man, then commit and sprint.',
-        '1B': 'Cover first, then trail toward the cut line.',
+        P: 'Split third and home. Read the second throw man, then commit and sprint.',
+        '1B': 'Cover first, then trail toward the throwing line.',
         CF: 'Chase and back up.',
         RF: 'Cross all the way in behind second.',
       },

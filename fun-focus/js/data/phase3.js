@@ -19,7 +19,7 @@
      Pitcher covers first on any ball to the right side, and otherwise goes to
        whichever base the next throw is heading for.
      The far-side outfielder never stands still — he comes in behind the bag
-       the relay is going to.
+       the second throw is going to.
 
    THE BUNT SYSTEM THIS PHASE TEACHES
      P   fields anything up the middle
@@ -71,14 +71,14 @@ export const PHASE3_QUESTIONS = [
     reveal: reveal(
       {
         SS: 'Field it and throw to first.',
-        '1B': 'Cover first, give a target, stretch.',
+        '1B': 'Cover first, hold your glove up so they know where to throw, stretch.',
         RF: 'Sprint in and line up directly behind the bag with the flight of the throw.',
         C: 'Bases empty — trail the batter down the first-base line as a second backup.',
         P: 'Break toward the first-base line in case you are needed to cover.',
         '2B': 'Cover second behind the play.',
         '3B': 'Cover third.',
-        CF: 'Break in behind second.',
-        LF: 'Break in behind third.',
+        CF: 'Run in toward second base so you are close to the play.',
+        LF: 'Run in toward third base so you are close to the play.',
       },
       { primary: 'RF' },
     ),
@@ -126,21 +126,21 @@ export const PHASE3_QUESTIONS = [
       { key: 'a', text: 'Break in hard behind second base' },
       { key: 'b', text: 'Hold your ground — the ball is on the infield' },
       { key: 'c', text: 'Move over behind the shortstop' },
-      { key: 'd', text: 'Break in behind first for the relay' },
+      { key: 'd', text: 'Break in behind first for the second throw' },
     ],
     correct: 'a',
     why: 'Every throw to second has a center fielder behind it, and that feed is the one most likely to get away.',
     reveal: reveal(
       {
         SS: 'Field it and feed second.',
-        '2B': 'Cover second, take the force, relay to first.',
+        '2B': 'Cover second, take the force, then throw to first.',
         CF: 'Break in behind second and line up with the throw.',
-        '1B': 'Cover first for the relay.',
+        '1B': 'Cover first for the second throw.',
         RF: 'Break in behind first for that relay throw.',
         P: 'Get off the mound toward the first-base side.',
         C: 'Runner on base — stay home.',
         '3B': 'Cover third.',
-        LF: 'Break in behind third.',
+        LF: 'Run in toward third base so you are close to the play.',
       },
       { primary: 'CF' },
     ),
@@ -235,8 +235,8 @@ export const PHASE3_QUESTIONS = [
         SS: 'Cover second.',
         '3B': 'Bases empty, so charge.',
         RF: 'Break in behind first for the throw.',
-        CF: 'Break in behind second.',
-        LF: 'Break in behind third.',
+        CF: 'Run in toward second base so you are close to the play.',
+        LF: 'Run in toward third base so you are close to the play.',
       },
       { primary: '2B' },
     ),
@@ -359,7 +359,7 @@ export const PHASE3_QUESTIONS = [
       {
         RF: 'Field it clean and get it in — keep the runner from taking third.',
         CF: 'Angle in behind him, not straight at him. Take the ball if it gets by.',
-        '2B': 'Go out for the relay.',
+        '2B': 'Go out for the second throw.',
         SS: 'Cover second behind the runner.',
         '3B': 'Cover third — that is where he is headed.',
         '1B': 'Cover first for the batter.',
@@ -387,12 +387,12 @@ export const PHASE3_QUESTIONS = [
     ],
     correct: 'a',
     why: 'A ball in the other gap still gives you a job — get behind second so a relay throw that gets away does not turn into another base.',
-    trap: 'It genuinely looks like a play you are not part of. The far-side outfielder never stands still; he goes to the bag the relay is coming to.',
+    trap: 'It genuinely looks like a play you are not part of. The far-side outfielder never stands still; he goes to the bag the second throw is coming to.',
     reveal: reveal(
       {
-        LF: 'Run it down, get to it, and give the relay man a target.',
+        LF: 'Run it down, get to it, and give the second throw man a target.',
         CF: 'Chase with him and call who takes it.',
-        SS: 'Go out as the relay man, line up with the throw.',
+        SS: 'Go out as the second throw man, line up with the throw.',
         '2B': 'Cover second.',
         RF: 'All the way in behind second base.',
         '3B': 'Cover third — the runner is coming.',
@@ -454,7 +454,7 @@ export const PHASE3_QUESTIONS = [
     why: 'The third baseman is already holding third, so the bags split the usual way — second is yours, first is the second baseman\'s.',
     reveal: reveal(
       {
-        SS: 'Cover second. Get there early and give a target.',
+        SS: 'Cover second. Get there early and hold your glove up so they know where to throw.',
         '3B': 'Hold third — the force there is the lead out.',
         '2B': 'Cover first.',
         '1B': 'Charge the line.',
@@ -511,7 +511,7 @@ export const PHASE3_QUESTIONS = [
       { key: 'a', text: 'Sprint behind the catcher and back up home' },
       { key: 'b', text: 'Cover third base' },
       { key: 'c', text: 'Stay on the mound as a cutoff' },
-      { key: 'd', text: 'Break toward first for the relay' },
+      { key: 'd', text: 'Break toward first for the second throw' },
     ],
     correct: 'a',
     why: 'Any throw to the plate has the pitcher behind it — and with the bases loaded, a ball to the backstop does not stop at one runner.',
@@ -523,9 +523,9 @@ export const PHASE3_QUESTIONS = [
         '1B': 'Cover first for the second half of the double play.',
         '2B': 'Cover second.',
         '3B': 'Cover third — that force is still live.',
-        LF: 'Break in behind third.',
-        CF: 'Break in behind second.',
-        RF: 'Break in behind first.',
+        LF: 'Run in toward third base so you are close to the play.',
+        CF: 'Run in toward second base so you are close to the play.',
+        RF: 'Run in toward first base so you are close to the play.',
       },
       { primary: 'P' },
     ),
@@ -633,10 +633,10 @@ export const PHASE3_QUESTIONS = [
     bases: [1],
     basesLabel: 'Runner on 1st',
     pos: 'RF',
-    situation: 'Ground ball to third. He goes to second for the force and the relay is going across to first.',
+    situation: 'Ground ball to third. He goes to second for the force and the second throw is going across to first.',
     question: 'Where do you go?',
     options: [
-      { key: 'a', text: 'Get in behind first base for the relay throw' },
+      { key: 'a', text: 'Get in behind first base for the second throw throw' },
       { key: 'b', text: 'Back up second base' },
       { key: 'c', text: 'Hold your spot until the ball is in the outfield' },
       { key: 'd', text: 'Move toward the line in case of an overthrow' },
@@ -647,13 +647,13 @@ export const PHASE3_QUESTIONS = [
       {
         '3B': 'Field it and feed second.',
         '2B': 'Take the force at second, relay across.',
-        '1B': 'Cover first and stretch for the relay.',
+        '1B': 'Cover first and stretch for the second throw.',
         RF: 'In behind first, lined up with the throw.',
         CF: 'In behind second for the feed.',
         SS: 'Cover third behind the play.',
         P: 'Break toward the first-base line.',
         C: 'Stay home.',
-        LF: 'Break in behind third.',
+        LF: 'Run in toward third base so you are close to the play.',
       },
       { primary: 'RF' },
     ),

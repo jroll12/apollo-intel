@@ -23,11 +23,11 @@ export function reveal(jobs, { primary, fallback = {} } = {}) {
 const GENERIC = {
   P: 'Off the mound and into the play — you back up a base on every throw.',
   C: 'Home is yours. Call the play out loud before the pitch.',
-  '1B': 'First is yours. Give a target.',
-  '2B': 'Move with the ball and cover your half of the middle.',
-  SS: 'Move with the ball and cover your half of the middle.',
+  '1B': 'First is yours. Hold your glove up so they know where to throw.',
+  '2B': 'Move toward the ball. If it gets through, you chase it down on your side.',
+  SS: 'Move toward the ball. If it gets through, you chase it down on your side.',
   '3B': 'Third is yours. Know whether that runner can go.',
-  LF: 'Break in behind third.',
-  CF: 'Break in behind second.',
-  RF: 'Break in behind first.',
+  LF: 'Run in toward third base so you are close to the play.',
+  CF: 'Run in toward second base so you are close to the play.',
+  RF: 'Run in toward first base so you are close to the play.',
 };

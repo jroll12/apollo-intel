@@ -99,7 +99,7 @@ function build() {
       text: 'A real ball off a real bat. Read it live, then call your job — whether it comes to you or not.',
     }),
     picker,
-    el('div', { class: 'live__stage' }, [canvas, situation]),
+    el('div', { class: 'live__stage' }, [situation, canvas]),
     headline,
     action,
     stats,

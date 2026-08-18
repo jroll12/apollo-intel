@@ -122,52 +122,52 @@ function flyCaughtTarget(outs, runners) {
 /* ---------- Why lines ------------------------------------------------------
    One line, coach voice. Never about whether the throw would be caught. */
 const WHY = {
-  empty: 'Nobody on — the only out out there is the batter.',
-  noForce: 'Nothing is forced, so first base is the sure out. Check the runner back, then throw.',
-  forceOn: 'The runner on first has to go — take the lead out at second.',
-  dpLook: 'Everyone ahead of the batter is forced. Second is the closest one you cannot miss.',
-  stepThird: "Force is on at third and you're standing on it — the lead runner, without a throw.",
-  loadedStep: "Bases loaded makes home a force, and your foot is already on the plate.",
-  loadedQuick: "Short, clean throw with the catcher on the bag — that's the force on the runner closest to scoring.",
-  loadedClosest: 'Home is the run everyone is watching, but the closest guaranteed force is the out you actually get.',
-  twoOut: 'Two outs — any out ends the inning, so take the throw you make every time.',
-  twoOutFreeForce: "Two outs and a force under your foot. Take the free one and run off the field.",
-  buntSureOut: 'A bunt gives the runners a running start, so the batter at first is the out that is really there.',
-  buntPlain: 'Field it clean and beat the batter to first.',
-  runScoring: 'A runner in scoring position is coming home — the ball goes to the plate through your cutoff man.',
-  firstToThird: "He's going first to third on that, so the throw goes to third through the shortstop.",
-  keepToSingle: 'Nobody on — get it in cleanly and keep the batter to one base.',
-  twoOutOF: 'Two outs, so no hero throw. Get it in to the cutoff and let the next out end it.',
-  tagHome: "Fewer than two outs with a runner on third — he's tagging. Catch it moving in.",
-  tagThird: "He'll tag and take third on a ball that deep. Get it to the lead base.",
-  noTag: "He can't tag up and make it from first — catch it and get the ball back in.",
-  justCatch: 'Nobody on. Squeeze it and get it back to the infield.',
-  inningOver: "Two outs — the catch is the third out. Nobody tags, nothing scores.",
+  empty: 'Nobody is on base, so the only out you can get is the batter at first.',
+  noForce: "Nobody HAS to run, so first base is your sure out. Show the runner the ball first, then throw.",
+  forceOn: 'The runner on first HAS to run, so you can get him at second just by touching the bag.',
+  dpLook: 'Every runner ahead of the batter HAS to run. Second base is the closest out you cannot miss.',
+  stepThird: 'The runner has to come to third, and you are already standing on it. Just step on the bag.',
+  loadedStep: 'Bases loaded means the runner on third HAS to run home, so touching the plate is an out.',
+  loadedQuick: 'It is a short, easy throw and the catcher is standing on the plate. That stops the run.',
+  loadedClosest: 'Everybody is watching home plate, but the out you know you will get is the closest base.',
+  twoOut: 'Two outs. Any out ends the inning, so make the throw you make every single time.',
+  twoOutFreeForce: 'Two outs, and the base is already under your foot. Take the easy one.',
+  buntSureOut: 'The runners took off as soon as the ball was bunted, so the batter at first is the out you can really get.',
+  buntPlain: 'Grab it and throw to first before the batter gets there.',
+  runScoring: 'A runner is trying to score, so the ball goes home. Throw it to your cutoff man, not all the way.',
+  firstToThird: 'He is running all the way to third, so the ball goes there. Throw it to your cutoff man.',
+  keepToSingle: 'Nobody is on base. Get the ball back in fast so the batter has to stop at first.',
+  twoOutOF: 'Two outs. Do not try a huge throw. Get it back in and let the next out end the inning.',
+  tagHome: 'Less than two outs with a runner on third means he can run home as soon as you catch it.',
+  tagThird: 'On a ball hit that deep he can run to third as soon as you catch it.',
+  noTag: 'He cannot make it all the way from first on that one. Just catch it and get the ball back in.',
+  justCatch: 'Nobody is on base. Catch it and throw it back in to the infield.',
+  inningOver: 'Two outs, so catching it is the third out. The inning is over and nobody can run.',
 };
 
 /* A second line only where the right answer genuinely surprises someone who
    picked the obvious-sounding wrong one. */
 const TRAP = {
-  buntSureOut: 'The lead force is on, which is exactly why this one fools people — but that runner left with the pitch and is already most of the way there.',
-  stepThird: 'Throwing across to first is the reflex, but the bag under your foot is a free out on the runner closest to scoring.',
-  twoOutFreeForce: 'The long throw would also end it. There is no reason to make a throw when the base is already under your foot.',
-  loadedClosest: 'Home looks like the play with the bases loaded. From where you are standing it is the throw most likely to go wrong.',
-  noForce: 'Chasing the lead runner feels aggressive, but he does not have to run — you would be giving back the out you already had.',
-  twoOutOF: 'With one out you are coming up throwing. With two, the out itself ends the inning, so the safe throw wins.',
+  buntSureOut: 'The lead runner HAS to run, which is why this one tricks people. He left early and you will not catch him.',
+  stepThird: 'Throwing to first feels normal, but the base is already under your foot. That is a free out on the runner closest to scoring.',
+  twoOutFreeForce: 'The long throw would work too. But why throw at all when the base is right under you?',
+  loadedClosest: 'Home plate looks like the play with the bases loaded. From where you are standing, it is the throw most likely to go wrong.',
+  noForce: 'Chasing the runner feels brave, but he does not have to run anywhere. You would be giving away the out you already had.',
+  twoOutOF: 'With one out you catch it ready to throw. With two outs the catch itself ends the inning, so play it safe.',
 };
 
 /* ---------- Non-involved movement -----------------------------------------
    Honest, position-specific, and never "do nothing". */
 const IDLE = {
-  P: 'Off the mound and into the play — read the throw and get behind a base.',
-  C: 'Home is yours. Call the outs and the play out loud before the pitch.',
-  '1B': 'First is yours. Give a target.',
-  '2B': 'Move with the ball and cover your half of the middle.',
-  SS: 'Move with the ball and cover your half of the middle.',
-  '3B': 'Third is yours. Know whether that runner can go.',
-  LF: 'Break in behind third.',
-  CF: 'Break in behind second.',
-  RF: 'Break in behind first.',
+  P: 'Get off the mound and follow the ball. Be ready to stand behind whichever base the throw goes to.',
+  C: 'Stay at home plate. Before the pitch, yell out how many outs there are and where the play is.',
+  '1B': 'Get to first base and hold your glove up so they know where to throw.',
+  '2B': 'Move toward the ball. If it gets past the infield, you are the one chasing it down on your side.',
+  SS: 'Move toward the ball. If it gets past the infield, you are the one chasing it down on your side.',
+  '3B': 'Stay at third base. Know before the pitch whether that runner is allowed to run.',
+  LF: 'Run in toward third base so you are close if the ball ends up coming that way.',
+  CF: 'Run in toward second base so you are close if the ball ends up coming that way.',
+  RF: 'Run in toward first base so you are close if the ball ends up coming that way.',
 };
 
 /* ---------- Resolve -------------------------------------------------------- */
@@ -257,7 +257,7 @@ function buildAssignments({ branch, fielder, target, cover, cutoff, runners, out
   if (cutoff && cutoff !== fielder && !out[cutoff]) {
     out[cutoff] = {
       role: 'cutoff',
-      text: `Line up between ${fielder} and ${BASE_NAME[base]} as the cutoff. Hands up, call for it.`,
+      text: `Run out and stand in a straight line between ${fielder} and ${BASE_NAME[base]}. Both hands up, and yell for the ball.`,
     };
   }
 
@@ -266,15 +266,15 @@ function buildAssignments({ branch, fielder, target, cover, cutoff, runners, out
     out[cover[base]] = {
       role: 'cover',
       text: base === 'H'
-        ? 'Cover home. Foot on the plate, give a target, and make the cut call.'
-        : `Cover ${BASE_NAME[base]}. Beat the runner to the bag and give a target.`,
+        ? 'Stand on home plate, hold your glove up, and be ready for the throw.'
+        : `Run to ${BASE_NAME[base]} and stand on it. Get there before the runner does and hold your glove up.`,
     };
   }
 
   // 4. Backup behind that throw.
   const backup = BACKUP_FOR[base];
   if (base && backup && !out[backup]) {
-    out[backup] = { role: 'backup', text: `Back up the throw to ${BASE_NAME[base]}.` };
+    out[backup] = { role: 'backup', text: `Stand well behind ${BASE_NAME[base]}. If the throw gets past, you are the one who stops it.` };
   }
 
   // 5. Everyone else covers a live base or moves with the ball.
@@ -284,19 +284,19 @@ function buildAssignments({ branch, fielder, target, cover, cutoff, runners, out
     const liveBase =
       bKey === 1 || (bKey === 2 && runners.has(1)) || (bKey === 3 && runners.has(2)) || (bKey === 'H' && runners.has(3));
     if (liveBase) {
-      out[who] = { role: 'cover', text: bKey === 'H' ? 'Home is yours. Stay in front of the plate.' : `Cover ${BASE_NAME[bKey]}.` };
+      out[who] = { role: 'cover', text: bKey === 'H' ? 'Stay right in front of home plate. That base is yours.' : `Get to ${BASE_NAME[bKey]} and stay on it.` };
     }
   }
 
   // 6. Bunt-specific jobs for anyone still unassigned.
   if (isBunt) {
-    if (!out['1B']) out['1B'] = { role: 'move', text: 'Charge the line.' };
-    if (!out.C) out.C = { role: 'move', text: 'Field anything in front of the plate and call the base out loud.' };
-    if (!out.P) out.P = { role: 'move', text: 'Field anything up the middle.' };
+    if (!out['1B']) out['1B'] = { role: 'move', text: 'Run in hard toward the first-base line and try to get the ball.' };
+    if (!out.C) out.C = { role: 'move', text: 'Grab anything that stops in front of the plate, then yell which base to throw to.' };
+    if (!out.P) out.P = { role: 'move', text: 'Run in and grab anything bunted up the middle.' };
     if (!out['3B']) {
       out['3B'] = runners.has(2)
-        ? { role: 'cover', text: 'Runner on second — hold third. Do not charge.' }
-        : { role: 'move', text: 'Charge the line.' };
+        ? { role: 'cover', text: 'Stay at third base. There is a runner on second and he is coming to you.' }
+        : { role: 'move', text: 'Run in hard toward the third-base line and try to get the ball.' };
     }
   }
 
@@ -304,7 +304,7 @@ function buildAssignments({ branch, fielder, target, cover, cutoff, runners, out
   for (const of of ['LF', 'CF', 'RF']) {
     if (out[of]) continue;
     if (['LF', 'CF', 'RF'].includes(fielder) && of !== fielder) {
-      out[of] = { role: 'backup', text: `Angle in behind ${fielder} — take it if it gets past him.` };
+      out[of] = { role: 'backup', text: `Run behind ${fielder}. If the ball gets past him, you are there to stop it.` };
     }
   }
 
@@ -320,21 +320,25 @@ function primaryText(branch, target, fielder, cutoff) {
   const base = target.base;
 
   if (branch === 'outfieldHit') {
-    if (target.note === 'twoOutOF') return 'Field it clean and get it in to the cutoff man. No hero throw.';
-    return `Field it clean and throw through the cutoff to ${BASE_NAME[base]}.`;
+    if (target.note === 'twoOutOF') return 'Field it clean and throw it in to your cutoff man. Do not try a long throw.';
+    return `Field it clean and throw it to your cutoff man, lined up with ${BASE_NAME[base]}.`;
   }
 
   if (branch === 'flyCaught') {
-    if (!base) return target.note === 'inningOver' ? "Catch it — that's the inning." : 'Catch it, then get the ball back in to the infield.';
-    return `Catch it, then come up throwing to ${BASE_NAME[base]}.`;
+    if (!base) {
+      return target.note === 'inningOver'
+        ? "Catch it. That's the third out and the inning is over."
+        : 'Catch it, then throw the ball back in to the infield.';
+    }
+    return `Catch it, then throw to ${BASE_NAME[base]} right away.`;
   }
 
-  if (branch === 'popup') return 'Call it loud, camp under it, and catch it.';
+  if (branch === 'popup') return 'Yell "I got it!" loud, get underneath it, and catch it.';
 
   // Infield ground ball or bunt.
-  if (target.step) return `Step on ${BASE_NAME[base]} yourself — that's the force, no throw needed.`;
-  if (target.relay) return 'Get the force at second, then relay to first.';
-  if (target.look) return `Look the runner back, then throw to ${BASE_NAME[base]}.`;
+  if (target.step) return `Step on ${BASE_NAME[base]} yourself. You do not need to throw it.`;
+  if (target.relay) return 'Step on second base for the out, then throw to first.';
+  if (target.look) return `Show the runner the ball so he stays put, then throw to ${BASE_NAME[base]}.`;
   return `Throw to ${BASE_NAME[base]}.`;
 }
 

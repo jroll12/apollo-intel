@@ -56,7 +56,7 @@ const PLAYS = {
   lookThenFirst: 'Look the runner back, then throw to first',
   lookThenFirstPl: 'Look the runners back, then throw to first',
   second: 'Throw to second',
-  secondThenFirst: 'Get the force at second, then relay to first',
+  secondThenFirst: 'Get the force at second, then throw to first',
   third: 'Throw to third',
   thirdStep: 'Step on third yourself',
   home: 'Throw home',
@@ -287,12 +287,12 @@ const IF_JOBS = {
     '2B': {
       loc: 'Routine grounder right at you.',
       play: 'secondThenFirst',
-      why: 'Standard double-play look: force at second, then the relay across to first.',
+      why: 'Two-out chance: force at second, then the then throw across to first.',
     },
     SS: {
       loc: 'Two-hopper right at you.',
       play: 'secondThenFirst',
-      why: 'Standard double-play look: force at second, then the relay across to first.',
+      why: 'Two-out chance: force at second, then the then throw across to first.',
     },
     '3B': {
       loc: 'Grounder right at you at third.',
@@ -356,7 +356,7 @@ const IF_JOBS = {
     '2B': {
       loc: 'Routine grounder right at you.',
       play: 'secondThenFirst',
-      why: 'Second is your closest guaranteed force, and the relay across can give you two.',
+      why: 'Second is your closest guaranteed force, and the second throw across can give you two.',
       trap: "Home is a long throw from where you're standing. The force at second is the out that's actually guaranteed.",
     },
     SS: {
@@ -640,19 +640,19 @@ function coverage(pos) {
 const IF_DEFAULT_JOBS = {
   P: "Off the mound toward the ball. If the throw gets away, you're the one backing up a base.",
   C: 'Home is yours. Before the pitch, call the outs and the play out loud so everyone hears it.',
-  '1B': 'Get to first and give a target — a relay can still end up coming your way.',
-  '2B': 'Move toward the ball and cover your half of the middle.',
-  SS: 'Move toward the ball and cover your half of the middle.',
+  '1B': 'Get to first and hold your glove up so they know where to throw — a relay can still end up coming your way.',
+  '2B': 'Move toward the ball. If it gets through, you chase it down on your side.',
+  SS: 'Move toward the ball. If it gets through, you chase it down on your side.',
   '3B': "Third is yours. Know before it's hit whether that runner can go.",
-  LF: 'Break in behind third. If it gets through, you keep it to one base.',
-  CF: 'Break in behind second. Nothing gets past you.',
-  RF: 'Break in behind first — you back up the throw over there.',
+  LF: 'Run in toward third base so you are close to the play. If it gets through, you keep it to one base.',
+  CF: 'Run in toward second base so you are close to the play. Nothing gets past you.',
+  RF: 'Run in toward first base. If the throw gets past, you stop it.',
 };
 
 const COVER_TEXT = {
-  1: 'Cover first. Big target, stretch for the throw.',
-  2: 'Cover second. Beat the runner to the bag and give a target.',
-  3: 'Cover third and give a target.',
+  1: 'Cover first. Hold your glove up and stretch toward the throw.',
+  2: 'Cover second. Beat the runner to the bag and hold your glove up so they know where to throw.',
+  3: 'Cover third and hold your glove up so they know where to throw.',
   H: 'Cover home. Foot on the plate, call for the ball.',
 };
 
@@ -687,7 +687,7 @@ function outfieldSupportJob(p, fielder, targets) {
   if (p === 'P') return 'Get off the mound toward the third-base line — you back up third or home depending on where the throw goes.';
   if (p === '1B' && goingHome) return `Line up between ${fielder} and home as the cutoff man. Phase 4 drills the details.`;
   if (p === 'SS' && goingThird) return `Line up between ${fielder} and third as the cutoff man. Phase 4 drills the details.`;
-  if (p === 'C' && goingHome) return 'Home is yours. Set up, give a target, and make the call on the throw.';
+  if (p === 'C' && goingHome) return 'Home is yours. Set up, hold your glove up so they know where to throw, and make the call on the throw.';
   if (['LF', 'CF', 'RF'].includes(p)) return 'Back up your teammate — take an angle behind the catch, not straight at it.';
   return null;
 }
