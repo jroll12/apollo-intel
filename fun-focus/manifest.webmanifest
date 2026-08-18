@@ -1,0 +1,19 @@
+{
+  "name": "Fun & Focus",
+  "short_name": "Fun & Focus",
+  "description": "The players' companion app — Golden Chain, team chant, and situational baseball practice.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFDF7",
+  "theme_color": "#14213D",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

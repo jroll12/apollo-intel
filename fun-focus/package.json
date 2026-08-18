@@ -1,0 +1,13 @@
+{
+  "name": "fun-focus",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fun & Focus — players' companion app for a 10U/11U rec baseball team.",
+  "scripts": {
+    "start": "npx --yes serve@14 . -l 5173"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

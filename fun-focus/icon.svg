@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Fun and Focus">
+  <rect width="512" height="512" fill="#14213D" />
+  <!-- Golden chain link -->
+  <g fill="none" stroke="#FFC93C" stroke-width="30" stroke-linecap="round">
+    <rect x="128" y="176" width="150" height="96" rx="48" />
+    <rect x="234" y="240" width="150" height="96" rx="48" />
+  </g>
+</svg>
