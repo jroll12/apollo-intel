@@ -1,13 +1,11 @@
-/* Personal, per-device state: which player this phone belongs to, and that
-   player's progress per phase. localStorage is exactly right here — this is
-   meant to be private to the phone and does not need to sync anywhere.
+/* Per-device state: quiz progress per phase. localStorage is exactly right —
+   this is private to the phone and does not need to sync anywhere.
 
-   Progress is stored per player so a shared family phone doesn't blend two
-   kids' streaks together. */
+   There is no player identity in this app. Anyone can pick the app up and
+   start; progress belongs to the device, not to a named kid. */
 
 import { STORAGE_PREFIX } from './config.js';
 
-const KEY_PLAYER = `${STORAGE_PREFIX}.player`;
 const KEY_PROGRESS = `${STORAGE_PREFIX}.progress`;
 
 function read(key, fallback) {
@@ -29,19 +27,8 @@ function write(key, value) {
   }
 }
 
-/* ---------- Player -------------------------------------------------------- */
+/* Shape: { "<phaseId>": { correctIds: [], seen: n, streak: n, bestStreak: n } }
 
-export function getPlayer() {
-  return read(KEY_PLAYER, null);
-}
-
-export function setPlayer(name) {
-  write(KEY_PLAYER, name);
-}
-
-/* ---------- Progress ------------------------------------------------------
-   Shape: { "<player>": { "<phaseId>": { correctIds: [], seen: n,
-                                         streak: n, bestStreak: n } } }
    Note what is NOT stored: wrong counts, misses, error rates. There is no
    consequence system in this app and nothing here should let one be built. */
 
@@ -49,9 +36,8 @@ function allProgress() {
   return read(KEY_PROGRESS, {});
 }
 
-export function getPhaseProgress(player, phaseId) {
-  const forPlayer = allProgress()[player || '_'] || {};
-  const phase = forPlayer[phaseId] || {};
+export function getPhaseProgress(phaseId) {
+  const phase = allProgress()[phaseId] || {};
   return {
     correctIds: phase.correctIds || [],
     seen: phase.seen || 0,
@@ -65,16 +51,14 @@ export function getPhaseProgress(player, phaseId) {
  * A question counts toward completion the first time it is answered
  * correctly, and stays counted — completion only ever goes up.
  */
-export function recordAnswer(player, phaseId, questionId, wasCorrect) {
-  const key = player || '_';
+export function recordAnswer(phaseId, questionId, wasCorrect) {
   const data = allProgress();
-  data[key] = data[key] || {};
   const phase = {
     correctIds: [],
     seen: 0,
     streak: 0,
     bestStreak: 0,
-    ...(data[key][phaseId] || {}),
+    ...(data[phaseId] || {}),
   };
 
   phase.seen += 1;
@@ -89,22 +73,20 @@ export function recordAnswer(player, phaseId, questionId, wasCorrect) {
     phase.streak = 0;
   }
 
-  data[key][phaseId] = phase;
+  data[phaseId] = phase;
   write(KEY_PROGRESS, data);
   return phase;
 }
 
-export function resetPhase(player, phaseId) {
-  const key = player || '_';
+export function resetPhase(phaseId) {
   const data = allProgress();
-  if (data[key]) {
-    delete data[key][phaseId];
-    write(KEY_PROGRESS, data);
-  }
+  delete data[phaseId];
+  write(KEY_PROGRESS, data);
 }
 
 /* ---------- Fallback storage for shared content --------------------------- */
-/* Used only when no shared backend is configured. See chain.js. */
+/* Used by chain.js when no shared backend is configured. Parked with the Fun
+   tab, kept so the Golden Chain can switch back on without rework. */
 
 export function readLocalShared(key, fallback) {
   return read(`${STORAGE_PREFIX}.shared.${key}`, fallback);

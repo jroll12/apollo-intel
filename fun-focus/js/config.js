@@ -5,29 +5,29 @@
 
 export const CONFIG = {
   /* ---- TEAM NAME -------------------------------------------------------
-     Used in the chant ("[TEAM NAME] on three") and the app header.
-     TODO(coach): confirm this is right — it was inferred from the team's
-     banana-yellow palette, not given to us. */
-  teamName: 'BANANAS',
+     teamName shows in the app header.
+     chantName is the one shouted in the chant, where "The" gets in the way
+     ("Creamsicles on three" reads better than "The Creamsicles on three").
+     The chant lives on the Fun tab, which is parked — see fun.js. */
+  teamName: 'The Creamsicles',
+  chantName: 'Creamsicles',
 
   /* ---- COACH PIN -------------------------------------------------------
-     4 digits. This is a friction gate so a kid doesn't tap "award" by
-     accident. It is NOT security — this file ships to every phone and
-     anyone can read it. Don't reuse a PIN you care about.
-     TODO(coach): change this from the placeholder. */
+     4 digits, for awarding the Golden Chain. Currently unused: the Fun tab
+     is parked. It is a friction gate, never security — this file ships to
+     every phone and anyone can read it. Don't reuse a PIN you care about.
+     TODO(coach): change this from the placeholder before the Fun tab ships. */
   coachPin: '1234',
 
   /* ---- WALK-UP SONG SHEET ---------------------------------------------
-     Out of scope to rebuild — the Fun tab just links out to it.
+     Out of scope to rebuild — the Fun tab will just link out to it.
      Paste the Google Sheet share link here. Leave '' to hide the link.
-     TODO(coach): paste the sheet URL. */
+     TODO(coach): paste the sheet URL before the Fun tab ships. */
   walkupSheetUrl: '',
 
   /* ---- HANDSHAKE -------------------------------------------------------
      Base sequence is fixed (clap, bump, spin). The team voted on a final
-     move — the coach sets it in-app behind the PIN, and it syncs to every
-     phone when a shared backend is configured (see below). This value is
-     only the starting text before anyone sets one. */
+     move; the coach sets it in-app behind the PIN once the Fun tab ships. */
   handshakeFinalMoveDefault: '',
 
   /* ---- SHARED BACKEND (Golden Chain history + handshake move) ----------
@@ -36,9 +36,8 @@ export const CONFIG = {
      'firebase' — Firestore REST (fill in firebase.projectId + apiKey)
      'local'    — deliberately this-phone-only
 
-     Until one of these is working the Golden Chain does NOT sync between
-     phones, and the app says so on screen rather than pretending. Setup
-     instructions for both options are in README.md. */
+     Nothing calls this while the Fun tab is parked. Setup for both options
+     is in README.md, ready for when it ships. */
   chainBackend: 'auto',
 
   firebase: {
@@ -47,5 +46,6 @@ export const CONFIG = {
   },
 };
 
-/* Storage key prefix — bump this to reset every phone's saved progress. */
-export const STORAGE_PREFIX = 'funfocus.v1';
+/* Storage key prefix. Bumped to v2 when player profiles were removed — v1
+   keyed progress by player name and that shape is gone. */
+export const STORAGE_PREFIX = 'funfocus.v2';

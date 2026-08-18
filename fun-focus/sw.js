@@ -4,7 +4,7 @@
 
    Bump CACHE_VERSION whenever you change app files, or phones will keep
    serving the old copy. */
-const CACHE_VERSION = 'funfocus-v1';
+const CACHE_VERSION = 'funfocus-v2';
 
 const PRECACHE = [
   './',
@@ -15,12 +15,9 @@ const PRECACHE = [
   './js/app.js',
   './js/config.js',
   './js/store.js',
-  './js/chain.js',
   './js/ui.js',
   './js/fun.js',
   './js/focus.js',
-  './js/data/roster.js',
-  './js/data/fun-content.js',
   './js/data/hype.js',
   './js/data/phases.js',
   './js/data/reveal.js',
@@ -28,6 +25,8 @@ const PRECACHE = [
   './js/data/phase2.js',
   './js/data/phase3.js',
   './js/data/phase4.js',
+  // Parked with the Fun tab and deliberately not precached: js/chain.js,
+  // js/data/roster.js, js/data/fun-content.js. Add them back when it ships.
 ];
 
 self.addEventListener('install', (event) => {

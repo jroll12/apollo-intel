@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Fun and Focus">
-  <rect width="512" height="512" fill="#14213D" />
-  <!-- Golden chain link -->
-  <g fill="none" stroke="#FFC93C" stroke-width="30" stroke-linecap="round">
-    <rect x="128" y="176" width="150" height="96" rx="48" />
-    <rect x="234" y="240" width="150" height="96" rx="48" />
-  </g>
+  <rect width="512" height="512" fill="#121212" />
+  <!-- Creamsicle: orange bar, cream core, white stick -->
+  <rect x="146" y="76" width="220" height="256" rx="100" fill="#F26722" />
+  <rect x="196" y="126" width="120" height="156" rx="56" fill="#FFF0E6" opacity="0.85" />
+  <rect x="226" y="316" width="60" height="120" rx="18" fill="#FFFFFF" />
 </svg>

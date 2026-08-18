@@ -1,93 +1,43 @@
-# Fun & Focus
+# Fun & Focus — The Creamsicles
 
-The players' companion app for the 10U/11U team. It extends the coaching system
-already used at practice — it doesn't replace it or invent a new one.
+The team's companion app. It extends the coaching system already used at
+practice — it doesn't replace it or invent a new one.
 
-Two tabs. **Fun** opens first (Golden Chain, chant, handshake, what fun looks
-like in a game). **Focus** is situational practice: four phases, 156 situations.
+Two tabs. **Fun** opens first and is currently a "more coming soon" placeholder.
+**Focus** is the live one: situational practice, four phases, 156 situations.
 
-No accounts. A kid taps their name off the roster once and that phone remembers
-them. Plain HTML/CSS/JS, no build step, no framework, nothing to install.
+**No accounts, no profiles, no name picker.** Open the link and you're in.
+Progress belongs to the phone, not to a person. Plain HTML/CSS/JS, no build
+step, no framework, nothing to install.
 
 ---
 
-## ⚠️ Read this first: one feature needs a coach account
+## Right now this needs zero external accounts
 
-**Everything in this app runs with zero external accounts except one: the shared
-Golden Chain history.**
+Everything that ships today runs off static files. Nothing to sign up for,
+nothing to configure, no API keys.
 
-The chain has to look the same on every phone — kids, parents and coaches all
-need to see the same list — and that genuinely requires a backend. A
-localStorage-only version would silently show each phone its own private list,
-which is worse than useless, so this app does not ship it that way.
-
-Until a backend is configured, the app **still works**, and it says so on screen:
-
-> 🔗 **The chain is only saved on this phone**
-> No shared backend is set up yet…
-
-Awards made in that state are saved locally so nothing is lost, but they do not
-reach anyone else. Two ways to switch it on, below. **Option A needs no API keys
-at all** and is the recommended one.
+That changes when the Fun tab ships — see [Parked: the Fun tab](#parked-the-fun-tab)
+below, because the Golden Chain does need a backend to be the same on every
+phone. The setup is written and ready; it just isn't needed yet.
 
 ---
 
 ## Deploying
 
-### Option A — Netlify (recommended: no API keys, ~5 minutes)
-
-Netlify Blobs works from inside a Netlify Function with no credentials, so the
-only account needed is the Netlify account required to host the site anyway.
+Any static host works. Netlify is what the config targets.
 
 1. Sign up free at [netlify.com](https://netlify.com) and connect this repo.
 2. Deploy. Nothing to configure — the repo-root `netlify.toml` already sets
-   `base = "fun-focus"` (the root holds an unrelated app), and `js/config.js`
-   ships with `chainBackend: 'auto'`, which finds the function on its own.
-3. Optional but recommended: in **Site settings → Environment variables**, add
-   `COACH_PIN` set to the same 4 digits as `coachPin` in `js/config.js`. Without
-   it the write endpoint is open to anyone who finds the URL. With a rec team
-   that's usually fine; setting it costs nothing.
+   `base = "fun-focus"` (the root holds an unrelated app).
 
-Verify: open the site, and the yellow "only saved on this phone" banner should
-be gone.
+That's it. `netlify/functions/chain.mjs` deploys alongside but nothing calls it
+while the Fun tab is parked.
 
-### Option B — Firebase Firestore (needs a Google account + API keys)
+For Vercel, GitHub Pages, S3 or anything else: upload the contents of
+`fun-focus/` minus `netlify/`. It works identically today.
 
-Use this if hosting somewhere without functions (Vercel static, GitHub Pages,
-S3). The app talks to Firestore over plain REST, so there's no SDK to download
-on a bad connection.
-
-1. Create a free project at [console.firebase.google.com](https://console.firebase.google.com).
-2. Build → **Firestore Database** → Create database.
-3. Project settings → General → your web app → copy **Project ID** and
-   **Web API Key**.
-4. Paste both into `js/config.js` and set `chainBackend: 'firebase'`.
-5. Set Firestore rules. This is a kids' team app with no login, so reads and
-   writes are open to anyone with the URL — scope them at least to the two
-   collections the app uses:
-
-   ```
-   rules_version = '2';
-   service cloud.firestore {
-     match /databases/{database}/documents {
-       match /goldenChain/{doc} { allow read, write: if true; }
-       match /settings/{doc}    { allow read, write: if true; }
-     }
-   }
-   ```
-
-   Anyone who reads the site's JavaScript can find these keys and write to those
-   two collections. That is an accepted trade for "no login for an 11-year-old",
-   but it is a real trade — Option A's `COACH_PIN` check is the stronger setup.
-
-### Any other static host
-
-Upload the contents of `fun-focus/` (excluding `netlify/`). The app runs fine;
-the Golden Chain stays per-phone unless you use Option B.
-
----
-
-## Running it locally
+### Running it locally
 
 ES modules need a real server — opening `index.html` from the filesystem won't
 work.
@@ -97,41 +47,44 @@ cd fun-focus
 npx serve@14 .          # or: python3 -m http.server 5173
 ```
 
-The Netlify function won't exist locally, so the app drops to per-phone mode and
-says so. To test the function too, use `npx netlify-cli dev` from this folder.
-
 ---
 
 ## Coach setup — everything lives in `js/config.js`
 
 | Setting | What it does |
 |---|---|
-| `teamName` | Used in the chant and header. **Currently `BANANAS`, inferred from the team's banana-yellow palette — confirm it.** |
-| `coachPin` | 4 digits to unlock awarding. Ships as `1234`; change it. |
-| `walkupSheetUrl` | Google Sheet link. Blank hides the link card. |
-| `chainBackend` | `auto` / `netlify` / `firebase` / `local` |
-| `firebase` | Project ID + API key for Option B |
+| `teamName` | Shows in the app header. `The Creamsicles` |
+| `chantName` | The name shouted in the chant — `Creamsicles`, so it isn't "The Creamsicles on three". Parked with the Fun tab. |
+| `coachPin` | 4 digits to award the Golden Chain. Ships as `1234`; change it before the Fun tab ships. Unused today. |
+| `walkupSheetUrl` | Google Sheet link for walk-up songs. Parked. |
+| `chainBackend` | `auto` / `netlify` / `firebase` / `local`. Parked. |
+| `firebase` | Project ID + API key, if you go that route. Parked. |
 
-### About the PIN
+## Look and feel
 
-It's a friction gate so a kid doesn't tap "Award" by accident. It is **not**
-security — `config.js` ships to every phone and anyone can read it. Don't reuse
-a PIN that matters. The server-side `COACH_PIN` env var (Option A) is the part
-that actually stops a stranger writing to the list.
+Three colours: **orange, white, black**. Everything else is a tint or a grey
+derived from them, defined once at the top of `styles.css`.
 
-### The handshake
+- `--orange: #F26722` — the brand, and the only "yes" in the palette
+- `--orange-dark: #C4501A` — borders and small text on white, where plain
+  orange doesn't have the contrast
+- `--orange-tint: #FFF0E6` — correct-answer backgrounds
+- `--black: #121212`, `--white: #FFFFFF`, `--paper: #FAF8F5`
 
-Base sequence (clap, bump, spin) is fixed. The team's voted-on fourth move is
-set in-app: unlock with the PIN on the Fun tab and a text field appears under
-the handshake. It saves to the shared backend so every phone sees the same move
-— and falls back to this-phone-only if there's no backend, same as the chain.
+Orange fills always carry **black** text, never white — this orange is too
+bright to hold white at button sizes.
+
+Fonts are Anton for headers, Inter 400/600/700/800 for body.
+
+No red and no amber anywhere. A wrong quiz answer is black-on-white under
+"Here's the read", never alarming.
 
 ---
 
 ## The Focus tab
 
 Same loop in every phase: situation → answer with one line of why → whole-field
-reveal → a Golden-Chain hype line on a correct answer.
+reveal → a hype line on a correct answer.
 
 | Phase | Standard | Situations |
 |---|---|---|
@@ -154,6 +107,9 @@ Three things are deliberate and worth not undoing:
   counts misses, nothing is red, and a wrong pick only resets the current streak
   and shows the read. There is no consequence system here and nothing in the
   data model to build one on.
+
+The hype lines still talk about the Golden Chain — that award is a real thing
+the team does, it just isn't in the app yet.
 
 ### Coach's calls, flagged rather than guessed
 
@@ -185,8 +141,7 @@ inventing a house answer:
   `js/data/phase1.js` — edit `IF_JOBS`, `IF_TWO_OUTS`, `OF_JOBS`, and the deck
   rebuilds itself.
 
-There's a validator that checks every question has 3+ distinct options, a
-correct answer among them, all nine reveal rows, and no blame language:
+Quick count check:
 
 ```bash
 node -e "import('./js/data/phases.js').then(m=>console.log(m.PHASES.map(p=>p.name+': '+p.questions.length).join('\n')))"
@@ -194,28 +149,85 @@ node -e "import('./js/data/phases.js').then(m=>console.log(m.PHASES.map(p=>p.nam
 
 ---
 
+## Parked: the Fun tab
+
+The full Fun tab is **built and working**, just held back. It has shared Golden
+Chain history, a coach award form behind a PIN gate, the team chant, the
+handshake with a coach-editable final move, the walk-up sheet link-out, and the
+six-item "what fun looks like in a game" card.
+
+Nothing was thrown away:
+
+- The data it reads is still here and still wired — `js/data/fun-content.js`,
+  `js/data/roster.js`, `js/chain.js`, `netlify/functions/chain.mjs`.
+- The UI and its CSS are in git at commit `9b596ed`. `js/fun.js` has the exact
+  restore commands at the top of the file.
+
+Restoring it means putting back `js/fun.js` and its stylesheet blocks, and
+calling `initChain()` / `loadFunData()` from `app.js` again.
+
+**When it ships, the Golden Chain needs a backend.** It has to look the same on
+every phone — kids, parents and coaches all seeing one list — and a
+localStorage-only version would silently give each phone its own private copy.
+Two ways to switch it on:
+
+### Option A — Netlify Blobs (recommended: no API keys)
+
+Works from inside a Netlify Function with no credentials, so the only account
+needed is the Netlify one used to host the site anyway. `chainBackend: 'auto'`
+already finds it. Optionally set a `COACH_PIN` environment variable on the site
+so the write endpoint isn't open to anyone who finds the URL.
+
+### Option B — Firebase Firestore (needs a Google account + API keys)
+
+For hosts without functions. The app talks to Firestore over plain REST, so
+there's no SDK to download on a bad connection.
+
+1. Create a free project at [console.firebase.google.com](https://console.firebase.google.com).
+2. Build → **Firestore Database** → Create database.
+3. Copy **Project ID** and **Web API Key** into `js/config.js`, set
+   `chainBackend: 'firebase'`.
+4. Firestore rules — this is a kids' app with no login, so scope them at least
+   to the two collections used:
+
+   ```
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /goldenChain/{doc} { allow read, write: if true; }
+       match /settings/{doc}    { allow read, write: if true; }
+     }
+   }
+   ```
+
+   Anyone reading the site's JavaScript can find these keys and write to those
+   collections. That's an accepted trade for "no login for an 11-year-old", but
+   it is a real one — Option A's `COACH_PIN` check is stronger.
+
+---
+
 ## What's stored where
 
 | Data | Where | Why |
 |---|---|---|
-| Roster, chant, checklist, all 156 questions | Hardcoded | Static reference content |
-| Selected player, streaks, completion | `localStorage` | Personal to one phone |
-| Golden Chain history, handshake move | Shared backend | Everyone must see the same thing |
+| All 156 questions | Hardcoded | Static reference content |
+| Streaks and completion per phase | `localStorage` | Belongs to the phone |
+| Golden Chain history, handshake move | Shared backend (parked) | Everyone must see the same thing |
 
-Progress is stored per player, so a shared family phone doesn't blend two kids'
-streaks. Nothing about wrong answers is persisted anywhere.
+Nothing about wrong answers is persisted anywhere. There is no player identity,
+so a shared family phone is simply one shared set of streaks.
 
 The app registers a service worker, so after one good load the whole thing —
-every question included — works with no signal at all. Bump `CACHE_VERSION` in
-`sw.js` when changing app files, or phones will keep serving the old copy.
+every question included — works with no signal at all. **Bump `CACHE_VERSION` in
+`sw.js` when changing app files**, or phones keep serving the old copy.
 
 ---
 
-## Out of scope for v1
+## Out of scope
 
-- Walk-up song sign-up — stays on the Google Sheet, the Fun tab just links out.
-- Any login beyond the name picker and the coach PIN.
+- Player profiles or name selection — removed on purpose; anyone can just open
+  it.
+- Walk-up song sign-up — stays on the Google Sheet, the Fun tab will link out.
 - Editing the roster in-app.
-- **Undoing an award.** The chain is append-only. A mis-tap currently needs
-  editing the blob in the Netlify UI (or the Firestore doc). Worth adding if it
-  happens more than once.
+- **Undoing a Golden Chain award.** The chain is append-only. A mis-tap would
+  need editing the blob in the Netlify UI. Worth adding if it happens twice.

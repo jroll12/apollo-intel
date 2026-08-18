@@ -1,6 +1,10 @@
 /* Static reference content for the Fun tab. No backend, no edits needed. */
 
-/* The chant. [TEAM] is swapped for CONFIG.teamName at render time. */
+/* Parked with the Fun tab — nothing imports this yet. See js/fun.js.
+
+   The chant. [TEAM] is swapped at render time for CONFIG.chantName, not
+   teamName: "Creamsicles on three" is what gets shouted, not "The
+   Creamsicles on three". */
 export const CHANT_LINES = [
   'Good, better, best!',
   'Never let it rest,',

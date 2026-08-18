@@ -1,13 +1,13 @@
 {
-  "name": "Fun & Focus",
+  "name": "Fun & Focus — The Creamsicles",
   "short_name": "Fun & Focus",
-  "description": "The players' companion app — Golden Chain, team chant, and situational baseball practice.",
+  "description": "The team's companion app — situational baseball practice.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#FFFDF7",
-  "theme_color": "#14213D",
+  "background_color": "#FAF8F5",
+  "theme_color": "#121212",
   "icons": [
     {
       "src": "icon.svg",

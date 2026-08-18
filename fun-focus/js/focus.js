@@ -20,15 +20,15 @@ import { el, clear, shuffle, diamondSVG, outsPips, POSITION_NAMES } from './ui.j
 
 let session = null; // { phaseId, deck, index, answered, pickedKey }
 
-export function renderFocus(root, { player, onStateChange }) {
+export function renderFocus(root, { onStateChange }) {
   clear(root);
-  if (session) root.append(renderQuiz(player, onStateChange));
-  else root.append(renderPhaseList(player, onStateChange));
+  if (session) root.append(renderQuiz(onStateChange));
+  else root.append(renderPhaseList(onStateChange));
 }
 
 /* ---------- Phase list ----------------------------------------------------- */
 
-function renderPhaseList(player, onStateChange) {
+function renderPhaseList(onStateChange) {
   const wrap = el('div');
 
   wrap.append(
@@ -41,7 +41,7 @@ function renderPhaseList(player, onStateChange) {
   );
 
   for (const phase of PHASES) {
-    const progress = getPhaseProgress(player, phase.id);
+    const progress = getPhaseProgress(phase.id);
     const total = phase.questions.length;
     const done = progress.correctIds.length;
     const pct = total ? Math.round((done / total) * 100) : 0;
@@ -59,7 +59,7 @@ function renderPhaseList(player, onStateChange) {
           'span',
           { class: 'streak' },
           progress.streak > 0
-            ? `🔗 ${progress.streak} in a row`
+            ? `🔥 ${progress.streak} in a row`
             : progress.bestStreak > 0
               ? `Best run: ${progress.bestStreak}`
               : 'Start a run',
@@ -68,7 +68,7 @@ function renderPhaseList(player, onStateChange) {
     ]);
 
     card.addEventListener('click', () => {
-      startPhase(phase.id, player);
+      startPhase(phase.id);
       onStateChange();
     });
 
@@ -80,9 +80,9 @@ function renderPhaseList(player, onStateChange) {
 
 /* ---------- Deck ----------------------------------------------------------- */
 
-function startPhase(phaseId, player) {
+function startPhase(phaseId) {
   const phase = getPhase(phaseId);
-  const progress = getPhaseProgress(player, phaseId);
+  const progress = getPhaseProgress(phaseId);
   const alreadyRight = new Set(progress.correctIds);
 
   // Situations not yet answered correctly come first, so completion is
@@ -103,7 +103,7 @@ export function inPhase() {
 
 /* ---------- Quiz ----------------------------------------------------------- */
 
-function renderQuiz(player, onStateChange) {
+function renderQuiz(onStateChange) {
   const phase = getPhase(session.phaseId);
   const wrap = el('div');
 
@@ -113,7 +113,7 @@ function renderQuiz(player, onStateChange) {
     onStateChange();
   });
 
-  const progress = getPhaseProgress(player, session.phaseId);
+  const progress = getPhaseProgress(session.phaseId);
 
   wrap.append(
     el('div', { class: 'quizhead' }, [
@@ -122,20 +122,20 @@ function renderQuiz(player, onStateChange) {
       el(
         'div',
         { class: 'quizhead__count' },
-        progress.streak > 0 ? `🔗 ${progress.streak}` : `${progress.correctIds.length}/${phase.questions.length}`,
+        progress.streak > 0 ? `🔥 ${progress.streak}` : `${progress.correctIds.length}/${phase.questions.length}`,
       ),
     ]),
   );
 
   if (session.index >= session.deck.length) {
-    wrap.append(renderDone(phase, player, onStateChange));
+    wrap.append(renderDone(phase, onStateChange));
     return wrap;
   }
 
   const q = session.deck[session.index];
 
   wrap.append(renderSituation(q));
-  wrap.append(renderChoices(q, player, onStateChange));
+  wrap.append(renderChoices(q, onStateChange));
 
   if (session.answered) {
     wrap.append(renderResult(q));
@@ -179,7 +179,7 @@ function renderSituation(q) {
   return box;
 }
 
-function renderChoices(q, player, onStateChange) {
+function renderChoices(q, onStateChange) {
   const list = el('div', { class: `choices${session.answered ? ' choices--locked' : ''}` });
 
   q.options.forEach((option, i) => {
@@ -201,7 +201,7 @@ function renderChoices(q, player, onStateChange) {
       session.pickedKey = option.key;
       const wasCorrect = option.key === q.correct;
       session.hype = wasCorrect ? randomHype() : null;
-      recordAnswer(player, session.phaseId, q.id, wasCorrect);
+      recordAnswer(session.phaseId, q.id, wasCorrect);
       onStateChange();
     });
 
@@ -232,7 +232,7 @@ function renderResult(q) {
   }
 
   if (wasCorrect && session.hype) {
-    box.append(el('div', { class: 'hype' }, [el('span', { text: '🔗' }), el('span', { text: session.hype })]));
+    box.append(el('div', { class: 'hype' }, [el('span', { text: '🍊' }), el('span', { text: session.hype })]));
   }
 
   return box;
@@ -265,13 +265,13 @@ function renderReveal(q) {
   return box;
 }
 
-function renderDone(phase, player, onStateChange) {
-  const progress = getPhaseProgress(player, phase.id);
+function renderDone(phase, onStateChange) {
+  const progress = getPhaseProgress(phase.id);
   const total = phase.questions.length;
   const done = progress.correctIds.length;
 
   const wrap = el('div', { class: 'done' }, [
-    el('div', { class: 'done__big', text: done >= total ? 'Phase complete 🔗' : 'Nice run' }),
+    el('div', { class: 'done__big', text: done >= total ? 'Phase complete 🍊' : 'Nice run' }),
     el('div', {
       class: 'done__sub',
       text:
@@ -283,7 +283,7 @@ function renderDone(phase, player, onStateChange) {
 
   const again = el('button', { class: 'btn btn--primary', type: 'button' }, ['Go again']);
   again.addEventListener('click', () => {
-    startPhase(phase.id, player);
+    startPhase(phase.id);
     onStateChange();
   });
 
