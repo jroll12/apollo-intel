@@ -1,0 +1,29 @@
+# This repo holds two unrelated things. Netlify deploys the Fun & Focus team
+# app, which lives entirely in fun-focus/ — `base` points there so the rest of
+# the config, the package.json, and the functions all resolve inside it.
+#
+# fun-focus/netlify.toml repeats the publish/functions paths so a deploy run
+# from inside that folder behaves identically.
+
+[build]
+  base = "fun-focus"
+  publish = "."
+  functions = "netlify/functions"
+  # Nothing to compile — plain HTML/CSS/JS. Netlify still runs `npm install`
+  # in the base directory, which is what gets @netlify/blobs to the function.
+  command = "echo 'static site — nothing to build'"
+
+[functions]
+  node_bundler = "esbuild"
+
+# The service worker must never be served stale, or phones keep running an old
+# cache after a deploy.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

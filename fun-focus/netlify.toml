@@ -1,22 +1,17 @@
-# Netlify config for Fun & Focus.
+# Deploy config for a run started from inside fun-focus/.
 #
-# In the Netlify UI, set the site's "Base directory" to `fun-focus` (this repo
-# also contains an unrelated app at the root). Everything else is here.
+# The repo-root netlify.toml sets `base = "fun-focus"` and is what a
+# git-connected build uses; this file repeats the same paths so both entry
+# points behave identically. Keep the two in sync.
 
 [build]
-  base = "fun-focus"
   publish = "."
   functions = "netlify/functions"
-  # Nothing to compile — plain HTML/CSS/JS. Netlify still runs `npm install`
-  # because package.json exists, which is what gets @netlify/blobs to the
-  # function.
   command = "echo 'static site — nothing to build'"
 
 [functions]
   node_bundler = "esbuild"
 
-# The service worker must never be served stale, or phones keep running an old
-# cache after a deploy.
 [[headers]]
   for = "/sw.js"
   [headers.values]

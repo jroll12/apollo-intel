@@ -40,12 +40,10 @@ Netlify Blobs works from inside a Netlify Function with no credentials, so the
 only account needed is the Netlify account required to host the site anyway.
 
 1. Sign up free at [netlify.com](https://netlify.com) and connect this repo.
-2. In the site's build settings set **Base directory** to `fun-focus`.
-   (`netlify.toml` in this folder sets publish dir, functions dir and build
-   command; the repo root holds an unrelated app, hence the base directory.)
-3. Deploy. That's it — `js/config.js` ships with `chainBackend: 'auto'`, which
-   finds the function on its own.
-4. Optional but recommended: in **Site settings → Environment variables**, add
+2. Deploy. Nothing to configure — the repo-root `netlify.toml` already sets
+   `base = "fun-focus"` (the root holds an unrelated app), and `js/config.js`
+   ships with `chainBackend: 'auto'`, which finds the function on its own.
+3. Optional but recommended: in **Site settings → Environment variables**, add
    `COACH_PIN` set to the same 4 digits as `coachPin` in `js/config.js`. Without
    it the write endpoint is open to anyone who finds the URL. With a rec team
    that's usually fine; setting it costs nothing.
