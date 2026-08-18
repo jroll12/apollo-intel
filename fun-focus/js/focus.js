@@ -15,15 +15,32 @@
 
 import { PHASES, getPhase } from './data/phases.js';
 import { randomHype } from './data/hype.js';
-import { getPhaseProgress, recordAnswer } from './store.js';
+import { getPhaseProgress, recordAnswer, getLiveProgress } from './store.js';
+import { renderLive, exitLive } from './live.js';
 import { el, clear, shuffle, diamondSVG, outsPips, POSITION_NAMES } from './ui.js';
 
 let session = null; // { phaseId, deck, index, answered, pickedKey }
+let mode = 'phases'; // 'phases' | 'live'
 
 export function renderFocus(root, { onStateChange }) {
   clear(root);
+  if (mode === 'live') {
+    root.append(liveHeader(onStateChange));
+    renderLive(root);
+    return;
+  }
   if (session) root.append(renderQuiz(onStateChange));
   else root.append(renderPhaseList(onStateChange));
+}
+
+function liveHeader(onStateChange) {
+  const back = el('button', { class: 'btn btn--ghost', style: 'width:auto;padding:8px 4px;' }, ['\u2039 Phases']);
+  back.addEventListener('click', () => {
+    exitLive();
+    mode = 'phases';
+    onStateChange();
+  });
+  return el('div', { class: 'quizhead' }, [back]);
 }
 
 /* ---------- Phase list ----------------------------------------------------- */
@@ -39,6 +56,10 @@ function renderPhaseList(onStateChange) {
       text: 'Four phases. Work through them in order, or jump around — nothing locks.',
     }),
   );
+
+  wrap.append(liveCard(onStateChange));
+
+  wrap.append(el('div', { class: 'section-label', text: 'By standard' }));
 
   for (const phase of PHASES) {
     const progress = getPhaseProgress(phase.id);
@@ -76,6 +97,33 @@ function renderPhaseList(onStateChange) {
   }
 
   return wrap;
+}
+
+/* Live Reps sits above the phases: it is the four standards run together on
+   one batted ball, not a fifth standard. */
+function liveCard(onStateChange) {
+  const p = getLiveProgress();
+  const card = el('button', { class: 'phase phase--live', type: 'button' }, [
+    el('div', { class: 'phase__top' }, [el('span', { class: 'phase__num', text: 'Live reps' })]),
+    el('div', { class: 'phase__name', text: 'Read It Live' }),
+    el('div', {
+      class: 'phase__standard',
+      text: 'The ball is hit and you do not know where. Track it, then call your job \u2014 whether it comes to you or not.',
+    }),
+    el('div', { class: 'phase__stats' }, [
+      el('span', { text: p.reps ? `${p.reps} rep${p.reps === 1 ? '' : 's'} taken` : 'All four phases, live' }),
+      el(
+        'span',
+        { class: 'streak' },
+        p.streak > 0 ? `\uD83D\uDD25 ${p.streak} in a row` : p.bestStreak > 0 ? `Best run: ${p.bestStreak}` : 'Take a rep',
+      ),
+    ]),
+  ]);
+  card.addEventListener('click', () => {
+    mode = 'live';
+    onStateChange();
+  });
+  return card;
 }
 
 /* ---------- Deck ----------------------------------------------------------- */

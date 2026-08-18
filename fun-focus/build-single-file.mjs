@@ -37,18 +37,38 @@ const MODULES = [
   'js/data/phase3.js',
   'js/data/phase4.js',
   'js/data/phases.js',
+  'js/data/field-geometry.js',
+  'js/data/play-engine.js',
+  'js/data/live-reps.js',
+  'js/field.js',
   'js/fun.js',
+  'js/live.js',
   'js/focus.js',
   'js/app.js',
 ];
 
 const read = (rel) => readFileSync(join(ROOT, rel), 'utf8');
 
-/** Strip `import ... ;` statements and the leading `export ` keyword. */
+/**
+ * Strip ES module syntax:
+ *   `import ... from '...';`     removed outright
+ *   `export const|function|...`  the keyword removed, declaration kept
+ *   `export { A, B };`           removed outright (re-export lists)
+ */
 function stripModuleSyntax(src) {
   return src
     .replace(/^\s*import\s+[^;]*?;[ \t]*$/gm, '')
+    .replace(/^\s*export\s*\{[^}]*\}\s*;?[ \t]*$/gm, '')
     .replace(/^export\s+(?=(const|let|var|function|async function|class)\b)/gm, '');
+}
+
+/** Nothing may survive stripping — a leftover keyword is a syntax error in
+ *  the bundle, which only shows up as a blank page at runtime. */
+function assertNoModuleSyntax(src, rel) {
+  const stray = src.split('\n').findIndex((l) => /^\s*(import|export)\b/.test(l));
+  if (stray !== -1) {
+    throw new Error(`${rel}:${stray + 1} still has module syntax after stripping:\n  ${src.split('\n')[stray].trim()}`);
+  }
 }
 
 /** Top-level declarations, so collisions between modules are caught. */
@@ -65,6 +85,7 @@ const chunks = [];
 
 for (const rel of MODULES) {
   const src = stripModuleSyntax(read(rel));
+  assertNoModuleSyntax(src, rel);
 
   for (const name of topLevelNames(src)) {
     if (seen.has(name)) {
@@ -122,7 +143,7 @@ ${script}
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>${title} — The Creamsicles</title>
     <meta name="description" content="Fun &amp; Focus — the Creamsicles' companion app. Situational baseball practice." />
-    <meta name="theme-color" content="#121212" />
+    <meta name="theme-color" content="#DB7518" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Fun &amp; Focus" />

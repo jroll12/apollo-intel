@@ -108,6 +108,34 @@ No red and no amber anywhere. A wrong quiz answer is black-on-white under
 
 ## The Focus tab
 
+### Live Reps — "Read It Live"
+
+A ball is hit and you do not know where it is going. It animates across a
+canvas drawing of the field, and only once it settles does the app ask what
+your job was. Two questions come out of the same rep:
+
+- **"It's yours. What now?"** when the ball came to your position
+- **"Not your ball. Where do you go?"** when it did not — which is most reps,
+  and is where 10U defense actually breaks down
+
+**Answers are computed, not authored.** `js/data/play-engine.js` resolves any
+batted ball into an assignment for all nine positions, running the four phases
+as one system: ground ball to the infield uses Phase 1's force table, a bunt
+uses Phase 3's coverage, a ball to the outfield uses Phase 4's cutoffs, a
+caught fly uses tag-up logic, and everyone else covers or backs up. That is
+819 distinct plays and 7,371 askable questions.
+
+The payoff of computing them: **every wrong answer offered is another
+position's real job on that same play**, so no option is filler and picking
+one teaches you whose job it actually was.
+
+Live Reps is not a fifth standard — it is the four existing ones run together
+on one ball, which is why it sits above the phase list rather than in it.
+
+Field geometry is 10U/11U, not big-league: 60-foot basepaths, 46-foot mound.
+
+### The four phases
+
 Same loop in every phase: situation → answer with one line of why → whole-field
 reveal → a hype line on a correct answer.
 
@@ -149,6 +177,10 @@ inventing a house answer:
   split — 3B holds third whenever a runner is on second. Rotation and wheel
   systems are equally correct. If practice runs something else, the rules and
   the three questions that depend on them are marked.
+- **1st & 3rd in Live Reps** (`play-engine.js`). Same rule as Phase 1, applied
+  per play type: excluded from ground balls and bunts, where conceding a run is
+  a live coach's call, but allowed on outfield hits and caught fly balls, where
+  the cutoff and tag-up answers are assignments rather than judgment calls.
 - **Cutting a throw with no call** (`phase4.js`). Some coaches say never touch
   it without a call, others say cut anything obviously short. No question is
   built on it.
@@ -235,8 +267,10 @@ there's no SDK to download on a bad connection.
 
 | Data | Where | Why |
 |---|---|---|
-| All 156 questions | Hardcoded | Static reference content |
+| All 156 phase questions | Hardcoded | Static reference content |
+| Live rep plays | Computed at runtime | 819 plays is too many to author |
 | Streaks and completion per phase | `localStorage` | Belongs to the phone |
+| Live rep count, streak, position | `localStorage` | Belongs to the phone |
 | Golden Chain history, handshake move | Shared backend (parked) | Everyone must see the same thing |
 
 Nothing about wrong answers is persisted anywhere. There is no player identity,

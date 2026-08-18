@@ -84,6 +84,44 @@ export function resetPhase(phaseId) {
   write(KEY_PROGRESS, data);
 }
 
+/* ---------- Live Reps -----------------------------------------------------
+   Kept separate from the phases: reps are generated from a combinatorial
+   space, so there is no fixed deck to complete and nothing to store per
+   question. Only the running totals matter. */
+
+const KEY_LIVE = `${STORAGE_PREFIX}.live`;
+
+export function getLiveProgress() {
+  const d = read(KEY_LIVE, {});
+  return {
+    reps: d.reps || 0,
+    called: d.called || 0, // reps where the job was called correctly
+    streak: d.streak || 0,
+    bestStreak: d.bestStreak || 0,
+    position: d.position || null, // last position chosen, or null for mixed
+  };
+}
+
+export function recordLiveAnswer(wasCorrect) {
+  const d = getLiveProgress();
+  d.reps += 1;
+  if (wasCorrect) {
+    d.called += 1;
+    d.streak += 1;
+    if (d.streak > d.bestStreak) d.bestStreak = d.streak;
+  } else {
+    d.streak = 0;
+  }
+  write(KEY_LIVE, d);
+  return d;
+}
+
+export function setLivePosition(position) {
+  const d = getLiveProgress();
+  d.position = position;
+  write(KEY_LIVE, d);
+}
+
 /* ---------- Fallback storage for shared content --------------------------- */
 /* Used by chain.js when no shared backend is configured. Parked with the Fun
    tab, kept so the Golden Chain can switch back on without rework. */
