@@ -112,31 +112,8 @@ No red and no amber anywhere. A wrong quiz answer is black-on-white under
 
 ## The Focus tab
 
-### Live Reps — "Read It Live"
-
-A ball is hit and you do not know where it is going. It animates across a
-canvas drawing of the field, and only once it settles does the app ask what
-your job was. Two questions come out of the same rep:
-
-- **"It's yours. What now?"** when the ball came to your position
-- **"Not your ball. Where do you go?"** when it did not — which is most reps,
-  and is where 10U defense actually breaks down
-
-**Answers are computed, not authored.** `js/data/play-engine.js` resolves any
-batted ball into an assignment for all nine positions, running the four phases
-as one system: ground ball to the infield uses Phase 1's force table, a bunt
-uses Phase 3's coverage, a ball to the outfield uses Phase 4's cutoffs, a
-caught fly uses tag-up logic, and everyone else covers or backs up. That is
-819 distinct plays and 7,371 askable questions.
-
-The payoff of computing them: **every wrong answer offered is another
-position's real job on that same play**, so no option is filler and picking
-one teaches you whose job it actually was.
-
-Live Reps is not a fifth standard — it is the four existing ones run together
-on one ball, which is why it sits above the phase list rather than in it.
-
-Field geometry is 10U/11U, not big-league: 60-foot basepaths, 46-foot mound.
+The list runs as a progression, easiest to hardest: the four standard phases
+first, in order, then Live Reps at the bottom as the advanced step.
 
 ### The four phases
 
@@ -167,6 +144,33 @@ Three things are deliberate and worth not undoing:
 
 The hype lines talk about the Golden Chain, which is the same award the Fun
 tab tracks — one system, both tabs.
+
+### Live Reps — "Read It Live" (the advanced step)
+
+Deliberately last in the list, after all four phases: this is where a player
+proves they can put the pieces together on their own, not a fifth standard to
+work through in order.
+
+A ball is hit and you do not know where it is going. It animates across a
+canvas drawing of the field, and only once it settles does the app ask what
+your job was. Two questions come out of the same rep:
+
+- **"It's yours. What now?"** when the ball came to your position
+- **"Not your ball. Where do you go?"** when it did not — which is most reps,
+  and is where 10U defense actually breaks down
+
+**Answers are computed, not authored.** `js/data/play-engine.js` resolves any
+batted ball into an assignment for all nine positions, running the four phases
+as one system: ground ball to the infield uses Phase 1's force table, a bunt
+uses Phase 3's coverage, a ball to the outfield uses Phase 4's cutoffs, a
+caught fly uses tag-up logic, and everyone else covers or backs up. That is
+819 distinct plays and 7,371 askable questions.
+
+The payoff of computing them: **every wrong answer offered is another
+position's real job on that same play**, so no option is filler and picking
+one teaches you whose job it actually was.
+
+Field geometry is 10U/11U, not big-league: 60-foot basepaths, 46-foot mound.
 
 ### Coach's calls, flagged rather than guessed
 

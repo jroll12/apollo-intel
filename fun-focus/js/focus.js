@@ -53,13 +53,9 @@ function renderPhaseList(onStateChange) {
     el('p', {
       class: 'card__sub',
       style: 'margin:0 0 14px 2px;',
-      text: 'Four phases. Work through them in order, or jump around — nothing locks.',
+      text: 'Start with Phase 1 and work down — each phase builds on the last. Nothing locks, so jump around if you want.',
     }),
   );
-
-  wrap.append(liveCard(onStateChange));
-
-  wrap.append(el('div', { class: 'section-label', text: 'By standard' }));
 
   for (const phase of PHASES) {
     const progress = getPhaseProgress(phase.id);
@@ -96,15 +92,27 @@ function renderPhaseList(onStateChange) {
     wrap.append(card);
   }
 
+  wrap.append(
+    el('div', { class: 'section-label', text: 'Then go live' }),
+    el('p', {
+      class: 'card__sub',
+      style: 'margin:0 0 14px 2px;',
+      text: 'The hardest one. All four phases at once, on a ball you don\u2019t get to see coming.',
+    }),
+  );
+  wrap.append(liveCard(onStateChange));
+
   return wrap;
 }
 
-/* Live Reps sits above the phases: it is the four standards run together on
-   one batted ball, not a fifth standard. */
+/* Live Reps is the advanced step, deliberately last: it is the four
+   standards run together on one unpredictable batted ball, not a fifth
+   standard to work through in order. Phases 1-4 build the pieces; this is
+   where a player proves they can put them together on their own. */
 function liveCard(onStateChange) {
   const p = getLiveProgress();
   const card = el('button', { class: 'phase phase--live', type: 'button' }, [
-    el('div', { class: 'phase__top' }, [el('span', { class: 'phase__num', text: 'Live reps' })]),
+    el('div', { class: 'phase__top' }, [el('span', { class: 'phase__num', text: 'Advanced' })]),
     el('div', { class: 'phase__name', text: 'Read It Live' }),
     el('div', {
       class: 'phase__standard',
