@@ -78,7 +78,7 @@ npx serve@14 .          # or: python3 -m http.server 5173
 |---|---|
 | `teamName` | Shows in the app header. `The Creamsicles` |
 | `chantName` | The name shouted in the chant — `Creamsicles`, so it isn't "The Creamsicles on three". |
-| `coachPin` | 4 digits to award the Golden Chain. **Ships as `1234` — change it.** |
+| `coachPin` | 4 digits to award the Golden Chain. Not security — see the code comment. |
 | `walkupSheetUrl` | Google Sheet link for walk-up songs. Blank hides the card. |
 | `chainBackend` | `auto` / `netlify` / `firebase` / `local` |
 | `firebase` | Project ID + API key, if you go that route |

@@ -13,11 +13,10 @@ export const CONFIG = {
   chantName: 'Creamsicles',
 
   /* ---- COACH PIN -------------------------------------------------------
-     4 digits, for awarding the Golden Chain. Currently unused: the Fun tab
-     is parked. It is a friction gate, never security — this file ships to
-     every phone and anyone can read it. Don't reuse a PIN you care about.
-     TODO(coach): change this from the placeholder before the Fun tab ships. */
-  coachPin: '1234',
+     4 digits, for awarding the Golden Chain. It is a friction gate, never
+     security — this file ships to every phone and anyone can read it.
+     Don't reuse a PIN you care about elsewhere. */
+  coachPin: '0212',
 
   /* ---- WALK-UP SONG SHEET ---------------------------------------------
      Out of scope to rebuild — the Fun tab will just link out to it.
