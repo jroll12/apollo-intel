@@ -1,0 +1,11 @@
+{
+  "title": "Every closing gives back (concept)",
+  "scenes": [
+    { "id": "s1", "narration": "This year, we helped over 170 families buy or sell a home." },
+    { "id": "s2", "narration": "More than 70 million dollars. But a closing is more than a transaction." },
+    { "id": "s3", "narration": "A portion of every closing goes to Filter of Hope. So far, that's over 1,760 water filters." },
+    { "id": "s4", "narration": "Clean water, for families who have never had it before." },
+    { "id": "s5", "narration": "That's our mission: Making a Difference. Changing Lives. Leaving a Legacy." },
+    { "id": "s6", "narration": "Know someone buying or selling in 2027? Send them our way. Evelo Team, 3-1-7, 8-6-3, 9-0-1-1." }
+  ]
+}

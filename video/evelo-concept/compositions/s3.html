@@ -1,0 +1,51 @@
+<template>
+  <style>
+    #root { 
+  --bg: #0E1B33; --fg: #F5EBDD; --accent: #E8A33D; --muted: #B9C2D3;
+  /* intersection of TikTok, Reels and Shorts UI-clear bands (core/safeAreas): y 288-1248;
+     x 120-888 above y 840, x 120-780 below */
+  --x-left: 120px; --x-right-hi: 192px; --x-right-lo: 300px;
+  --safe-top: 288px; --key-bottom: 1060px; --cap-top: 1096px; }
+    
+  #root { position: absolute; inset: 0; font-family: Inter, sans-serif; color: var(--fg); }
+  .stage { position: absolute; left: var(--x-left); right: var(--x-right-hi); top: var(--safe-top);
+           height: calc(var(--key-bottom) - var(--safe-top)); display: flex; flex-direction: column;
+           align-items: flex-start; justify-content: center; text-align: left; }
+  .big { font-weight: 900; line-height: 0.95; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .sub { font-weight: 700; line-height: 1.05; }
+  .accent { color: var(--accent); }
+  .muted { color: var(--muted); }
+  .bar { width: 120px; height: 10px; background: var(--accent); margin-bottom: 56px; }
+  .drop { width: 120px; height: 120px; margin-bottom: 48px; }
+  .drop i { display: block; width: 100%; height: 100%; background: var(--accent);
+            border-radius: 50% 0 50% 50%; rotate: -45deg; }
+    #s3-eyebrow { font-size: 60px; margin-bottom: 40px; }
+    #s3-count { font-size: 190px; white-space: nowrap; }
+    #s3-label { font-size: 84px; margin-top: 24px; }
+  </style>
+  <div id="root" data-composition-id="s3" data-width="1080" data-height="1920">
+    <div id="s3-stage" class="stage">
+      <div id="s3-drop" class="drop"><i></i></div>
+      <div id="s3-eyebrow" class="sub muted">Filter of Hope</div>
+      <div id="s3-count" class="big accent"><span id="s3-n">0</span><span id="s3-plus">+</span></div>
+      <div id="s3-label" class="sub">water filters</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s3-stage", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0);
+    tl.fromTo("#s3-drop", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.1);
+    tl.fromTo("#s3-eyebrow", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.735);
+    const n = document.querySelector("#s3-n");
+    const c = { v: 0 };
+    const paint = () => { n.textContent = Math.round(c.v).toLocaleString("en-US"); };
+    tl.fromTo("#s3-count", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 4.185);
+    tl.fromTo(c, { v: 0 }, { v: 1760, duration: 2.655, ease: "power2.out", onUpdate: paint }, 4.285);
+    tl.set(c, { v: 1760, onComplete: paint }, 6.94);
+    tl.fromTo("#s3-plus", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 6.94);
+    tl.fromTo("#s3-label", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 6.68);
+    paint();
+    tl.to("#s3-stage", { opacity: 0, duration: 0.25, ease: "power2.in" }, 8.04);
+    window.__timelines["s3"] = tl;
+  </script>
+</template>

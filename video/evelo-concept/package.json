@@ -1,0 +1,14 @@
+{
+  "name": "evelo-concept-video",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "hyperframes": "0.9.64",
+    "gsap": "3.12.5"
+  },
+  "scripts": {
+    "timings:estimate": "node scripts/estimate-timings.mjs",
+    "build": "node scripts/build.mjs",
+    "check:self": "node scripts/check.mjs"
+  }
+}

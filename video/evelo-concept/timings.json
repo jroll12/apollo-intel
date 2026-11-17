@@ -1,0 +1,592 @@
+{
+  "source": "estimate",
+  "note": "DRAFT: estimated, no audio",
+  "duration": 41.605,
+  "scenes": [
+    {
+      "id": "s1",
+      "start": 0,
+      "end": 5.775
+    },
+    {
+      "id": "s2",
+      "start": 5.775,
+      "end": 11.865
+    },
+    {
+      "id": "s3",
+      "start": 11.865,
+      "end": 20.205
+    },
+    {
+      "id": "s4",
+      "start": 20.205,
+      "end": 24.93
+    },
+    {
+      "id": "s5",
+      "start": 24.93,
+      "end": 31.36
+    },
+    {
+      "id": "s6",
+      "start": 31.36,
+      "end": 41.605
+    }
+  ],
+  "words": [
+    {
+      "id": "w0",
+      "text": "This",
+      "start": 0.4,
+      "end": 0.655,
+      "scene": "s1"
+    },
+    {
+      "id": "w1",
+      "text": "year,",
+      "start": 0.695,
+      "end": 0.95,
+      "scene": "s1"
+    },
+    {
+      "id": "w2",
+      "text": "we",
+      "start": 1.13,
+      "end": 1.385,
+      "scene": "s1"
+    },
+    {
+      "id": "w3",
+      "text": "helped",
+      "start": 1.425,
+      "end": 1.835,
+      "scene": "s1"
+    },
+    {
+      "id": "w4",
+      "text": "over",
+      "start": 1.875,
+      "end": 2.285,
+      "scene": "s1"
+    },
+    {
+      "id": "w5",
+      "text": "170",
+      "start": 2.325,
+      "end": 3.045,
+      "scene": "s1"
+    },
+    {
+      "id": "w6",
+      "text": "families",
+      "start": 3.085,
+      "end": 3.65,
+      "scene": "s1"
+    },
+    {
+      "id": "w7",
+      "text": "buy",
+      "start": 3.69,
+      "end": 3.945,
+      "scene": "s1"
+    },
+    {
+      "id": "w8",
+      "text": "or",
+      "start": 3.985,
+      "end": 4.24,
+      "scene": "s1"
+    },
+    {
+      "id": "w9",
+      "text": "sell",
+      "start": 4.28,
+      "end": 4.535,
+      "scene": "s1"
+    },
+    {
+      "id": "w10",
+      "text": "a",
+      "start": 4.575,
+      "end": 4.83,
+      "scene": "s1"
+    },
+    {
+      "id": "w11",
+      "text": "home.",
+      "start": 4.87,
+      "end": 5.125,
+      "scene": "s1"
+    },
+    {
+      "id": "w12",
+      "text": "More",
+      "start": 6.025,
+      "end": 6.28,
+      "scene": "s2"
+    },
+    {
+      "id": "w13",
+      "text": "than",
+      "start": 6.32,
+      "end": 6.575,
+      "scene": "s2"
+    },
+    {
+      "id": "w14",
+      "text": "70",
+      "start": 6.615,
+      "end": 7.18,
+      "scene": "s2"
+    },
+    {
+      "id": "w15",
+      "text": "million",
+      "start": 7.22,
+      "end": 7.63,
+      "scene": "s2"
+    },
+    {
+      "id": "w16",
+      "text": "dollars.",
+      "start": 7.67,
+      "end": 8.08,
+      "scene": "s2"
+    },
+    {
+      "id": "w17",
+      "text": "But",
+      "start": 8.43,
+      "end": 8.685,
+      "scene": "s2"
+    },
+    {
+      "id": "w18",
+      "text": "a",
+      "start": 8.725,
+      "end": 8.98,
+      "scene": "s2"
+    },
+    {
+      "id": "w19",
+      "text": "closing",
+      "start": 9.02,
+      "end": 9.43,
+      "scene": "s2"
+    },
+    {
+      "id": "w20",
+      "text": "is",
+      "start": 9.47,
+      "end": 9.725,
+      "scene": "s2"
+    },
+    {
+      "id": "w21",
+      "text": "more",
+      "start": 9.765,
+      "end": 10.02,
+      "scene": "s2"
+    },
+    {
+      "id": "w22",
+      "text": "than",
+      "start": 10.06,
+      "end": 10.315,
+      "scene": "s2"
+    },
+    {
+      "id": "w23",
+      "text": "a",
+      "start": 10.355,
+      "end": 10.61,
+      "scene": "s2"
+    },
+    {
+      "id": "w24",
+      "text": "transaction.",
+      "start": 10.65,
+      "end": 11.215,
+      "scene": "s2"
+    },
+    {
+      "id": "w25",
+      "text": "A",
+      "start": 12.115,
+      "end": 12.37,
+      "scene": "s3"
+    },
+    {
+      "id": "w26",
+      "text": "portion",
+      "start": 12.41,
+      "end": 12.82,
+      "scene": "s3"
+    },
+    {
+      "id": "w27",
+      "text": "of",
+      "start": 12.86,
+      "end": 13.115,
+      "scene": "s3"
+    },
+    {
+      "id": "w28",
+      "text": "every",
+      "start": 13.155,
+      "end": 13.72,
+      "scene": "s3"
+    },
+    {
+      "id": "w29",
+      "text": "closing",
+      "start": 13.76,
+      "end": 14.17,
+      "scene": "s3"
+    },
+    {
+      "id": "w30",
+      "text": "goes",
+      "start": 14.21,
+      "end": 14.465,
+      "scene": "s3"
+    },
+    {
+      "id": "w31",
+      "text": "to",
+      "start": 14.505,
+      "end": 14.76,
+      "scene": "s3"
+    },
+    {
+      "id": "w32",
+      "text": "Filter",
+      "start": 14.8,
+      "end": 15.21,
+      "scene": "s3"
+    },
+    {
+      "id": "w33",
+      "text": "of",
+      "start": 15.25,
+      "end": 15.505,
+      "scene": "s3"
+    },
+    {
+      "id": "w34",
+      "text": "Hope.",
+      "start": 15.545,
+      "end": 15.8,
+      "scene": "s3"
+    },
+    {
+      "id": "w35",
+      "text": "So",
+      "start": 16.15,
+      "end": 16.405,
+      "scene": "s3"
+    },
+    {
+      "id": "w36",
+      "text": "far,",
+      "start": 16.445,
+      "end": 16.7,
+      "scene": "s3"
+    },
+    {
+      "id": "w37",
+      "text": "that's",
+      "start": 16.88,
+      "end": 17.135,
+      "scene": "s3"
+    },
+    {
+      "id": "w38",
+      "text": "over",
+      "start": 17.175,
+      "end": 17.585,
+      "scene": "s3"
+    },
+    {
+      "id": "w39",
+      "text": "1,760",
+      "start": 17.625,
+      "end": 18.655,
+      "scene": "s3"
+    },
+    {
+      "id": "w40",
+      "text": "water",
+      "start": 18.695,
+      "end": 19.105,
+      "scene": "s3"
+    },
+    {
+      "id": "w41",
+      "text": "filters.",
+      "start": 19.145,
+      "end": 19.555,
+      "scene": "s3"
+    },
+    {
+      "id": "w42",
+      "text": "Clean",
+      "start": 20.455,
+      "end": 20.71,
+      "scene": "s4"
+    },
+    {
+      "id": "w43",
+      "text": "water,",
+      "start": 20.75,
+      "end": 21.16,
+      "scene": "s4"
+    },
+    {
+      "id": "w44",
+      "text": "for",
+      "start": 21.34,
+      "end": 21.595,
+      "scene": "s4"
+    },
+    {
+      "id": "w45",
+      "text": "families",
+      "start": 21.635,
+      "end": 22.2,
+      "scene": "s4"
+    },
+    {
+      "id": "w46",
+      "text": "who",
+      "start": 22.24,
+      "end": 22.495,
+      "scene": "s4"
+    },
+    {
+      "id": "w47",
+      "text": "have",
+      "start": 22.535,
+      "end": 22.79,
+      "scene": "s4"
+    },
+    {
+      "id": "w48",
+      "text": "never",
+      "start": 22.83,
+      "end": 23.24,
+      "scene": "s4"
+    },
+    {
+      "id": "w49",
+      "text": "had",
+      "start": 23.28,
+      "end": 23.535,
+      "scene": "s4"
+    },
+    {
+      "id": "w50",
+      "text": "it",
+      "start": 23.575,
+      "end": 23.83,
+      "scene": "s4"
+    },
+    {
+      "id": "w51",
+      "text": "before.",
+      "start": 23.87,
+      "end": 24.28,
+      "scene": "s4"
+    },
+    {
+      "id": "w52",
+      "text": "That's",
+      "start": 25.18,
+      "end": 25.435,
+      "scene": "s5"
+    },
+    {
+      "id": "w53",
+      "text": "our",
+      "start": 25.475,
+      "end": 25.73,
+      "scene": "s5"
+    },
+    {
+      "id": "w54",
+      "text": "mission:",
+      "start": 25.77,
+      "end": 26.18,
+      "scene": "s5"
+    },
+    {
+      "id": "w55",
+      "text": "Making",
+      "start": 26.53,
+      "end": 26.94,
+      "scene": "s5"
+    },
+    {
+      "id": "w56",
+      "text": "a",
+      "start": 26.98,
+      "end": 27.235,
+      "scene": "s5"
+    },
+    {
+      "id": "w57",
+      "text": "Difference.",
+      "start": 27.275,
+      "end": 27.84,
+      "scene": "s5"
+    },
+    {
+      "id": "w58",
+      "text": "Changing",
+      "start": 28.19,
+      "end": 28.6,
+      "scene": "s5"
+    },
+    {
+      "id": "w59",
+      "text": "Lives.",
+      "start": 28.64,
+      "end": 29.05,
+      "scene": "s5"
+    },
+    {
+      "id": "w60",
+      "text": "Leaving",
+      "start": 29.4,
+      "end": 29.81,
+      "scene": "s5"
+    },
+    {
+      "id": "w61",
+      "text": "a",
+      "start": 29.85,
+      "end": 30.105,
+      "scene": "s5"
+    },
+    {
+      "id": "w62",
+      "text": "Legacy.",
+      "start": 30.145,
+      "end": 30.71,
+      "scene": "s5"
+    },
+    {
+      "id": "w63",
+      "text": "Know",
+      "start": 31.61,
+      "end": 31.865,
+      "scene": "s6"
+    },
+    {
+      "id": "w64",
+      "text": "someone",
+      "start": 31.905,
+      "end": 32.315,
+      "scene": "s6"
+    },
+    {
+      "id": "w65",
+      "text": "buying",
+      "start": 32.355,
+      "end": 32.61,
+      "scene": "s6"
+    },
+    {
+      "id": "w66",
+      "text": "or",
+      "start": 32.65,
+      "end": 32.905,
+      "scene": "s6"
+    },
+    {
+      "id": "w67",
+      "text": "selling",
+      "start": 32.945,
+      "end": 33.355,
+      "scene": "s6"
+    },
+    {
+      "id": "w68",
+      "text": "in",
+      "start": 33.395,
+      "end": 33.65,
+      "scene": "s6"
+    },
+    {
+      "id": "w69",
+      "text": "2027?",
+      "start": 33.69,
+      "end": 34.565,
+      "scene": "s6"
+    },
+    {
+      "id": "w70",
+      "text": "Send",
+      "start": 34.915,
+      "end": 35.17,
+      "scene": "s6"
+    },
+    {
+      "id": "w71",
+      "text": "them",
+      "start": 35.21,
+      "end": 35.465,
+      "scene": "s6"
+    },
+    {
+      "id": "w72",
+      "text": "our",
+      "start": 35.505,
+      "end": 35.76,
+      "scene": "s6"
+    },
+    {
+      "id": "w73",
+      "text": "way.",
+      "start": 35.8,
+      "end": 36.055,
+      "scene": "s6"
+    },
+    {
+      "id": "w74",
+      "text": "Evelo",
+      "start": 36.405,
+      "end": 36.97,
+      "scene": "s6"
+    },
+    {
+      "id": "w75",
+      "text": "Team,",
+      "start": 37.01,
+      "end": 37.265,
+      "scene": "s6"
+    },
+    {
+      "id": "w76",
+      "text": "3-1-7,",
+      "start": 37.445,
+      "end": 38.01,
+      "scene": "s6"
+    },
+    {
+      "id": "w77",
+      "text": "8-6-3,",
+      "start": 38.19,
+      "end": 38.755,
+      "scene": "s6"
+    },
+    {
+      "id": "w78",
+      "text": "9-0-1-1.",
+      "start": 38.935,
+      "end": 39.655,
+      "scene": "s6"
+    }
+  ]
+}
