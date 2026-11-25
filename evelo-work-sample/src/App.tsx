@@ -28,7 +28,7 @@ const current = () => {
 };
 
 export function go(id: string) {
-  window.location.hash = `/${id}`;
+  window.location.hash = id;
 }
 
 export default function App() {
@@ -48,9 +48,9 @@ export default function App() {
       <div className="bg-[var(--sand-soft)] px-4 py-2 text-center text-[12px] leading-snug text-foreground/80">
         Spec work sample by Jarret Roloff. Not affiliated with or published by Evelo Team or Keller Williams. All content is draft.
       </div>
-      <header className="sticky top-0 z-40 border-b bg-background/90 backdrop-blur">
+      <header className="site-header sticky z-40 border-b bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 pt-3">
-          <a href="#/overview" className="flex items-center gap-2">
+          <a href="#overview" className="flex items-center gap-2">
             <span className="grid size-8 place-items-center rounded-lg bg-[#0b1f3a] text-[13px] font-bold text-[#d4b483]">EC</span>
             <span className="leading-tight">
               <span className="font-display block text-[15px] font-semibold">Evelo Content Engine</span>
@@ -63,7 +63,7 @@ export default function App() {
             {ROUTES.map((r) => (
               <li key={r.id}>
                 <a
-                  href={`#/${r.id}`}
+                  href={`#${r.id}`}
                   className={cn(
                     "block rounded-full px-3 py-1.5 text-[13px] whitespace-nowrap transition-colors",
                     route === r.id ? "bg-primary font-medium text-primary-foreground" : "text-muted-foreground hover:bg-muted hover:text-foreground",

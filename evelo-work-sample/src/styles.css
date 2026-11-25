@@ -96,9 +96,11 @@
     --p-ll: #e8935a;
     --p-pr: #5cc4a0;
     --p-cg: #e77ea3;
+    color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
+  color-scheme: dark;
   --background: #0d1420;
   --foreground: #e8ebf0;
   --card: #141d2b;
@@ -162,3 +164,7 @@ body {
 .prose-sm th { background: var(--muted); font-weight: 600; }
 .prose-sm hr { margin: 1em 0; }
 .prose-sm blockquote { border-left: 3px solid var(--sand); padding-left: 0.8em; color: var(--muted-foreground); }
+
+/* Sticky header clears a phone status bar; the band above it is painted in the page background. */
+.site-header { top: env(safe-area-inset-top, 0px); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--background); }

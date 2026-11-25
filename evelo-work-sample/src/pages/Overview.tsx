@@ -29,10 +29,10 @@ export function Overview() {
           7 channels, wrote every piece, checked it for fair housing and brokerage rules, and built the playbook a coordinator would use to run it every week.
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
-          <a href="#/calendar" className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-[14px] font-medium text-primary-foreground">
+          <a href="#calendar" className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-[14px] font-medium text-primary-foreground">
             Open the calendar <ArrowRight className="size-4" />
           </a>
-          <a href="#/ops" className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[14px] font-medium">
+          <a href="#ops" className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[14px] font-medium">
             See the ops playbook
           </a>
         </div>
@@ -89,7 +89,7 @@ export function Overview() {
       <Section eyebrow="Inside" title="Where to look">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {LINKS.map((l) => (
-            <a key={l.id} href={`#/${l.id}`} className="group rounded-xl border bg-card p-5 transition-colors hover:border-[var(--sand)]">
+            <a key={l.id} href={`#${l.id}`} className="group rounded-xl border bg-card p-5 transition-colors hover:border-[var(--sand)]">
               <l.icon className="size-5 text-[var(--sand)]" />
               <div className="mt-3 flex items-center gap-1 font-semibold">
                 {l.title} <ArrowRight className="size-4 opacity-0 transition-opacity group-hover:opacity-100" />

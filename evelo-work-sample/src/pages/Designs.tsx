@@ -3,10 +3,12 @@ import { Section } from "@/components/shared";
 import { Preview } from "@/components/Preview";
 import { AssetDrawer } from "@/components/AssetDrawer";
 import { assets, CHANNEL_LABEL, type Asset } from "@/data";
+import hamilton from "../../public/designs/hamilton-stat-card.jpg";
+import metro from "../../public/designs/metro-inventory-card.jpg";
 
 const CANVA = [
-  { src: "designs/hamilton-stat-card.png", title: "Hamilton County stat card", note: "Market Pulse template. Swap the 4 numbers monthly." },
-  { src: "designs/metro-inventory-card.png", title: "Metro inventory card", note: "Single-stat template with a soft CTA." },
+  { src: hamilton, title: "Hamilton County stat card", note: "Market Pulse template. Swap the 4 numbers monthly." },
+  { src: metro, title: "Metro inventory card", note: "Single-stat template with a soft CTA." },
 ];
 
 export function Designs() {
