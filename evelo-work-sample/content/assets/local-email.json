@@ -1,0 +1,212 @@
+[
+  {
+    "id": "S04",
+    "slot": "S04",
+    "channel": "gbp",
+    "pillar": "MP",
+    "date": "2026-12-03",
+    "title": "S04 GBP Update: Hamilton County list prices are down from a year ago",
+    "hook": "Hamilton County's median list price is about $30,000 lower than it was a year ago.",
+    "body": "In October, the median list price across Hamilton County was $445,000. Last fall, sellers were asking noticeably more.\n\nWhat that means if you are buying in Fishers, Carmel, Noblesville or Westfield: you may find homes in neighborhoods that felt just out of reach a year ago, and you have more listings to compare while you decide.\n\nWhat it means if you are selling: buyers are watching prices closely. A home that is priced right from day one, and looks cared for, still stands out.\n\nKeep in mind this is a list price, the asking price, not what homes sold for. Your street and your home's condition can tell a different story than the county median.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Call now: 317-863-9011 and ask for a pricing check on your home",
+    "visual": {
+      "kind": "gbp",
+      "headline": "Hamilton County median list price: $445,000",
+      "sub": "About $30,000 lower than a year ago. Source: Realtor.com via FRED, Oct 2026",
+      "stat": "$445,000"
+    },
+    "sources": [
+      "content/metrics.json#MEDLISPRI18057"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  },
+  {
+    "id": "S05",
+    "slot": "S05",
+    "channel": "email",
+    "pillar": "AQ",
+    "date": "2026-12-03",
+    "title": "S05 Email: Buyer newsletter, more homes to choose from this winter",
+    "subject": "Indy buyers have 21% more homes to pick from this winter",
+    "preview": "7,171 homes were for sale across the metro in October. Here is how to use that in a calm winter search.",
+    "hook": "If last spring's house hunt felt like a sprint, this winter may feel more like a walk.",
+    "body": "Hi {{first_name}},\n\nIf last spring's house hunt felt like a sprint, this winter may feel more like a walk.\n\n## More homes on the shelf\n\nIn October, 7,171 homes were listed for sale across the Indianapolis-Carmel-Anderson metro. That is 21.3% more than a year earlier, according to Realtor.com data via FRED. Hamilton County followed the same pattern, with active listings up 19.3%.\n\n## What that means for you\n\nMore homes for sale usually means fewer bidding wars and more time to think. You can compare a few homes side by side, ask for a repair after inspection, or talk about closing costs without feeling the clock run out. Every home and every seller is different, so we look at each one on its own.\n\nOne Fishers buyer put it this way: \"They never tried to upsell or pressure us to move faster than we were comfortable.\" That is the pace we aim for with everyone.\n\n## A word on rates\n\nRates still matter. But the right time to buy depends on your monthly comfort level, your cash for closing, and how long you plan to stay, not on guessing where rates go next. A lender pre-approval shows you real numbers for your situation.\n\n## Your next step\n\nHit reply and tell us your top must-haves and the towns you are watching, whether that is Fishers, Carmel, Noblesville or Westfield. We will set up a winter search that sends you only the homes that fit.\n\nWarmly,\n\nThe Evelo Team\n\n---\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.\n\n11501 Cumberland Rd, Suite 300, Fishers, IN 46037 | 317-863-9011 | info@eveloteam.com\n\nSources: Realtor.com via FRED, October 2026 (active listings, Indianapolis-Carmel-Anderson metro and Hamilton County). Quote: Natalie, buyer in Fishers, one client's experience.\n\nYou are receiving this because you joined the Evelo Team buyer list. [Unsubscribe](UNSUBSCRIBE_LINK) anytime.",
+    "cta": "Reply with your must-haves and towns, and we will set up a winter search",
+    "visual": {
+      "kind": "email",
+      "headline": "7,171 homes for sale around Indy, up 21.3%",
+      "sub": "More choices and more time to decide this winter. Source: Realtor.com via FRED, Oct 2026",
+      "stat": "7,171 listings"
+    },
+    "sources": [
+      "content/metrics.json#ACTLISCOU26900",
+      "content/metrics.json#ACTLISCOU18057",
+      "content/brand.json#testimonials (Natalie)",
+      "content/seeds.json#wait-for-rates (angle only)"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Email footer includes 11501 Cumberland Rd, Suite 300, Fishers, IN 46037 and an unsubscribe link.",
+    "adType": true
+  },
+  {
+    "id": "S09",
+    "slot": "S09",
+    "channel": "gbp",
+    "pillar": "CG",
+    "date": "2026-12-07",
+    "title": "S09 GBP Update: Our agents' giving from every closing",
+    "hook": "A closing in Noblesville can end with clean water for a family in need.",
+    "body": "Here is how. Our agents donate part of their commission from every closing we handle, from our office on Cumberland Road in Fishers to homes across Carmel, Westfield and the rest of Hamilton County:\n\n$10 to KW Cares\n$10 to the REALTOR Foundation\n2% of the commission to Filter of Hope, which provides household water filters for families in poverty\n\nThe gift comes from our side of the table. It never comes from you or your sale price.\n\nIt is not a holiday campaign. It happens on every closing, all year long. It is our way of living out the words we started with in 1998: Making a Difference. Changing Lives. Leaving a Legacy.\n\nWant to see the organizations we support? Our giving page has the details.",
+    "cta": "Learn more: eveloteam.com/giving",
+    "visual": {
+      "kind": "gbp",
+      "headline": "Every closing gives back, from our commission",
+      "sub": "Our agents give $10 to KW Cares, $10 to the REALTOR Foundation and 2% of commission to Filter of Hope",
+      "stat": "2% of commission"
+    },
+    "sources": [
+      "content/brand.json#facts (giving, from agents' commission)",
+      "content/brand.json#tagline",
+      "https://www.eveloteam.com/giving"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  },
+  {
+    "id": "S12",
+    "slot": "S12",
+    "channel": "gbp",
+    "pillar": "LL",
+    "date": "2026-12-09",
+    "title": "S12 GBP Event: Sample listing open house logistics, Saturday Dec 12",
+    "hook": "Saturday, December 12, 1 to 3 PM: come see a Fishers kitchen updated in 2023, with quartz counters and a walk-in pantry.",
+    "body": "Event: Open House for our Sample listing (illustrative only, not a real home for sale)\nWhere: 1234 Sample Lane, Fishers, IN 46038\nWhen: Saturday, December 12, 2026, 1:00 PM to 3:00 PM\n\nHow it works: no appointment and no sign-up needed. Drop in anytime during the two hours, walk through at your own pace, and ask our agent anything, from the 2022 roof to the monthly HOA.\n\nWhat you will see: 4 bedrooms, 2.5 baths and about 2,650 square feet, listed at $465,000. There is a main-level office with French doors, a finished basement with a flex room, a fenced backyard with a paver patio, and a Nickel Plate Trail access point about 1 mile away.\n\nIf a quiet home office and a yard you can actually use are on your list, this one is worth a Saturday afternoon. We will have the lights on and the coffee ready.",
+    "cta": "Call now: 317-863-9011 if Saturday doesn't work and you'd like another time",
+    "visual": {
+      "kind": "gbp",
+      "headline": "Open house: Sat, Dec 12, 1-3 PM (Sample listing)",
+      "sub": "1234 Sample Lane, Fishers (illustrative only). Drop in, no appointment needed",
+      "stat": "$465,000"
+    },
+    "sources": [
+      "content/listing.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Sample listing (illustrative): 1234 Sample Lane is a hypothetical property, not a real home for sale.",
+    "adType": true
+  },
+  {
+    "id": "S20",
+    "slot": "S20",
+    "channel": "gbp",
+    "pillar": "AQ",
+    "date": "2026-12-16",
+    "title": "S20 GBP Update: Promote the winter-vs-spring selling blog post",
+    "hook": "Tempted to wait for spring before you list your Hamilton County home? Your own timeline matters more than the calendar.",
+    "body": "One thing has clearly changed this year: buyers have more to choose from. Hamilton County had 1,111 active listings in October, up 19.3% from a year earlier.\n\nWhen buyers have options, price and presentation do more of the work in any season. A well-prepared winter listing in Fishers or Carmel can stand out to the buyers who are still shopping, while a spring listing may share the stage with more homes.\n\nOur new post, \"Should You Sell Your Hamilton County Home in Winter or Wait for Spring?\", walks through what a winter listing gains, what it gives up, and how to decide based on your own plans. It is a calm, plain-English read, written for homeowners, not agents.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Learn more: BLOG_POST_LINK (Should You Sell Your Hamilton County Home in Winter or Wait for Spring?)",
+    "visual": {
+      "kind": "gbp",
+      "headline": "Sell this winter or wait for spring?",
+      "sub": "New on the Evelo Team blog. Source: Realtor.com via FRED, Oct 2026",
+      "stat": "+19.3% listings"
+    },
+    "sources": [
+      "content/grid.json#S19",
+      "content/metrics.json#ACTLISCOU18057"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  },
+  {
+    "id": "S21",
+    "slot": "S21",
+    "channel": "email",
+    "pillar": "CG",
+    "date": "2026-12-17",
+    "title": "S21 Email: Year-end thank-you and giving letter to sphere and past clients",
+    "subject": "From our commissions to clean water: a thank-you note",
+    "preview": "Our agents gave from every closing this year. Here is where it went, and one small favor if you have a minute.",
+    "hook": "Every move we helped with this year started with someone trusting us.",
+    "body": "Hi {{first_name}},\n\nEvery move we helped with this year started with someone trusting us, or with a friend who sent someone our way. Thank you for being part of that.\n\n## Thank you\n\nStephanie and Derek Evelo started this team in 1998. Since then, more than 2,500 families across Fishers, Carmel, Noblesville, Westfield and beyond have let us help with a move. That trust is the whole business, and we never take it for granted.\n\n## Our giving from every closing\n\nOur agents donate part of their commission from every closing. The gift comes from our side of the table, never from you or your sale price. Here is where it goes:\n\n- $10 to KW Cares\n- $10 to the REALTOR Foundation\n- 2% of the commission to Filter of Hope, which provides household water filters for families in poverty\n\nIt is how we try to live out the words we started with: Making a Difference. Changing Lives. Leaving a Legacy.\n\n## One small favor\n\nOur clients have left 419 Google reviews, 5.0 average (as of September 2026). Those reviews help neighbors who are about to make a big move know what working with us is really like.\n\nIf we helped you, this year or any year, a few honest words would mean a great deal to our team. Only if you have a minute, and only if it feels right.\n\n[Leave a Google review](REVIEW_LINK)\n\nFrom all of us, we hope your holidays are restful and your new year is a good one.\n\nWith gratitude,\n\nThe Evelo Team\n\n---\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.\n\n11501 Cumberland Rd, Suite 300, Fishers, IN 46037 | 317-863-9011 | info@eveloteam.com\n\nYou are receiving this because you are a past client or friend of the Evelo Team. [Unsubscribe](UNSUBSCRIBE_LINK) anytime.",
+    "cta": "Leave a Google review: REVIEW_LINK",
+    "visual": {
+      "kind": "email",
+      "headline": "Thank you, from all of us at the Evelo Team",
+      "sub": "Where our agents' giving went this year, and one small favor"
+    },
+    "sources": [
+      "content/brand.json#facts (founded 1998, 2,500+ families, giving from agents' commission, 419 Google reviews)",
+      "content/brand.json#tagline"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Email footer includes 11501 Cumberland Rd, Suite 300, Fishers, IN 46037 and an unsubscribe link.",
+    "adType": true
+  },
+  {
+    "id": "S27",
+    "slot": "S27",
+    "channel": "gbp",
+    "pillar": "CG",
+    "date": "2026-12-23",
+    "title": "S27 GBP Update: Season's thanks to Central Indiana clients and neighbors",
+    "hook": "More than 2,500 Central Indiana families have trusted us with a move since 1998. To every one of you: thank you.",
+    "body": "What started with Stephanie and Derek Evelo is now a team of 18 agents and staff, and we still feel the weight of every set of keys we hand over.\n\nTo the clients who let us into their homes this year, in Fishers, Carmel, Noblesville, Westfield, Zionsville and beyond: thank you.\n\nTo past clients who came out to our fall festival, and to everyone who sent a friend or neighbor our way: thank you.\n\nAnd to the neighbors who simply wave when they see our signs around town: thank you, too.\n\nWe hope your holidays are warm and unhurried. If we helped you this year, we would love to hear how it went.",
+    "cta": "Learn more: eveloteam.com/reviews",
+    "visual": {
+      "kind": "gbp",
+      "headline": "Thank you, Central Indiana",
+      "sub": "More than 2,500 families since 1998. Season's thanks from the Evelo Team"
+    },
+    "sources": [
+      "content/brand.json#facts (founded 1998, 2,500+ families, 18 agents and staff, fall festival)"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  },
+  {
+    "id": "S30",
+    "slot": "S30",
+    "channel": "gbp",
+    "pillar": "MP",
+    "date": "2026-12-29",
+    "title": "S30 GBP Update: Year-end metro snapshot, list price per square foot",
+    "hook": "Here is the year-end number that surprised us: across the Indy metro, list prices per square foot went up, not down.",
+    "body": "The median list price per square foot in the Indianapolis-Carmel-Anderson metro was $164 in October, up 5.1% from a year earlier.\n\nThat can sound odd next to headlines about lower list prices. The difference is the mix of homes. When more smaller or lower-priced homes come on the market, the overall median list price can dip even while each square foot is listed for more.\n\nThe takeaway: a metro headline will not tell you much about your own home. Size, condition and location matter more. If you are buying, compare homes by price per square foot, not just the sticker price. If you are selling, start with the homes most like yours in your part of Hamilton County.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Call now: 317-863-9011 and ask for the numbers for your zip code",
+    "visual": {
+      "kind": "gbp",
+      "headline": "Indy metro list price per sq ft: up 5.1%",
+      "sub": "Median list price per square foot, October 2026. Source: Realtor.com via FRED",
+      "stat": "$164 per sq ft"
+    },
+    "sources": [
+      "content/metrics.json#MEDLISPRIPERSQUFEE26900",
+      "content/metrics.json#MEDLISPRI26900 (direction only)"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  },
+  {
+    "id": "S32",
+    "slot": "S32",
+    "channel": "gbp",
+    "pillar": "AQ",
+    "date": "2026-12-30",
+    "title": "S32 GBP Update: Book a no-pressure 2027 planning call",
+    "hook": "One short planning call this week can make a spring move feel a lot less rushed.",
+    "body": "Here is why timing matters. In October, homes in Hamilton County spent a median of 49 days on the market. Add time to get your home ready and time to close, and a spring move often starts taking shape in January.\n\nOn a no-pressure 2027 planning call, an Evelo Team agent will help you sketch a realistic timeline, talk through pre-approval, and start a pricing conversation about your current home in Fishers, Carmel, Noblesville or Westfield.\n\nIf you are not ready yet, that is fine. You set the pace, and we will help you plan around it. You should never feel like you're navigating an important decision alone.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Call now: 317-863-9011 and ask for a 2027 planning call",
+    "visual": {
+      "kind": "gbp",
+      "headline": "Planning a 2027 move? Start with one calm call",
+      "sub": "Timeline, pre-approval and a pricing conversation, at your pace",
+      "stat": "49 days on market"
+    },
+    "sources": [
+      "content/metrics.json#MEDDAYONMAR18057",
+      "content/grid.json#S31",
+      "content/brand.json#voice.quotes"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  }
+]

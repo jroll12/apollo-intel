@@ -1,0 +1,54 @@
+{
+  "fetchedAt": "2026-11-25",
+  "team": "Evelo Team",
+  "brokerage": "Keller Williams Indy Metro NE",
+  "brokerageDisclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+  "address": "11501 Cumberland Rd, Suite 300, Fishers, IN 46037",
+  "phone": "317-863-9011",
+  "email": "info@eveloteam.com",
+  "tagline": "Making a Difference. Changing Lives. Leaving a Legacy.",
+  "facts": [
+    { "claim": "Founded in 1998 by Stephanie and Derek Evelo", "source": "https://www.eveloteam.com/realestateagent/search" },
+    { "claim": "Led today by CEO Hannah Perkey, who runs operations, client experience, and agent coaching", "source": "https://www.eveloteam.com/about-us" },
+    { "claim": "2,500+ families helped; more than 200 a year today", "source": "https://www.eveloteam.com/about-us" },
+    { "claim": "419 Google reviews, 5.0 average (as of September 2026)", "source": "https://www.eveloteam.com/reviews" },
+    { "claim": "178 Zillow team reviews, 5.0 average", "source": "https://www.eveloteam.com/reviews" },
+    { "claim": "18 agents and staff", "source": "https://www.eveloteam.com/about-us" },
+    { "claim": "More than $500 million in closed residential sales", "source": "https://www.eveloteam.com/blog/find-a-relocation-real-estate-agent-in-fishers-indiana" },
+    { "claim": "The team's agents donate part of their commission from every closing: $10 to KW Cares, $10 to the REALTOR Foundation, and 2% to Filter of Hope (household water filters for families in poverty). Always say the gift comes from the team's commission, never from the client or the sale price.", "source": "https://www.eveloteam.com/giving (page states agents donate a percentage of their commissions; base of the 2% to be confirmed with the team)" },
+    { "claim": "Hosts client events, including a fall festival for past clients", "source": "https://www.eveloteam.com/ (client review)" },
+    { "claim": "Derek Evelo is the team's new construction and builder specialist", "source": "https://www.eveloteam.com/realestateagent/search" }
+  ],
+  "areas": ["Fishers", "Carmel", "Noblesville", "Westfield", "Zionsville", "Cicero", "Fortville", "McCordsville", "Lapel", "Pendleton", "Anderson", "Indianapolis", "Brownsburg", "Plainfield", "Avon", "Greenfield", "Greenwood"],
+  "focusAreas": ["Fishers", "Carmel", "Noblesville", "Westfield", "Zionsville"],
+  "voice": {
+    "traits": ["Helpful and calm, never pushy", "Data first, then plain-English meaning", "Local and specific (names towns, zip codes)", "Warm, family-business tone", "Ends with a clear, low-pressure next step"],
+    "quotes": [
+      "Market statistics provide the starting point, not the complete answer.",
+      "Selling your home shouldn't be stressful. Let us handle the process for you.",
+      "The right strategy starts with current local data and a clear understanding of your goals.",
+      "You should never feel like you're navigating an important decision alone.",
+      "Making a Difference. Changing Lives. Leaving a Legacy."
+    ],
+    "avoid": ["Hype words (hottest, best ever, dream home guaranteed)", "Pressure or urgency tactics", "Unsourced statistics", "Describing who a home or area is 'for' (fair housing)"]
+  },
+  "testimonials": [
+    { "quote": "They never tried to upsell or pressure us to move faster than we were comfortable. They listen and care about their clients.", "who": "Natalie, buyer in Fishers", "source": "https://www.eveloteam.com/" },
+    { "quote": "Communication was immediate, no matter the time of day or night, and we always felt they had our best interests in mind.", "who": "Adam, buyer in Indy", "source": "https://www.eveloteam.com/" }
+  ],
+  "testimonialNote": "Testimonials are published on eveloteam.com. Quote them as client experiences, never as typical results. Outcome-based quotes (speed of sale, price) are excluded on purpose.",
+  "channels": {
+    "website": "https://www.eveloteam.com",
+    "blog": "Weekly question-style posts (Wednesdays) plus a monthly housing market update",
+    "instagram": "https://www.instagram.com/eveloteamrealestate/",
+    "facebook": "https://www.facebook.com/eveloteam",
+    "linkedin": "https://www.linkedin.com/company/the-evelo-team/",
+    "youtube": "http://www.youtube.com/user/eveloteam",
+    "podcast": "Indianapolis Real Estate Podcast with the Evelo Team (last episode 2016-09-22)"
+  },
+  "stack": [
+    { "tool": "Brivity", "evidence": "Website footer: Powered by Brivity (IDX + CRM)" },
+    { "tool": "Fello", "evidence": "Landing pages on eveloteam.hifello.com (home value / seller lead capture)" },
+    { "tool": "Keller Williams (Command)", "evidence": "KW team; KPA assessment workflow" }
+  ]
+}

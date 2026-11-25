@@ -1,0 +1,27 @@
+{
+  "hypothetical": true,
+  "label": "Sample listing (illustrative only, not a real property)",
+  "address": "1234 Sample Lane, Fishers, IN 46038",
+  "neighborhoodNote": "A fictional subdivision on the east side of Fishers",
+  "price": 465000,
+  "beds": 4,
+  "baths": 2.5,
+  "sqft": 2650,
+  "lotAcres": 0.28,
+  "yearBuilt": 2004,
+  "garage": "3-car attached",
+  "features": [
+    "Kitchen updated in 2023: quartz counters, gas range, walk-in pantry",
+    "Roof replaced in 2022",
+    "Finished basement with flex room and half bath",
+    "Main-level office with French doors",
+    "Fenced backyard with paver patio",
+    "Primary suite with walk-in closet and dual vanities",
+    "About 1 mile to the Nickel Plate Trail access point"
+  ],
+  "schoolDistrict": "Hamilton Southeastern Schools",
+  "hoaMonthly": 45,
+  "openHouse": { "date": "2026-12-12", "start": "1:00 PM", "end": "3:00 PM" },
+  "listDate": "2026-12-08",
+  "listingAgent": "An Evelo Team agent (placeholder)"
+}

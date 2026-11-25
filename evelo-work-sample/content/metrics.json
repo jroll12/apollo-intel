@@ -1,0 +1,1662 @@
+{
+  "fetchedAt": "2026-11-25T01:31:50.882Z",
+  "series": {
+    "MEDLISPRI26900": {
+      "id": "MEDLISPRI26900",
+      "label": "Median listing price",
+      "geo": "metro",
+      "geoName": "Indianapolis-Carmel-Anderson metro",
+      "unit": "usd",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/MEDLISPRI26900",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 305000
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 310000
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 320000
+      },
+      "momPct": -1.6,
+      "yoyPct": -4.7,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 316000
+        },
+        {
+          "date": "2024-12-01",
+          "value": 309973
+        },
+        {
+          "date": "2025-01-01",
+          "value": 300000
+        },
+        {
+          "date": "2025-02-01",
+          "value": 300000
+        },
+        {
+          "date": "2025-03-01",
+          "value": 315000
+        },
+        {
+          "date": "2025-04-01",
+          "value": 329211
+        },
+        {
+          "date": "2025-05-01",
+          "value": 331500
+        },
+        {
+          "date": "2025-06-01",
+          "value": 338450
+        },
+        {
+          "date": "2025-07-01",
+          "value": 334273
+        },
+        {
+          "date": "2025-08-01",
+          "value": 327500
+        },
+        {
+          "date": "2025-09-01",
+          "value": 323250
+        },
+        {
+          "date": "2025-10-01",
+          "value": 320000
+        },
+        {
+          "date": "2025-11-01",
+          "value": 315000
+        },
+        {
+          "date": "2025-12-01",
+          "value": 309974
+        },
+        {
+          "date": "2026-01-01",
+          "value": 305000
+        },
+        {
+          "date": "2026-02-01",
+          "value": 309950
+        },
+        {
+          "date": "2026-03-01",
+          "value": 312500
+        },
+        {
+          "date": "2026-04-01",
+          "value": 318950
+        },
+        {
+          "date": "2026-05-01",
+          "value": 320000
+        },
+        {
+          "date": "2026-06-01",
+          "value": 321450
+        },
+        {
+          "date": "2026-07-01",
+          "value": 315000
+        },
+        {
+          "date": "2026-08-01",
+          "value": 310000
+        },
+        {
+          "date": "2026-09-01",
+          "value": 310000
+        },
+        {
+          "date": "2026-10-01",
+          "value": 305000
+        }
+      ]
+    },
+    "MEDLISPRIPERSQUFEE26900": {
+      "id": "MEDLISPRIPERSQUFEE26900",
+      "label": "Median listing price per sq ft",
+      "geo": "metro",
+      "geoName": "Indianapolis-Carmel-Anderson metro",
+      "unit": "usd",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/MEDLISPRIPERSQUFEE26900",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 164
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 165
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 156
+      },
+      "momPct": -0.6,
+      "yoyPct": 5.1,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 155
+        },
+        {
+          "date": "2024-12-01",
+          "value": 154
+        },
+        {
+          "date": "2025-01-01",
+          "value": 155
+        },
+        {
+          "date": "2025-02-01",
+          "value": 156
+        },
+        {
+          "date": "2025-03-01",
+          "value": 158
+        },
+        {
+          "date": "2025-04-01",
+          "value": 159
+        },
+        {
+          "date": "2025-05-01",
+          "value": 160
+        },
+        {
+          "date": "2025-06-01",
+          "value": 159
+        },
+        {
+          "date": "2025-07-01",
+          "value": 158
+        },
+        {
+          "date": "2025-08-01",
+          "value": 158
+        },
+        {
+          "date": "2025-09-01",
+          "value": 158
+        },
+        {
+          "date": "2025-10-01",
+          "value": 156
+        },
+        {
+          "date": "2025-11-01",
+          "value": 155
+        },
+        {
+          "date": "2025-12-01",
+          "value": 160
+        },
+        {
+          "date": "2026-01-01",
+          "value": 166
+        },
+        {
+          "date": "2026-02-01",
+          "value": 167
+        },
+        {
+          "date": "2026-03-01",
+          "value": 167
+        },
+        {
+          "date": "2026-04-01",
+          "value": 168
+        },
+        {
+          "date": "2026-05-01",
+          "value": 168
+        },
+        {
+          "date": "2026-06-01",
+          "value": 167
+        },
+        {
+          "date": "2026-07-01",
+          "value": 166
+        },
+        {
+          "date": "2026-08-01",
+          "value": 165
+        },
+        {
+          "date": "2026-09-01",
+          "value": 165
+        },
+        {
+          "date": "2026-10-01",
+          "value": 164
+        }
+      ]
+    },
+    "ACTLISCOU26900": {
+      "id": "ACTLISCOU26900",
+      "label": "Active listings",
+      "geo": "metro",
+      "geoName": "Indianapolis-Carmel-Anderson metro",
+      "unit": "count",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/ACTLISCOU26900",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 7171
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 6869
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 5910
+      },
+      "momPct": 4.4,
+      "yoyPct": 21.3,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 4721
+        },
+        {
+          "date": "2024-12-01",
+          "value": 4122
+        },
+        {
+          "date": "2025-01-01",
+          "value": 3689
+        },
+        {
+          "date": "2025-02-01",
+          "value": 3491
+        },
+        {
+          "date": "2025-03-01",
+          "value": 3555
+        },
+        {
+          "date": "2025-04-01",
+          "value": 3671
+        },
+        {
+          "date": "2025-05-01",
+          "value": 4311
+        },
+        {
+          "date": "2025-06-01",
+          "value": 4800
+        },
+        {
+          "date": "2025-07-01",
+          "value": 5145
+        },
+        {
+          "date": "2025-08-01",
+          "value": 5316
+        },
+        {
+          "date": "2025-09-01",
+          "value": 5730
+        },
+        {
+          "date": "2025-10-01",
+          "value": 5910
+        },
+        {
+          "date": "2025-11-01",
+          "value": 5865
+        },
+        {
+          "date": "2025-12-01",
+          "value": 5185
+        },
+        {
+          "date": "2026-01-01",
+          "value": 4625
+        },
+        {
+          "date": "2026-02-01",
+          "value": 4356
+        },
+        {
+          "date": "2026-03-01",
+          "value": 4427
+        },
+        {
+          "date": "2026-04-01",
+          "value": 4861
+        },
+        {
+          "date": "2026-05-01",
+          "value": 5255
+        },
+        {
+          "date": "2026-06-01",
+          "value": 5694
+        },
+        {
+          "date": "2026-07-01",
+          "value": 6119
+        },
+        {
+          "date": "2026-08-01",
+          "value": 6422
+        },
+        {
+          "date": "2026-09-01",
+          "value": 6869
+        },
+        {
+          "date": "2026-10-01",
+          "value": 7171
+        }
+      ]
+    },
+    "NEWLISCOU26900": {
+      "id": "NEWLISCOU26900",
+      "label": "New listings",
+      "geo": "metro",
+      "geoName": "Indianapolis-Carmel-Anderson metro",
+      "unit": "count",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/NEWLISCOU26900",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 2712
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 3064
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 2876
+      },
+      "momPct": -11.5,
+      "yoyPct": -5.7,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 2116
+        },
+        {
+          "date": "2024-12-01",
+          "value": 1488
+        },
+        {
+          "date": "2025-01-01",
+          "value": 1738
+        },
+        {
+          "date": "2025-02-01",
+          "value": 2112
+        },
+        {
+          "date": "2025-03-01",
+          "value": 2832
+        },
+        {
+          "date": "2025-04-01",
+          "value": 3108
+        },
+        {
+          "date": "2025-05-01",
+          "value": 3248
+        },
+        {
+          "date": "2025-06-01",
+          "value": 3254
+        },
+        {
+          "date": "2025-07-01",
+          "value": 2946
+        },
+        {
+          "date": "2025-08-01",
+          "value": 2980
+        },
+        {
+          "date": "2025-09-01",
+          "value": 3016
+        },
+        {
+          "date": "2025-10-01",
+          "value": 2876
+        },
+        {
+          "date": "2025-11-01",
+          "value": 2352
+        },
+        {
+          "date": "2025-12-01",
+          "value": 1482
+        },
+        {
+          "date": "2026-01-01",
+          "value": 2060
+        },
+        {
+          "date": "2026-02-01",
+          "value": 2288
+        },
+        {
+          "date": "2026-03-01",
+          "value": 3108
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3764
+        },
+        {
+          "date": "2026-05-01",
+          "value": 3668
+        },
+        {
+          "date": "2026-06-01",
+          "value": 3546
+        },
+        {
+          "date": "2026-07-01",
+          "value": 3414
+        },
+        {
+          "date": "2026-08-01",
+          "value": 3084
+        },
+        {
+          "date": "2026-09-01",
+          "value": 3064
+        },
+        {
+          "date": "2026-10-01",
+          "value": 2712
+        }
+      ]
+    },
+    "PENLISCOU26900": {
+      "id": "PENLISCOU26900",
+      "label": "Pending listings",
+      "geo": "metro",
+      "geoName": "Indianapolis-Carmel-Anderson metro",
+      "unit": "count",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/PENLISCOU26900",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 2651
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 3005
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 3011
+      },
+      "momPct": -11.8,
+      "yoyPct": -12,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 2852
+        },
+        {
+          "date": "2024-12-01",
+          "value": 2287
+        },
+        {
+          "date": "2025-01-01",
+          "value": 2114
+        },
+        {
+          "date": "2025-02-01",
+          "value": 2685
+        },
+        {
+          "date": "2025-03-01",
+          "value": 3108
+        },
+        {
+          "date": "2025-04-01",
+          "value": 3623
+        },
+        {
+          "date": "2025-05-01",
+          "value": 3766
+        },
+        {
+          "date": "2025-06-01",
+          "value": 3688
+        },
+        {
+          "date": "2025-07-01",
+          "value": 3406
+        },
+        {
+          "date": "2025-08-01",
+          "value": 3304
+        },
+        {
+          "date": "2025-09-01",
+          "value": 3083
+        },
+        {
+          "date": "2025-10-01",
+          "value": 3011
+        },
+        {
+          "date": "2025-11-01",
+          "value": 2832
+        },
+        {
+          "date": "2025-12-01",
+          "value": 2188
+        },
+        {
+          "date": "2026-01-01",
+          "value": 2128
+        },
+        {
+          "date": "2026-02-01",
+          "value": 2682
+        },
+        {
+          "date": "2026-03-01",
+          "value": 3233
+        },
+        {
+          "date": "2026-04-01",
+          "value": 3670
+        },
+        {
+          "date": "2026-05-01",
+          "value": 4168
+        },
+        {
+          "date": "2026-06-01",
+          "value": 3774
+        },
+        {
+          "date": "2026-07-01",
+          "value": 3507
+        },
+        {
+          "date": "2026-08-01",
+          "value": 3235
+        },
+        {
+          "date": "2026-09-01",
+          "value": 3005
+        },
+        {
+          "date": "2026-10-01",
+          "value": 2651
+        }
+      ]
+    },
+    "PRIREDCOU26900": {
+      "id": "PRIREDCOU26900",
+      "label": "Listings with a price reduction",
+      "geo": "metro",
+      "geoName": "Indianapolis-Carmel-Anderson metro",
+      "unit": "count",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/PRIREDCOU26900",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 3972
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 3900
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 3678
+      },
+      "momPct": 1.8,
+      "yoyPct": 8,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 2580
+        },
+        {
+          "date": "2024-12-01",
+          "value": 1336
+        },
+        {
+          "date": "2025-01-01",
+          "value": 1448
+        },
+        {
+          "date": "2025-02-01",
+          "value": 1648
+        },
+        {
+          "date": "2025-03-01",
+          "value": 1848
+        },
+        {
+          "date": "2025-04-01",
+          "value": 1974
+        },
+        {
+          "date": "2025-05-01",
+          "value": 2408
+        },
+        {
+          "date": "2025-06-01",
+          "value": 3124
+        },
+        {
+          "date": "2025-07-01",
+          "value": 3448
+        },
+        {
+          "date": "2025-08-01",
+          "value": 3404
+        },
+        {
+          "date": "2025-09-01",
+          "value": 3514
+        },
+        {
+          "date": "2025-10-01",
+          "value": 3678
+        },
+        {
+          "date": "2025-11-01",
+          "value": 3124
+        },
+        {
+          "date": "2025-12-01",
+          "value": 1520
+        },
+        {
+          "date": "2026-01-01",
+          "value": 1576
+        },
+        {
+          "date": "2026-02-01",
+          "value": 1822
+        },
+        {
+          "date": "2026-03-01",
+          "value": 2162
+        },
+        {
+          "date": "2026-04-01",
+          "value": 2486
+        },
+        {
+          "date": "2026-05-01",
+          "value": 2940
+        },
+        {
+          "date": "2026-06-01",
+          "value": 3302
+        },
+        {
+          "date": "2026-07-01",
+          "value": 3544
+        },
+        {
+          "date": "2026-08-01",
+          "value": 3740
+        },
+        {
+          "date": "2026-09-01",
+          "value": 3900
+        },
+        {
+          "date": "2026-10-01",
+          "value": 3972
+        }
+      ]
+    },
+    "MEDDAYONMAR26900": {
+      "id": "MEDDAYONMAR26900",
+      "label": "Median days on market",
+      "geo": "metro",
+      "geoName": "Indianapolis-Carmel-Anderson metro",
+      "unit": "days",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/MEDDAYONMAR26900",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 55
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 53
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 50
+      },
+      "momPct": 3.8,
+      "yoyPct": 10,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 50
+        },
+        {
+          "date": "2024-12-01",
+          "value": 60
+        },
+        {
+          "date": "2025-01-01",
+          "value": 68
+        },
+        {
+          "date": "2025-02-01",
+          "value": 63
+        },
+        {
+          "date": "2025-03-01",
+          "value": 44
+        },
+        {
+          "date": "2025-04-01",
+          "value": 40
+        },
+        {
+          "date": "2025-05-01",
+          "value": 39
+        },
+        {
+          "date": "2025-06-01",
+          "value": 41
+        },
+        {
+          "date": "2025-07-01",
+          "value": 45
+        },
+        {
+          "date": "2025-08-01",
+          "value": 47
+        },
+        {
+          "date": "2025-09-01",
+          "value": 47
+        },
+        {
+          "date": "2025-10-01",
+          "value": 50
+        },
+        {
+          "date": "2025-11-01",
+          "value": 52
+        },
+        {
+          "date": "2025-12-01",
+          "value": 64
+        },
+        {
+          "date": "2026-01-01",
+          "value": 74
+        },
+        {
+          "date": "2026-02-01",
+          "value": 73
+        },
+        {
+          "date": "2026-03-01",
+          "value": 52
+        },
+        {
+          "date": "2026-04-01",
+          "value": 41
+        },
+        {
+          "date": "2026-05-01",
+          "value": 42
+        },
+        {
+          "date": "2026-06-01",
+          "value": 45
+        },
+        {
+          "date": "2026-07-01",
+          "value": 47
+        },
+        {
+          "date": "2026-08-01",
+          "value": 51
+        },
+        {
+          "date": "2026-09-01",
+          "value": 53
+        },
+        {
+          "date": "2026-10-01",
+          "value": 55
+        }
+      ]
+    },
+    "MEDLISPRI18057": {
+      "id": "MEDLISPRI18057",
+      "label": "Median listing price",
+      "geo": "hamilton",
+      "geoName": "Hamilton County, IN",
+      "unit": "usd",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/MEDLISPRI18057",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 445000
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 449450
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 475000
+      },
+      "momPct": -1,
+      "yoyPct": -6.3,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 463513
+        },
+        {
+          "date": "2024-12-01",
+          "value": 469900
+        },
+        {
+          "date": "2025-01-01",
+          "value": 478450
+        },
+        {
+          "date": "2025-02-01",
+          "value": 490675
+        },
+        {
+          "date": "2025-03-01",
+          "value": 500000
+        },
+        {
+          "date": "2025-04-01",
+          "value": 495745
+        },
+        {
+          "date": "2025-05-01",
+          "value": 495000
+        },
+        {
+          "date": "2025-06-01",
+          "value": 499450
+        },
+        {
+          "date": "2025-07-01",
+          "value": 499900
+        },
+        {
+          "date": "2025-08-01",
+          "value": 489900
+        },
+        {
+          "date": "2025-09-01",
+          "value": 479070
+        },
+        {
+          "date": "2025-10-01",
+          "value": 475000
+        },
+        {
+          "date": "2025-11-01",
+          "value": 455000
+        },
+        {
+          "date": "2025-12-01",
+          "value": 449973
+        },
+        {
+          "date": "2026-01-01",
+          "value": 459500
+        },
+        {
+          "date": "2026-02-01",
+          "value": 472475
+        },
+        {
+          "date": "2026-03-01",
+          "value": 479725
+        },
+        {
+          "date": "2026-04-01",
+          "value": 485546
+        },
+        {
+          "date": "2026-05-01",
+          "value": 495000
+        },
+        {
+          "date": "2026-06-01",
+          "value": 489950
+        },
+        {
+          "date": "2026-07-01",
+          "value": 485000
+        },
+        {
+          "date": "2026-08-01",
+          "value": 464950
+        },
+        {
+          "date": "2026-09-01",
+          "value": 449450
+        },
+        {
+          "date": "2026-10-01",
+          "value": 445000
+        }
+      ]
+    },
+    "ACTLISCOU18057": {
+      "id": "ACTLISCOU18057",
+      "label": "Active listings",
+      "geo": "hamilton",
+      "geoName": "Hamilton County, IN",
+      "unit": "count",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/ACTLISCOU18057",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 1111
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 1065
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 931
+      },
+      "momPct": 4.3,
+      "yoyPct": 19.3,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 714
+        },
+        {
+          "date": "2024-12-01",
+          "value": 591
+        },
+        {
+          "date": "2025-01-01",
+          "value": 488
+        },
+        {
+          "date": "2025-02-01",
+          "value": 422
+        },
+        {
+          "date": "2025-03-01",
+          "value": 486
+        },
+        {
+          "date": "2025-04-01",
+          "value": 548
+        },
+        {
+          "date": "2025-05-01",
+          "value": 677
+        },
+        {
+          "date": "2025-06-01",
+          "value": 784
+        },
+        {
+          "date": "2025-07-01",
+          "value": 846
+        },
+        {
+          "date": "2025-08-01",
+          "value": 858
+        },
+        {
+          "date": "2025-09-01",
+          "value": 943
+        },
+        {
+          "date": "2025-10-01",
+          "value": 931
+        },
+        {
+          "date": "2025-11-01",
+          "value": 907
+        },
+        {
+          "date": "2025-12-01",
+          "value": 736
+        },
+        {
+          "date": "2026-01-01",
+          "value": 628
+        },
+        {
+          "date": "2026-02-01",
+          "value": 583
+        },
+        {
+          "date": "2026-03-01",
+          "value": 608
+        },
+        {
+          "date": "2026-04-01",
+          "value": 701
+        },
+        {
+          "date": "2026-05-01",
+          "value": 722
+        },
+        {
+          "date": "2026-06-01",
+          "value": 852
+        },
+        {
+          "date": "2026-07-01",
+          "value": 928
+        },
+        {
+          "date": "2026-08-01",
+          "value": 976
+        },
+        {
+          "date": "2026-09-01",
+          "value": 1065
+        },
+        {
+          "date": "2026-10-01",
+          "value": 1111
+        }
+      ]
+    },
+    "MEDDAYONMAR18057": {
+      "id": "MEDDAYONMAR18057",
+      "label": "Median days on market",
+      "geo": "hamilton",
+      "geoName": "Hamilton County, IN",
+      "unit": "days",
+      "source": "Realtor.com via FRED",
+      "url": "https://fred.stlouisfed.org/series/MEDDAYONMAR18057",
+      "latest": {
+        "date": "2026-10-01",
+        "value": 49
+      },
+      "prior": {
+        "date": "2026-09-01",
+        "value": 45
+      },
+      "yearAgo": {
+        "date": "2025-10-01",
+        "value": 45
+      },
+      "momPct": 8.9,
+      "yoyPct": 8.9,
+      "last24": [
+        {
+          "date": "2024-11-01",
+          "value": 46
+        },
+        {
+          "date": "2024-12-01",
+          "value": 55
+        },
+        {
+          "date": "2025-01-01",
+          "value": 63
+        },
+        {
+          "date": "2025-02-01",
+          "value": 58
+        },
+        {
+          "date": "2025-03-01",
+          "value": 32
+        },
+        {
+          "date": "2025-04-01",
+          "value": 32
+        },
+        {
+          "date": "2025-05-01",
+          "value": 33
+        },
+        {
+          "date": "2025-06-01",
+          "value": 36
+        },
+        {
+          "date": "2025-07-01",
+          "value": 39
+        },
+        {
+          "date": "2025-08-01",
+          "value": 43
+        },
+        {
+          "date": "2025-09-01",
+          "value": 41
+        },
+        {
+          "date": "2025-10-01",
+          "value": 45
+        },
+        {
+          "date": "2025-11-01",
+          "value": 50
+        },
+        {
+          "date": "2025-12-01",
+          "value": 62
+        },
+        {
+          "date": "2026-01-01",
+          "value": 71
+        },
+        {
+          "date": "2026-02-01",
+          "value": 59
+        },
+        {
+          "date": "2026-03-01",
+          "value": 38
+        },
+        {
+          "date": "2026-04-01",
+          "value": 35
+        },
+        {
+          "date": "2026-05-01",
+          "value": 37
+        },
+        {
+          "date": "2026-06-01",
+          "value": 39
+        },
+        {
+          "date": "2026-07-01",
+          "value": 40
+        },
+        {
+          "date": "2026-08-01",
+          "value": 44
+        },
+        {
+          "date": "2026-09-01",
+          "value": 45
+        },
+        {
+          "date": "2026-10-01",
+          "value": 49
+        }
+      ]
+    },
+    "MORTGAGE30US": {
+      "id": "MORTGAGE30US",
+      "label": "30-year fixed mortgage rate (weekly avg)",
+      "geo": "us",
+      "geoName": "U.S. (Freddie Mac PMMS)",
+      "unit": "pct",
+      "source": "Freddie Mac via FRED",
+      "url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
+      "latest": {
+        "date": "2026-11-19",
+        "value": 7.28
+      },
+      "prior": {
+        "date": "2026-10-22",
+        "value": 7.32
+      },
+      "yearAgo": {
+        "date": "2025-11-20",
+        "value": 6.26
+      },
+      "momPct": -0.5,
+      "yoyPct": 16.3,
+      "last24": [
+        {
+          "date": "2024-11-27",
+          "value": 6.81
+        },
+        {
+          "date": "2024-12-05",
+          "value": 6.69
+        },
+        {
+          "date": "2024-12-12",
+          "value": 6.6
+        },
+        {
+          "date": "2024-12-19",
+          "value": 6.72
+        },
+        {
+          "date": "2024-12-26",
+          "value": 6.85
+        },
+        {
+          "date": "2025-01-02",
+          "value": 6.91
+        },
+        {
+          "date": "2025-01-09",
+          "value": 6.93
+        },
+        {
+          "date": "2025-01-16",
+          "value": 7.04
+        },
+        {
+          "date": "2025-01-23",
+          "value": 6.96
+        },
+        {
+          "date": "2025-01-30",
+          "value": 6.95
+        },
+        {
+          "date": "2025-02-06",
+          "value": 6.89
+        },
+        {
+          "date": "2025-02-13",
+          "value": 6.87
+        },
+        {
+          "date": "2025-02-20",
+          "value": 6.85
+        },
+        {
+          "date": "2025-02-27",
+          "value": 6.76
+        },
+        {
+          "date": "2025-03-06",
+          "value": 6.63
+        },
+        {
+          "date": "2025-03-13",
+          "value": 6.65
+        },
+        {
+          "date": "2025-03-20",
+          "value": 6.67
+        },
+        {
+          "date": "2025-03-27",
+          "value": 6.65
+        },
+        {
+          "date": "2025-04-03",
+          "value": 6.64
+        },
+        {
+          "date": "2025-04-10",
+          "value": 6.62
+        },
+        {
+          "date": "2025-04-17",
+          "value": 6.83
+        },
+        {
+          "date": "2025-04-24",
+          "value": 6.81
+        },
+        {
+          "date": "2025-05-01",
+          "value": 6.76
+        },
+        {
+          "date": "2025-05-08",
+          "value": 6.76
+        },
+        {
+          "date": "2025-05-15",
+          "value": 6.81
+        },
+        {
+          "date": "2025-05-22",
+          "value": 6.86
+        },
+        {
+          "date": "2025-05-29",
+          "value": 6.89
+        },
+        {
+          "date": "2025-06-05",
+          "value": 6.85
+        },
+        {
+          "date": "2025-06-12",
+          "value": 6.84
+        },
+        {
+          "date": "2025-06-18",
+          "value": 6.81
+        },
+        {
+          "date": "2025-06-26",
+          "value": 6.77
+        },
+        {
+          "date": "2025-07-03",
+          "value": 6.67
+        },
+        {
+          "date": "2025-07-10",
+          "value": 6.72
+        },
+        {
+          "date": "2025-07-17",
+          "value": 6.75
+        },
+        {
+          "date": "2025-07-24",
+          "value": 6.74
+        },
+        {
+          "date": "2025-07-31",
+          "value": 6.72
+        },
+        {
+          "date": "2025-08-07",
+          "value": 6.63
+        },
+        {
+          "date": "2025-08-14",
+          "value": 6.58
+        },
+        {
+          "date": "2025-08-21",
+          "value": 6.58
+        },
+        {
+          "date": "2025-08-28",
+          "value": 6.56
+        },
+        {
+          "date": "2025-09-04",
+          "value": 6.5
+        },
+        {
+          "date": "2025-09-11",
+          "value": 6.35
+        },
+        {
+          "date": "2025-09-18",
+          "value": 6.26
+        },
+        {
+          "date": "2025-09-25",
+          "value": 6.3
+        },
+        {
+          "date": "2025-10-02",
+          "value": 6.34
+        },
+        {
+          "date": "2025-10-09",
+          "value": 6.3
+        },
+        {
+          "date": "2025-10-16",
+          "value": 6.27
+        },
+        {
+          "date": "2025-10-23",
+          "value": 6.19
+        },
+        {
+          "date": "2025-10-30",
+          "value": 6.17
+        },
+        {
+          "date": "2025-11-06",
+          "value": 6.22
+        },
+        {
+          "date": "2025-11-13",
+          "value": 6.24
+        },
+        {
+          "date": "2025-11-20",
+          "value": 6.26
+        },
+        {
+          "date": "2025-11-26",
+          "value": 6.23
+        },
+        {
+          "date": "2025-12-04",
+          "value": 6.19
+        },
+        {
+          "date": "2025-12-11",
+          "value": 6.22
+        },
+        {
+          "date": "2025-12-18",
+          "value": 6.21
+        },
+        {
+          "date": "2025-12-24",
+          "value": 6.18
+        },
+        {
+          "date": "2025-12-31",
+          "value": 6.15
+        },
+        {
+          "date": "2026-01-08",
+          "value": 6.16
+        },
+        {
+          "date": "2026-01-15",
+          "value": 6.06
+        },
+        {
+          "date": "2026-01-22",
+          "value": 6.09
+        },
+        {
+          "date": "2026-01-29",
+          "value": 6.1
+        },
+        {
+          "date": "2026-02-05",
+          "value": 6.11
+        },
+        {
+          "date": "2026-02-12",
+          "value": 6.09
+        },
+        {
+          "date": "2026-02-19",
+          "value": 6.01
+        },
+        {
+          "date": "2026-02-26",
+          "value": 5.98
+        },
+        {
+          "date": "2026-03-05",
+          "value": 6
+        },
+        {
+          "date": "2026-03-12",
+          "value": 6.11
+        },
+        {
+          "date": "2026-03-19",
+          "value": 6.22
+        },
+        {
+          "date": "2026-03-26",
+          "value": 6.38
+        },
+        {
+          "date": "2026-04-02",
+          "value": 6.46
+        },
+        {
+          "date": "2026-04-09",
+          "value": 6.37
+        },
+        {
+          "date": "2026-04-16",
+          "value": 6.3
+        },
+        {
+          "date": "2026-04-23",
+          "value": 6.23
+        },
+        {
+          "date": "2026-04-30",
+          "value": 6.3
+        },
+        {
+          "date": "2026-05-07",
+          "value": 6.37
+        },
+        {
+          "date": "2026-05-14",
+          "value": 6.36
+        },
+        {
+          "date": "2026-05-21",
+          "value": 6.51
+        },
+        {
+          "date": "2026-05-28",
+          "value": 6.53
+        },
+        {
+          "date": "2026-06-04",
+          "value": 6.48
+        },
+        {
+          "date": "2026-06-11",
+          "value": 6.52
+        },
+        {
+          "date": "2026-06-18",
+          "value": 6.47
+        },
+        {
+          "date": "2026-06-25",
+          "value": 6.49
+        },
+        {
+          "date": "2026-07-02",
+          "value": 6.43
+        },
+        {
+          "date": "2026-07-09",
+          "value": 6.49
+        },
+        {
+          "date": "2026-07-16",
+          "value": 6.55
+        },
+        {
+          "date": "2026-07-23",
+          "value": 6.58
+        },
+        {
+          "date": "2026-07-30",
+          "value": 6.66
+        },
+        {
+          "date": "2026-08-06",
+          "value": 6.69
+        },
+        {
+          "date": "2026-08-13",
+          "value": 6.67
+        },
+        {
+          "date": "2026-08-20",
+          "value": 6.65
+        },
+        {
+          "date": "2026-08-27",
+          "value": 6.66
+        },
+        {
+          "date": "2026-09-03",
+          "value": 6.71
+        },
+        {
+          "date": "2026-09-10",
+          "value": 6.76
+        },
+        {
+          "date": "2026-09-17",
+          "value": 6.95
+        },
+        {
+          "date": "2026-09-24",
+          "value": 7.03
+        },
+        {
+          "date": "2026-10-01",
+          "value": 7.28
+        },
+        {
+          "date": "2026-10-08",
+          "value": 7.4
+        },
+        {
+          "date": "2026-10-15",
+          "value": 7.4
+        },
+        {
+          "date": "2026-10-22",
+          "value": 7.32
+        },
+        {
+          "date": "2026-10-29",
+          "value": 7.24
+        },
+        {
+          "date": "2026-11-05",
+          "value": 7.18
+        },
+        {
+          "date": "2026-11-12",
+          "value": 7.11
+        },
+        {
+          "date": "2026-11-19",
+          "value": 7.28
+        }
+      ]
+    }
+  },
+  "derived": {
+    "priceReducedSharePct": 55.4,
+    "priceReducedSharePctYearAgo": 62.2,
+    "hamiltonPremiumPct": 45.9,
+    "hamiltonShareOfMetroInventoryPct": 15.5
+  }
+}

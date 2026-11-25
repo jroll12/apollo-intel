@@ -1,0 +1,78 @@
+{
+  "principles": [
+    "One queue, one approval moment per week. Leaders review in 15 minutes, not in scattered texts.",
+    "Every number has a source. Every public asset carries the brokerage line. Every listing hits the MLS before it hits social.",
+    "Reuse before create: one blog post becomes 4-6 assets across channels.",
+    "No new paid tools in the first 90 days. Get more out of Brivity, Fello, Canva and KW Command first."
+  ],
+  "weeklyRhythm": [
+    { "day": "Monday", "name": "Plan", "minutes": 60, "owner": "Marketing & Ops Coordinator", "steps": ["Pull the newest public market data and refresh the stat cards", "Confirm the week's calendar slots and any new listings from the Listing Manager", "Collect agent requests from the intake form (one queue, no DMs)"] },
+    { "day": "Tuesday", "name": "Produce", "minutes": 240, "owner": "Marketing & Ops Coordinator", "steps": ["Write captions, emails and GBP posts in one batch", "Build visuals from Canva templates", "Film 2 short videos with whichever agent is in the office (10 minutes each)"] },
+    { "day": "Wednesday", "name": "Approve", "minutes": 15, "owner": "CEO (or delegate)", "steps": ["Review the approval queue in one sitting: approve, edit, or kill", "The coordinator runs the compliance checklist before anything enters the queue"] },
+    { "day": "Thursday", "name": "Schedule", "minutes": 60, "owner": "Marketing & Ops Coordinator", "steps": ["Schedule social posts and GBP posts for the next 7 days", "Load emails into Brivity with the right list segments", "Update the listing launch tracker"] },
+    { "day": "Friday", "name": "Report", "minutes": 30, "owner": "Marketing & Ops Coordinator", "steps": ["Send a one-screen KPI snapshot to the CEO", "Name 3 learnings and 1 change for next week", "Ask 2 recent closings for a Google review"] }
+  ],
+  "raciRoles": ["CEO", "Agents", "Listing Manager", "Client Care Manager", "Ops & Referrals Manager", "Marketing & Ops Coordinator"],
+  "raci": [
+    { "activity": "Monthly content calendar", "r": ["Marketing & Ops Coordinator"], "a": "CEO", "c": ["Agents"], "i": ["Client Care Manager"] },
+    { "activity": "Weekly approval queue", "r": ["CEO"], "a": "CEO", "c": ["Marketing & Ops Coordinator"], "i": ["Agents"] },
+    { "activity": "Listing launch kit", "r": ["Marketing & Ops Coordinator"], "a": "Listing Manager", "c": ["Agents"], "i": ["CEO"] },
+    { "activity": "MLS entry and Clear Cooperation timing", "r": ["Listing Manager"], "a": "Listing Manager", "c": ["Marketing & Ops Coordinator"], "i": ["Agents"] },
+    { "activity": "Market data and stat cards", "r": ["Marketing & Ops Coordinator"], "a": "CEO", "c": [], "i": ["Agents"] },
+    { "activity": "Review requests after closing", "r": ["Client Care Manager"], "a": "Client Care Manager", "c": ["Marketing & Ops Coordinator"], "i": ["CEO"] },
+    { "activity": "Lead source tagging in Brivity", "r": ["Ops & Referrals Manager"], "a": "CEO", "c": ["Marketing & Ops Coordinator"], "i": ["Agents"] },
+    { "activity": "Podcast recording and clips", "r": ["Marketing & Ops Coordinator"], "a": "CEO", "c": ["Agents"], "i": ["Client Care Manager"] },
+    { "activity": "Monthly KPI report", "r": ["Marketing & Ops Coordinator"], "a": "CEO", "c": ["Ops & Referrals Manager"], "i": ["Agents"] }
+  ],
+  "listingLaunch": [
+    { "t": "T-5", "task": "Listing agreement signed: create the launch card, book photos and video", "owner": "Listing Manager" },
+    { "t": "T-3", "task": "Draft MLS remarks, flyer, social, email and texts from the launch kit template", "owner": "Marketing & Ops Coordinator" },
+    { "t": "T-2", "task": "Agent and seller approve copy; compliance checklist passed", "owner": "Agents" },
+    { "t": "T-0", "task": "Live on the MLS first. Public marketing follows within 1 business day (Clear Cooperation)", "owner": "Listing Manager" },
+    { "t": "T-0", "task": "Just-listed post, GBP post, and story go live", "owner": "Marketing & Ops Coordinator" },
+    { "t": "T+1", "task": "Open-house email to buyer segments in Brivity", "owner": "Marketing & Ops Coordinator" },
+    { "t": "T+4", "task": "Open house; sign-ins captured with text consent", "owner": "Agents" },
+    { "t": "T+5", "task": "3-text follow-up drip to opted-in sign-ins", "owner": "Client Care Manager" },
+    { "t": "T+7", "task": "Seller marketing report: views, saves, showings, feedback", "owner": "Marketing & Ops Coordinator" }
+  ],
+  "compliance": [
+    "Brokerage line on every public asset (Evelo Team | Keller Williams Indy Metro NE)",
+    "Fair housing scan: describe the property, never the people",
+    "Every statistic names its source and period; list price is never called sale price",
+    "MLS before social (Clear Cooperation)",
+    "Emails: physical address and unsubscribe. Texts: opted-in only, STOP language",
+    "Testimonials are quoted exactly, with permission on file"
+  ],
+  "kpis": [
+    { "name": "Leads by source", "definition": "New contacts by lead source (social, GBP, website, Fello, referral, open house)", "source": "Brivity", "cadence": "Weekly" },
+    { "name": "Appointments set", "definition": "Buyer and listing consults booked from marketing-sourced leads", "source": "Brivity", "cadence": "Weekly" },
+    { "name": "Seller leads from home-value pages", "definition": "Fello landing page submissions", "source": "Fello", "cadence": "Weekly" },
+    { "name": "Google Business Profile actions", "definition": "Calls, website clicks and direction requests", "source": "GBP Insights", "cadence": "Weekly" },
+    { "name": "Social reach and saves", "definition": "Accounts reached; saves and shares per post (saves signal useful content)", "source": "Meta Business Suite", "cadence": "Weekly" },
+    { "name": "Email engagement", "definition": "Click rate and replies by segment (opens are unreliable)", "source": "Brivity", "cadence": "Per send" },
+    { "name": "Review velocity", "definition": "New Google reviews per month (419 at 5.0 as of September 2026)", "source": "Google", "cadence": "Monthly" },
+    { "name": "Listing launch on-time rate", "definition": "Share of new listings that hit every launch milestone on schedule", "source": "Launch tracker", "cadence": "Monthly" }
+  ],
+  "kpiNote": "Targets are set after a 30-day baseline. Setting targets before measuring is guessing.",
+  "stack": [
+    { "tool": "Brivity", "role": "CRM, IDX website, email sends, lead-source tagging", "move": "Tag every marketing lead by source so the KPI report is automatic" },
+    { "tool": "Fello", "role": "Home-value landing pages for seller leads", "move": "Point every 'What's my home worth?' CTA here" },
+    { "tool": "Canva", "role": "Templates and brand kit", "move": "Build a locked template library so any agent can make an on-brand post in 5 minutes" },
+    { "tool": "Meta Business Suite", "role": "Free scheduling for Instagram and Facebook", "move": "Schedule Thursday for the week ahead" },
+    { "tool": "Google Business Profile", "role": "Local search presence", "move": "2 posts a week plus a review ask after every closing" },
+    { "tool": "KW Command", "role": "KW-native campaigns and SmartPlans", "move": "Mirror the 3-text open house follow-up as a SmartPlan" }
+  ],
+  "plan306090": [
+    { "phase": "First 30 days", "items": ["Run the December calendar end to end", "Build the Canva template library and brand kit", "Set up the weekly approval queue and Friday KPI snapshot", "Measure the baseline for every KPI"] },
+    { "phase": "Days 31-60", "items": ["Use the listing launch kit on every new listing", "Record and launch the podcast reboot pilot", "Automate review requests after closing", "First monthly KPI report with targets"] },
+    { "phase": "Days 61-90", "items": ["Agent content request intake running smoothly", "Repurpose every blog post into 4-6 assets automatically", "Plan podcast season two", "90-day review with the CEO: keep, cut, double down"] }
+  ],
+  "approvalQueue": [
+    { "id": "S10", "item": "Listing launch kit (sample listing)", "status": "Needs approval", "owner": "Listing Manager" },
+    { "id": "S03", "item": "Blog: Indy-area listing trends heading into winter", "status": "Needs approval", "owner": "CEO" },
+    { "id": "S05", "item": "Buyer newsletter: winter buying", "status": "Approved", "owner": "CEO" },
+    { "id": "S01", "item": "Reel: inventory up 21.3%", "status": "Approved", "owner": "CEO" },
+    { "id": "S33", "item": "Podcast pilot script", "status": "In edit", "owner": "Marketing & Ops Coordinator" },
+    { "id": "S21", "item": "Year-end client letter", "status": "Drafting", "owner": "Marketing & Ops Coordinator" }
+  ]
+}

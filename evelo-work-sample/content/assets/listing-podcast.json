@@ -1,0 +1,342 @@
+[
+  {
+    "id": "S10-mls",
+    "slot": "S10",
+    "channel": "listing-mls",
+    "pillar": "LL",
+    "date": "2026-12-08",
+    "title": "Sample listing: MLS public remarks, 1234 Sample Lane, Fishers",
+    "hook": "A kitchen updated in 2023, with quartz counters, a gas range and a walk-in pantry, anchors this 4-bedroom Fishers home.",
+    "body": "A kitchen updated in 2023, with quartz counters, a gas range and a walk-in pantry, anchors this 4-bedroom Fishers home. The home offers 2.5 baths and 2,650 square feet on a 0.28-acre lot. A main-level office with French doors sits just off the entry and closes off for calls or quiet work. The primary suite includes a walk-in closet and dual vanities. The finished basement adds a flex room and a half bath, with space that can work as a gym, media room or guest area. Two big-ticket items are already done: the roof was replaced in 2022, and the kitchen update followed in 2023. Outside, the fenced backyard opens to a paver patio with room for outdoor seating, and the 3-car attached garage adds storage. Built in 2004 in a subdivision on the east side of Fishers, the home sits about 1 mile from a Nickel Plate Trail access point. School district: Hamilton Southeastern Schools. HOA is $45 per month. Offered at $465,000.",
+    "cta": "See the MLS showing and open-house fields to schedule a visit.",
+    "visual": {
+      "kind": "doc",
+      "headline": "MLS public remarks: 1234 Sample Lane, Fishers",
+      "sub": "Sample listing (illustrative) | 4 bed | 2.5 bath | 2,650 sq ft | 0.28 acre",
+      "stat": "$465,000"
+    },
+    "sources": [
+      "content/listing.json",
+      "content/brand.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Sample listing (illustrative): a hypothetical property created for this spec sample, not a real home for sale.",
+    "adType": true
+  },
+  {
+    "id": "S10-social",
+    "slot": "S10",
+    "channel": "listing-social",
+    "pillar": "LL",
+    "date": "2026-12-08",
+    "title": "Sample listing: just-listed post, 1234 Sample Lane, Fishers",
+    "hook": "New on the MLS in Fishers: a 2023 kitchen, a main-level office and a 3-car garage.",
+    "body": "Sample listing (illustrative). 1234 Sample Lane, Fishers, IN 46038 is now on the MLS at $465,000.\n\nWhat stands out:\n- Kitchen updated in 2023 with quartz counters, gas range and walk-in pantry\n- Main-level office with French doors\n- Finished basement with flex room and half bath\n- Roof replaced in 2022\n- Fenced backyard with paver patio\n\n4 beds, 2.5 baths, 2,650 sq ft on 0.28 acre. Hamilton Southeastern Schools district. About 1 mile to Nickel Plate Trail access.\n\nOpen house: Saturday, December 12, 1:00 to 3:00 PM.\n\nEvelo Team | Keller Williams Indy Metro NE",
+    "cta": "Stop by the open house, or call 317-863-9011 to book a private showing.",
+    "hashtags": [
+      "#JustListed",
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate"
+    ],
+    "visual": {
+      "kind": "feed",
+      "headline": "Just listed: 1234 Sample Lane, Fishers",
+      "sub": "Sample listing (illustrative) | 4 bed | 2.5 bath | 2,650 sq ft | Open house Sat, Dec 12, 1:00-3:00 PM",
+      "stat": "$465,000"
+    },
+    "sources": [
+      "content/listing.json",
+      "content/brand.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Sample listing (illustrative): a hypothetical property created for this spec sample, not a real home for sale.",
+    "adType": true
+  },
+  {
+    "id": "S10-email",
+    "slot": "S10",
+    "channel": "listing-email",
+    "pillar": "LL",
+    "date": "2026-12-08",
+    "title": "Sample listing: open-house invite email to buyer list",
+    "subject": "Open house Sat: 2023 kitchen, 3-car garage, $465K",
+    "preview": "Sample listing at 1234 Sample Lane, Fishers. Doors open Saturday, December 12, 1:00 to 3:00 PM.",
+    "hook": "Picture Saturday afternoon in a Fishers kitchen updated in 2023: quartz counters, a gas range and a walk-in pantry.",
+    "body": "*Sample listing (illustrative)*\n\nHi {first_name},\n\nPicture Saturday afternoon in a Fishers kitchen updated in 2023: quartz counters, a gas range and a walk-in pantry. That's the first room you'll see at 1234 Sample Lane, now on the MLS at $465,000. The doors are open this Saturday, and no appointment is needed.\n\n**When:** Saturday, December 12, 1:00 to 3:00 PM  \n**Where:** 1234 Sample Lane, Fishers, IN 46038\n\n**Also worth a look**\n- 4 bedrooms, 2.5 baths, 2,650 sq ft on a 0.28-acre lot\n- Main-level office with French doors\n- Primary suite with walk-in closet and dual vanities\n- Finished basement with flex room and half bath\n- Roof replaced in 2022 and a 3-car attached garage\n- Fenced backyard with paver patio, about 1 mile to Nickel Plate Trail access\n\nThe home is in the Hamilton Southeastern Schools district, and the HOA is $45 per month.\n\nCome walk through at your own pace. We'll have feature sheets ready and time for your questions. Can't make Saturday? Just reply to this email.\n\nWarmly,  \nThe Evelo Team\n\n---\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.  \n11501 Cumberland Rd, Suite 300, Fishers, IN 46037  \nYou're receiving this because you joined our buyer list. [Unsubscribe](#unsubscribe) anytime.",
+    "cta": "Stop by the open house Saturday, December 12, 1:00 to 3:00 PM.",
+    "visual": {
+      "kind": "email",
+      "headline": "Open house Saturday in Fishers",
+      "sub": "Sample listing (illustrative) | 1234 Sample Lane | Sat, Dec 12, 1:00-3:00 PM",
+      "stat": "$465,000"
+    },
+    "sources": [
+      "content/listing.json",
+      "content/brand.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Sample listing (illustrative): a hypothetical property created for this spec sample, not a real home for sale. Evelo Team | Keller Williams Indy Metro NE, 11501 Cumberland Rd, Suite 300, Fishers, IN 46037. You received this because you joined the Evelo Team buyer list. Unsubscribe anytime.",
+    "adType": true
+  },
+  {
+    "id": "S10-flyer",
+    "slot": "S10",
+    "channel": "listing-flyer",
+    "pillar": "LL",
+    "date": "2026-12-08",
+    "title": "Sample listing: open-house flyer copy, 1234 Sample Lane",
+    "hook": "A 2023 kitchen, a 2022 roof and a fenced yard in Fishers, offered at $465,000.",
+    "body": "**SAMPLE LISTING (ILLUSTRATIVE)**\n\n# 1234 Sample Lane, Fishers, IN 46038\n## A 2023 kitchen, a 2022 roof and a fenced yard in Fishers, offered at $465,000.\n\n**4 beds | 2.5 baths | 2,650 sq ft | 0.28 acre | 3-car attached garage**\n\n- Kitchen updated in 2023 with quartz counters, gas range and walk-in pantry\n- Main-level office with French doors\n- Primary suite with walk-in closet and dual vanities\n- Finished basement with flex room and half bath\n- Fenced backyard with paver patio\n\nAlso: roof replaced in 2022. Built in 2004. Hamilton Southeastern Schools district. HOA $45 per month. About 1 mile to Nickel Plate Trail access. Now on the MLS.\n\n**OPEN HOUSE**  \nSaturday, December 12 | 1:00 to 3:00 PM\n\n**Book a private showing: 317-863-9011**\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "cta": "Call 317-863-9011 to book a private showing.",
+    "visual": {
+      "kind": "flyer",
+      "headline": "1234 Sample Lane, Fishers",
+      "sub": "Sample listing (illustrative) | Open house Sat, Dec 12, 1:00-3:00 PM",
+      "stat": "$465,000"
+    },
+    "sources": [
+      "content/listing.json",
+      "content/brand.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Sample listing (illustrative): a hypothetical property created for this spec sample, not a real home for sale.",
+    "adType": true
+  },
+  {
+    "id": "S10-sms",
+    "slot": "S10",
+    "channel": "sms",
+    "pillar": "LL",
+    "date": "2026-12-08",
+    "title": "Sample listing: 3-text follow-up drip for open-house sign-ins",
+    "hook": "Thanks for stopping by the Sample Lane open house today.",
+    "body": "Hi {first_name}, thanks for visiting 1234 Sample Lane today. Questions? Just reply. Evelo Team, Keller Williams Indy Metro NE. Reply STOP to opt out\n---\nHi {first_name}, want the disclosures, HOA details or a second look at 1234 Sample Lane? Reply with a time that works and we'll set it up. Evelo Team\n---\nStill looking in Fishers or Hamilton County? Reply YES and we'll set up a home search for you. Evelo Team, Keller Williams Indy Metro NE",
+    "cta": "Reply to ask a question, book a second showing or start a home search.",
+    "visual": {
+      "kind": "sms",
+      "headline": "Open-house follow-up: 3 texts",
+      "sub": "Sample listing (illustrative). Opted-in sign-ins only. Send same day, day 2 and day 5."
+    },
+    "sources": [
+      "content/listing.json",
+      "content/brand.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Sample listing (illustrative): a hypothetical property created for this spec sample, not a real home for sale.",
+    "adType": true
+  },
+  {
+    "id": "S33-script",
+    "slot": "S33",
+    "channel": "podcast-script",
+    "pillar": "AQ",
+    "date": "2026-12-09",
+    "title": "Podcast pilot script: Winter 2026 in Central Indiana and your 2027 move",
+    "hook": "The last time this show was on the air, we asked whether you should wait to make an offer. Ten years later, it's still the question we hear most.",
+    "body": "# Indianapolis Real Estate Podcast with the Evelo Team\n## Pilot: Winter 2026 in Central Indiana: what October's numbers mean for your 2027 move\n\nRuntime target: about 14 minutes. Record December 9, 2026. Release January 6, 2027.\n\n> **PRODUCER NOTE:** The four market numbers in this episode (homes for sale, days on market, price-cut share, 30-year rate) are October data, the latest at recording. Before the January 6 release, refresh them to November data from the same sources, record the changed lines as pickups, and update the show notes to match. Also confirm with the team what the 2% Filter of Hope gift is a percentage of.\n\n## Outline\n- **00:00** Cold open: the show is back\n- **00:40** Welcome: meet the host and first guest\n- **01:45** Segment 1: What the market feels like right now\n- **05:00** Segment 2: Then vs now: \"Should You Wait to Make an Offer in Indianapolis?\" (June 2016)\n- **08:15** Segment 3: Planning a 2027 move, for buyers and sellers\n- **11:00** Segment 4: The giving plan behind every closing\n- **13:00** Wrap, one next step and end card\n\n## Script\n\n**00:00 Cold open**\n\n[HOST] The last time this show was on the air, we asked whether you should wait to make an offer. Ten years later, it's still the question we hear most. So we're bringing the show back to answer it properly.\n\n[MUSIC IN, THEN UNDER]\n\n**00:40 Welcome**\n\n[HOST] Welcome back to the Indianapolis Real Estate Podcast with the Evelo Team. I'm {HOST_FIRST_NAME}, and I lead one of our teams here in Fishers. I talked {GUEST_FIRST_NAME} into being the first guest of the reboot.\n\n[GUEST: Evelo agent] You didn't have to talk very hard. I listened to a couple of the 2016 episodes to prep.\n\n[HOST] And?\n\n[GUEST: Evelo agent] The audio has aged. The questions haven't. People still want to know when to buy, when to sell, and whether they're about to make a mistake.\n\n[HOST] That's the whole idea. Every other Wednesday: one real question, a little local data, plain English. No lectures.\n\n[GUEST: Evelo agent] I can do no lectures.\n\n**01:45 Segment 1: What the market feels like right now**\n\n[HOST] You're in homes most weekends. What feels different from a year ago?\n\n[GUEST: Evelo agent] Choice. A year ago, a lot of buyers felt like they were fighting over a short list. Now they have room to compare.\n\n[HOST] And the data backs that up. We're recording in December, so these are October numbers from Realtor.com via FRED, the latest we have. Hamilton County had 1,111 homes for sale. That's up about 19% from a year earlier.\n\n[GUEST: Evelo agent] And they're taking a bit longer to sell. The typical Hamilton County listing sat 49 days on the market, up from 45 a year ago.\n\n[HOST] So what does that look like at a showing?\n\n[GUEST: Evelo agent] Calmer. Fewer cars in the driveway at the same time. Buyers can go home, sleep on it and come back for a second look.\n\n[HOST] Sellers are feeling it too.\n\n[GUEST: Evelo agent] They are. Across the Indianapolis metro, more than half of the homes for sale in October had a price cut at some point. That's not a crisis. Usually it means the first price was set for a market that had already moved.\n\n[HOST] And then there's the number everybody asks me about at dinner parties.\n\n[GUEST: Evelo agent] Rates. Freddie Mac's 30-year average was 7.28% the week of November 19. Higher than a year ago.\n\n[HOST] So: more homes, more time, plenty of price cuts, and pricier borrowing. That's the backdrop. Now the real question.\n\n**05:00 Segment 2: Then vs now**\n\n[HOST] In June 2016, we recorded an episode called \"Should You Wait to Make an Offer in Indianapolis?\" I'm not going to play it for you. Trust me on that.\n\n[GUEST: Evelo agent] That's a kindness.\n\n[HOST] But the title holds up. So, then versus now. If a buyer asks you that today, what do you say?\n\n[GUEST: Evelo agent] I ask which wait they mean, because there are two. One is waiting a few days on a specific house. The other is waiting on the whole move.\n\n[HOST] Start with the house.\n\n[GUEST: Evelo agent] On a single house, you usually have more room than people think right now. Homes are sitting longer, so you can see it twice, read the disclosures and know your payment before you write anything. That isn't stalling. That's homework.\n\n[HOST] Okay. Waiting on the whole move.\n\n[GUEST: Evelo agent] That one's personal. Nobody can tell you where rates go next, and I'd be careful with anyone who says they can. If you wait for spring, you'll probably see more listings, and more buyers along with them. So I ask, \"Wait for what, exactly?\" A rate? A job change? A bonus? If you can name it, we can plan around it.\n\n[HOST] Then versus now, in one line.\n\n[GUEST: Evelo agent] Then: should you wait? Now: know what you're waiting for.\n\n**08:15 Segment 3: Planning a 2027 move**\n\n[HOST] Let's make it practical. Say I want to buy in Fishers or Noblesville in 2027. Where do I start?\n\n[GUEST: Evelo agent] With a lender, before the listing apps. Get pre-approved so you know your payment at today's rate, not the price you hope for. Then use the extra choice. Tour more homes than you think you need, and ask your agent for each home's price history.\n\n[HOST] And when you find the one?\n\n[GUEST: Evelo agent] Remember the negotiation is bigger than price. Repairs, closing costs, move-in timing. In a calmer market, those become real conversations.\n\n[HOST] Now flip it. I'm selling in Carmel or Westfield.\n\n[GUEST: Evelo agent] Price for the market you're in, not the one your neighbor sold in. Buyers have options, so the first couple of weeks matter most. Clean, repaired, well photographed and priced with current data. And plan for a longer timeline than you might expect.\n\n**11:00 Segment 4: The giving plan**\n\n[HOST] Before we wrap, something close to home for us. The very last episode we posted in 2016 was called \"Support Your Local Food Pantry.\" It felt wrong to bring the show back without that part.\n\n[GUEST: Evelo agent] It's one of my favorite things about this team. Our agents donate part of their commission from every closing. Out of that commission, $10 goes to KW Cares, $10 goes to the REALTOR Foundation, and 2% goes to Filter of Hope, which provides household water filters for families in poverty.\n\n[HOST] And to be clear, that comes from us. Not from our clients, and not from the sale price.\n\n[GUEST: Evelo agent] Right. Nobody pays a cent extra for it.\n\n[HOST] We've helped more than 2,500 families move since 1998, and every one of those moves did a little good somewhere else. Starting this season, each episode ends with a short spotlight on a Central Indiana nonprofit.\n\n**13:00 Wrap**\n\n[HOST] Quick recap. More homes for sale, more time to decide, and higher rates than a year ago. If you're weighing a 2027 move, the first step is a short conversation.\n\n[GUEST: Evelo agent] And you don't need it all figured out before you call. That's what the call is for.\n\n[HOST] Call us at 317-863-9011 and ask for a 2027 move plan. See you in two weeks.\n\n[MUSIC UP]\n\n**End card (read over music)**\n\n[HOST] The Indianapolis Real Estate Podcast is produced by the Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Market data from Realtor.com via FRED and Freddie Mac via FRED, the latest available at recording. This episode is general information, not financial advice.\n",
+    "cta": "Call 317-863-9011 and ask for a 2027 move plan.",
+    "visual": {
+      "kind": "doc",
+      "headline": "Pilot: should you wait to move in 2027?",
+      "sub": "Then vs now, a calmer market and the giving plan | About 14 minutes | Record Dec 9, release Jan 6",
+      "stat": "Episode 1"
+    },
+    "sources": [
+      "content/podcast.json",
+      "content/brand.json",
+      "content/metrics.json#ACTLISCOU18057",
+      "content/metrics.json#MEDDAYONMAR18057",
+      "content/metrics.json#derived.priceReducedSharePct",
+      "content/metrics.json#PRIREDCOU26900",
+      "content/metrics.json#MORTGAGE30US",
+      "content/seeds.json#wait-for-rates",
+      "content/seeds.json#fishers-market-now"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Market data: Realtor.com via FRED and Freddie Mac via FRED, the latest available at recording. General information, not financial advice.",
+    "adType": true
+  },
+  {
+    "id": "S33-notes",
+    "slot": "S33",
+    "channel": "podcast-notes",
+    "pillar": "AQ",
+    "date": "2026-12-09",
+    "title": "Podcast pilot show notes: should you wait to move in 2027?",
+    "hook": "Should you wait to move in 2027? Ten years after we first asked it on this show, we answer it again.",
+    "body": "# Episode 1: Winter 2026 in Central Indiana: what October's numbers mean for your 2027 move\n\n**Indianapolis Real Estate Podcast with the Evelo Team** | Released January 6, 2027 | About 14 minutes\n\n## Summary\nShould you wait to move in 2027? Ten years after we first asked it on this show, we answer it again. A team leader and an Evelo agent talk through what the Hamilton County market feels like right now, then revisit our June 2016 episode \"Should You Wait to Make an Offer in Indianapolis?\" The short answer: know what you're waiting for. They share practical first steps for buyers and sellers planning a 2027 move, and explain the giving plan our agents fund from their commission on every closing.\n\n## Key numbers from the episode\nOctober data, the latest at recording:\n- Hamilton County homes for sale: 1,111, up 19.3% from a year earlier\n- Hamilton County median days on market: 49, up from 45\n- Metro listings with a price cut: more than half (55.4%)\n- 30-year fixed mortgage rate: 7.28% (week of November 19, 2026)\n\nSources: Realtor.com via FRED, October 2026; Freddie Mac via FRED, week of November 19, 2026.\n\n> **PRODUCER NOTE:** The four market numbers (homes for sale, days on market, price-cut share, 30-year rate) are October data, the latest at recording. Before the January 6 release, refresh them to November data from the same sources, record the changed lines as pickups, and update the show notes to match. Also confirm with the team what the 2% Filter of Hope gift is a percentage of.\n\n## Timestamps\n- 00:00 Cold open: the show is back\n- 00:40 Welcome\n- 01:45 What the market feels like right now\n- 05:00 Then vs now: \"Should You Wait to Make an Offer in Indianapolis?\"\n- 08:15 Planning a 2027 move\n- 11:00 The giving plan behind every closing\n- 13:00 Wrap\n\n## Links\n- Evelo Team: [eveloteam.com](https://www.eveloteam.com)\n- Blog: [eveloteam.com/blog](https://www.eveloteam.com/blog)\n- Related post: [Should I Wait to Buy a House Until Interest Rates Drop More?](https://www.eveloteam.com/blog/should-i-wait-to-buy-until-interest-rates-drop)\n- Related post: [What Is the Housing Market Like in Fishers Right Now?](https://www.eveloteam.com/blog/fishers-indiana-housing-market)\n- Our giving plan: [eveloteam.com/giving](https://www.eveloteam.com/giving)\n\n## Talk with us\nWeighing a move in Fishers, Carmel, Noblesville, Westfield or anywhere in Hamilton County? Call 317-863-9011 and ask for a 2027 move plan.\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. General information, not financial advice.\n",
+    "cta": "Call 317-863-9011 and ask for a 2027 move plan.",
+    "visual": {
+      "kind": "doc",
+      "headline": "Show notes: should you wait to move in 2027?",
+      "sub": "Episode 1 | Then vs now | Planning a 2027 move | The giving plan",
+      "stat": "Episode 1"
+    },
+    "sources": [
+      "content/podcast.json",
+      "content/brand.json",
+      "content/metrics.json#ACTLISCOU18057",
+      "content/metrics.json#MEDDAYONMAR18057",
+      "content/metrics.json#derived.priceReducedSharePct",
+      "content/metrics.json#PRIREDCOU26900",
+      "content/metrics.json#MORTGAGE30US",
+      "content/seeds.json#wait-for-rates",
+      "content/seeds.json#fishers-market-now",
+      "https://www.eveloteam.com/blog",
+      "https://www.eveloteam.com/giving"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Market data: Realtor.com via FRED and Freddie Mac via FRED, the latest available at recording. General information, not financial advice.",
+    "adType": true
+  },
+  {
+    "id": "S33-clip-1",
+    "slot": "S33",
+    "channel": "podcast-clip",
+    "pillar": "AQ",
+    "date": "2026-12-09",
+    "title": "Podcast Clip 1: more homes to choose from in Hamilton County",
+    "hook": "If house hunting felt like a short list last year, 2027 starts with a lot more choice.",
+    "body": "If house hunting felt like a short list last year, 2027 starts with a lot more choice. Hamilton County had 1,111 homes for sale in October, the latest data when we recorded. That's up about 19% from a year earlier. So what does that mean for you? You can compare homes side by side instead of grabbing the first one that fits. You can see a house twice. You can ask about price history and repairs without feeling rushed. More choice doesn't make every home a bargain. It gives you time to decide well.\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Follow the Indianapolis Real Estate Podcast for the full episode (link in bio).",
+    "shotList": [
+      "Agent at podcast mic, tight shot, hook delivered to camera",
+      "On-screen text: 1,111 homes for sale in Hamilton County, up about 19%",
+      "B-roll: a Fishers street with a for-sale sign, no house numbers visible",
+      "Agent counting off on fingers: compare, see it twice, ask questions",
+      "End card: Follow the show | Evelo Team | Keller Williams Indy Metro NE | Source: Realtor.com via FRED, Oct 2026"
+    ],
+    "visual": {
+      "kind": "reel",
+      "headline": "2027 starts with more choice",
+      "sub": "Clip from the Evelo Team podcast pilot | Vertical 9:16 | 30-45 seconds",
+      "stat": "Up about 19%"
+    },
+    "sources": [
+      "content/podcast.json",
+      "content/brand.json",
+      "content/metrics.json#ACTLISCOU18057",
+      "content/metrics.json#MEDDAYONMAR18057",
+      "content/metrics.json#derived.priceReducedSharePct",
+      "content/metrics.json#PRIREDCOU26900",
+      "content/metrics.json#MORTGAGE30US",
+      "content/seeds.json#wait-for-rates",
+      "content/seeds.json#fishers-market-now"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Market data: Realtor.com via FRED and Freddie Mac via FRED, the latest available at recording. General information, not financial advice.",
+    "adType": true
+  },
+  {
+    "id": "S33-clip-2",
+    "slot": "S33",
+    "channel": "podcast-clip",
+    "pillar": "AQ",
+    "date": "2026-12-09",
+    "title": "Podcast Clip 2: then vs now, should you wait to make an offer?",
+    "hook": "In 2016 we asked whether you should wait to make an offer in Indianapolis. Here is how we would answer it today.",
+    "body": "In 2016 we asked whether you should wait to make an offer in Indianapolis. Here is how we would answer it today. First, ask which wait you mean. On a single house, you usually have room right now. The typical Hamilton County listing spent 49 days on the market in October. So see it twice, read the disclosures and know your payment. That's homework, not stalling. Waiting on the whole move is different. Ask yourself: wait for what, exactly? If you can name it, you can plan for it.\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Follow the Indianapolis Real Estate Podcast for the full episode (link in bio).",
+    "shotList": [
+      "Archive-style title card: Should You Wait to Make an Offer in Indianapolis? (June 2016)",
+      "Agent at mic, medium shot, explaining the two kinds of waiting",
+      "On-screen text: 49 days, median time on market in Hamilton County",
+      "End card: Follow the show | Evelo Team | Keller Williams Indy Metro NE | Source: Realtor.com via FRED, Oct 2026"
+    ],
+    "visual": {
+      "kind": "reel",
+      "headline": "Then vs now: should you wait to make an offer?",
+      "sub": "Clip from the Evelo Team podcast pilot | Vertical 9:16 | 30-45 seconds",
+      "stat": "49 days"
+    },
+    "sources": [
+      "content/podcast.json",
+      "content/brand.json",
+      "content/metrics.json#ACTLISCOU18057",
+      "content/metrics.json#MEDDAYONMAR18057",
+      "content/metrics.json#derived.priceReducedSharePct",
+      "content/metrics.json#PRIREDCOU26900",
+      "content/metrics.json#MORTGAGE30US",
+      "content/seeds.json#wait-for-rates",
+      "content/seeds.json#fishers-market-now"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Market data: Realtor.com via FRED and Freddie Mac via FRED, the latest available at recording. General information, not financial advice.",
+    "adType": true
+  },
+  {
+    "id": "S33-clip-3",
+    "slot": "S33",
+    "channel": "podcast-clip",
+    "pillar": "AQ",
+    "date": "2026-12-09",
+    "title": "Podcast Clip 3: payment first, then the house",
+    "hook": "Before you tour a single home in 2027, talk to a lender.",
+    "body": "Before you tour a single home in 2027, talk to a lender. Here's why. A pre-approval tells you your real monthly payment at today's rates, not the price you hope for. Once you know that number, you can shop without second-guessing every listing. And when you find the one, remember the negotiation is bigger than price. Repairs, closing costs and move-in timing are all on the table, especially in a calmer market. Knowing your payment first is what lets you negotiate calmly instead of guessing. Payment first, then the house.",
+    "cta": "Follow the Indianapolis Real Estate Podcast for the full episode (link in bio).",
+    "shotList": [
+      "Host close-up delivering the hook",
+      "On-screen text: Step 1: Know your payment",
+      "Agent at mic, lower-third: Repairs | Closing costs | Timing",
+      "End card: Follow the show | Evelo Team | Keller Williams Indy Metro NE"
+    ],
+    "visual": {
+      "kind": "reel",
+      "headline": "Payment first, then the house",
+      "sub": "Clip from the Evelo Team podcast pilot | Vertical 9:16 | 30-45 seconds"
+    },
+    "sources": [
+      "content/podcast.json",
+      "content/brand.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  },
+  {
+    "id": "S33-clip-4",
+    "slot": "S33",
+    "channel": "podcast-clip",
+    "pillar": "AQ",
+    "date": "2026-12-09",
+    "title": "Podcast Clip 4: the giving plan behind every closing",
+    "hook": "Every home the Evelo Team closes sends money to three causes.",
+    "body": "Every home the Evelo Team closes sends money to three causes. Our agents donate part of their commission from every closing to KW Cares, the REALTOR Foundation and Filter of Hope, which provides household water filters for families in poverty. Our clients don't pay for it, and it never comes out of the sale price. The last podcast episode we posted, back in 2016, was about supporting your local food pantry. So when we brought the show back, giving came with it. This season, every episode ends with a spotlight on a nonprofit here in Central Indiana, from Fishers to Noblesville.",
+    "cta": "Follow the Indianapolis Real Estate Podcast for the full episode (link in bio).",
+    "shotList": [
+      "Host at mic, warm medium shot, hook to camera",
+      "On-screen text: KW Cares | REALTOR Foundation | Filter of Hope",
+      "On-screen text: Funded by our agents' commissions, never by clients",
+      "Motion graphic: a map pin on Hamilton County with the words Nonprofit spotlight",
+      "End card: Follow the show | Evelo Team | Keller Williams Indy Metro NE"
+    ],
+    "visual": {
+      "kind": "reel",
+      "headline": "The giving plan behind every closing",
+      "sub": "Clip from the Evelo Team podcast pilot | Vertical 9:16 | 30-45 seconds",
+      "stat": "3 causes"
+    },
+    "sources": [
+      "content/podcast.json",
+      "content/brand.json"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": true
+  },
+  {
+    "id": "S33-season",
+    "slot": "S33",
+    "channel": "podcast-season",
+    "pillar": "AQ",
+    "date": "2027-01-06",
+    "title": "Podcast Season 1 plan: 6 episodes, January to March 2027, plus workflow",
+    "hook": "One 45-minute recording every two weeks gives us a podcast episode, 4 clips, a blog post, a newsletter feature and a Google Business Profile post.",
+    "body": "# Indianapolis Real Estate Podcast with the Evelo Team: Season 1 plan (January to March 2027)\n\n**Decision needed by December 4, 2026:** approve this season plan and confirm the December 9 pilot recording.\n\nOne 45-minute recording every two weeks gives us a podcast episode, 4 clips, a blog post, a newsletter feature and a Google Business Profile post. The show already has a feed and a back catalog from 2016, so we restart with an audience path in place instead of starting from zero.\n\n**Format:** 12-15 minutes, released every other Wednesday. Host: a team leader. One guest per episode. Each episode answers one real question with local data, revisits a 2016 episode where it fits, and closes with a 1-minute Central Indiana nonprofit spotlight.\n\n## Episodes\n\n### Ep 1 | January 6, 2027 | Winter 2026 in Central Indiana: what October's numbers mean for your 2027 move\nPremise: The pilot, recorded December 9 with October data (the latest at recording), refreshed to November data before release.\nWe revisit \"Should You Wait to Make an Offer in Indianapolis?\" as then vs now and introduce the giving plan.\nGuest type: Evelo agent.\n\n### Ep 2 | January 20, 2027 | Is it better to buy than rent in Hamilton County in 2027?\nPremise: We revisit our 2016 rent vs buy episode with current rates and list prices.\nWe walk through the questions that decide it: how long you'll stay, your budget and your down payment.\nGuest type: local mortgage lender.\n\n### Ep 3 | February 3, 2027 | How do I prepare my home to sell this spring?\nPremise: The 2016 spring prep episode, updated for a market with more homes for sale.\nWhat to fix, what to skip, and how presentation affects time on market.\nGuest type: home stager.\n\n### Ep 4 | February 17, 2027 | New construction in Fishers, Noblesville and Westfield: what to ask a builder\nPremise: Builder contracts, incentives and timelines, explained in plain English.\nHow a buyer's agent helps on a new build, and when to bring one in.\nGuest type: the team's new construction specialist.\n\n### Ep 5 | March 3, 2027 | The home inspection, ten years later\nPremise: Our 2016 episode made the case for a three-part home inspection.\nWe ask what a thorough inspection covers today and how to use the report in negotiation.\nGuest type: licensed home inspector.\n\n### Ep 6 | March 17, 2027 | How should sellers weigh offers this spring?\nPremise: Price is only one part of an offer. Terms, financing and timing matter too.\nWe revisit the 2016 multiple-offers episode and update it with spring 2027 data.\nGuest type: Evelo listing agent.\n\n## Production workflow (repeats every two weeks)\n\n1. **Plan (Thursday after each release):** Pick the question from client calls, blog comments and search trends. Pull the latest numbers (Realtor.com via FRED, Freddie Mac via FRED) and label them with the month they cover. Write a one-page outline. Run a fair housing and data check before recording.\n2. **Record (the Wednesday between releases):** About 45 minutes in the Fishers office, two mics and two cameras so the video works for YouTube and clips. Guest gets the outline 48 hours ahead.\n3. **Edit (within 48 hours):** Cut to 12-15 minutes. Add intro music, the spoken end card with \"Evelo Team | Keller Williams Indy Metro NE,\" and a transcript. Refresh any number that aged since recording. Team leader approves the final cut.\n4. **Clip (same day as edit):** Cut 4 vertical clips of 30-45 seconds each. Hook in the first 3 seconds, one number at most, burned-in captions, a source tag on screen and a brokerage end card. Schedule to Instagram Reels, Facebook, YouTube Shorts and LinkedIn across the two weeks.\n5. **Publish (release Wednesday, morning):** Post to Apple Podcasts (existing show feed), Spotify and the Evelo Team YouTube channel. Show notes include a summary, timestamps, sources and links to eveloteam.com and the blog.\n6. **Repurpose to blog (release Wednesday):** Turn the transcript into the week's question-style blog post on eveloteam.com/blog, with the episode embedded. Feature it in the next email newsletter and a Google Business Profile post.\n7. **Review (Friday after each release):** Track downloads, clip views, blog visits, and calls or emails that mention the show. Keep what works and adjust the next outline.\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.\n",
+    "cta": "Approve the season plan by December 4, 2026 so we can record the pilot on December 9.",
+    "visual": {
+      "kind": "doc",
+      "headline": "Season 1: one recording, five pieces of content",
+      "sub": "Six episodes every other Wednesday from January 6 | Decision needed by December 4",
+      "stat": "6 episodes"
+    },
+    "sources": [
+      "content/podcast.json",
+      "content/brand.json",
+      "content/seeds.json",
+      "content/grid.json#S33"
+    ],
+    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "adType": false
+  }
+]

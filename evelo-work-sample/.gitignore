@@ -1,0 +1,4 @@
+node_modules
+dist
+# Full text of the team's blog posts: used as private source material, not republished.
+content/seeds.json
