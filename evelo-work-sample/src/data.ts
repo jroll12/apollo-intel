@@ -24,6 +24,10 @@ type Validation = {
 const vfiles = import.meta.glob<{ default: Validation }>("../content/validation-report.json", { eager: true });
 export const validation: Validation = Object.values(vfiles)[0]?.default ?? { compliance: {}, editor: {}, regenerated: [], dropped: [] };
 
+// Assets that failed review twice are dropped from the site (logged on the Method page).
+const droppedSet = new Set(validation.dropped);
+assets.splice(0, assets.length, ...assets.filter((a) => !droppedSet.has(a.id)));
+
 export { metrics, grid, brand, listing, podcast, ops };
 export type { Asset };
 

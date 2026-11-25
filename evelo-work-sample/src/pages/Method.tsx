@@ -8,7 +8,7 @@ const STAGES = [
   { n: "2", name: "Generate", detail: "5 specialist writers working in parallel: social, video, Google and email, blog, listing and podcast." },
   { n: "3", name: "Check", detail: "Scripts check format limits, brokerage disclosure, fair housing terms, duplicate hooks, and trace every number back to its source." },
   { n: "4", name: "Blind review", detail: "Separate compliance and editor reviewers see only the finished copy and the rules. They never see the prompts, sources or plan." },
-  { n: "5", name: "Revise", detail: "Everything that fails gets reworked once with the reviewers' notes, then reviewed again by fresh, blind reviewers." },
+  { n: "5", name: "Revise", detail: "Anything flagged is reworked with the reviewers' notes, then reviewed again by fresh, blind reviewers. Anything that still fails is dropped." },
 ];
 
 export function Method() {
@@ -52,7 +52,7 @@ export function Method() {
             <tbody>
               {r.map((x) => (
                 <tr key={x.round} className="border-t">
-                  <td className="px-4 py-2 font-medium">{x.round === 1 ? "First draft" : "After revision"}</td>
+                  <td className="px-4 py-2 font-medium">{x.round === 1 ? "First draft" : x.round === 2 ? "Revision 1 (all assets)" : x.round === 3 ? "Revision 2 (flagged only)" : "Final, as shown on this site"}</td>
                   <td className="px-4 py-2">{x.reviewed}</td>
                   <td className="px-4 py-2">{x.compliancePass}/{x.reviewed}</td>
                   <td className="px-4 py-2">{x.editorPass}/{x.reviewed}</td>
@@ -80,7 +80,7 @@ export function Method() {
           <li>All {assets.length} assets are drafts. Nothing was posted, emailed or published anywhere.</li>
           <li>The listing is fictional ("1234 Sample Lane"). Spec work should never market a real seller's home.</li>
           <li>Market numbers are Realtor.com listing data and Freddie Mac rates via FRED, latest month October 2026. They are asking prices, not sold prices.</li>
-          <li>Team facts (reviews, giving plan, history) come from eveloteam.com as of November 2026. The base of the 2% Filter of Hope gift should be confirmed before use.</li>
+          <li>Team facts (reviews, giving plan, history) come from eveloteam.com as of November 2026. Giving amounts are left out of the copy on purpose until the team confirms how they are calculated.</li>
           <li>Compliance rules marked "verify" should be confirmed with the managing broker. This is a first line of defense, not legal review.</li>
         </ul>
       </Section>

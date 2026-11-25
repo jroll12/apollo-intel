@@ -57,8 +57,8 @@ export function Overview() {
           <div className="rounded-xl border bg-card p-5">
             <div className="font-display text-lg font-semibold">The proof is already earned. Show it weekly.</div>
             <p className="mt-2 text-[14px] leading-relaxed text-muted-foreground">
-              419 Google reviews at 5.0 and a giving plan that sends 2% of every closing to Filter of Hope are rare. Both get a recurring slot instead of an
-              occasional mention.
+              419 Google reviews at 5.0, and a giving plan that funds clean water through Filter of Hope from every closing, are rare. Both get a recurring slot
+              instead of an occasional mention.
             </p>
           </div>
           <div className="rounded-xl border bg-card p-5">
