@@ -71,7 +71,7 @@ export function Method() {
           </div>
         )}
         {validation.dropped.length > 0 && (
-          <p className="mt-3 text-[13px] text-muted-foreground">Dropped after failing twice: {validation.dropped.join(", ")}.</p>
+          <p className="mt-3 text-[13px] text-muted-foreground">Dropped after failing the final blind review: {validation.dropped.join(", ")}.</p>
         )}
       </Section>
 
@@ -88,7 +88,7 @@ export function Method() {
       <Section eyebrow="Sources" title="Everything this was built from">
         <ul className="grid gap-x-6 gap-y-1 text-[13px] break-all text-muted-foreground sm:grid-cols-2">
           {brand.facts.map((f) => (
-            <li key={f.claim}>{f.claim.split(".")[0]}: <span className="text-foreground/70">{f.source}</span></li>
+            <li key={f.claim}>{f.claim.split(". ")[0]}: <span className="text-foreground/70">{f.source}</span></li>
           ))}
           <li>Podcast archive: <a className="underline" href={podcast.source} target="_blank" rel="noreferrer">Apple Podcasts</a></li>
           {Object.values(S).map((s) => (

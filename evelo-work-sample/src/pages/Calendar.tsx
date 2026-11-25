@@ -26,7 +26,7 @@ function Chip({ e, onOpen }: { e: (typeof entries)[number]; onOpen: (a: Asset) =
       style={{ borderLeft: `3px solid ${PILLAR_META[e.slot.pillar].color}` }}
     >
       <Icon className="mt-px size-3.5 shrink-0 text-muted-foreground" />
-      <span className="line-clamp-2">{e.asset?.visual.headline ?? e.slot.angle}</span>
+      <span className="line-clamp-2">{e.asset ? e.asset.visual.headline : <i>Dropped in review</i>}</span>
     </button>
   );
 }
@@ -135,7 +135,7 @@ export function CalendarPage() {
                   <div className="flex items-center gap-1.5 text-[12px] text-muted-foreground">
                     <Icon className="size-3.5" /> {GROUP_LABEL[e.group]}
                   </div>
-                  <div className="mt-0.5 text-[14px] leading-snug font-medium">{e.asset?.visual.headline ?? e.slot.angle}</div>
+                  <div className="mt-0.5 text-[14px] leading-snug font-medium">{e.asset ? e.asset.visual.headline : <i className="text-muted-foreground">Dropped in review (see How It Was Built)</i>}</div>
                 </div>
                 {e.asset && <ReviewChip id={e.asset.id} compact />}
               </button>

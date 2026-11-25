@@ -1,0 +1,836 @@
+{
+ "reviewedAt": "2026-11-25T12:44:40.445Z",
+ "deterministic": {
+  "total": 43,
+  "failingFinal": 0
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "reviewed": 43,
+   "compliancePass": 33,
+   "editorPass": 3,
+   "avgScore": 3.7,
+   "topIssues": [
+    "Fair housing and NAR: a testimonial about a fast accepted offer read like a typical result. Removed everywhere.",
+    "Giving plan: a percentage was stated without its base, which could read as the client's money. Amounts now left out until confirmed.",
+    "Clarity: inline source citations broke the flow. Moved to one closing source line per short post.",
+    "Repetition: the same stats and the same '3 things' hook showed up across channels. Each key stat now has one owner slot.",
+    "Timing: a January podcast release led with October numbers. Retitled and flagged for a data refresh."
+   ]
+  },
+  {
+   "round": 2,
+   "reviewed": 43,
+   "compliancePass": 37,
+   "editorPass": 22,
+   "avgScore": 4.08,
+   "topIssues": []
+  },
+  {
+   "round": 3,
+   "reviewed": 27,
+   "compliancePass": 24,
+   "editorPass": 18,
+   "avgScore": 4.16,
+   "topIssues": []
+  },
+  {
+   "round": 4,
+   "reviewed": 40,
+   "compliancePass": 40,
+   "editorPass": 32,
+   "avgScore": 4.24,
+   "topIssues": []
+  }
+ ],
+ "compliance": {
+  "S01": {
+   "pass": true,
+   "issues": []
+  },
+  "S07": {
+   "pass": true,
+   "issues": []
+  },
+  "S11": {
+   "pass": true,
+   "issues": []
+  },
+  "S14": {
+   "pass": true,
+   "issues": []
+  },
+  "S17": {
+   "pass": true,
+   "issues": []
+  },
+  "S22": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-5",
+     "quote": "Whether you're buying in Indianapolis, Fishers or Noblesville, you should get a clear answer and know what happens next.",
+     "note": "ADVISORY: The testimonial is labeled 'One client's experience', but the hook ('Buying a home doesn't keep office hours') and this line come right after 'immediate, no matter the time of day or night' and read like a promise of round-the-clock replies. Add a hedge like the one in S28: 'Quick, clear answers are something we work toward with every client.'"
+    }
+   ]
+  },
+  "S25": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-1",
+     "quote": "On our team, Derek Evelo is the new construction specialist.",
+     "note": "ADVISORY: 'Specialist' is a title claim. Check that brand.json supports it and that Indiana rules allow it. Safer wording: 'Derek Evelo leads new construction for our team.'"
+    }
+   ]
+  },
+  "S29": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-1",
+     "quote": "In the latest month of data, fewer Indy-area homes went under contract, even with more for sale.",
+     "note": "ADVISORY: Realtor.com 'pending listings' counts listings that are in pending status. It does not count new contracts written that month. The metro 'more for sale' claim also has no figure in the asset; the only inventory figure in this packet is for Hamilton County. Suggested: 'fewer Indy-area listings were pending in October than a year earlier.'"
+    }
+   ]
+  },
+  "S10-mls": {
+   "pass": true,
+   "issues": []
+  },
+  "S10-social": {
+   "pass": true,
+   "issues": []
+  },
+  "S10-email": {
+   "pass": true,
+   "issues": []
+  },
+  "S10-flyer": {
+   "pass": true,
+   "issues": []
+  },
+  "S10-sms": {
+   "pass": false,
+   "issues": [
+    {
+     "rule": "LIC-3",
+     "quote": "Hi {first_name}, want the 1234 Sample Lane feature sheet (2022 roof, 2023 kitchen)? Reply YES.",
+     "note": "The texts recipients receive use the hypothetical listing without the 'Sample listing' label. That label appears only in the Visual text and Disclosure metadata, which are not sent. Add 'Sample listing' to the text itself, for example 'Hi {first_name}, want the Sample listing feature sheet for 1234 Sample Lane? Reply YES. Evelo Team, Keller Williams Indy Metro NE. Reply STOP to opt out'. Drop the roof and kitchen detail to stay under 160 characters."
+    },
+    {
+     "rule": "LIC-3",
+     "quote": "Hi {first_name}, want disclosures, HOA info or a second look at 1234 Sample Lane? Reply with a good time.",
+     "note": "Same problem in text 2: the listing appears without the 'Sample listing' label. Change it to '...a second look at 1234 Sample Lane (Sample listing)?'. It stays under 160 characters."
+    },
+    {
+     "rule": "MSG-2",
+     "quote": "Hi {first_name}, want the 1234 Sample Lane feature sheet (2022 roof, 2023 kitchen)? Reply YES. Evelo Team, Keller Williams Indy Metro NE. Reply STOP to opt out",
+     "note": "ADVISORY: This text is 159 characters with the placeholder included, so any first name longer than 13 characters pushes it past 160. Adding the required label makes it longer still. Trim the copy to leave about 20 characters of room."
+    }
+   ]
+  },
+  "S33-script": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-2",
+     "quote": "The four market numbers in this episode (homes for sale, days on market, price-cut share, 30-year rate) are October data, the latest at recording.",
+     "note": "ADVISORY: The 30-year rate is weekly Freddie Mac data for the week of November 19, not October data. Also, by the December 9 recording newer weekly rates, and probably November Realtor.com data, will be out, so 'the latest at recording' may not hold. Fix the note and refresh the numbers at recording, not only before release."
+    },
+    {
+     "rule": "LIC-2",
+     "quote": "I lead one of our teams here in Fishers.",
+     "note": "ADVISORY: 'One of our teams' could make the Evelo Team sound like a brokerage with several teams. Suggested: 'I'm a team leader with the Evelo Team at Keller Williams Indy Metro NE here in Fishers.'"
+    }
+   ]
+  },
+  "S33-notes": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-2",
+     "quote": "October data, the latest at recording:",
+     "note": "ADVISORY: The notes are dated 'Released January 6, 2027', and the producer note says the numbers will be refreshed to November before release. Update these figures and the Sources line to match the final audio."
+    }
+   ]
+  },
+  "S33-clip-1": {
+   "pass": true,
+   "issues": []
+  },
+  "S33-clip-2": {
+   "pass": true,
+   "issues": []
+  },
+  "S33-clip-3": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-1",
+     "quote": "A pre-approval tells you your real monthly payment at today's rates, not the price you hope for.",
+     "note": "ADVISORY: A pre-approval sets a loan amount. It does not lock a rate or fix a payment. Suggested: 'A pre-approval helps you estimate your monthly payment at today's rates.'"
+    },
+    {
+     "rule": "NAR-1",
+     "quote": "And you'll likely have room to negotiate.",
+     "note": "ADVISORY: This reads as an expected outcome drawn from a median days-on-market figure. Suggested: 'and there may be room to talk about more than price.'"
+    },
+    {
+     "rule": "NAR-2",
+     "quote": "On-screen text: 49 days, median time on market in Hamilton County",
+     "note": "ADVISORY: The season workflow calls for a source tag on screen, but the shot list for this clip has none. Add 'Source: Realtor.com via FRED, Oct 2026' to the 49-days card or the end card."
+    }
+   ]
+  },
+  "S33-clip-4": {
+   "pass": true,
+   "issues": []
+  },
+  "S33-season": {
+   "pass": true,
+   "issues": []
+  },
+  "S04": {
+   "pass": true,
+   "issues": []
+  },
+  "S05": {
+   "pass": true,
+   "issues": []
+  },
+  "S09": {
+   "pass": true,
+   "issues": []
+  },
+  "S12": {
+   "pass": false,
+   "issues": [
+    {
+     "rule": "FMT-2",
+     "quote": "CTA: Get directions: 1234 Sample Lane, Fishers (Sample listing). Drop in Saturday, 1 to 3 PM",
+     "note": "'Get directions' is not a Google Business Profile post button type. The available types are Book, Order online, Buy, Learn more, Sign up and Call now. Use 'Call now' (317-863-9011) or 'Learn more', and keep the address, with its Sample listing label, in the post body."
+    }
+   ]
+  },
+  "S20": {
+   "pass": true,
+   "issues": []
+  },
+  "S21": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-1",
+     "quote": "If we helped you, this year or any year, a few honest words would mean a great deal to our team.",
+     "note": "ADVISORY: 'If we helped you' can read as asking only happy clients for reviews, which Google's review policy prohibits. Suggested: 'If you have a minute, we'd value your honest feedback, whatever it is.'"
+    }
+   ]
+  },
+  "S27": {
+   "pass": false,
+   "issues": [
+    {
+     "rule": "FMT-2",
+     "quote": "CTA: Share your experience: REVIEW_LINK (Google review)",
+     "note": "'Share your experience' is not a Google Business Profile post button type. Use 'Learn more' with REVIEW_LINK as the URL."
+    },
+    {
+     "rule": "NAR-1",
+     "quote": "If we helped you this year, we would love to hear how it went.",
+     "note": "ADVISORY: Same selective-solicitation risk as S21. Suggested: 'If we worked together this year, we'd love to hear how it went.'"
+    }
+   ]
+  },
+  "S30": {
+   "pass": true,
+   "issues": []
+  },
+  "S32": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-1",
+     "quote": "Homes in Hamilton County spent a median of 49 days on the market in October, so a spring move really starts in January.",
+     "note": "ADVISORY: Realtor.com median days on market measures listings that were active that month. It is not the time it takes to sell. Treat it as context rather than a timeline, for example: 'the typical Hamilton County listing had been on the market 49 days in October.'"
+    }
+   ]
+  },
+  "S03": {
+   "pass": true,
+   "issues": []
+  },
+  "S19": {
+   "pass": true,
+   "issues": []
+  },
+  "S02": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "VOICE-1",
+     "quote": "If rates fall, that choice could shrink as other buyers jump back in at the same moment.",
+     "note": "ADVISORY: This is hedged and balanced by 'waiting is a perfectly good plan', but it still leans toward fear of waiting. You could cut it or soften it to 'If rates fall, more buyers may return.'"
+    }
+   ]
+  },
+  "S06": {
+   "pass": true,
+   "issues": []
+  },
+  "S08": {
+   "pass": true,
+   "issues": []
+  },
+  "S13": {
+   "pass": true,
+   "issues": []
+  },
+  "S15": {
+   "pass": true,
+   "issues": []
+  },
+  "S16": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-2",
+     "quote": "Either way, that's slower than the spring rush",
+     "note": "ADVISORY: comparison with spring has no figure or source behind it (only October data is cited). Fix: 'Either way, that leaves room to plan' or cite a spring days-on-market figure from metrics.json."
+    }
+   ]
+  },
+  "S18": {
+   "pass": true,
+   "issues": [
+    {
+     "rule": "NAR-1",
+     "quote": "every one of those reviews came from a client who trusted us with a big decision.",
+     "note": "ADVISORY: You can't verify that every Google reviewer was a client. Suggested: 'those reviews come from people who trusted us with a big decision.'"
+    }
+   ]
+  },
+  "S23": {
+   "pass": true,
+   "issues": []
+  },
+  "S24": {
+   "pass": true,
+   "issues": []
+  },
+  "S26": {
+   "pass": true,
+   "issues": []
+  },
+  "S28": {
+   "pass": true,
+   "issues": []
+  },
+  "S31": {
+   "pass": true,
+   "issues": []
+  }
+ },
+ "editor": {
+  "S01": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S07": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S11": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S14": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S17": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 5,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S22": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 3,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": [
+    "LOCAL: The towns are just a list, so add one concrete Central Indiana detail (for example a Hamilton County inspection or showing scenario) that only a local team would write."
+   ]
+  },
+  "S25": {
+   "scores": {
+    "HOOK": 5,
+    "CLARITY": 5,
+    "LOCAL": 3,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": [
+    "LOCAL: Westfield, Noblesville, Fishers and McCordsville appear only in on-screen text, so say one of them in the voiceover (for example 'new neighborhoods going up in Westfield and Noblesville') so the spoken script is clearly local."
+   ]
+  },
+  "S29": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S10-mls": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S10-social": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 5,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S10-email": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 5,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S10-flyer": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 5,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S10-sms": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 5,
+    "VOICE": 3
+   },
+   "notes": [
+    "VOICE: Text 1 opens with a transactional ask and no context, so lead with a short thank-you for stopping by the open house today before the offer."
+   ]
+  },
+  "S33-script": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S33-notes": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S33-clip-1": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 5,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S33-clip-2": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 5,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S33-clip-3": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S33-clip-4": {
+   "scores": {
+    "HOOK": 3,
+    "CLARITY": 4,
+    "LOCAL": 3,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": [
+    "HOOK: The opening is about the brand rather than the viewer, so lead with the human outcome (a household getting clean water because a Fishers family moved) and name the team after that.",
+    "LOCAL: Fishers and Westfield are only token mentions and the causes are not local, so tie it to a real local detail such as closings from the Cumberland Road office or the planned Central Indiana nonprofit spotlight."
+   ]
+  },
+  "S33-season": {
+   "scores": {
+    "HOOK": 5,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 5,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S04": {
+   "scores": {
+    "HOOK": 5,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S05": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 5,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S09": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S12": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S20": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 3,
+    "VOICE": 4
+   },
+   "notes": [
+    "CTA: Sending readers to the blog index makes them hunt for the post, so link straight to the winter-vs-spring post URL."
+   ]
+  },
+  "S21": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 3
+   },
+   "notes": [
+    "VOICE: Phrases like 'according to our about page' and the '419 reviews, 5.0 average (as of September 2026)' stat sound robotic and self-promotional in a thank-you note, so cut the citation and lead the review ask with warmth instead of the score."
+   ]
+  },
+  "S27": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S30": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S32": {
+   "scores": {
+    "HOOK": 5,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S03": {
+   "scores": {
+    "HOOK": 5,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 5,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S19": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 5,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S02": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S06": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 3,
+    "VOICE": 5
+   },
+   "notes": [
+    "CTA: 'Tell us the pace that feels right' is vague, so offer something concrete in return for the DM (for example 'DM us PACE and we'll send a sample buying timeline')."
+   ]
+  },
+  "S08": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S13": {
+   "scores": {
+    "HOOK": 5,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 5,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S15": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 3,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": [
+    "LOCAL: Apart from the address, nothing here is specific to Fishers, so bring in the Nickel Plate Trail access already in the GBP version, or another neighborhood detail."
+   ]
+  },
+  "S16": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S18": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S23": {
+   "scores": {
+    "HOOK": 5,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 5,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S24": {
+   "scores": {
+    "HOOK": 3,
+    "CLARITY": 4,
+    "LOCAL": 3,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": [
+    "HOOK: 'Some of our favorite moments' is a generic holiday opener, so lead with one specific, vivid festival moment or quote from a past client.",
+    "LOCAL: The town list is generic and the festival has no place or detail, so name where it happened or one real local detail from the day."
+   ]
+  },
+  "S26": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 5,
+    "CTA": 5,
+    "VOICE": 5
+   },
+   "notes": []
+  },
+  "S28": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 4,
+    "VOICE": 4
+   },
+   "notes": []
+  },
+  "S31": {
+   "scores": {
+    "HOOK": 4,
+    "CLARITY": 4,
+    "LOCAL": 4,
+    "CTA": 5,
+    "VOICE": 5
+   },
+   "notes": []
+  }
+ },
+ "regenerated": [
+  "S01",
+  "S07",
+  "S11",
+  "S14",
+  "S17",
+  "S22",
+  "S25",
+  "S29",
+  "S04",
+  "S09",
+  "S12",
+  "S20",
+  "S27",
+  "S30",
+  "S32",
+  "S02",
+  "S08",
+  "S13",
+  "S15",
+  "S16",
+  "S18",
+  "S23",
+  "S24",
+  "S26",
+  "S28",
+  "S31",
+  "S10-mls",
+  "S10-email",
+  "S10-flyer",
+  "S10-sms",
+  "S33-script",
+  "S33-notes",
+  "S33-clip-1",
+  "S33-clip-2",
+  "S33-clip-3",
+  "S33-clip-4",
+  "S33-season",
+  "S05",
+  "S21",
+  "S03",
+  "S19",
+  "S06"
+ ],
+ "dropped": [
+  "S10-sms",
+  "S12",
+  "S27"
+ ]
+}
