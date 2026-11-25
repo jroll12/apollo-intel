@@ -7,8 +7,8 @@
     "date": "2026-12-03",
     "title": "S04 GBP Update: Hamilton County list prices are down from a year ago",
     "hook": "Hamilton County's median list price is about $30,000 lower than it was a year ago.",
-    "body": "In October, the median list price across Hamilton County was $445,000. Last fall, sellers were asking noticeably more.\n\nWhat that means if you are buying in Fishers, Carmel, Noblesville or Westfield: you may find homes in neighborhoods that felt just out of reach a year ago, and you have more listings to compare while you decide.\n\nWhat it means if you are selling: buyers are watching prices closely. A home that is priced right from day one, and looks cared for, still stands out.\n\nKeep in mind this is a list price, the asking price, not what homes sold for. Your street and your home's condition can tell a different story than the county median.\n\nSource: Realtor.com via FRED, Oct 2026.",
-    "cta": "Call now: 317-863-9011 and ask for a pricing check on your home",
+    "body": "In October, the median list price across Hamilton County was $445,000, down from $475,000 a year earlier.\n\nWhat that means if you are buying in Fishers, Carmel, Noblesville or Westfield: you may find homes in neighborhoods that felt just out of reach a year ago, and you have more listings to compare while you decide.\n\nWhat it means if you are selling: buyers are watching prices closely. A home that is priced right from day one, and looks cared for, still stands out.\n\nKeep in mind this is a list price, the asking price, not what homes sold for. Your street and your home's condition can tell a different story than the county median.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Call: 317-863-9011 and ask what the October numbers mean for your neighborhood",
     "visual": {
       "kind": "gbp",
       "headline": "Hamilton County median list price: $445,000",
@@ -55,14 +55,13 @@
     "pillar": "CG",
     "date": "2026-12-07",
     "title": "S09 GBP Update: Our agents' giving from every closing",
-    "hook": "A closing in Noblesville can end with clean water for a family in need.",
-    "body": "Here is how. Our agents donate part of their commission from every closing we handle, from our office on Cumberland Road in Fishers to homes across Carmel, Westfield and the rest of Hamilton County:\n\n$10 to KW Cares\n$10 to the REALTOR Foundation\n2% of the commission to Filter of Hope, which provides household water filters for families in poverty\n\nThe gift comes from our side of the table. It never comes from you or your sale price.\n\nIt is not a holiday campaign. It happens on every closing, all year long. It is our way of living out the words we started with in 1998: Making a Difference. Changing Lives. Leaving a Legacy.\n\nWant to see the organizations we support? Our giving page has the details.",
+    "hook": "A closing in Noblesville can end with clean water for a household that needs it.",
+    "body": "Here is how. Our agents give part of their commission from every closing to KW Cares, the REALTOR Foundation and Filter of Hope, which provides household water filters for people living in poverty.\n\nThat happens on every home we help with, from our office on Cumberland Road in Fishers to closings across Carmel, Westfield and the rest of Hamilton County.\n\nThe gift comes from our side of the table. It never comes from you or your sale price.\n\nIt is not a holiday campaign. It happens on every closing, all year long. It is our way of living out the words we started with in 1998: Making a Difference. Changing Lives. Leaving a Legacy.\n\nWant to see the organizations we support? Our giving page has the details.",
     "cta": "Learn more: eveloteam.com/giving",
     "visual": {
       "kind": "gbp",
       "headline": "Every closing gives back, from our commission",
-      "sub": "Our agents give $10 to KW Cares, $10 to the REALTOR Foundation and 2% of commission to Filter of Hope",
-      "stat": "2% of commission"
+      "sub": "Our agents give part of their commission to KW Cares, the REALTOR Foundation and Filter of Hope"
     },
     "sources": [
       "content/brand.json#facts (giving, from agents' commission)",
@@ -80,8 +79,8 @@
     "date": "2026-12-09",
     "title": "S12 GBP Event: Sample listing open house logistics, Saturday Dec 12",
     "hook": "Saturday, December 12, 1 to 3 PM: come see a Fishers kitchen updated in 2023, with quartz counters and a walk-in pantry.",
-    "body": "Event: Open House for our Sample listing (illustrative only, not a real home for sale)\nWhere: 1234 Sample Lane, Fishers, IN 46038\nWhen: Saturday, December 12, 2026, 1:00 PM to 3:00 PM\n\nHow it works: no appointment and no sign-up needed. Drop in anytime during the two hours, walk through at your own pace, and ask our agent anything, from the 2022 roof to the monthly HOA.\n\nWhat you will see: 4 bedrooms, 2.5 baths and about 2,650 square feet, listed at $465,000. There is a main-level office with French doors, a finished basement with a flex room, a fenced backyard with a paver patio, and a Nickel Plate Trail access point about 1 mile away.\n\nIf a quiet home office and a yard you can actually use are on your list, this one is worth a Saturday afternoon. We will have the lights on and the coffee ready.",
-    "cta": "Call now: 317-863-9011 if Saturday doesn't work and you'd like another time",
+    "body": "Event: Open House for our Sample listing (illustrative only, not a real home for sale)\nWhere: 1234 Sample Lane, Fishers, IN 46038\nWhen: Saturday, December 12, 2026, 1:00 PM to 3:00 PM\n\nHow it works: no appointment and no sign-up needed. Drop in anytime during the two hours, walk through at your own pace, and ask our agent anything, from the 2022 roof to the monthly HOA.\n\nWhat you will see: 4 bedrooms, 2.5 baths and about 2,650 square feet, listed at $465,000. There is a main-level office with French doors, a finished basement with a flex room, a fenced backyard with a paver patio, and a Nickel Plate Trail access point about 1 mile away.\n\nIf a quiet home office and a yard you can actually use are on your list, this one is worth a Saturday afternoon. We will have the lights on and the coffee ready.\n\nCan't make Saturday? Call 317-863-9011 and we will find another time.",
+    "cta": "Get directions: 1234 Sample Lane, Fishers (Sample listing). Drop in Saturday, 1 to 3 PM",
     "visual": {
       "kind": "gbp",
       "headline": "Open house: Sat, Dec 12, 1-3 PM (Sample listing)",
@@ -102,8 +101,8 @@
     "date": "2026-12-16",
     "title": "S20 GBP Update: Promote the winter-vs-spring selling blog post",
     "hook": "Tempted to wait for spring before you list your Hamilton County home? Your own timeline matters more than the calendar.",
-    "body": "One thing has clearly changed this year: buyers have more to choose from. Hamilton County had 1,111 active listings in October, up 19.3% from a year earlier.\n\nWhen buyers have options, price and presentation do more of the work in any season. A well-prepared winter listing in Fishers or Carmel can stand out to the buyers who are still shopping, while a spring listing may share the stage with more homes.\n\nOur new post, \"Should You Sell Your Hamilton County Home in Winter or Wait for Spring?\", walks through what a winter listing gains, what it gives up, and how to decide based on your own plans. It is a calm, plain-English read, written for homeowners, not agents.\n\nSource: Realtor.com via FRED, Oct 2026.",
-    "cta": "Learn more: BLOG_POST_LINK (Should You Sell Your Hamilton County Home in Winter or Wait for Spring?)",
+    "body": "One thing has clearly changed this year: buyers have more to choose from. Hamilton County had 1,111 active listings in October, up 19.3% from a year earlier.\n\nWhen buyers have options, price and presentation do more of the work in any season. A well-prepared winter listing in Fishers or Carmel can stand out to the buyers who are still shopping, while a spring listing may share the stage with more homes.\n\nOur new post, \"Should You Sell Your Hamilton County Home in Winter or Wait for Spring?\", walks through what a December listing gives up compared with April, what it can gain, and how to decide based on your own plans.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Learn more: eveloteam.com/blog (read the winter-vs-spring post)",
     "visual": {
       "kind": "gbp",
       "headline": "Sell this winter or wait for spring?",
@@ -125,9 +124,9 @@
     "date": "2026-12-17",
     "title": "S21 Email: Year-end thank-you and giving letter to sphere and past clients",
     "subject": "From our commissions to clean water: a thank-you note",
-    "preview": "Our agents gave from every closing this year. Here is where it went, and one small favor if you have a minute.",
-    "hook": "Every move we helped with this year started with someone trusting us.",
-    "body": "Hi {{first_name}},\n\nEvery move we helped with this year started with someone trusting us, or with a friend who sent someone our way. Thank you for being part of that.\n\n## Thank you\n\nStephanie and Derek Evelo started this team in 1998. Since then, more than 2,500 families across Fishers, Carmel, Noblesville, Westfield and beyond have let us help with a move. That trust is the whole business, and we never take it for granted.\n\n## Our giving from every closing\n\nOur agents donate part of their commission from every closing. The gift comes from our side of the table, never from you or your sale price. Here is where it goes:\n\n- $10 to KW Cares\n- $10 to the REALTOR Foundation\n- 2% of the commission to Filter of Hope, which provides household water filters for families in poverty\n\nIt is how we try to live out the words we started with: Making a Difference. Changing Lives. Leaving a Legacy.\n\n## One small favor\n\nOur clients have left 419 Google reviews, 5.0 average (as of September 2026). Those reviews help neighbors who are about to make a big move know what working with us is really like.\n\nIf we helped you, this year or any year, a few honest words would mean a great deal to our team. Only if you have a minute, and only if it feels right.\n\n[Leave a Google review](REVIEW_LINK)\n\nFrom all of us, we hope your holidays are restful and your new year is a good one.\n\nWith gratitude,\n\nThe Evelo Team\n\n---\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.\n\n11501 Cumberland Rd, Suite 300, Fishers, IN 46037 | 317-863-9011 | info@eveloteam.com\n\nYou are receiving this because you are a past client or friend of the Evelo Team. [Unsubscribe](UNSUBSCRIBE_LINK) anytime.",
+    "preview": "Every closing this year included a gift from our agents' commissions. Here is who it supports.",
+    "hook": "This year, every home we helped close also sent a gift from our agents' commissions to three causes.",
+    "body": "Hi {{first_name}},\n\nThis year, every home we helped close also sent a gift from our agents' commissions to KW Cares, the REALTOR Foundation and Filter of Hope. You made that possible, and we wanted to say thank you.\n\n## Thank you\n\nStephanie and Derek Evelo started this team in 1998. Since then, more than 2,500 clients across Fishers, Carmel, Noblesville, Westfield and beyond have let us help with a move, according to our about page. Whether you bought, sold or sent a friend our way, that trust is the whole business, and we never take it for granted.\n\n## Our giving from every closing\n\nOur agents give part of their commission from every closing. The gift comes from our side of the table, never from you or your sale price. It supports three organizations:\n\n- **KW Cares**\n- **The REALTOR Foundation**\n- **Filter of Hope**, which provides household water filters for people living in poverty\n\nIt is how we try to live out the words we started with: Making a Difference. Changing Lives. Leaving a Legacy.\n\n## One small favor\n\nOur clients have left 419 Google reviews, 5.0 average (as of September 2026). Those reviews help neighbors who are about to make a big move know what working with us is really like.\n\nIf we helped you, this year or any year, a few honest words would mean a great deal to our team. Only if you have a minute, and only if it feels right.\n\n[Leave a Google review](REVIEW_LINK)\n\nFrom all of us, we hope your holidays are restful and your new year is a good one.\n\nWith gratitude,\n\nThe Evelo Team\n\n---\n\nEvelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.\n\n11501 Cumberland Rd, Suite 300, Fishers, IN 46037 | 317-863-9011 | info@eveloteam.com\n\nYou are receiving this because you are a past client or friend of the Evelo Team. [Unsubscribe](UNSUBSCRIBE_LINK) anytime.",
     "cta": "Leave a Google review: REVIEW_LINK",
     "visual": {
       "kind": "email",
@@ -135,8 +134,9 @@
       "sub": "Where our agents' giving went this year, and one small favor"
     },
     "sources": [
-      "content/brand.json#facts (founded 1998, 2,500+ families, giving from agents' commission, 419 Google reviews)",
-      "content/brand.json#tagline"
+      "content/brand.json#facts (founded 1998, 2,500+ helped per eveloteam.com/about-us, giving from agents' commission, 419 Google reviews)",
+      "content/brand.json#tagline",
+      "https://www.eveloteam.com/giving"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Email footer includes 11501 Cumberland Rd, Suite 300, Fishers, IN 46037 and an unsubscribe link.",
     "adType": true
@@ -148,16 +148,17 @@
     "pillar": "CG",
     "date": "2026-12-23",
     "title": "S27 GBP Update: Season's thanks to Central Indiana clients and neighbors",
-    "hook": "More than 2,500 Central Indiana families have trusted us with a move since 1998. To every one of you: thank you.",
-    "body": "What started with Stephanie and Derek Evelo is now a team of 18 agents and staff, and we still feel the weight of every set of keys we hand over.\n\nTo the clients who let us into their homes this year, in Fishers, Carmel, Noblesville, Westfield, Zionsville and beyond: thank you.\n\nTo past clients who came out to our fall festival, and to everyone who sent a friend or neighbor our way: thank you.\n\nAnd to the neighbors who simply wave when they see our signs around town: thank you, too.\n\nWe hope your holidays are warm and unhurried. If we helped you this year, we would love to hear how it went.",
-    "cta": "Learn more: eveloteam.com/reviews",
+    "hook": "More than 2,500 clients have trusted us with a move since 1998. To every one of you: thank you.",
+    "body": "What started with Stephanie and Derek Evelo is now a team of 18 agents and staff, and we still feel the weight of every set of keys we hand over.\n\nTo the clients who let us into their homes this year, in Fishers, Carmel, Noblesville, Westfield, Zionsville and beyond: thank you.\n\nTo past clients who came out to our fall festival, and to everyone who sent a friend or neighbor our way: thank you.\n\nAnd to the neighbors who simply wave when they see our signs around town: thank you, too.\n\nWe hope your holidays are warm and unhurried. If we helped you this year, we would love to hear how it went.\n\nSource: client count from eveloteam.com/about-us.",
+    "cta": "Share your experience: REVIEW_LINK (Google review)",
     "visual": {
       "kind": "gbp",
       "headline": "Thank you, Central Indiana",
-      "sub": "More than 2,500 families since 1998. Season's thanks from the Evelo Team"
+      "sub": "More than 2,500 clients helped since 1998, per eveloteam.com. Season's thanks from the Evelo Team"
     },
     "sources": [
-      "content/brand.json#facts (founded 1998, 2,500+ families, 18 agents and staff, fall festival)"
+      "content/brand.json#facts (founded 1998, 2,500+ helped per eveloteam.com/about-us, 18 agents and staff, fall festival)",
+      "https://www.eveloteam.com/about-us"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true
@@ -192,9 +193,9 @@
     "pillar": "AQ",
     "date": "2026-12-30",
     "title": "S32 GBP Update: Book a no-pressure 2027 planning call",
-    "hook": "One short planning call this week can make a spring move feel a lot less rushed.",
-    "body": "Here is why timing matters. In October, homes in Hamilton County spent a median of 49 days on the market. Add time to get your home ready and time to close, and a spring move often starts taking shape in January.\n\nOn a no-pressure 2027 planning call, an Evelo Team agent will help you sketch a realistic timeline, talk through pre-approval, and start a pricing conversation about your current home in Fishers, Carmel, Noblesville or Westfield.\n\nIf you are not ready yet, that is fine. You set the pace, and we will help you plan around it. You should never feel like you're navigating an important decision alone.\n\nSource: Realtor.com via FRED, Oct 2026.",
-    "cta": "Call now: 317-863-9011 and ask for a 2027 planning call",
+    "hook": "Homes in Hamilton County spent a median of 49 days on the market in October, so a spring move really starts in January.",
+    "body": "Add the weeks it takes to get a home ready before listing, plus time to close after an offer, and the math points to a January start.\n\nOn a no-pressure 2027 planning call, an Evelo Team agent will help you sketch a realistic timeline, talk through pre-approval, and start a pricing conversation about your current home in Fishers, Carmel, Noblesville or Westfield.\n\nIf you are not ready yet, that is fine. You set the pace, and we will help you plan around it. You should never feel like you're navigating an important decision alone.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Call: 317-863-9011 and ask for a no-pressure 2027 planning call",
     "visual": {
       "kind": "gbp",
       "headline": "Planning a 2027 move? Start with one calm call",

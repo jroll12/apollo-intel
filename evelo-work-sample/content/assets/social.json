@@ -7,16 +7,23 @@
     "date": "2026-12-02",
     "title": "Ask Evelo: Should we wait for mortgage rates to drop before buying?",
     "hook": "\"Should we just wait until rates come down?\" It's one of the first questions buyers in Fishers and Westfield ask us.",
-    "body": "It's a fair question, and there isn't one right answer for everyone. Waiting can work. It can also cost you in ways that are easy to miss.\n\nHere's the trade-off. If rates fall, the payment on the same home could drop. But nobody can tell you when that will happen. And if more buyers jump back in at the same moment, you may find yourself competing for the same homes in Fishers, Westfield and Noblesville all over again.\n\nSo instead of guessing what rates will do, start with what you can control: the monthly payment you're comfortable with, the cash you have for a down payment and closing costs, and how long you plan to stay. If those numbers work today, buying now can make sense. If they don't, waiting is a perfectly good plan.",
+    "body": "It's a fair question, and there isn't one right answer for everyone. Waiting can work. It can also cost you in ways that are easy to miss.\n\nRight now, buyers have room to choose. Hamilton County had 1,111 homes for sale in October, up 19.3% from a year earlier. That means more homes to compare and more time to decide in Fishers, Westfield and Noblesville. If rates fall, that choice could shrink as other buyers jump back in at the same moment.\n\nSo instead of guessing what rates will do, start with what you can control: the monthly payment you're comfortable with, the cash you have for a down payment and closing costs, and how long you plan to stay. If those numbers work today, buying now can make sense. If they don't, waiting is a perfectly good plan.\n\nSource: Realtor.com via FRED, Oct 2026.",
     "cta": "Call 317-863-9011 and ask for a buy-now-or-wait comparison built on your own numbers.",
-    "hashtags": ["#FishersIN", "#WestfieldIN", "#HamiltonCountyIN", "#HomeBuyingTips"],
+    "hashtags": [
+      "#FishersIN",
+      "#WestfieldIN",
+      "#HamiltonCountyIN",
+      "#HomeBuyingTips"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "Should we wait for rates to drop?",
       "sub": "The better question: does buying make sense for your budget and your timeline?"
     },
     "sources": [
-      "content/seeds.json#wait-for-rates"
+      "content/seeds.json#wait-for-rates",
+      "content/metrics.json#ACTLISCOU18057",
+      "https://fred.stlouisfed.org/series/ACTLISCOU18057"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true
@@ -29,9 +36,14 @@
     "date": "2026-12-04",
     "title": "Client words: Natalie, buyer in Fishers (no pressure, no upsell)",
     "hook": "\"Faster\" is not always the goal. Natalie, who bought in Fishers, put it this way:",
-    "body": "\"They never tried to upsell or pressure us to move faster than we were comfortable. They listen and care about their clients.\"\nNatalie, buyer in Fishers\n\nThat was Natalie's experience, and it's the one we work toward with every client. Some buyers are ready to write an offer after the first weekend of showings. Others need a few months to learn the market, compare Fishers with Carmel or Noblesville, and get comfortable with the numbers.\n\nOur job is to listen first, explain the trade-offs in plain English, and let you set the speed. You should never feel like you're navigating an important decision alone, and you should never feel rushed through one either.\n\nThank you, Natalie, for trusting us with your search.",
-    "cta": "Thinking about buying in 2027? Call 317-863-9011 for a no-pressure first conversation.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#IndyRealEstate", "#ClientStories"],
+    "body": "\"They never tried to upsell or pressure us to move faster than we were comfortable. They listen and care about their clients.\"\nNatalie, buyer in Fishers\n\nThe word that stands out to us is \"comfortable.\" Not fast. Not slow. Comfortable.\n\nBuying in Fishers can mean weighing a shorter commute against a bigger yard, or a newer build against an established street. Choices like that deserve time, and the right pace looks different for every buyer. Some are ready after one weekend of showings. Others want a few months to compare Fishers with Carmel or Noblesville before they decide.\n\nThat was Natalie's experience with us, and we're grateful she shared it. Thank you, Natalie.",
+    "cta": "Buying in 2027? DM us and tell us the pace that feels right for you.",
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate",
+      "#ClientStories"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "\"They listen and care about their clients.\"",
@@ -39,10 +51,9 @@
     },
     "sources": [
       "content/brand.json#testimonials[0]",
-      "content/brand.json#voice.quotes",
       "https://www.eveloteam.com/"
     ],
-    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "disclosure": "Testimonial reflects one client's experience. Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true
   },
   {
@@ -51,15 +62,20 @@
     "channel": "instagram",
     "pillar": "CG",
     "date": "2026-12-07",
-    "title": "Giving: how our agents' commission funds clean water through Filter of Hope",
+    "title": "Giving: how our agents' commission supports clean water and local causes",
     "hook": "Closing day in Fishers looks like keys, signatures and a photo on the front step. Part of it reaches much farther.",
-    "body": "From every closing, our agents donate part of their commission: 2% of it to Filter of Hope, $10 to KW Cares and $10 to the REALTOR Foundation.\n\nFilter of Hope provides household water filters to families living in poverty. So when a home closes in Carmel, Noblesville or right here in Fishers, it also helps another household get clean drinking water.\n\nThe gift comes out of our commission, not your price or your closing costs. There's nothing for you to sign up for and nothing extra to pay.\n\nIt's how we live out the first line of our tagline, Making a Difference, from our office on Cumberland Road in Fishers.",
+    "body": "From every closing, our agents give part of their commission to KW Cares, the REALTOR Foundation and Filter of Hope.\n\nFilter of Hope provides household water filters to people living in poverty. So when a home closes in Carmel, Noblesville or right here in Fishers, it also helps another household get clean drinking water.\n\nThe gift comes out of our agents' commission, not your price or your closing costs. There's nothing for you to sign up for and nothing extra to pay.\n\nIt's how we live out the first line of our tagline, Making a Difference, from our office on Cumberland Road in Fishers.",
     "cta": "Tap the link in our bio to see how our giving plan works.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#FilterOfHope", "#GivingBack"],
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#FilterOfHope",
+      "#GivingBack"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "Every closing helps fund clean water",
-      "sub": "Our agents donate part of their commission from every closing to Filter of Hope."
+      "sub": "Our agents give part of their commission from every closing to Filter of Hope, KW Cares and the REALTOR Foundation."
     },
     "sources": [
       "content/brand.json#facts (giving: agents donate part of their commission)",
@@ -79,7 +95,12 @@
     "hook": "Two online estimates, two different numbers. So what is your Fishers home actually worth?",
     "body": "Probably neither number, exactly. An algorithm can't walk through your kitchen. These 4 factors matter more:\n\n1. Recent comparable sales. Homes like yours that closed nearby, adjusted for real differences.\n2. Current competition. Hamilton County had 1,111 homes for sale in October, and buyers compare.\n3. Condition and updates. A newer roof or a remodeled kitchen can separate two homes on the same street.\n4. Location details. Lot, floor plan and which part of Fishers, from 46037 to 46038.\n\nA Comparative Market Analysis (CMA) pulls these together into a price range built on your home, not a formula.\n\nSource: Realtor.com via FRED, Oct 2026.",
     "cta": "DM us the word VALUE and we'll set up a no-obligation home value conversation.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#IndyRealEstate", "#HomeValue"],
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate",
+      "#HomeValue"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "What is my Fishers home worth?",
@@ -100,10 +121,15 @@
     "pillar": "LL",
     "date": "2026-12-11",
     "title": "Sample listing open house story: the 2023 kitchen at 1234 Sample Lane, Fishers",
-    "hook": "The kitchen is the room to see in person at Saturday's open house in Fishers.",
-    "body": "Sample listing (illustrative only, not a real property).\n\nUpdated in 2023, it has quartz counters, a gas range and a walk-in pantry with room for a whole season of holiday baking. Photos show the finishes. Standing at the counter shows you how the space actually works: where the light falls, how it opens to the rest of the main level, and how much room there is to cook with company around.\n\nSee it at 1234 Sample Lane, Fishers, IN 46038, on Saturday, Dec. 12, from 1:00 to 3:00 PM. Listed at $465,000.",
+    "hook": "A walk-in pantry, a gas range and quartz counters with room to cook while company gathers around. See this Fishers kitchen in person on Saturday.",
+    "body": "Updated in 2023, this kitchen is the reason to come by. Photos show the finishes. Standing at the counter shows you how the space works: where the light falls, how the layout flows, and how easy it would be to host a holiday meal.\n\nOpen house: Saturday, Dec. 12, from 1:00 to 3:00 PM at 1234 Sample Lane, Fishers, IN 46038. Listed at $465,000.\n\nSample listing (illustrative only, not a real property).",
     "cta": "Stop by Saturday and ask our agent to walk you through the kitchen updates.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#OpenHouse", "#IndyRealEstate"],
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#OpenHouse",
+      "#IndyRealEstate"
+    ],
     "visual": {
       "kind": "story",
       "headline": "Sample listing | See the kitchen in person",
@@ -126,7 +152,12 @@
     "hook": "55 days. That's how long the typical home for sale in the Indianapolis metro sat on the market in October.",
     "body": "Closer to home, Hamilton County homes moved a little faster, at 49 days. Either way, that's slower than the spring rush, and it's worth planning around if you want to sell this winter or early spring.\n\nWhat that looks like in practice:\n• Build in time. Plan your move, and any purchase, around a longer stretch between listing and contract.\n• Price it right from the start. Buyers have homes to compare, and they notice when a price doesn't match the condition.\n• Prep matters more. Small repairs, clean photos and a clear list of updates help a home in Fishers or Noblesville stand out.\n\nA slower pace isn't a bad market. It's a market that rewards planning.\n\nSource: Realtor.com via FRED, Oct 2026.",
     "cta": "Call 317-863-9011 and ask for a winter selling timeline for your home.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#IndyRealEstate", "#SellingYourHome"],
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate",
+      "#SellingYourHome"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "Median days on market: 55",
@@ -147,11 +178,16 @@
     "channel": "instagram",
     "pillar": "PR",
     "date": "2026-12-15",
-    "title": "Proof: what to look for in reviews (419 Google reviews, 5.0 average)",
+    "title": "Proof: how to read agent reviews (419 Google reviews, 5.0 average)",
     "hook": "Choosing an agent you've never met? Most people start where you would: the reviews.",
-    "body": "Ours stand at 419 Google reviews with a 5.0 average. We're proud of that, but the words behind the stars matter more.\n\nAdam, a buyer in Indy, wrote that \"we always felt they had our best interests in mind.\" That was his experience, and it's the one we work toward with every client, from Fishers to Westfield.\n\nWhen you read reviews for any agent, look past the score. Did the agent answer quickly? Did anyone feel rushed? Was the process explained in plain English? Those details tell you more about how your own move will feel than any number can.\n\nSource: Google reviews, as of September 2026.",
+    "body": "Ours stand at 419 Google reviews with a 5.0 average. We're proud of that, but the words behind the stars matter more than the score.\n\nWhen you read reviews for any agent in Fishers, Carmel or Noblesville, look for the details. Did the agent answer quickly? Did anyone feel rushed? Was the process explained in plain English? Did the agent know the area, from new construction in Westfield to established streets in Fishers? Those details tell you more about how your own move will feel than any number can.\n\nOur team has been helping Central Indiana buyers and sellers since 1998, and every one of those reviews came from a client who trusted us with a big decision.\n\nSource: Google reviews, as of September 2026.",
     "cta": "Tap the link in our bio to read our reviews in clients' own words.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#IndyRealEstate", "#ClientReviews"],
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate",
+      "#ClientReviews"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "419 Google reviews. 5.0 average.",
@@ -160,7 +196,7 @@
     },
     "sources": [
       "content/brand.json#facts (419 Google reviews, 5.0 average, as of September 2026)",
-      "content/brand.json#testimonials[1]",
+      "content/brand.json#facts (founded 1998)",
       "https://www.eveloteam.com/reviews"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
@@ -176,7 +212,12 @@
     "hook": "More than half of the homes for sale around Indianapolis took a price cut in October. Here's how to use that without insulting a seller.",
     "body": "Across the metro, 55.4% of active listings had a price reduction. For buyers looking in Fishers, Carmel or Noblesville, that can mean a little more room to negotiate. It doesn't mean every seller will take any offer.\n\nLeverage isn't the same as lowballing. A very low offer on a well-priced home can end the conversation before it starts. A better approach:\n• Check the history. How long has the home been listed, and has the price already moved?\n• Let recent sales in that neighborhood set your number, not the discount you hope for.\n• Ask for more than price. Help with closing costs, or repairs after inspection, can matter as much as a lower number.\n\nA fair, well-supported offer gives a seller a reason to say yes.\n\nSource: Realtor.com via FRED, Oct 2026.",
     "cta": "Call 317-863-9011 and ask us to pull the price history on a home you're watching.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#IndyRealEstate", "#BuyerTips"],
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate",
+      "#BuyerTips"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "55.4% of metro listings had a price cut in October",
@@ -197,18 +238,22 @@
     "channel": "instagram",
     "pillar": "CG",
     "date": "2026-12-21",
-    "title": "Happy holidays from the Evelo Team: a simple thank-you",
-    "hook": "From closing tables in Fishers to our fall festival for past clients, this year was full of people we're grateful for.",
-    "body": "Happy holidays from all of us at the Evelo Team.\n\nTo the clients who trusted us with a move, the neighbors who sent a friend our way, and everyone who stopped to say hello at the fall festival: thank you. Whether you moved across Carmel or across the country to Westfield, it was a privilege to be part of it.\n\nOur tagline reads Making a Difference. Changing Lives. Leaving a Legacy. This time of year reminds us that all three start with the people right around us.\n\nWe hope your season is warm, calm and full of the people you love.",
-    "cta": "Share a favorite holiday memory from your home in the comments. We'd love to read it.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#HappyHolidays", "#IndyRealEstate"],
+    "title": "Happy holidays from the Evelo Team: a thank-you from the fall festival to now",
+    "hook": "Some of our favorite moments this year didn't happen at a closing table. They happened at our fall festival, catching up with past clients.",
+    "body": "Seeing familiar faces again and hearing how life has settled in, whether in a home in Noblesville, Carmel or Westfield, is the part of this work we never take for granted.\n\nSo as the year wraps up, thank you. To every client who trusted us with a move, every neighbor who sent a friend our way, and everyone who stopped by to say hello.\n\nWe hope your holidays are warm, calm and full of the people you love.",
+    "cta": "Comment with your town and your favorite local holiday tradition.",
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#HappyHolidays",
+      "#IndyRealEstate"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "Happy holidays from the Evelo Team",
-      "sub": "Making a Difference. Changing Lives. Leaving a Legacy."
+      "sub": "Thank you for a year of moves, milestones and fall festival memories."
     },
     "sources": [
-      "content/brand.json#tagline",
       "content/brand.json#facts (fall festival for past clients)"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
@@ -222,9 +267,14 @@
     "date": "2026-12-22",
     "title": "Market Pulse: rates in context at 7.28%, a payment-first way to plan",
     "hook": "Start with the payment, not the rate.",
-    "body": "The average 30-year fixed rate was 7.28% for the week of Nov 19. Headlines will keep tracking that number. Your budget runs on a monthly payment.\n\nA payment-first plan looks like this:\n1. Pick the monthly number that feels comfortable. Include property taxes and insurance, and ask about HOA dues, which vary from one Fishers or Carmel neighborhood to the next.\n2. Ask a lender to turn that payment into a price range at today's rate.\n3. Search inside that range in Hamilton County, not at the very top of it.\n4. Revisit the plan if rates move.\n\nThis keeps the decision about your life, not about a weekly average you can't control.\n\nSource: Freddie Mac via FRED, week of Nov 19, 2026.",
-    "cta": "Call 317-863-9011 and ask for a payment-first buying plan.",
-    "hashtags": ["#FishersIN", "#HamiltonCountyIN", "#IndyRealEstate", "#MortgageRates"],
+    "body": "The average 30-year fixed rate was 7.28% for the week of Nov 19. Headlines will keep tracking that number. Your budget runs on a monthly payment.\n\nHere's a local way to use it. Say you're looking at homes near Hamilton County's October median list price of $445,000. Before you tour a single one, ask a lender to show you the full monthly payment at today's rate, including Hamilton County property taxes, insurance and any HOA dues. Taxes and dues vary between Fishers, Carmel and Noblesville neighborhoods, so the same price can carry different payments.\n\nThen flip it around:\n1. Pick the monthly number that feels comfortable.\n2. Ask the lender to turn it into a price range.\n3. Search inside that range, not at the very top of it.\n\nThis keeps the decision about your life, not about a weekly average you can't control.\n\nSource: Freddie Mac via FRED, week of Nov 19, 2026; Realtor.com via FRED, Oct 2026.",
+    "cta": "Save this post for your first lender conversation.",
+    "hashtags": [
+      "#FishersIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate",
+      "#MortgageRates"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "Rates in context: start with the payment",
@@ -233,7 +283,9 @@
     },
     "sources": [
       "content/metrics.json#MORTGAGE30US",
-      "https://fred.stlouisfed.org/series/MORTGAGE30US"
+      "content/metrics.json#MEDLISPRI18057",
+      "https://fred.stlouisfed.org/series/MORTGAGE30US",
+      "https://fred.stlouisfed.org/series/MEDLISPRI18057"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true
@@ -245,10 +297,15 @@
     "pillar": "PR",
     "date": "2026-12-28",
     "title": "Client words: Adam, buyer in Indy (communication day or night)",
-    "hook": "A question at 9 PM should not have to wait until Monday.",
-    "body": "Adam bought a home in Indy with us. This is how he described his experience:\n\n\"Communication was immediate, no matter the time of day or night, and we always felt they had our best interests in mind.\"\nAdam, buyer in Indy\n\nBuying a home comes with a lot of questions, and they rarely show up during office hours. An inspection report lands after dinner. A lender needs one more document on a Sunday. In a Central Indiana winter, a showing can get moved around an overnight snowfall. When answers come quickly, decisions feel calmer.\n\nThat's the standard our 18 agents and staff hold ourselves to, from Indianapolis to Fishers. Thank you, Adam, for the kind words.",
-    "cta": "Have a question about buying or selling? Send it to us by DM and we'll get back to you.",
-    "hashtags": ["#IndyRealEstate", "#IndianapolisIN", "#HamiltonCountyIN", "#ClientStories"],
+    "hook": "Home-buying questions rarely wait for office hours.",
+    "body": "An inspection report lands after dinner. A lender needs one more document on a Sunday. In a Central Indiana winter, a showing gets moved around an overnight snowfall.\n\nAdam, who bought in Indy, described his experience this way:\n\n\"Communication was immediate, no matter the time of day or night, and we always felt they had our best interests in mind.\"\nAdam, buyer in Indy\n\nThat was Adam's experience, and quick, clear answers are something we work toward with every client. Thank you, Adam, for the kind words.",
+    "cta": "Comment with the one question you'd most want answered before buying your next home.",
+    "hashtags": [
+      "#IndyRealEstate",
+      "#IndianapolisIN",
+      "#HamiltonCountyIN",
+      "#ClientStories"
+    ],
     "visual": {
       "kind": "feed",
       "headline": "\"Communication was immediate, no matter the time of day or night\"",
@@ -256,10 +313,9 @@
     },
     "sources": [
       "content/brand.json#testimonials[1]",
-      "content/brand.json#facts (18 agents and staff)",
       "https://www.eveloteam.com/"
     ],
-    "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+    "disclosure": "Testimonial reflects one client's experience. Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true
   },
   {
@@ -268,18 +324,25 @@
     "channel": "instagram",
     "pillar": "AQ",
     "date": "2026-12-30",
-    "title": "Ask Evelo: Planning a 2027 move? 3 steps to start in January",
-    "hook": "Moving in 2027? The first three steps fit into January.",
-    "body": "Spring gets the attention, but the planning starts now. Here is a simple January checklist:\n\n1. Get pre-approved. Talk with a lender about your budget, down payment and monthly comfort zone. It turns a rough guess into a real range.\n2. Have a pricing conversation. If you're selling, learn what your home could list for based on recent sales and current competition in Fishers, Carmel or wherever you live now. Your home will have its own number.\n3. Set a timeline. Work backward from your ideal move date to plan prep, listing, showings and closing.\n\nNone of this commits you to anything. It just means you'll be ready when the right home, or the right offer, comes along.",
-    "cta": "Call 317-863-9011 and book a January planning call.",
-    "hashtags": ["#FishersIN", "#CarmelIN", "#HamiltonCountyIN", "#IndyRealEstate"],
+    "title": "Ask Evelo: Three January tasks that make a spring 2027 move calmer",
+    "hook": "Three January tasks that make a spring move calmer.",
+    "body": "In Hamilton County, the typical home for sale sat on the market for 49 days in October. Add time to prepare and to close, and a spring move really starts in winter. Here is a simple January checklist:\n\n1. Get pre-approved. Talk with a lender about your budget, down payment and monthly comfort zone. It turns a rough guess into a real range.\n2. Have a pricing conversation. If you're selling, learn what your home could list for based on recent sales and current competition. Your home will have its own number.\n3. Set a timeline. Work backward from your ideal move date to plan prep, listing, showings and closing.\n\nNone of this commits you to anything. It just means you'll be ready when the right home, or the right offer, comes along.\n\nSource: Realtor.com via FRED, Oct 2026.",
+    "cta": "Save this checklist so it's ready when January starts.",
+    "hashtags": [
+      "#FishersIN",
+      "#CarmelIN",
+      "#HamiltonCountyIN",
+      "#IndyRealEstate"
+    ],
     "visual": {
       "kind": "feed",
-      "headline": "Planning a 2027 move? Start in January",
+      "headline": "Three January tasks for a calmer spring move",
       "sub": "Pre-approval, a pricing conversation, and a timeline"
     },
     "sources": [
-      "content/seeds.json#fishers-market-now"
+      "content/seeds.json#fishers-market-now",
+      "content/metrics.json#MEDDAYONMAR18057",
+      "https://fred.stlouisfed.org/series/MEDDAYONMAR18057"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true

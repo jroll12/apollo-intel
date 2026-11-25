@@ -1,0 +1,10 @@
+# Static Vite build. Deploy is manual and only after Jarret approves.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Referrer-Policy = "no-referrer"

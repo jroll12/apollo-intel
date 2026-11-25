@@ -154,33 +154,34 @@
     "channel": "reel",
     "pillar": "AQ",
     "date": "2026-12-15",
-    "title": "Reel: Are prices going up or down in your town? Reading Noblesville headlines",
+    "title": "Reel: Are prices going up or down in your town? Reading the headlines (text-list format)",
     "hook": "One Noblesville headline says prices are down, another says they're up, and both can be right.",
-    "body": "One Noblesville headline says prices are down, another says they're up, and both can be right. Here's how to read them. First, is it a list price or a closed price? What sellers ask and what buyers actually paid can move in different directions. Next, what's the time frame? One month can swing, so compare it with the same month last year. Then, what's being measured? If more smaller homes sold in Noblesville, the median can dip while price per square foot climbs. That's how one town gets two headlines. Your street matters more than either. Text your street name to 317-863-9011 and ask for a local price check.",
-    "cta": "Text your street name to 317-863-9011 and ask for a local price check.",
+    "body": "One Noblesville headline says prices are down, another says they're up, and both can be right. Ask three things first. Is it a list price or a closed price? What's the time frame, and is it compared with the same month last year? And what's being measured? A real example: across the Indy metro in October, the median list price was lower than a year earlier, but list price per square foot was up 5.1%. Same market, two headlines. A shift toward smaller homes can pull the median down while each square foot is priced higher. Comment your town below, and we'll reply with the number to watch there.",
+    "cta": "Comment your town below, and we'll reply with the number to watch there.",
     "shotList": [
-      "1. (0-3s) [Agent on camera] holds up a phone showing two made-up headline cards side by side: \"Prices DOWN\" and \"Prices UP\". Delivers the hook.",
-      "2. (3-12s) Close-up: a finger tapping between \"List price\" and \"Closed price\" sticky notes on a whiteboard.",
-      "3. (12-20s) Overhead: a desk calendar flipping from one month back to the same month a year earlier.",
-      "4. (20-29s) B-roll from a Noblesville sidewalk: a smaller home, then a larger home (no house numbers), as the median line plays.",
-      "5. (29-35s) [Agent on camera] at the whiteboard: \"Your street matters more than either.\"",
-      "6. (35-40s) End card: \"Evelo Team, Keller Williams Indy Metro NE\" logo lockup with the CTA \"Text your street name to 317-863-9011 and ask for a local price check.\" and eveloteam.com on a plain brand-color background."
+      "1. (0-3s) POV, voiceover only: hands hold a phone showing two made-up headline cards, \"Prices DOWN\" and \"Prices UP\", flicking between them on the courthouse square in downtown Noblesville (no faces in frame).",
+      "2. (3-16s) Text-on-screen list over a slow, steady phone shot of a Noblesville street (no house numbers). Each question appears as it is read: \"List or closed price?\", \"Same month last year?\", \"What's being measured?\"",
+      "3. (16-30s) Split screen made in a phone editor: left card \"Median list price: lower\", right card \"Price per sq ft: +5.1%\". Plain brand background, large type.",
+      "4. (30-36s) Phone shot from the sidewalk: a smaller home, then a larger home on the same Noblesville block (no house numbers), as the smaller-homes line plays.",
+      "5. (36-40s) Closing text card, no logo animation: \"Comment your town\" in large type, with \"Evelo Team, Keller Williams Indy Metro NE\" and the source line underneath."
     ],
     "onScreenText": [
       "Prices up or down? Both can be true",
-      "List price or closed price?",
-      "Same month, last year?",
-      "Median or price per sq ft?",
-      "Text your street name to 317-863-9011 and ask for a local price check."
+      "List or closed price? Same month last year? What's measured?",
+      "Indy metro, October: price per sq ft +5.1%",
+      "Comment your town below",
+      "Source: Realtor.com via FRED, Oct 2026."
     ],
     "visual": {
       "kind": "reel",
-      "headline": "Prices up or down? How to read the headline",
-      "sub": "Why one Noblesville headline can say down while another says up"
+      "headline": "Prices up or down? Both headlines can be right",
+      "sub": "How to read a price headline for Noblesville or anywhere in Hamilton County",
+      "stat": "+5.1% per sq ft"
     },
     "sources": [
-      "content/seeds.json#noblesville-prices",
-      "https://www.eveloteam.com/blog/noblesville-home-prices-going-up-or-down"
+      "content/metrics.json#MEDLISPRIPERSQUFEE26900",
+      "content/metrics.json#MEDLISPRI26900",
+      "content/seeds.json#noblesville-prices"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true
@@ -191,35 +192,31 @@
     "channel": "reel",
     "pillar": "PR",
     "date": "2026-12-17",
-    "title": "Reel: Client words on no pressure (Natalie, buyer in Fishers) over b-roll",
-    "hook": "\"They never tried to upsell or pressure us to move faster than we were comfortable.",
-    "body": "\"They never tried to upsell or pressure us to move faster than we were comfortable. They listen and care about their clients.\" That's Natalie, buyer in Fishers, describing her experience with our team. Buying a home is a big decision, and the pace should be yours. That can mean touring Fishers one weekend and Noblesville the next, taking a second look before you decide, or hearing an honest \"this one isn't right\" when a home doesn't fit. Our job is to listen first and then help you move when you're ready, not before. Want a no-pressure first conversation? Call or text 317-863-9011.",
-    "cta": "Want a no-pressure first conversation? Call or text 317-863-9011.",
+    "title": "Reel: Client words on communication (Adam, buyer in Indy), phone-POV b-roll",
+    "hook": "Buying a home doesn't keep office hours.",
+    "body": "Buying a home doesn't keep office hours. Here's how one client put it: \"Communication was immediate, no matter the time of day or night, and we always felt they had our best interests in mind.\" That's Adam, buyer in Indy, describing his experience with our team. Questions show up at odd times. An inspection report lands at dinner. A lender asks for one more document on a Saturday. Whether you're buying in Indianapolis, Fishers or Noblesville, you should get a clear answer and know what happens next. Call 317-863-9011 with the one home-buying question on your mind.",
+    "cta": "Call 317-863-9011 with the one home-buying question on your mind.",
     "shotList": [
-      "1. (0-5s) B-roll: hands pouring two cups of coffee at the office conference table, unhurried. Quote text appears line by line with the voiceover.",
-      "2. (5-12s) Attribution card \"Natalie, buyer in Fishers\" over a slow pan of a winter Fishers street (no faces, no house numbers).",
-      "3. (12-20s) B-roll: a hand flipping a weekend planner from a \"Fishers tours\" page to a \"Noblesville tours\" page.",
-      "4. (20-28s) B-roll: a car parked at a curb, engine off, a hand resting on a printed home info sheet (blank sample data). Nobody rushing.",
-      "5. (28-35s) [Agent on camera] at the office, calm and direct, delivers \"listen first\" and the CTA.",
-      "6. (35-40s) End card: \"Evelo Team, Keller Williams Indy Metro NE\" logo lockup with the CTA \"Want a no-pressure first conversation? Call or text 317-863-9011.\" and eveloteam.com on a plain brand-color background."
+      "1. (0-3s) POV close-up: a phone face-up on a kitchen table at night lights up with a mock notification, \"Inspection report is ready\". Hook as voiceover.",
+      "2. (3-15s) Same table, hands pick up the phone. The quote types out on screen line by line over the mock message thread (no real names or numbers on the phone), then the card \"Adam, buyer in Indy\".",
+      "3. (15-28s) Quick-cut b-roll, hands only: a fork set down beside a printed inspection report, then a Saturday-morning shot of a hand photographing a document for a lender.",
+      "4. (28-40s) [Agent on camera] holding a phone, one steady take at the office: delivers the last line and the CTA. Final frame freezes on a phone-screen contact card reading \"Evelo Team, Keller Williams Indy Metro NE\", 317-863-9011."
     ],
     "onScreenText": [
-      "\"They never tried to upsell or pressure us to move faster than we were comfortable. They listen and care about their clients.\"",
-      "Natalie, buyer in Fishers",
-      "Your pace. Your decision.",
-      "419 Google reviews, 5.0 average (as of September 2026)",
-      "Want a no-pressure first conversation? Call or text 317-863-9011."
+      "Buying a home doesn't keep office hours",
+      "\"Communication was immediate, no matter the time of day or night, and we always felt they had our best interests in mind.\"",
+      "Adam, buyer in Indy",
+      "One client's experience",
+      "Call 317-863-9011 with the one home-buying question on your mind."
     ],
     "visual": {
       "kind": "reel",
-      "headline": "\"They never tried to upsell or pressure us\"",
-      "sub": "One client's experience buying in Fishers, quoted from her review on eveloteam.com"
+      "headline": "\"Communication was immediate, no matter the time\"",
+      "sub": "One client's experience buying in Indy, quoted from his review on eveloteam.com"
     },
     "sources": [
       "content/brand.json#testimonials",
-      "content/brand.json#facts",
-      "https://www.eveloteam.com/",
-      "https://www.eveloteam.com/reviews"
+      "https://www.eveloteam.com/"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated. Testimonial reflects one client's experience.",
     "adType": true
@@ -230,29 +227,27 @@
     "channel": "reel",
     "pillar": "AQ",
     "date": "2026-12-22",
-    "title": "Reel: Building a new home in 2027? Why winter is when builder conversations start",
-    "hook": "Want to move into a newly built home in 2027?",
-    "body": "Want to move into a newly built home in 2027? The first conversations usually happen this winter, while model homes are quieter and you get more time with your questions. Across Westfield, Noblesville, Fishers and McCordsville, communities differ in lot sizes, build timelines and what's included versus an upgrade. Two things to know before your first visit. The builder's sales rep represents the builder. And ask about the agent registration policy, since some builders want your agent named at that first visit. On our team, Derek Evelo is the new construction specialist. Call 317-863-9011 and ask Derek for a side-by-side of the new-build communities on your list.",
-    "cta": "Call 317-863-9011 and ask Derek for a side-by-side of the new-build communities on your list.",
+    "title": "Reel: The model home sales rep works for the builder (new construction walk-and-talk)",
+    "hook": "The friendly sales rep at the model home works for the builder, not for you.",
+    "body": "The friendly sales rep at the model home works for the builder, not for you. It's simply their job to sell the builder's homes on the builder's terms. If you want someone reviewing the contract, the upgrades and the timeline with your interests in mind, bring your own agent. Here's the catch. Some builders ask that your agent be registered at your very first visit. So if you're starting model home visits this winter, ask about that policy before you walk in. On our team, Derek Evelo is the new construction specialist. Call 317-863-9011 and ask Derek to register as your agent before your first model home visit.",
+    "cta": "Call 317-863-9011 and ask Derek to register as your agent before your first model home visit.",
     "shotList": [
-      "1. (0-3s) [Agent on camera] at the edge of a new-construction street on a gray winter day (no builder signs or logos in frame), asks the hook question.",
-      "2. (3-11s) B-roll: wide shot of framed houses and open lots. Crop out builder names and signs.",
-      "3. (11-20s) Close-up: hands comparing two blank floor plan sketches and a lot map with names covered.",
-      "4. (20-29s) Overhead: a notepad as lines are written: \"Rep = builder\" and \"Ask about agent registration\".",
-      "5. (29-35s) B-roll: boots on a fresh sidewalk past a new driveway, then a slow tilt up to a finished roofline.",
-      "6. (35-40s) Name card \"Derek Evelo, new construction specialist\", then End card: \"Evelo Team, Keller Williams Indy Metro NE\" logo lockup with the CTA \"Call 317-863-9011 and ask Derek for a side-by-side of the new-build communities on your list.\" and eveloteam.com on a plain brand-color background."
+      "1. (0-3s) Walk-and-talk: [Agent on camera] walks toward the phone on a new-construction sidewalk on a gray winter day, delivers the hook. Camera operator walks backward on a gimbal. No builder signs or logos in frame.",
+      "2. (3-20s) Same continuous take, framed chest-up as the agent keeps walking past framed houses and open lots. One cutaway insert of a model home front door with any builder signage cropped out.",
+      "3. (20-32s) Agent stops at a curb and holds up a phone to the lens showing a notes app: \"Ask: agent registration policy?\"",
+      "4. (32-40s) Agent finishes the CTA standing still. Lower-third slides in over the live shot: \"Derek Evelo, new construction specialist | Evelo Team, Keller Williams Indy Metro NE | 317-863-9011\"."
     ],
     "onScreenText": [
-      "Moving into a new build in 2027?",
+      "The model home rep works for the builder",
+      "Bring your own agent",
+      "Ask about agent registration before your first visit",
       "Westfield | Noblesville | Fishers | McCordsville",
-      "The builder's rep represents the builder",
-      "Ask about agent registration first",
-      "Call 317-863-9011 and ask Derek for a side-by-side of the new-build communities on your list."
+      "Call 317-863-9011 and ask Derek to register as your agent before your first model home visit."
     ],
     "visual": {
       "kind": "reel",
-      "headline": "Building a new home in 2027? Start this winter",
-      "sub": "Before your first model home visit in Westfield, Noblesville, Fishers or McCordsville"
+      "headline": "The model home rep works for the builder",
+      "sub": "Before your first model home visit this winter, ask about the agent registration policy"
     },
     "sources": [
       "content/brand.json#facts (Derek Evelo, new construction and builder specialist)",
@@ -268,33 +263,32 @@
     "channel": "reel",
     "pillar": "MP",
     "date": "2026-12-29",
-    "title": "Reel: 2026 wrap, more homes for sale but fewer going under contract in Indy",
-    "hook": "More homes were for sale around Indy this fall, yet fewer went under contract.",
-    "body": "More homes were for sale around Indy this fall, yet fewer went under contract. In October, pending listings across the metro were down 12% from a year earlier. That's 2026 in one line. Buyers had more choices and took their time, and higher mortgage rates kept many of them careful. Heading into 2027, that cuts both ways. Sellers in Fishers, Carmel and Westfield need a price and a presentation that work from day one. Buyers have room to compare and negotiate. Either way, a plan beats a guess. Call 317-863-9011 and ask for a 2027 move timeline built around your dates.",
-    "cta": "Call 317-863-9011 and ask for a 2027 move timeline built around your dates.",
+    "title": "Reel: Latest data shows fewer Indy-area homes going under contract, the seller takeaway",
+    "hook": "In the latest month of data, fewer Indy-area homes went under contract, even with more for sale.",
+    "body": "In the latest month of data, fewer Indy-area homes went under contract, even with more for sale. In October, pending listings across the metro were down 12% from a year earlier. If you're planning to sell in Fishers, Carmel or Westfield early next year, here's what that means. Buyers are taking their time and comparing homes side by side. So your home needs to make its case from the first day: a price set from today's comparable homes, clear photos, and small repairs finished before the listing goes live, not after the first round of feedback. Call 317-863-9011 and ask for a pre-listing checklist for your home.",
+    "cta": "Call 317-863-9011 and ask for a pre-listing checklist for your home.",
     "shotList": [
-      "1. (0-3s) [Agent on camera] in the office with a winter window behind, delivers the hook.",
-      "2. (3-11s) Full-screen number card \"Pending listings: -12%\" over slow b-roll of a snowy Fishers street (no house numbers).",
-      "3. (11-20s) B-roll: a hand turning a desk calendar from 2026 to 2027.",
-      "4. (20-29s) Split b-roll: a hand placing a staging pillow on a sofa (sellers), then a hand writing notes on a printed comparison sheet (buyers).",
-      "5. (29-35s) [Agent on camera] delivers \"a plan beats a guess\" and the CTA.",
-      "6. (35-40s) End card: \"Evelo Team, Keller Williams Indy Metro NE\" logo lockup with the CTA \"Call 317-863-9011 and ask for a 2027 move timeline built around your dates.\" and eveloteam.com on a plain brand-color background."
+      "1. (0-3s) Talking head: [Agent on camera] seated at the office, medium shot, phone on a tripod with window light. Delivers the hook.",
+      "2. (3-14s) Same setup, punch-in to a close-up in the edit. Big on-screen number beside the agent: \"Pending listings: -12%\" with \"October vs. a year ago\" underneath.",
+      "3. (14-32s) Same continuous take, cut back to the medium shot. Keyword captions pop in as spoken: \"Price from today's comps\", \"Clear photos\", \"Repairs done first\".",
+      "4. (32-40s) Agent delivers the CTA straight to the lens. Static text slate over the last two seconds: \"Evelo Team, Keller Williams Indy Metro NE\", 317-863-9011, and the source line."
     ],
     "onScreenText": [
-      "2026: more for sale, fewer under contract",
+      "Fewer homes went under contract in October",
       "Pending listings down 12% vs. a year ago",
-      "Sellers: price and presentation from day one",
-      "Buyers: room to compare",
+      "Price from today's comps | Clear photos | Repairs done first",
+      "Call 317-863-9011 and ask for a pre-listing checklist for your home.",
       "Source: Realtor.com via FRED, Oct 2026."
     ],
     "visual": {
       "kind": "reel",
-      "headline": "2026 wrap: more choice, slower contracts",
-      "sub": "Indy metro pending listings in October, compared with a year earlier",
+      "headline": "Fewer homes going under contract: a seller's plan",
+      "sub": "Indy metro pending listings in October, the latest month of data, vs. a year earlier",
       "stat": "-12% pending"
     },
     "sources": [
-      "content/metrics.json#PENLISCOU26900"
+      "content/metrics.json#PENLISCOU26900",
+      "content/metrics.json#ACTLISCOU26900"
     ],
     "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
     "adType": true
