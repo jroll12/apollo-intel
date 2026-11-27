@@ -12,7 +12,7 @@ export const FEED = { width: 1080, height: 1350 } as const;
 const SHORT: Segment[] = [
   [0, scene("hook").end],
   [scene("price").start, scene("price").end],
-  [scene("cta").start, T.duration],
+  [T.keyTimes.call - 0.02, T.duration],
 ];
 
 export const RemotionRoot: React.FC = () => {
