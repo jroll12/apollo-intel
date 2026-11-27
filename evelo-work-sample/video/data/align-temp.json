@@ -1,0 +1,1133 @@
+{
+ "vo": {
+  "file": "audio/temp-vo.mp3",
+  "duration": 37.12,
+  "speechStart": 0.06,
+  "speechEnd": 36.96,
+  "segments": [
+   [
+    0.06,
+    2.94
+   ],
+   [
+    3.33,
+    3.91
+   ],
+   [
+    4.44,
+    9.19
+   ],
+   [
+    9.51,
+    11.88
+   ],
+   [
+    12.36,
+    15.34
+   ],
+   [
+    15.61,
+    19.16
+   ],
+   [
+    19.56,
+    21.78
+   ],
+   [
+    22.01,
+    24.14
+   ],
+   [
+    24.36,
+    26.35
+   ],
+   [
+    26.89,
+    27.41
+   ],
+   [
+    27.7,
+    28.05
+   ],
+   [
+    28.17,
+    29.17
+   ],
+   [
+    29.4,
+    30.88
+   ],
+   [
+    31.33,
+    32.39
+   ],
+   [
+    32.55,
+    34.48
+   ],
+   [
+    34.67,
+    36.96
+   ]
+  ],
+  "silences": [
+   [
+    2.94,
+    3.33
+   ],
+   [
+    3.91,
+    4.44
+   ],
+   [
+    9.19,
+    9.51
+   ],
+   [
+    11.88,
+    12.36
+   ],
+   [
+    15.34,
+    15.61
+   ],
+   [
+    19.16,
+    19.56
+   ],
+   [
+    21.78,
+    22.01
+   ],
+   [
+    24.14,
+    24.36
+   ],
+   [
+    26.35,
+    26.89
+   ],
+   [
+    27.41,
+    27.7
+   ],
+   [
+    29.17,
+    29.4
+   ],
+   [
+    30.88,
+    31.33
+   ],
+   [
+    34.48,
+    34.67
+   ]
+  ],
+  "anchorsUsed": 11,
+  "breaks": 12
+ },
+ "words": [
+  {
+   "i": 0,
+   "text": "What",
+   "syl": 1,
+   "break": null,
+   "start": 0.06,
+   "end": 0.252
+  },
+  {
+   "i": 1,
+   "text": "should",
+   "syl": 1,
+   "break": null,
+   "start": 0.252,
+   "end": 0.444
+  },
+  {
+   "i": 2,
+   "text": "you",
+   "syl": 1,
+   "break": null,
+   "start": 0.444,
+   "end": 0.636
+  },
+  {
+   "i": 3,
+   "text": "list",
+   "syl": 1,
+   "break": null,
+   "start": 0.636,
+   "end": 0.828
+  },
+  {
+   "i": 4,
+   "text": "your",
+   "syl": 1,
+   "break": null,
+   "start": 0.828,
+   "end": 1.02
+  },
+  {
+   "i": 5,
+   "text": "Fishers",
+   "syl": 2,
+   "break": null,
+   "start": 1.02,
+   "end": 1.404
+  },
+  {
+   "i": 6,
+   "text": "or",
+   "syl": 1,
+   "break": null,
+   "start": 1.404,
+   "end": 1.596
+  },
+  {
+   "i": 7,
+   "text": "Carmel",
+   "syl": 2,
+   "break": null,
+   "start": 1.596,
+   "end": 1.98
+  },
+  {
+   "i": 8,
+   "text": "home",
+   "syl": 1,
+   "break": null,
+   "start": 1.98,
+   "end": 2.172
+  },
+  {
+   "i": 9,
+   "text": "for",
+   "syl": 1,
+   "break": null,
+   "start": 2.172,
+   "end": 2.364
+  },
+  {
+   "i": 10,
+   "text": "this",
+   "syl": 1,
+   "break": null,
+   "start": 2.364,
+   "end": 2.556
+  },
+  {
+   "i": 11,
+   "text": "winter?",
+   "syl": 2,
+   "break": "sentence",
+   "start": 2.556,
+   "end": 2.94
+  },
+  {
+   "i": 12,
+   "text": "Start",
+   "syl": 1,
+   "break": null,
+   "start": 3.33,
+   "end": 3.62
+  },
+  {
+   "i": 13,
+   "text": "here.",
+   "syl": 1,
+   "break": "sentence",
+   "start": 3.62,
+   "end": 3.91
+  },
+  {
+   "i": 14,
+   "text": "Hamilton",
+   "syl": 3,
+   "break": null,
+   "start": 4.44,
+   "end": 5.034
+  },
+  {
+   "i": 15,
+   "text": "County's",
+   "syl": 2,
+   "break": null,
+   "start": 5.034,
+   "end": 5.43
+  },
+  {
+   "i": 16,
+   "text": "median",
+   "syl": 2,
+   "break": null,
+   "start": 5.43,
+   "end": 5.825
+  },
+  {
+   "i": 17,
+   "text": "list",
+   "syl": 1,
+   "break": null,
+   "start": 5.825,
+   "end": 6.023
+  },
+  {
+   "i": 18,
+   "text": "price",
+   "syl": 1,
+   "break": null,
+   "start": 6.023,
+   "end": 6.221
+  },
+  {
+   "i": 19,
+   "text": "was",
+   "syl": 1,
+   "break": null,
+   "start": 6.221,
+   "end": 6.419
+  },
+  {
+   "i": 20,
+   "text": "$445,000",
+   "syl": 10,
+   "break": null,
+   "start": 6.419,
+   "end": 8.398
+  },
+  {
+   "i": 21,
+   "text": "in",
+   "syl": 1,
+   "break": null,
+   "start": 8.398,
+   "end": 8.596
+  },
+  {
+   "i": 22,
+   "text": "October,",
+   "syl": 3,
+   "break": "clause",
+   "start": 8.596,
+   "end": 9.19
+  },
+  {
+   "i": 23,
+   "text": "down",
+   "syl": 1,
+   "break": null,
+   "start": 9.51,
+   "end": 9.725
+  },
+  {
+   "i": 24,
+   "text": "6.3%",
+   "syl": 5,
+   "break": null,
+   "start": 9.725,
+   "end": 10.803
+  },
+  {
+   "i": 25,
+   "text": "from",
+   "syl": 1,
+   "break": null,
+   "start": 10.803,
+   "end": 11.018
+  },
+  {
+   "i": 26,
+   "text": "a",
+   "syl": 1,
+   "break": null,
+   "start": 11.018,
+   "end": 11.234
+  },
+  {
+   "i": 27,
+   "text": "year",
+   "syl": 1,
+   "break": null,
+   "start": 11.234,
+   "end": 11.449
+  },
+  {
+   "i": 28,
+   "text": "earlier.",
+   "syl": 2,
+   "break": "sentence",
+   "start": 11.449,
+   "end": 11.88
+  },
+  {
+   "i": 29,
+   "text": "Buyers",
+   "syl": 1,
+   "break": null,
+   "start": 12.36,
+   "end": 12.559
+  },
+  {
+   "i": 30,
+   "text": "also",
+   "syl": 2,
+   "break": null,
+   "start": 12.559,
+   "end": 12.956
+  },
+  {
+   "i": 31,
+   "text": "have",
+   "syl": 1,
+   "break": null,
+   "start": 12.956,
+   "end": 13.155
+  },
+  {
+   "i": 32,
+   "text": "more",
+   "syl": 1,
+   "break": null,
+   "start": 13.155,
+   "end": 13.353
+  },
+  {
+   "i": 33,
+   "text": "homes",
+   "syl": 2,
+   "break": null,
+   "start": 13.353,
+   "end": 13.751
+  },
+  {
+   "i": 34,
+   "text": "to",
+   "syl": 1,
+   "break": null,
+   "start": 13.751,
+   "end": 13.949
+  },
+  {
+   "i": 35,
+   "text": "compare",
+   "syl": 2,
+   "break": null,
+   "start": 13.949,
+   "end": 14.347
+  },
+  {
+   "i": 36,
+   "text": "than",
+   "syl": 1,
+   "break": null,
+   "start": 14.347,
+   "end": 14.545
+  },
+  {
+   "i": 37,
+   "text": "they",
+   "syl": 1,
+   "break": null,
+   "start": 14.545,
+   "end": 14.744
+  },
+  {
+   "i": 38,
+   "text": "did",
+   "syl": 1,
+   "break": null,
+   "start": 14.744,
+   "end": 14.943
+  },
+  {
+   "i": 39,
+   "text": "last",
+   "syl": 1,
+   "break": null,
+   "start": 14.943,
+   "end": 15.141
+  },
+  {
+   "i": 40,
+   "text": "fall,",
+   "syl": 1,
+   "break": "clause",
+   "start": 15.141,
+   "end": 15.34
+  },
+  {
+   "i": 41,
+   "text": "so",
+   "syl": 1,
+   "break": null,
+   "start": 15.61,
+   "end": 15.832
+  },
+  {
+   "i": 42,
+   "text": "they",
+   "syl": 1,
+   "break": null,
+   "start": 15.832,
+   "end": 16.054
+  },
+  {
+   "i": 43,
+   "text": "notice",
+   "syl": 2,
+   "break": null,
+   "start": 16.054,
+   "end": 16.497
+  },
+  {
+   "i": 44,
+   "text": "fast",
+   "syl": 1,
+   "break": null,
+   "start": 16.498,
+   "end": 16.719
+  },
+  {
+   "i": 45,
+   "text": "when",
+   "syl": 1,
+   "break": null,
+   "start": 16.719,
+   "end": 16.941
+  },
+  {
+   "i": 46,
+   "text": "a",
+   "syl": 1,
+   "break": null,
+   "start": 16.941,
+   "end": 17.163
+  },
+  {
+   "i": 47,
+   "text": "price",
+   "syl": 1,
+   "break": null,
+   "start": 17.163,
+   "end": 17.385
+  },
+  {
+   "i": 48,
+   "text": "was",
+   "syl": 1,
+   "break": null,
+   "start": 17.385,
+   "end": 17.607
+  },
+  {
+   "i": 49,
+   "text": "set",
+   "syl": 1,
+   "break": null,
+   "start": 17.607,
+   "end": 17.829
+  },
+  {
+   "i": 50,
+   "text": "from",
+   "syl": 1,
+   "break": null,
+   "start": 17.829,
+   "end": 18.051
+  },
+  {
+   "i": 51,
+   "text": "last",
+   "syl": 1,
+   "break": null,
+   "start": 18.051,
+   "end": 18.272
+  },
+  {
+   "i": 52,
+   "text": "spring's",
+   "syl": 1,
+   "break": null,
+   "start": 18.273,
+   "end": 18.494
+  },
+  {
+   "i": 53,
+   "text": "headlines.",
+   "syl": 3,
+   "break": "sentence",
+   "start": 18.494,
+   "end": 19.16
+  },
+  {
+   "i": 54,
+   "text": "A",
+   "syl": 1,
+   "break": null,
+   "start": 19.56,
+   "end": 19.745
+  },
+  {
+   "i": 55,
+   "text": "price",
+   "syl": 1,
+   "break": null,
+   "start": 19.745,
+   "end": 19.93
+  },
+  {
+   "i": 56,
+   "text": "built",
+   "syl": 1,
+   "break": null,
+   "start": 19.93,
+   "end": 20.115
+  },
+  {
+   "i": 57,
+   "text": "from",
+   "syl": 1,
+   "break": null,
+   "start": 20.115,
+   "end": 20.3
+  },
+  {
+   "i": 58,
+   "text": "today's",
+   "syl": 2,
+   "break": null,
+   "start": 20.3,
+   "end": 20.67
+  },
+  {
+   "i": 59,
+   "text": "comparable",
+   "syl": 4,
+   "break": null,
+   "start": 20.67,
+   "end": 21.41
+  },
+  {
+   "i": 60,
+   "text": "homes,",
+   "syl": 2,
+   "break": "clause",
+   "start": 21.41,
+   "end": 21.78
+  },
+  {
+   "i": 61,
+   "text": "on",
+   "syl": 1,
+   "break": null,
+   "start": 22.01,
+   "end": 22.204
+  },
+  {
+   "i": 62,
+   "text": "your",
+   "syl": 1,
+   "break": null,
+   "start": 22.204,
+   "end": 22.397
+  },
+  {
+   "i": 63,
+   "text": "street",
+   "syl": 1,
+   "break": null,
+   "start": 22.397,
+   "end": 22.591
+  },
+  {
+   "i": 64,
+   "text": "and",
+   "syl": 1,
+   "break": null,
+   "start": 22.591,
+   "end": 22.785
+  },
+  {
+   "i": 65,
+   "text": "in",
+   "syl": 1,
+   "break": null,
+   "start": 22.785,
+   "end": 22.978
+  },
+  {
+   "i": 66,
+   "text": "your",
+   "syl": 1,
+   "break": null,
+   "start": 22.978,
+   "end": 23.172
+  },
+  {
+   "i": 67,
+   "text": "home's",
+   "syl": 2,
+   "break": null,
+   "start": 23.172,
+   "end": 23.559
+  },
+  {
+   "i": 68,
+   "text": "condition,",
+   "syl": 3,
+   "break": "clause",
+   "start": 23.559,
+   "end": 24.14
+  },
+  {
+   "i": 69,
+   "text": "gives",
+   "syl": 2,
+   "break": null,
+   "start": 24.36,
+   "end": 24.915
+  },
+  {
+   "i": 70,
+   "text": "buyers",
+   "syl": 1,
+   "break": null,
+   "start": 24.915,
+   "end": 25.192
+  },
+  {
+   "i": 71,
+   "text": "a",
+   "syl": 1,
+   "break": null,
+   "start": 25.192,
+   "end": 25.469
+  },
+  {
+   "i": 72,
+   "text": "reason",
+   "syl": 2,
+   "break": null,
+   "start": 25.469,
+   "end": 26.024
+  },
+  {
+   "i": 73,
+   "text": "to",
+   "syl": 1,
+   "break": null,
+   "start": 26.024,
+   "end": 26.301
+  },
+  {
+   "i": 74,
+   "text": "book",
+   "syl": 1,
+   "break": null,
+   "start": 26.301,
+   "end": 26.578
+  },
+  {
+   "i": 75,
+   "text": "the",
+   "syl": 1,
+   "break": null,
+   "start": 26.578,
+   "end": 26.855
+  },
+  {
+   "i": 76,
+   "text": "showing.",
+   "syl": 2,
+   "break": "sentence",
+   "start": 26.856,
+   "end": 27.41
+  },
+  {
+   "i": 77,
+   "text": "One",
+   "syl": 1,
+   "break": null,
+   "start": 27.7,
+   "end": 27.884
+  },
+  {
+   "i": 78,
+   "text": "note:",
+   "syl": 1,
+   "break": "clause",
+   "start": 27.884,
+   "end": 28.067
+  },
+  {
+   "i": 79,
+   "text": "these",
+   "syl": 1,
+   "break": null,
+   "start": 28.068,
+   "end": 28.251
+  },
+  {
+   "i": 80,
+   "text": "are",
+   "syl": 1,
+   "break": null,
+   "start": 28.251,
+   "end": 28.435
+  },
+  {
+   "i": 81,
+   "text": "asking",
+   "syl": 2,
+   "break": null,
+   "start": 28.435,
+   "end": 28.802
+  },
+  {
+   "i": 82,
+   "text": "prices,",
+   "syl": 2,
+   "break": "clause",
+   "start": 28.803,
+   "end": 29.17
+  },
+  {
+   "i": 83,
+   "text": "not",
+   "syl": 1,
+   "break": null,
+   "start": 29.4,
+   "end": 29.611
+  },
+  {
+   "i": 84,
+   "text": "what",
+   "syl": 1,
+   "break": null,
+   "start": 29.611,
+   "end": 29.823
+  },
+  {
+   "i": 85,
+   "text": "homes",
+   "syl": 2,
+   "break": null,
+   "start": 29.823,
+   "end": 30.246
+  },
+  {
+   "i": 86,
+   "text": "closed",
+   "syl": 2,
+   "break": null,
+   "start": 30.246,
+   "end": 30.669
+  },
+  {
+   "i": 87,
+   "text": "for.",
+   "syl": 1,
+   "break": "sentence",
+   "start": 30.669,
+   "end": 30.88
+  },
+  {
+   "i": 88,
+   "text": "Call",
+   "syl": 1,
+   "break": null,
+   "start": 31.33,
+   "end": 31.555
+  },
+  {
+   "i": 89,
+   "text": "317-863-9011",
+   "syl": 12,
+   "break": null,
+   "start": 31.555,
+   "end": 34.258
+  },
+  {
+   "i": 90,
+   "text": "and",
+   "syl": 1,
+   "break": null,
+   "start": 34.258,
+   "end": 34.483
+  },
+  {
+   "i": 91,
+   "text": "ask",
+   "syl": 1,
+   "break": null,
+   "start": 34.483,
+   "end": 34.708
+  },
+  {
+   "i": 92,
+   "text": "for",
+   "syl": 1,
+   "break": null,
+   "start": 34.708,
+   "end": 34.933
+  },
+  {
+   "i": 93,
+   "text": "a",
+   "syl": 1,
+   "break": null,
+   "start": 34.933,
+   "end": 35.158
+  },
+  {
+   "i": 94,
+   "text": "winter",
+   "syl": 2,
+   "break": null,
+   "start": 35.158,
+   "end": 35.609
+  },
+  {
+   "i": 95,
+   "text": "pricing",
+   "syl": 2,
+   "break": null,
+   "start": 35.609,
+   "end": 36.059
+  },
+  {
+   "i": 96,
+   "text": "check",
+   "syl": 1,
+   "break": null,
+   "start": 36.059,
+   "end": 36.284
+  },
+  {
+   "i": 97,
+   "text": "on",
+   "syl": 1,
+   "break": null,
+   "start": 36.284,
+   "end": 36.51
+  },
+  {
+   "i": 98,
+   "text": "your",
+   "syl": 1,
+   "break": null,
+   "start": 36.51,
+   "end": 36.735
+  },
+  {
+   "i": 99,
+   "text": "home.",
+   "syl": 1,
+   "break": "sentence",
+   "start": 36.735,
+   "end": 36.96
+  }
+ ],
+ "phrases": [
+  {
+   "text": "What should you list",
+   "start": 0.06,
+   "end": 0.828
+  },
+  {
+   "text": "your Fishers or Carmel",
+   "start": 0.828,
+   "end": 1.98
+  },
+  {
+   "text": "home for this winter?",
+   "start": 1.98,
+   "end": 2.94
+  },
+  {
+   "text": "Start here.",
+   "start": 3.33,
+   "end": 3.91
+  },
+  {
+   "text": "Hamilton County's median list",
+   "start": 4.44,
+   "end": 6.023
+  },
+  {
+   "text": "price was $445,000 in",
+   "start": 6.023,
+   "end": 8.596
+  },
+  {
+   "text": "October,",
+   "start": 8.596,
+   "end": 9.19
+  },
+  {
+   "text": "down 6.3% from a",
+   "start": 9.51,
+   "end": 11.234
+  },
+  {
+   "text": "year earlier.",
+   "start": 11.234,
+   "end": 11.88
+  },
+  {
+   "text": "Buyers also have more",
+   "start": 12.36,
+   "end": 13.353
+  },
+  {
+   "text": "homes to compare than",
+   "start": 13.353,
+   "end": 14.545
+  },
+  {
+   "text": "they did last fall,",
+   "start": 14.545,
+   "end": 15.34
+  },
+  {
+   "text": "so they notice fast",
+   "start": 15.61,
+   "end": 16.719
+  },
+  {
+   "text": "when a price was",
+   "start": 16.719,
+   "end": 17.607
+  },
+  {
+   "text": "set from last spring's",
+   "start": 17.607,
+   "end": 18.494
+  },
+  {
+   "text": "headlines.",
+   "start": 18.494,
+   "end": 19.16
+  },
+  {
+   "text": "A price built from",
+   "start": 19.56,
+   "end": 20.3
+  },
+  {
+   "text": "today's comparable homes,",
+   "start": 20.3,
+   "end": 21.78
+  },
+  {
+   "text": "on your street and",
+   "start": 22.01,
+   "end": 22.785
+  },
+  {
+   "text": "in your home's condition,",
+   "start": 22.785,
+   "end": 24.14
+  },
+  {
+   "text": "gives buyers a reason",
+   "start": 24.36,
+   "end": 26.024
+  },
+  {
+   "text": "to book the showing.",
+   "start": 26.024,
+   "end": 27.41
+  },
+  {
+   "text": "One note:",
+   "start": 27.7,
+   "end": 28.067
+  },
+  {
+   "text": "these are asking prices,",
+   "start": 28.068,
+   "end": 29.17
+  },
+  {
+   "text": "not what homes closed",
+   "start": 29.4,
+   "end": 30.669
+  },
+  {
+   "text": "for.",
+   "start": 30.669,
+   "end": 30.88
+  },
+  {
+   "text": "Call 317-863-9011 and ask",
+   "start": 31.33,
+   "end": 34.708
+  },
+  {
+   "text": "for a winter pricing",
+   "start": 34.708,
+   "end": 36.059
+  },
+  {
+   "text": "check on your home.",
+   "start": 36.059,
+   "end": 36.96
+  }
+ ],
+ "music": {
+  "file": "audio/music.mp3",
+  "tempo": 95.7,
+  "beats": [
+   5.759,
+   6.409,
+   7.036,
+   7.663,
+   8.29,
+   8.916,
+   9.543,
+   10.194,
+   10.82,
+   11.447,
+   12.074,
+   12.701,
+   13.328,
+   13.978,
+   14.605,
+   15.232,
+   15.882,
+   16.509,
+   17.136,
+   17.763,
+   18.39,
+   19.04,
+   19.667,
+   20.294,
+   20.921,
+   21.548,
+   22.175,
+   22.825,
+   23.452,
+   24.079,
+   24.706,
+   25.356,
+   25.983,
+   26.61,
+   27.237,
+   27.864,
+   28.491,
+   29.141,
+   29.768,
+   30.395,
+   31.022,
+   31.672,
+   32.299,
+   32.926,
+   33.553,
+   34.203,
+   34.807
+  ],
+  "duration": 46.0
+ }
+}

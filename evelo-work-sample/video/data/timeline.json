@@ -1,0 +1,1415 @@
+{
+ "fps": 30,
+ "duration": 44.3,
+ "durationInFrames": 1329,
+ "voOffset": 0.35,
+ "vo": {
+  "file": "audio/temp-vo.mp3",
+  "speechEnd": 37.31
+ },
+ "music": {
+  "file": "audio/music.mp3",
+  "skip": 1.7,
+  "tempo": 95.7,
+  "period": 0.631
+ },
+ "beats": [
+  0.27,
+  0.902,
+  1.533,
+  2.165,
+  2.796,
+  3.428,
+  4.059,
+  4.709,
+  5.336,
+  5.963,
+  6.59,
+  7.216,
+  7.843,
+  8.494,
+  9.12,
+  9.747,
+  10.374,
+  11.001,
+  11.628,
+  12.278,
+  12.905,
+  13.532,
+  14.182,
+  14.809,
+  15.436,
+  16.063,
+  16.69,
+  17.34,
+  17.967,
+  18.594,
+  19.221,
+  19.848,
+  20.475,
+  21.125,
+  21.752,
+  22.379,
+  23.006,
+  23.656,
+  24.283,
+  24.91,
+  25.537,
+  26.164,
+  26.791,
+  27.441,
+  28.068,
+  28.695,
+  29.322,
+  29.972,
+  30.599,
+  31.226,
+  31.853,
+  32.503,
+  33.107
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0,
+   "end": 4.54,
+   "beatNear": 0.27
+  },
+  {
+   "id": "price",
+   "start": 4.54,
+   "end": 12.46,
+   "beatNear": 4.709
+  },
+  {
+   "id": "inventory",
+   "start": 12.46,
+   "end": 19.66,
+   "beatNear": 12.278
+  },
+  {
+   "id": "comps",
+   "start": 19.66,
+   "end": 27.8,
+   "beatNear": 19.848
+  },
+  {
+   "id": "asking",
+   "start": 27.8,
+   "end": 31.43,
+   "beatNear": 28.068
+  },
+  {
+   "id": "cta",
+   "start": 31.43,
+   "end": 44.3,
+   "beatNear": 31.226
+  }
+ ],
+ "words": [
+  {
+   "text": "What",
+   "start": 0.41,
+   "end": 0.602
+  },
+  {
+   "text": "should",
+   "start": 0.602,
+   "end": 0.794
+  },
+  {
+   "text": "you",
+   "start": 0.794,
+   "end": 0.986
+  },
+  {
+   "text": "list",
+   "start": 0.986,
+   "end": 1.178
+  },
+  {
+   "text": "your",
+   "start": 1.178,
+   "end": 1.37
+  },
+  {
+   "text": "Fishers",
+   "start": 1.37,
+   "end": 1.754
+  },
+  {
+   "text": "or",
+   "start": 1.754,
+   "end": 1.946
+  },
+  {
+   "text": "Carmel",
+   "start": 1.946,
+   "end": 2.33
+  },
+  {
+   "text": "home",
+   "start": 2.33,
+   "end": 2.522
+  },
+  {
+   "text": "for",
+   "start": 2.522,
+   "end": 2.714
+  },
+  {
+   "text": "this",
+   "start": 2.714,
+   "end": 2.906
+  },
+  {
+   "text": "winter?",
+   "start": 2.906,
+   "end": 3.29
+  },
+  {
+   "text": "Start",
+   "start": 3.68,
+   "end": 3.97
+  },
+  {
+   "text": "here.",
+   "start": 3.97,
+   "end": 4.26
+  },
+  {
+   "text": "Hamilton",
+   "start": 4.79,
+   "end": 5.384
+  },
+  {
+   "text": "County's",
+   "start": 5.384,
+   "end": 5.78
+  },
+  {
+   "text": "median",
+   "start": 5.78,
+   "end": 6.175
+  },
+  {
+   "text": "list",
+   "start": 6.175,
+   "end": 6.373
+  },
+  {
+   "text": "price",
+   "start": 6.373,
+   "end": 6.571
+  },
+  {
+   "text": "was",
+   "start": 6.571,
+   "end": 6.769
+  },
+  {
+   "text": "$445,000",
+   "start": 6.769,
+   "end": 8.748
+  },
+  {
+   "text": "in",
+   "start": 8.748,
+   "end": 8.946
+  },
+  {
+   "text": "October,",
+   "start": 8.946,
+   "end": 9.54
+  },
+  {
+   "text": "down",
+   "start": 9.86,
+   "end": 10.075
+  },
+  {
+   "text": "6.3%",
+   "start": 10.075,
+   "end": 11.153
+  },
+  {
+   "text": "from",
+   "start": 11.153,
+   "end": 11.368
+  },
+  {
+   "text": "a",
+   "start": 11.368,
+   "end": 11.584
+  },
+  {
+   "text": "year",
+   "start": 11.584,
+   "end": 11.799
+  },
+  {
+   "text": "earlier.",
+   "start": 11.799,
+   "end": 12.23
+  },
+  {
+   "text": "Buyers",
+   "start": 12.71,
+   "end": 12.909
+  },
+  {
+   "text": "also",
+   "start": 12.909,
+   "end": 13.306
+  },
+  {
+   "text": "have",
+   "start": 13.306,
+   "end": 13.505
+  },
+  {
+   "text": "more",
+   "start": 13.505,
+   "end": 13.703
+  },
+  {
+   "text": "homes",
+   "start": 13.703,
+   "end": 14.101
+  },
+  {
+   "text": "to",
+   "start": 14.101,
+   "end": 14.299
+  },
+  {
+   "text": "compare",
+   "start": 14.299,
+   "end": 14.697
+  },
+  {
+   "text": "than",
+   "start": 14.697,
+   "end": 14.895
+  },
+  {
+   "text": "they",
+   "start": 14.895,
+   "end": 15.094
+  },
+  {
+   "text": "did",
+   "start": 15.094,
+   "end": 15.293
+  },
+  {
+   "text": "last",
+   "start": 15.293,
+   "end": 15.491
+  },
+  {
+   "text": "fall,",
+   "start": 15.491,
+   "end": 15.69
+  },
+  {
+   "text": "so",
+   "start": 15.96,
+   "end": 16.182
+  },
+  {
+   "text": "they",
+   "start": 16.182,
+   "end": 16.404
+  },
+  {
+   "text": "notice",
+   "start": 16.404,
+   "end": 16.847
+  },
+  {
+   "text": "fast",
+   "start": 16.848,
+   "end": 17.069
+  },
+  {
+   "text": "when",
+   "start": 17.069,
+   "end": 17.291
+  },
+  {
+   "text": "a",
+   "start": 17.291,
+   "end": 17.513
+  },
+  {
+   "text": "price",
+   "start": 17.513,
+   "end": 17.735
+  },
+  {
+   "text": "was",
+   "start": 17.735,
+   "end": 17.957
+  },
+  {
+   "text": "set",
+   "start": 17.957,
+   "end": 18.179
+  },
+  {
+   "text": "from",
+   "start": 18.179,
+   "end": 18.401
+  },
+  {
+   "text": "last",
+   "start": 18.401,
+   "end": 18.622
+  },
+  {
+   "text": "spring's",
+   "start": 18.623,
+   "end": 18.844
+  },
+  {
+   "text": "headlines.",
+   "start": 18.844,
+   "end": 19.51
+  },
+  {
+   "text": "A",
+   "start": 19.91,
+   "end": 20.095
+  },
+  {
+   "text": "price",
+   "start": 20.095,
+   "end": 20.28
+  },
+  {
+   "text": "built",
+   "start": 20.28,
+   "end": 20.465
+  },
+  {
+   "text": "from",
+   "start": 20.465,
+   "end": 20.65
+  },
+  {
+   "text": "today's",
+   "start": 20.65,
+   "end": 21.02
+  },
+  {
+   "text": "comparable",
+   "start": 21.02,
+   "end": 21.76
+  },
+  {
+   "text": "homes,",
+   "start": 21.76,
+   "end": 22.13
+  },
+  {
+   "text": "on",
+   "start": 22.36,
+   "end": 22.554
+  },
+  {
+   "text": "your",
+   "start": 22.554,
+   "end": 22.747
+  },
+  {
+   "text": "street",
+   "start": 22.747,
+   "end": 22.941
+  },
+  {
+   "text": "and",
+   "start": 22.941,
+   "end": 23.135
+  },
+  {
+   "text": "in",
+   "start": 23.135,
+   "end": 23.328
+  },
+  {
+   "text": "your",
+   "start": 23.328,
+   "end": 23.522
+  },
+  {
+   "text": "home's",
+   "start": 23.522,
+   "end": 23.909
+  },
+  {
+   "text": "condition,",
+   "start": 23.909,
+   "end": 24.49
+  },
+  {
+   "text": "gives",
+   "start": 24.71,
+   "end": 25.265
+  },
+  {
+   "text": "buyers",
+   "start": 25.265,
+   "end": 25.542
+  },
+  {
+   "text": "a",
+   "start": 25.542,
+   "end": 25.819
+  },
+  {
+   "text": "reason",
+   "start": 25.819,
+   "end": 26.374
+  },
+  {
+   "text": "to",
+   "start": 26.374,
+   "end": 26.651
+  },
+  {
+   "text": "book",
+   "start": 26.651,
+   "end": 26.928
+  },
+  {
+   "text": "the",
+   "start": 26.928,
+   "end": 27.205
+  },
+  {
+   "text": "showing.",
+   "start": 27.206,
+   "end": 27.76
+  },
+  {
+   "text": "One",
+   "start": 28.05,
+   "end": 28.234
+  },
+  {
+   "text": "note:",
+   "start": 28.234,
+   "end": 28.417
+  },
+  {
+   "text": "these",
+   "start": 28.418,
+   "end": 28.601
+  },
+  {
+   "text": "are",
+   "start": 28.601,
+   "end": 28.785
+  },
+  {
+   "text": "asking",
+   "start": 28.785,
+   "end": 29.152
+  },
+  {
+   "text": "prices,",
+   "start": 29.153,
+   "end": 29.52
+  },
+  {
+   "text": "not",
+   "start": 29.75,
+   "end": 29.961
+  },
+  {
+   "text": "what",
+   "start": 29.961,
+   "end": 30.173
+  },
+  {
+   "text": "homes",
+   "start": 30.173,
+   "end": 30.596
+  },
+  {
+   "text": "closed",
+   "start": 30.596,
+   "end": 31.019
+  },
+  {
+   "text": "for.",
+   "start": 31.019,
+   "end": 31.23
+  },
+  {
+   "text": "Call",
+   "start": 31.68,
+   "end": 31.905
+  },
+  {
+   "text": "317-863-9011",
+   "start": 31.905,
+   "end": 34.608
+  },
+  {
+   "text": "and",
+   "start": 34.608,
+   "end": 34.833
+  },
+  {
+   "text": "ask",
+   "start": 34.833,
+   "end": 35.058
+  },
+  {
+   "text": "for",
+   "start": 35.058,
+   "end": 35.283
+  },
+  {
+   "text": "a",
+   "start": 35.283,
+   "end": 35.508
+  },
+  {
+   "text": "winter",
+   "start": 35.508,
+   "end": 35.959
+  },
+  {
+   "text": "pricing",
+   "start": 35.959,
+   "end": 36.409
+  },
+  {
+   "text": "check",
+   "start": 36.409,
+   "end": 36.634
+  },
+  {
+   "text": "on",
+   "start": 36.634,
+   "end": 36.86
+  },
+  {
+   "text": "your",
+   "start": 36.86,
+   "end": 37.085
+  },
+  {
+   "text": "home.",
+   "start": 37.085,
+   "end": 37.31
+  }
+ ],
+ "phrases": [
+  {
+   "text": "What should you list",
+   "start": 0.41,
+   "end": 1.178,
+   "words": [
+    {
+     "text": "What",
+     "start": 0.41,
+     "end": 0.602
+    },
+    {
+     "text": "should",
+     "start": 0.602,
+     "end": 0.794
+    },
+    {
+     "text": "you",
+     "start": 0.794,
+     "end": 0.986
+    },
+    {
+     "text": "list",
+     "start": 0.986,
+     "end": 1.178
+    }
+   ]
+  },
+  {
+   "text": "your Fishers or Carmel home",
+   "start": 1.178,
+   "end": 2.522,
+   "words": [
+    {
+     "text": "your",
+     "start": 1.178,
+     "end": 1.37
+    },
+    {
+     "text": "Fishers",
+     "start": 1.37,
+     "end": 1.754
+    },
+    {
+     "text": "or",
+     "start": 1.754,
+     "end": 1.946
+    },
+    {
+     "text": "Carmel",
+     "start": 1.946,
+     "end": 2.33
+    },
+    {
+     "text": "home",
+     "start": 2.33,
+     "end": 2.522
+    }
+   ]
+  },
+  {
+   "text": "for this winter?",
+   "start": 2.522,
+   "end": 3.29,
+   "words": [
+    {
+     "text": "for",
+     "start": 2.522,
+     "end": 2.714
+    },
+    {
+     "text": "this",
+     "start": 2.714,
+     "end": 2.906
+    },
+    {
+     "text": "winter?",
+     "start": 2.906,
+     "end": 3.29
+    }
+   ]
+  },
+  {
+   "text": "Start here.",
+   "start": 3.68,
+   "end": 4.26,
+   "words": [
+    {
+     "text": "Start",
+     "start": 3.68,
+     "end": 3.97
+    },
+    {
+     "text": "here.",
+     "start": 3.97,
+     "end": 4.26
+    }
+   ]
+  },
+  {
+   "text": "Hamilton County's median list price",
+   "start": 4.79,
+   "end": 6.571,
+   "words": [
+    {
+     "text": "Hamilton",
+     "start": 4.79,
+     "end": 5.384
+    },
+    {
+     "text": "County's",
+     "start": 5.384,
+     "end": 5.78
+    },
+    {
+     "text": "median",
+     "start": 5.78,
+     "end": 6.175
+    },
+    {
+     "text": "list",
+     "start": 6.175,
+     "end": 6.373
+    },
+    {
+     "text": "price",
+     "start": 6.373,
+     "end": 6.571
+    }
+   ]
+  },
+  {
+   "text": "was $445,000 in October,",
+   "start": 6.571,
+   "end": 9.54,
+   "words": [
+    {
+     "text": "was",
+     "start": 6.571,
+     "end": 6.769
+    },
+    {
+     "text": "$445,000",
+     "start": 6.769,
+     "end": 8.748
+    },
+    {
+     "text": "in",
+     "start": 8.748,
+     "end": 8.946
+    },
+    {
+     "text": "October,",
+     "start": 8.946,
+     "end": 9.54
+    }
+   ]
+  },
+  {
+   "text": "down 6.3% from a year earlier.",
+   "start": 9.86,
+   "end": 12.23,
+   "words": [
+    {
+     "text": "down",
+     "start": 9.86,
+     "end": 10.075
+    },
+    {
+     "text": "6.3%",
+     "start": 10.075,
+     "end": 11.153
+    },
+    {
+     "text": "from",
+     "start": 11.153,
+     "end": 11.368
+    },
+    {
+     "text": "a",
+     "start": 11.368,
+     "end": 11.584
+    },
+    {
+     "text": "year",
+     "start": 11.584,
+     "end": 11.799
+    },
+    {
+     "text": "earlier.",
+     "start": 11.799,
+     "end": 12.23
+    }
+   ]
+  },
+  {
+   "text": "Buyers also have more homes to compare",
+   "start": 12.71,
+   "end": 14.697,
+   "words": [
+    {
+     "text": "Buyers",
+     "start": 12.71,
+     "end": 12.909
+    },
+    {
+     "text": "also",
+     "start": 12.909,
+     "end": 13.306
+    },
+    {
+     "text": "have",
+     "start": 13.306,
+     "end": 13.505
+    },
+    {
+     "text": "more",
+     "start": 13.505,
+     "end": 13.703
+    },
+    {
+     "text": "homes",
+     "start": 13.703,
+     "end": 14.101
+    },
+    {
+     "text": "to",
+     "start": 14.101,
+     "end": 14.299
+    },
+    {
+     "text": "compare",
+     "start": 14.299,
+     "end": 14.697
+    }
+   ]
+  },
+  {
+   "text": "than they did last fall,",
+   "start": 14.697,
+   "end": 15.69,
+   "words": [
+    {
+     "text": "than",
+     "start": 14.697,
+     "end": 14.895
+    },
+    {
+     "text": "they",
+     "start": 14.895,
+     "end": 15.094
+    },
+    {
+     "text": "did",
+     "start": 15.094,
+     "end": 15.293
+    },
+    {
+     "text": "last",
+     "start": 15.293,
+     "end": 15.491
+    },
+    {
+     "text": "fall,",
+     "start": 15.491,
+     "end": 15.69
+    }
+   ]
+  },
+  {
+   "text": "so they notice fast",
+   "start": 15.96,
+   "end": 17.069,
+   "words": [
+    {
+     "text": "so",
+     "start": 15.96,
+     "end": 16.182
+    },
+    {
+     "text": "they",
+     "start": 16.182,
+     "end": 16.404
+    },
+    {
+     "text": "notice",
+     "start": 16.404,
+     "end": 16.847
+    },
+    {
+     "text": "fast",
+     "start": 16.848,
+     "end": 17.069
+    }
+   ]
+  },
+  {
+   "text": "when a price was set",
+   "start": 17.069,
+   "end": 18.179,
+   "words": [
+    {
+     "text": "when",
+     "start": 17.069,
+     "end": 17.291
+    },
+    {
+     "text": "a",
+     "start": 17.291,
+     "end": 17.513
+    },
+    {
+     "text": "price",
+     "start": 17.513,
+     "end": 17.735
+    },
+    {
+     "text": "was",
+     "start": 17.735,
+     "end": 17.957
+    },
+    {
+     "text": "set",
+     "start": 17.957,
+     "end": 18.179
+    }
+   ]
+  },
+  {
+   "text": "from last spring's headlines.",
+   "start": 18.179,
+   "end": 19.51,
+   "words": [
+    {
+     "text": "from",
+     "start": 18.179,
+     "end": 18.401
+    },
+    {
+     "text": "last",
+     "start": 18.401,
+     "end": 18.622
+    },
+    {
+     "text": "spring's",
+     "start": 18.623,
+     "end": 18.844
+    },
+    {
+     "text": "headlines.",
+     "start": 18.844,
+     "end": 19.51
+    }
+   ]
+  },
+  {
+   "text": "A price built from",
+   "start": 19.91,
+   "end": 20.65,
+   "words": [
+    {
+     "text": "A",
+     "start": 19.91,
+     "end": 20.095
+    },
+    {
+     "text": "price",
+     "start": 20.095,
+     "end": 20.28
+    },
+    {
+     "text": "built",
+     "start": 20.28,
+     "end": 20.465
+    },
+    {
+     "text": "from",
+     "start": 20.465,
+     "end": 20.65
+    }
+   ]
+  },
+  {
+   "text": "today's comparable homes,",
+   "start": 20.65,
+   "end": 22.13,
+   "words": [
+    {
+     "text": "today's",
+     "start": 20.65,
+     "end": 21.02
+    },
+    {
+     "text": "comparable",
+     "start": 21.02,
+     "end": 21.76
+    },
+    {
+     "text": "homes,",
+     "start": 21.76,
+     "end": 22.13
+    }
+   ]
+  },
+  {
+   "text": "on your street",
+   "start": 22.36,
+   "end": 22.941,
+   "words": [
+    {
+     "text": "on",
+     "start": 22.36,
+     "end": 22.554
+    },
+    {
+     "text": "your",
+     "start": 22.554,
+     "end": 22.747
+    },
+    {
+     "text": "street",
+     "start": 22.747,
+     "end": 22.941
+    }
+   ]
+  },
+  {
+   "text": "and in your home's condition,",
+   "start": 22.941,
+   "end": 24.49,
+   "words": [
+    {
+     "text": "and",
+     "start": 22.941,
+     "end": 23.135
+    },
+    {
+     "text": "in",
+     "start": 23.135,
+     "end": 23.328
+    },
+    {
+     "text": "your",
+     "start": 23.328,
+     "end": 23.522
+    },
+    {
+     "text": "home's",
+     "start": 23.522,
+     "end": 23.909
+    },
+    {
+     "text": "condition,",
+     "start": 23.909,
+     "end": 24.49
+    }
+   ]
+  },
+  {
+   "text": "gives buyers a reason",
+   "start": 24.71,
+   "end": 26.374,
+   "words": [
+    {
+     "text": "gives",
+     "start": 24.71,
+     "end": 25.265
+    },
+    {
+     "text": "buyers",
+     "start": 25.265,
+     "end": 25.542
+    },
+    {
+     "text": "a",
+     "start": 25.542,
+     "end": 25.819
+    },
+    {
+     "text": "reason",
+     "start": 25.819,
+     "end": 26.374
+    }
+   ]
+  },
+  {
+   "text": "to book the showing.",
+   "start": 26.374,
+   "end": 27.76,
+   "words": [
+    {
+     "text": "to",
+     "start": 26.374,
+     "end": 26.651
+    },
+    {
+     "text": "book",
+     "start": 26.651,
+     "end": 26.928
+    },
+    {
+     "text": "the",
+     "start": 26.928,
+     "end": 27.205
+    },
+    {
+     "text": "showing.",
+     "start": 27.206,
+     "end": 27.76
+    }
+   ]
+  },
+  {
+   "text": "One note:",
+   "start": 28.05,
+   "end": 28.417,
+   "words": [
+    {
+     "text": "One",
+     "start": 28.05,
+     "end": 28.234
+    },
+    {
+     "text": "note:",
+     "start": 28.234,
+     "end": 28.417
+    }
+   ]
+  },
+  {
+   "text": "these are asking prices,",
+   "start": 28.418,
+   "end": 29.52,
+   "words": [
+    {
+     "text": "these",
+     "start": 28.418,
+     "end": 28.601
+    },
+    {
+     "text": "are",
+     "start": 28.601,
+     "end": 28.785
+    },
+    {
+     "text": "asking",
+     "start": 28.785,
+     "end": 29.152
+    },
+    {
+     "text": "prices,",
+     "start": 29.153,
+     "end": 29.52
+    }
+   ]
+  },
+  {
+   "text": "not what homes closed for.",
+   "start": 29.75,
+   "end": 31.23,
+   "words": [
+    {
+     "text": "not",
+     "start": 29.75,
+     "end": 29.961
+    },
+    {
+     "text": "what",
+     "start": 29.961,
+     "end": 30.173
+    },
+    {
+     "text": "homes",
+     "start": 30.173,
+     "end": 30.596
+    },
+    {
+     "text": "closed",
+     "start": 30.596,
+     "end": 31.019
+    },
+    {
+     "text": "for.",
+     "start": 31.019,
+     "end": 31.23
+    }
+   ]
+  },
+  {
+   "text": "Call 317-863-9011",
+   "start": 31.68,
+   "end": 34.608,
+   "words": [
+    {
+     "text": "Call",
+     "start": 31.68,
+     "end": 31.905
+    },
+    {
+     "text": "317-863-9011",
+     "start": 31.905,
+     "end": 34.608
+    }
+   ]
+  },
+  {
+   "text": "and ask for a winter",
+   "start": 34.608,
+   "end": 35.959,
+   "words": [
+    {
+     "text": "and",
+     "start": 34.608,
+     "end": 34.833
+    },
+    {
+     "text": "ask",
+     "start": 34.833,
+     "end": 35.058
+    },
+    {
+     "text": "for",
+     "start": 35.058,
+     "end": 35.283
+    },
+    {
+     "text": "a",
+     "start": 35.283,
+     "end": 35.508
+    },
+    {
+     "text": "winter",
+     "start": 35.508,
+     "end": 35.959
+    }
+   ]
+  },
+  {
+   "text": "pricing check on your home.",
+   "start": 35.959,
+   "end": 37.31,
+   "words": [
+    {
+     "text": "pricing",
+     "start": 35.959,
+     "end": 36.409
+    },
+    {
+     "text": "check",
+     "start": 36.409,
+     "end": 36.634
+    },
+    {
+     "text": "on",
+     "start": 36.634,
+     "end": 36.86
+    },
+    {
+     "text": "your",
+     "start": 36.86,
+     "end": 37.085
+    },
+    {
+     "text": "home.",
+     "start": 37.085,
+     "end": 37.31
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh",
+   "at": 0,
+   "gain": 0.55
+  },
+  {
+   "file": "whoosh",
+   "at": 4.09,
+   "gain": 0.4
+  },
+  {
+   "file": "whoosh",
+   "at": 12.01,
+   "gain": 0.4
+  },
+  {
+   "file": "whoosh",
+   "at": 19.21,
+   "gain": 0.4
+  },
+  {
+   "file": "whoosh",
+   "at": 27.35,
+   "gain": 0.4
+  },
+  {
+   "file": "whoosh",
+   "at": 30.98,
+   "gain": 0.4
+  },
+  {
+   "file": "riser",
+   "at": 5.169,
+   "gain": 0.35
+  },
+  {
+   "file": "impact",
+   "at": 6.769,
+   "gain": 0.7
+  },
+  {
+   "file": "tick",
+   "at": 13.66,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 14.273,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 14.692,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 15.058,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 15.395,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 15.711,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 16.012,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 16.3,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 16.578,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 16.848,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 17.11,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 17.365,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 17.615,
+   "gain": 0.18
+  },
+  {
+   "file": "tick",
+   "at": 17.86,
+   "gain": 0.18
+  },
+  {
+   "file": "impact",
+   "at": 18.06,
+   "gain": 0.45
+  },
+  {
+   "file": "shimmer",
+   "at": 31.78,
+   "gain": 0.35
+  }
+ ],
+ "keyTimes": {
+  "fishers": 1.37,
+  "carmel": 1.946,
+  "price": 6.769,
+  "down": 9.86,
+  "compare": 14.299,
+  "comparable": 21.02,
+  "street": 22.747,
+  "showing": 27.206,
+  "asking": 28.785,
+  "call": 31.68
+ }
+}

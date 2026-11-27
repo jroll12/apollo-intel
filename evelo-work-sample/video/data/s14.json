@@ -1,0 +1,37 @@
+{
+ "id": "S14",
+ "slot": "S14",
+ "channel": "reel",
+ "pillar": "MP",
+ "date": "2026-12-10",
+ "title": "Reel: Hamilton County median list price $445,000, down 6.3%, the pricing takeaway",
+ "hook": "What should you list your Fishers or Carmel home for this winter?",
+ "body": "What should you list your Fishers or Carmel home for this winter? Start here. Hamilton County's median list price was $445,000 in October, down 6.3% from a year earlier. Buyers also have more homes to compare than they did last fall, so they notice fast when a price was set from last spring's headlines. A price built from today's comparable homes, on your street and in your home's condition, gives buyers a reason to book the showing. One note: these are asking prices, not what homes closed for. Call 317-863-9011 and ask for a winter pricing check on your home.",
+ "cta": "Call 317-863-9011 and ask for a winter pricing check on your home.",
+ "shotList": [
+  "1. (0-3s) [Agent on camera] on a Fishers street corner in winter (no house numbers in frame) asks the hook question.",
+  "2. (3-11s) Full-screen number card \"$445,000\" with \"-6.3% vs. a year ago\" over slow b-roll of a Carmel or Fishers street, filmed from the sidewalk.",
+  "3. (11-20s) B-roll: a phone scrolling a blurred home search, many results, no addresses or listing photos legible.",
+  "4. (20-30s) Overhead: hands laying three blank comparable-home sheets side by side and circling one.",
+  "5. (30-36s) [Agent on camera] at the office desk delivers the asking-price note and the CTA.",
+  "6. (36-40s) End card: \"Evelo Team, Keller Williams Indy Metro NE\" logo lockup with the CTA \"Call 317-863-9011 and ask for a winter pricing check on your home.\" and eveloteam.com on a plain brand-color background."
+ ],
+ "onScreenText": [
+  "Hamilton County median list price: $445,000",
+  "Down 6.3% from a year ago",
+  "Price from today's comps, not last spring",
+  "List prices, not closed prices",
+  "Source: Realtor.com via FRED, Oct 2026."
+ ],
+ "visual": {
+  "kind": "reel",
+  "headline": "Pricing your Hamilton County home this winter",
+  "sub": "Median list price in October, compared with a year earlier",
+  "stat": "$445,000 (-6.3%)"
+ },
+ "sources": [
+  "content/metrics.json#MEDLISPRI18057"
+ ],
+ "disclosure": "Evelo Team | Keller Williams Indy Metro NE. Each office is independently owned and operated.",
+ "adType": true
+}
