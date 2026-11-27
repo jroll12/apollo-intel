@@ -40,7 +40,7 @@ for (const text of [...onscreen, caps]) {
 console.log("numbers");
 ok(bad.length === 0, `every on-screen number is in the locked October data${bad.length ? ": " + bad.join("; ") : ""}`);
 ok(onscreen.some((s) => /Keller Williams Indy Metro NE/.test(s)), "brokerage line on screen (LIC-1)");
-ok(onscreen.some((s) => /Source: Realtor\.com via FRED, October 2026/.test(s)), "source and period on screen (NAR-2)");
+ok(onscreen.some((s) => /Source: Realtor\.com via FRED, Oct 2025 and Oct 2026/.test(s)), "source and period on screen (NAR-2)");
 ok(onscreen.some((s) => /not closed prices/i.test(s)), "list price never presented as a sale price (DATA-2)");
 ok(onscreen.some((s) => /Spec sample by Jarret Roloff/.test(s)), "spec-sample label on screen");
 

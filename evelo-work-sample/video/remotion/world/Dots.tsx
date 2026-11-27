@@ -6,16 +6,22 @@ import { GEO, HAMILTON_TOP, scene, prog, ease, type Pt } from "../data";
 const inv = scene("inventory");
 const asking = scene("asking");
 export const DOTS = {
-  baseStart: inv.start + 0.35,
-  baseEnd: inv.start + 2.7,
-  streamStart: inv.start + 2.8,
-  streamEnd: inv.start + 5.9,
+  baseStart: inv.start + 0.15,
+  baseEnd: inv.start + 1.5,
+  streamStart: inv.start + 1.6,
+  streamEnd: inv.start + 4.0,
 };
 const R = 0.31;
-const Y = HAMILTON_TOP + 0.25 + R;
+const Y = HAMILTON_TOP + R;
 
-const base = GEO.dots.filter((d) => d.group === "base").sort((a, b) => a.order - b.order);
-const fresh = GEO.dots.filter((d) => d.group === "new").sort((a, b) => a.order - b.order);
+// Unit chart: 1 dot = 1 active listing, positions illustrative. The 180 new dots are spread evenly
+// across the county (every ~6th grid point) so the chart never implies where new listings are.
+const ALL = [...GEO.dots].sort((a, b) => a.order - b.order);
+const N_NEW = GEO.dots.filter((d) => d.group === "new").length;
+const step = ALL.length / N_NEW;
+const newIdx = new Set(Array.from({ length: N_NEW }, (_, k) => Math.floor(k * step + step / 2)));
+const base = ALL.filter((_, i) => !newIdx.has(i));
+const fresh = ALL.filter((_, i) => newIdx.has(i)).sort((a, b) => a.y - b.y);
 
 // Each new dot travels up I-69 from the southwest, then hops to its place.
 const paths = fresh.map((d) => {
@@ -70,8 +76,8 @@ export const Dots: React.FC<{ t: number; shot: string }> = ({ t, shot }) => {
     const mesh = newRef.current;
     if (!mesh) return;
     fresh.forEach((_, i) => {
-      const depart = DOTS.streamStart + (i / fresh.length) * (DOTS.streamEnd - DOTS.streamStart - 1.2);
-      const u = t >= asking.start ? 1 : ease.inOutCubic(prog(t, depart, depart + 1.2));
+      const depart = DOTS.streamStart + (i / fresh.length) * (DOTS.streamEnd - DOTS.streamStart - 0.9);
+      const u = t >= asking.start ? 1 : ease.inOutCubic(prog(t, depart, depart + 0.9));
       const [x, y] = pointAt(paths[i], u);
       const hop = Math.sin(Math.min(1, Math.max(0, (u - 0.8) / 0.2)) * Math.PI) * 0.9;
       const s = u <= 0 ? 0.0001 : 1.08;

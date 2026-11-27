@@ -24,7 +24,7 @@ const Counties: React.FC<{ t: number }> = ({ t }) => {
     [],
   );
   // Hamilton lifts slightly as its border ignites in the hook.
-  const lift = ease.outCubic(prog(t, 0.2, 1.6)) * 0.25;
+  const lift = 0;
   return (
     <group>
       {items.map(({ c, geometry, edge }) => (
@@ -49,8 +49,8 @@ const HamiltonBorder: React.FC<{ t: number }> = ({ t }) => {
     const h = () => HAMILTON_TOP;
     return { core: ribbon(HAM_RING, 0.32, h, 0.05, true), glow: ribbon(HAM_RING, 2.2, h, 0.04, true) };
   }, []);
-  const p = ease.inOutCubic(prog(t, 0.25, 1.45));
-  const lift = ease.outCubic(prog(t, 0.2, 1.6)) * 0.25;
+  const p = ease.inOutCubic(prog(t, 0.0, 0.9));
+  const lift = 0;
   core.geometry.setDrawRange(0, Math.ceil(core.segments * p) * 6);
   glow.geometry.setDrawRange(0, Math.ceil(glow.segments * p) * 6);
   return (
@@ -76,7 +76,8 @@ const Roads: React.FC<{ t: number; dim: number }> = ({ t, dim }) => {
       }),
     [],
   );
-  const on = ease.outCubic(prog(t, 0.0, 1.2));
+  const on = 1;
+  void t;
   return (
     <group>
       {items.map((it) => {
@@ -146,7 +147,7 @@ const CityLights: React.FC<{ t: number; dim: number }> = ({ t, dim }) => {
     g.setAttribute("color", new THREE.Float32BufferAttribute(col, 3));
     return g;
   }, []);
-  const on = ease.outCubic(prog(t, 0.0, 1.6));
+  const on = 1;
   const shimmer = 0.9 + 0.1 * Math.sin(t * 2.1);
   return (
     <points geometry={geometry}>

@@ -30,8 +30,8 @@ export const SHOTS: Shot[] = [
     fog: 0.0042,
     drift: 1,
     keys: [
-      { t: 0, pos: [2, 175, 120], target: [0, 0, -4] },
-      { t: K.fishers, pos: [6, 74, 66], target: [1, 0, 2] },
+      { t: 0, pos: [2, 112, 92], target: [0, 0, -10] },
+      { t: K.fishers, pos: [6, 66, 62], target: [1, 0, -2] },
       { t: S.hook.end - 0.3, pos: [6, 30, 44], target: [-1, 0, 9] },
       { t: S.price.start + 0.6, pos: [-26, 13, 30], target: [-6, 8, 0] },
       { t: K.down, pos: [-15, 20, 37], target: [-6.5, 13, 0] },
@@ -48,7 +48,7 @@ export const SHOTS: Shot[] = [
     end: S.asking.start,
     near: 0.001,
     far: 4,
-    fog: 2.2,
+    fog: 1.1,
     drift: 0.02,
     keys: [
       { t: S.comps.start + DIVE, pos: d(-0.11, 0.16, 0.2), target: d(0, 0, 0.005) },

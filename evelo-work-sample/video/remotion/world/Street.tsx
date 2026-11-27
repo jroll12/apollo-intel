@@ -35,8 +35,8 @@ const HOUSES: House[] = LOTS.flatMap((x) =>
 const S = 0.001; // meters -> km
 export const toWorld = (x: number, y: number, z: number): [number, number, number] => [D[0] + x * S, D[1] + y * S, D[2] + z * S];
 export const STREET_POINTS = {
-  subject: toWorld(0, 13, -17),
-  comps: COMPS.map((c) => toWorld(c.x, 13, c.side * 17)),
+  subject: toWorld(0, 19, -17),
+  comps: COMPS.map((c) => toWorld(c.x, 17, c.side * 17)),
 };
 export const compTimes = COMPS.map((_, i) => T.keyTimes.comparable + 0.05 + i * 0.32);
 
@@ -105,9 +105,9 @@ const Arcs: React.FC<{ t: number }> = ({ t }) => {
   const lines = useMemo(
     () =>
       COMPS.map((c) => {
-        const a = new THREE.Vector3(c.x, 11.5, c.side * 17);
-        const b = new THREE.Vector3(0, 11.5, -17);
-        const mid = a.clone().lerp(b, 0.5).add(new THREE.Vector3(0, 14, 0));
+        const a = new THREE.Vector3(c.x, 10.8, c.side * 17);
+        const b = new THREE.Vector3(0, 10.8, -17);
+        const mid = a.clone().lerp(b, 0.5).add(new THREE.Vector3(0, 24, 0));
         const curve = new THREE.QuadraticBezierCurve3(a, mid, b);
         const g = new THREE.BufferGeometry().setFromPoints(curve.getPoints(80));
         const line = new THREE.Line(g, new THREE.LineDashedMaterial({ color: C.amberHot, dashSize: 2.2, gapSize: 1.4, transparent: true }));
