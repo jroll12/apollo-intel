@@ -200,8 +200,8 @@ const CameraRig: React.FC = () => {
   useLayoutEffect(() => {
     const t = frame / 29;
     const angle = interpolate(t, [0, 1], [0.35, 0.95]) + Math.PI / 2;
-    const radius = interpolate(t, [0, 1], [13, 11]);
-    const height = interpolate(t, [0, 1], [14, 11]);
+    const radius = interpolate(t, [0, 1], [15.5, 13.5]);
+    const height = interpolate(t, [0, 1], [16.5, 13.5]);
     camera.position.set(Math.cos(angle) * radius, height, Math.sin(angle) * radius);
     camera.lookAt(0, 1.2, 0);
     camera.updateProjectionMatrix();
@@ -233,7 +233,13 @@ export const Smoke: React.FC = () => {
       <ThreeCanvas
         width={width}
         height={height}
-        camera={{ fov: 50, near: 0.1, far: 200, position: [0, 14, 13] }}
+        camera={{ fov: 50, near: 0.1, far: 200, position: [0, 16, 15] }}
+        onCreated={({ gl }) => {
+          // Logged once per tab; visible with --log=verbose. Shows which software GL is in use.
+          const ctx = gl.getContext();
+          const info = ctx.getExtension("WEBGL_debug_renderer_info");
+          console.log("[smoke] WebGL renderer:", info ? ctx.getParameter(info.UNMASKED_RENDERER_WEBGL) : ctx.getParameter(ctx.RENDERER));
+        }}
       >
         <color attach="background" args={[NAVY]} />
         <ambientLight intensity={0.55} />
