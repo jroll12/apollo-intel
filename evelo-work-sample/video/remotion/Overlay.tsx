@@ -39,23 +39,22 @@ function HeroQuestion({ t, format }: { t: number; format: Format }) {
       <div style={{ fontFamily: FONT.body, fontWeight: 700, fontSize: 26, letterSpacing: "0.16em", color: C.amber, textTransform: "uppercase", marginBottom: 18, opacity: fadeIn(t, 0.1, 0.3), ...stroke, WebkitTextStroke: "6px rgba(6,11,21,0.8)" }}>
         Hamilton County · October 2026
       </div>
-      {HERO.map((p, i) => {
-        const o = fadeIn(t, p.start - 0.12, 0.18);
-        return (
-          <div key={i} style={{ opacity: o, transform: rise(o, 26), fontFamily: FONT.display, fontWeight: 800, fontSize: size, lineHeight: 1.02, letterSpacing: "-0.015em", ...stroke, WebkitTextStroke: "14px rgba(6,11,21,0.75)" }}>
-            {p.words.map((w, k) => {
-              const said = t >= w.start - 0.03;
-              const key = /Fishers|Carmel/.test(w.text);
-              return (
-                <span key={k} style={{ color: key && said ? C.amberHot : C.snow, opacity: said ? 1 : 0.35 }}>
-                  {w.text}
-                  {k < p.words.length - 1 ? " " : ""}
-                </span>
-              );
-            })}
-          </div>
-        );
-      })}
+      <div style={{ opacity: fadeIn(t, 0.05, 0.25), transform: rise(fadeIn(t, 0.05, 0.25), 26), fontFamily: FONT.display, fontWeight: 800, fontSize: size, lineHeight: 1.04, letterSpacing: "-0.015em", textWrap: "balance", ...stroke, WebkitTextStroke: "14px rgba(6,11,21,0.75)" } as React.CSSProperties}>
+        {HERO.flatMap((p) => p.words).map((w, k, all) => {
+          const said = t >= w.start - 0.03;
+          const key = /Fishers|Carmel/.test(w.text);
+          return (
+            <span key={k} style={{ color: key && said ? C.amberHot : C.snow, opacity: said ? 1 : 0.5 }}>
+              {w.text}
+              {k < all.length - 1 ? " " : ""}
+            </span>
+          );
+        })}
+      </div>
+      <div style={{ display: "inline-flex", alignItems: "center", gap: 12, marginTop: 26, padding: "12px 22px", borderRadius: 999, background: "rgba(6,11,21,0.88)", border: `2px solid ${C.snow}`, opacity: fadeIn(t, 0.45, 0.3), transform: `scale(${0.92 + 0.08 * fadeIn(t, 0.45, 0.3)})`, transformOrigin: "left center" }}>
+        <span style={{ fontFamily: FONT.display, fontWeight: 800, fontSize: 38, color: C.snow }}>List prices −{Math.abs(NUM.pricePct)}%</span>
+        <span style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 26, color: C.snowDim }}>vs Oct 2025</span>
+      </div>
     </div>
   );
 }
@@ -103,7 +102,7 @@ function PriceCallout({ t, format, cam, shot }: Props) {
       <div style={{ position: "absolute", left: L.left, top: L.top + 20, opacity: o, transform: rise(o, 24) }}>
         <div style={{ fontFamily: FONT.display, fontWeight: 800, fontSize: big, lineHeight: 0.95, color: C.snow, letterSpacing: "-0.02em", textShadow: shadow }}>{usd(NUM.price)}</div>
         <div style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 30, color: C.amber, marginTop: 14, textShadow: shadow }}>Median list price, October 2026</div>
-        <div style={{ display: "inline-flex", alignItems: "center", gap: 12, marginTop: 20, padding: "12px 22px", borderRadius: 999, background: "rgba(8,40,40,0.85)", border: `2px solid ${C.teal}`, color: C.teal, fontFamily: FONT.display, fontWeight: 800, fontSize: 40, opacity: down, transform: `scale(${0.9 + 0.1 * down})`, transformOrigin: "left center" }}>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: 12, marginTop: 20, padding: "12px 22px", borderRadius: 999, background: "rgba(6,11,21,0.88)", border: `2px solid ${C.snow}`, color: C.snow, fontFamily: FONT.display, fontWeight: 800, fontSize: 40, opacity: down, transform: `scale(${0.9 + 0.1 * down})`, transformOrigin: "left center" }}>
           −{Math.abs(NUM.pricePct)}%
           <span style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 26, color: C.snowDim }}>from {usd(NUM.priceYearAgo)} in October 2025</span>
         </div>
@@ -121,7 +120,7 @@ function PriceCallout({ t, format, cam, shot }: Props) {
 function InventoryCallout({ t, format, cam, shot }: Props) {
   if (shot === "street") return null;
   const L = LAYOUT[format];
-  const o = fadeIn(t, DOTS.baseStart + 0.1, 0.3) * fadeOut(t, S.comps.start, 0.2);
+  const o = fadeIn(t, S.inv.start + 0.5, 0.3) * fadeOut(t, S.comps.start, 0.2);
   if (o <= 0.01) return null;
   const then = fadeIn(t, DOTS.baseEnd - 0.3, 0.3);
   const now = fadeIn(t, DOTS.streamEnd - 0.25, 0.3);
@@ -147,14 +146,13 @@ function InventoryCallout({ t, format, cam, shot }: Props) {
         <div style={{ display: "inline-block", marginTop: 18, padding: "10px 20px", borderRadius: 999, background: "rgba(8,40,40,0.85)", border: `2px solid ${C.teal}`, color: C.teal, fontFamily: FONT.display, fontWeight: 800, fontSize: 34, opacity: now }}>
           +{fmt(NUM.listings - NUM.listingsYearAgo)} more to compare
         </div>
-        <div style={{ display: "flex", flexWrap: "wrap", columnGap: 22, rowGap: 6, marginTop: 16, fontFamily: FONT.body, fontWeight: 600, fontSize: 22, color: C.snowDim, opacity: then, maxWidth: L.right - L.left }}>
-          <span>
-            <span style={{ display: "inline-block", width: 14, height: 14, borderRadius: 99, background: C.snowDim, marginRight: 8 }} />1 dot = 1 listing
-          </span>
+        <div style={{ marginTop: 16, fontFamily: FONT.body, fontWeight: 600, fontSize: 21, color: C.snowDim, opacity: then, whiteSpace: "nowrap" }}>
+          <span style={{ display: "inline-block", width: 13, height: 13, borderRadius: 99, background: C.snowDim, marginRight: 7 }} />1 dot = 1 listing
           <span style={{ opacity: now }}>
-            <span style={{ display: "inline-block", width: 14, height: 14, borderRadius: 99, background: C.amberHot, marginRight: 8 }} />new since Oct 2025
+            {"  ·  "}
+            <span style={{ display: "inline-block", width: 13, height: 13, borderRadius: 99, background: C.amberHot, marginRight: 7 }} />new since Oct 2025
           </span>
-          <span style={{ color: C.muted }}>positions illustrative</span>
+          <span style={{ color: C.muted }}>{"  ·  "}positions illustrative</span>
         </div>
         <Source text="Source: Realtor.com via FRED, Oct 2025 and Oct 2026" />
       </div>
@@ -172,9 +170,11 @@ function CompsCallout({ t, format, cam, shot }: Props) {
   const L = LAYOUT[format];
   const head = fadeIn(t, K.comparable - 0.25, 0.35) * fadeOut(t, S.asking.start - 0.05, 0.2);
   const tag = fadeIn(t, SHOTS[1].start, 0.2) * fadeOut(t, S.asking.start - 0.02, 0.15);
+  const subj = project(cam, L.w, L.h, STREET_POINTS.subject);
   const label = (p: [number, number, number], text: string, color: string, at: number, key: string) => {
     const o = ease.outBack(prog(t, at, at + 0.35)) * fadeOut(t, S.asking.start - 0.05, 0.2);
     const s = project(cam, L.w, L.h, p);
+    if (key !== "subject" && Math.hypot(s.x - subj.x, s.y - subj.y) < 170) return null;
     if (!s.visible || o <= 0.01 || s.y < L.top + 260 || s.y > L.captionY - 40 || s.x < L.left + 70 || s.x > L.right - 90) return null;
     return (
       <div key={key} style={{ position: "absolute", left: s.x, top: s.y, transform: `translate(-50%, -100%) scale(${Math.max(0.01, o)})`, transformOrigin: "50% 100%" }}>
@@ -193,7 +193,7 @@ function CompsCallout({ t, format, cam, shot }: Props) {
       </div>
       {label(STREET_POINTS.subject, "Your home", C.teal, K.comparable - 0.45, "subject")}
       {STREET_POINTS.comps.map((p, i) => label(p, "Comp", C.amberHot, compTimes[i], `c${i}`))}
-      <div style={{ position: "absolute", left: L.left, top: L.captionY - 86, opacity: tag, padding: "6px 14px", borderRadius: 999, background: "rgba(6,11,21,0.8)", border: `1.5px solid ${C.muted}`, fontFamily: FONT.body, fontWeight: 700, fontSize: 22, letterSpacing: "0.12em", color: C.snowDim, textTransform: "uppercase" }}>
+      <div style={{ position: "absolute", left: L.left, top: L.top + (format === "portrait" ? 232 : 170), opacity: tag, padding: "6px 14px", borderRadius: 999, background: "rgba(6,11,21,0.85)", border: `1.5px solid ${C.muted}`, fontFamily: FONT.body, fontWeight: 700, fontSize: 22, letterSpacing: "0.12em", color: C.snowDim, textTransform: "uppercase" }}>
         Illustration · not a real street
       </div>
     </>
@@ -257,19 +257,19 @@ function EndCard({ t, format }: { t: number; format: Format }) {
   const drift = 1 + 0.025 * prog(t, END_CARD_AT, T.duration);
   return (
     <>
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 42%, rgba(6,11,21,0.7) 0%, rgba(6,11,21,0.55) 40%, rgba(6,11,21,0.85) 85%)", opacity: o }} />
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 42%, rgba(6,11,21,0.84) 0%, rgba(6,11,21,0.78) 45%, rgba(6,11,21,0.92) 85%)", opacity: o }} />
       <div style={{ position: "absolute", left: cx, top, transform: `translateX(-50%) scale(${drift})`, transformOrigin: "50% 30%", width: L.right - L.left, textAlign: "center" }}>
         <div style={{ opacity: stagger(0), transform: rise(stagger(0)), fontFamily: FONT.body, fontWeight: 700, fontSize: 30, letterSpacing: "0.16em", color: C.amber, textTransform: "uppercase" }}>Winter pricing check</div>
         <div style={{ opacity: stagger(1), transform: rise(stagger(1), 22), fontFamily: FONT.display, fontWeight: 800, fontSize: format === "portrait" ? 116 : 104, color: C.snow, marginTop: 14, letterSpacing: "-0.01em" }}>317-863-9011</div>
         <div style={{ opacity: stagger(2), transform: rise(stagger(2)), fontFamily: FONT.body, fontWeight: 700, fontSize: 42, color: C.amberHot, marginTop: 6 }}>eveloteam.com</div>
-        <div style={{ opacity: stagger(3), margin: "40px auto 0", padding: "22px 26px", borderRadius: 22, background: "rgba(6,11,21,0.82)", border: `1px solid ${C.edgeDim}`, width: "fit-content", maxWidth: "100%" }}>
+        <div style={{ opacity: stagger(3), margin: "40px auto 0", padding: "22px 26px", borderRadius: 22, background: "rgba(6,11,21,0.94)", border: `1px solid ${C.edgeDim}`, width: "fit-content", maxWidth: "100%" }}>
           <div style={{ fontFamily: FONT.body, fontWeight: 700, fontSize: 30, color: C.snow }}>Evelo Team | Keller Williams Indy Metro NE</div>
           <div style={{ fontFamily: FONT.body, fontWeight: 500, fontSize: 25, color: C.snowDim, marginTop: 14, lineHeight: 1.4 }}>
             Source: Realtor.com via FRED, Oct 2025 and Oct 2026.
             <br />
             List prices, not closed prices.
           </div>
-          <div style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 25, color: C.amber, marginTop: 14 }}>Spec sample by Jarret Roloff. Not published by Evelo Team.</div>
+          <div style={{ fontFamily: FONT.body, fontWeight: 500, fontSize: 24, color: C.muted, marginTop: 14 }}>Spec sample by Jarret Roloff. Not published by Evelo Team.</div>
         </div>
       </div>
     </>
@@ -282,6 +282,14 @@ function TopScrim({ t }: { t: number }) {
   return <AbsoluteFill style={{ opacity: o, background: "linear-gradient(to bottom, rgba(6,11,21,0.95) 0%, rgba(6,11,21,0.85) 22%, rgba(6,11,21,0.0) 42%)" }} />;
 }
 
+function CaptionBand({ t, format }: { t: number; format: Format }) {
+  const L = LAYOUT[format];
+  const o = fadeIn(t, heroEnd - 0.1, 0.3) * fadeOut(t, END_CARD_AT, 0.3);
+  if (o <= 0.01) return null;
+  const y = L.captionY;
+  return <AbsoluteFill style={{ opacity: o, background: `linear-gradient(to bottom, rgba(6,11,21,0) ${y - 170}px, rgba(6,11,21,0.74) ${y + 5}px, rgba(6,11,21,0.74) ${y + 175}px, rgba(6,11,21,0) ${y + 320}px)` }} />;
+}
+
 function HookScrim({ t }: { t: number }) {
   const o = fadeOut(t, heroEnd + 0.2, 0.4);
   if (o <= 0.01) return null;
@@ -290,7 +298,7 @@ function HookScrim({ t }: { t: number }) {
 
 function Dip({ t }: { t: number }) {
   const cuts = [SHOTS[1].start, SHOTS[2].start];
-  const o = Math.max(...cuts.map((c) => (t < c - 0.12 ? 0 : t < c ? (t - (c - 0.12)) / 0.12 : Math.max(0, 1 - (t - c) / 0.28))));
+  const o = Math.max(...cuts.map((c) => (t < c - 0.06 ? 0 : t < c ? (t - (c - 0.06)) / 0.06 : Math.max(0, 1 - (t - c) / 0.14))));
   if (o <= 0.01) return null;
   return <AbsoluteFill style={{ background: C.ink, opacity: o }} />;
 }
@@ -318,6 +326,7 @@ export function Overlay(props: Props & { frame: number }) {
       <Grain frame={props.frame} />
       <HookScrim t={t} />
       <TopScrim t={t} />
+      <CaptionBand t={t} format={format} />
       <TownLabels {...props} />
       <PriceCallout {...props} />
       <InventoryCallout {...props} />

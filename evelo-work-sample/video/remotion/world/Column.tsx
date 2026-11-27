@@ -14,7 +14,7 @@ const asking = scene("asking");
 // 0..1 visibility and current height, shared with the overlay so labels track the column top.
 export function columnState(t: number) {
   const rise = ease.outBack(prog(t, price.start + 0.35, T.keyTimes.price + 0.15));
-  const sink = 1 - ease.inOutCubic(prog(t, inv.start, inv.start + 0.9));
+  const sink = 1 - ease.inOutCubic(prog(t, inv.start, inv.start + 0.5));
   const back = ease.outCubic(prog(t, asking.start - 0.1, asking.start + 0.7));
   const firstPass = t < asking.start - 0.1;
   const h = firstPass ? H_NOW * rise * sink : H_NOW * back;

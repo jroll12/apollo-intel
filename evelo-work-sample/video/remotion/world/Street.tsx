@@ -11,9 +11,9 @@ const LOTS = Array.from({ length: 11 }, (_, k) => -110 + 22 * k);
 type House = { x: number; z: number; side: 1 | -1; color: string; role: "subject" | "comp" | "other"; compIndex?: number; lit: boolean[] };
 const PALETTE = ["#3a4a63", "#4a4038", "#3d4f4a", "#55505c", "#40485a", "#4b5566"];
 const COMPS = [
-  { x: -44, side: -1 as const },
-  { x: 22, side: 1 as const },
-  { x: 88, side: -1 as const },
+  { x: -66, side: -1 as const },
+  { x: 44, side: 1 as const },
+  { x: 110, side: -1 as const },
 ];
 
 const HOUSES: House[] = LOTS.flatMap((x) =>

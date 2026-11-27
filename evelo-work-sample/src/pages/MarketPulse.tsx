@@ -70,6 +70,29 @@ export function MarketPulse() {
         </>
       }
     >
+      <div className="mb-6 grid items-center gap-6 rounded-xl border bg-card p-4 sm:p-6 md:grid-cols-[minmax(0,320px)_1fr]">
+        <video
+          className="mx-auto w-full max-w-[320px] rounded-xl bg-black"
+          src="reel-s14-9x16.mp4"
+          poster="reel-s14-poster.jpg"
+          controls
+          playsInline
+          preload="metadata"
+        />
+        <div className="min-w-0">
+          <div className="text-[12px] font-semibold tracking-[0.16em] text-[var(--sand)] uppercase">Calendar slot S14, produced</div>
+          <h3 className="font-display mt-1 text-2xl leading-tight font-semibold">One market post, from data to Reel</h3>
+          <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">
+            The Hamilton County pricing Reel from the December calendar, built from the numbers on this page: real county lines and highways, a price column, one dot per
+            active listing, and an illustrated street for the comps. Script approved in blind compliance review, captions burned in for sound-off viewing, sources and
+            brokerage line on screen.
+          </p>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-[14px] text-muted-foreground">
+            <li>9:16 for Reels and Shorts, 4:5 for the feed, and a short cut for Stories</li>
+            <li>Next month: refresh the data, record 40 seconds of voice, render. About an hour, start to finish.</li>
+          </ul>
+        </div>
+      </div>
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Stat value={fmtUSD(S.MEDLISPRI18057.latest.value)} label="Hamilton County median list price" sub={`${S.MEDLISPRI18057.yoyPct}% vs Oct 2025`} />
         <Stat value={S.ACTLISCOU26900.latest.value.toLocaleString()} label="Metro active listings" sub={`+${S.ACTLISCOU26900.yoyPct}% vs Oct 2025`} />

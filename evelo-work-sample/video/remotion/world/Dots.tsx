@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef } from "react";
+import { random } from "remotion";
 import * as THREE from "three";
 import { C } from "../theme";
 import { GEO, HAMILTON_TOP, scene, prog, ease, type Pt } from "../data";
@@ -18,8 +19,9 @@ const Y = HAMILTON_TOP + R;
 // across the county (every ~6th grid point) so the chart never implies where new listings are.
 const ALL = [...GEO.dots].sort((a, b) => a.order - b.order);
 const N_NEW = GEO.dots.filter((d) => d.group === "new").length;
-const step = ALL.length / N_NEW;
-const newIdx = new Set(Array.from({ length: N_NEW }, (_, k) => Math.floor(k * step + step / 2)));
+// seeded scatter: no stripes, no clusters that could imply where new listings are
+const ranked = ALL.map((_, i) => ({ i, r: random(`new-dot-${i}`) })).sort((a, b) => a.r - b.r);
+const newIdx = new Set(ranked.slice(0, N_NEW).map((x) => x.i));
 const base = ALL.filter((_, i) => !newIdx.has(i));
 const fresh = ALL.filter((_, i) => newIdx.has(i)).sort((a, b) => a.y - b.y);
 
