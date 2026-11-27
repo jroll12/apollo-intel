@@ -2,3 +2,4 @@ out/
 node_modules/
 audio/raw/
 *.wav
+public/audio/

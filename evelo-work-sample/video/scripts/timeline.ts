@@ -9,7 +9,8 @@ const alignPath = process.argv[2] ?? "data/align-temp.json";
 const al = JSON.parse(readFileSync(join(ROOT, alignPath), "utf8"));
 const FPS = 30;
 const VO_OFFSET = 0.35; // seconds of picture before the first word
-const MIN_END_HOLD = 4.2; // end card hold after the last word
+const MIN_END_HOLD = 3.0; // end card hold after the last word
+const MAX_MUSIC_SKIP = 5.5; // never cut past the music's first beat
 
 type W = { i: number; text: string; start: number; end: number; break: string | null };
 const words: W[] = al.words;
@@ -30,10 +31,10 @@ const cue = {
 };
 const speechEnd = t(words.at(-1)!.end);
 const musicDur: number = al.music.duration;
-let duration = Math.max(speechEnd + MIN_END_HOLD, 0);
-const endHold = Math.max(MIN_END_HOLD, Math.min(7, musicDur - speechEnd));
-duration = Math.round((speechEnd + endHold) * FPS) / FPS;
-const musicSkip = Math.max(0, Math.min(5.5, musicDur - duration)); // trim the ambient intro so the music's ending lands on the last frame
+// Shortest hold that still lets the music's own ending land on the last frame.
+const endHold = Math.max(MIN_END_HOLD, musicDur - MAX_MUSIC_SKIP - speechEnd);
+const duration = Math.round((speechEnd + endHold) * FPS) / FPS;
+const musicSkip = Math.max(0, Math.min(MAX_MUSIC_SKIP, musicDur - duration));
 
 const lead = 0.25; // cut slightly before the first word of a beat
 const sceneStart = (k: number) => Math.max(0, t(words[k].start) - lead);
